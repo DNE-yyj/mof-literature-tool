@@ -52,6 +52,12 @@ Register a weekly Windows scheduled task:
 powershell -ExecutionPolicy Bypass -File .\register_weekly_task.ps1 -ConfigPath .\configs\weekly_mof_latest.json -TaskName "MOF Literature Weekly" -Force
 ```
 
+Trigger the registered task immediately:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\trigger_weekly_task_now.ps1 -TaskName "MOF Literature Weekly"
+```
+
 If you want a better field-level synthesis and already have an OpenAI API key:
 
 ```powershell
