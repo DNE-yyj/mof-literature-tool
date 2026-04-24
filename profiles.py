@@ -1,0 +1,130 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+
+
+@dataclass(frozen=True)
+class QueryProfile:
+    name: str
+    description: str
+    queries: tuple[str, ...]
+    must_have_any: tuple[str, ...]
+    boost_keywords: tuple[str, ...]
+    required_any_tags: tuple[str, ...] = ()
+    required_any_method_tags: tuple[str, ...] = ()
+    exclude_keywords: tuple[str, ...] = ()
+
+
+PROFILES: dict[str, QueryProfile] = {
+    "mof_latest": QueryProfile(
+        name="mof_latest",
+        description="Recent MOF adsorption/catalysis papers with DFT, ML, screening, or interatomic-potential relevance.",
+        queries=(
+            "metal-organic framework adsorption machine learning density functional theory",
+            "metal-organic framework catalysis machine learning density functional theory",
+            "metal-organic framework water adsorption diffusion machine learning",
+            "metal-organic framework interatomic potential molecular dynamics adsorption",
+        ),
+        must_have_any=("metal-organic framework", "mof"),
+        boost_keywords=(
+            "adsorption",
+            "catalysis",
+            "machine learning",
+            "density functional theory",
+            "dft",
+            "screening",
+            "high-throughput",
+            "interatomic potential",
+            "molecular dynamics",
+        ),
+        required_any_tags=("adsorption", "separation", "catalysis", "photocatalysis", "electrocatalysis", "water", "co2"),
+        required_any_method_tags=("ml", "dft", "high_throughput", "interatomic_potential", "gcmc", "md", "force_field"),
+        exclude_keywords=("membrane", "sensor", "drug delivery", "biomedical", "electrode fabrication"),
+    ),
+    "mof_adsorption": QueryProfile(
+        name="mof_adsorption",
+        description="Recent MOF adsorption, separation, water harvesting, and diffusion literature.",
+        queries=(
+            "metal-organic framework adsorption machine learning",
+            "metal-organic framework gas separation density functional theory",
+            "metal-organic framework water adsorption diffusion",
+            "metal-organic framework carbon capture high-throughput screening",
+        ),
+        must_have_any=("metal-organic framework", "mof"),
+        boost_keywords=(
+            "adsorption",
+            "separation",
+            "water adsorption",
+            "water harvesting",
+            "carbon capture",
+            "co2",
+            "gcmc",
+            "molecular dynamics",
+            "machine learning",
+            "density functional theory",
+        ),
+        required_any_tags=("adsorption", "separation", "water", "co2"),
+        required_any_method_tags=("ml", "dft", "high_throughput", "interatomic_potential", "gcmc", "md", "force_field"),
+        exclude_keywords=("membrane", "sensor", "drug delivery", "biomedical"),
+    ),
+    "mof_catalysis": QueryProfile(
+        name="mof_catalysis",
+        description="Recent MOF catalytic studies spanning DFT, descriptors, and data-driven discovery.",
+        queries=(
+            "metal-organic framework catalysis machine learning density functional theory",
+            "metal-organic framework electrocatalysis descriptor screening",
+            "metal-organic framework photocatalysis first principles",
+            "metal-organic framework single atom catalyst computational study",
+        ),
+        must_have_any=("metal-organic framework", "mof"),
+        boost_keywords=(
+            "catalysis",
+            "electrocatalysis",
+            "photocatalysis",
+            "descriptor",
+            "reaction",
+            "machine learning",
+            "density functional theory",
+            "first-principles",
+            "screening",
+            "single-atom",
+        ),
+        required_any_tags=("catalysis", "photocatalysis", "electrocatalysis"),
+        required_any_method_tags=("ml", "dft", "high_throughput", "md"),
+        exclude_keywords=("membrane", "sensor", "drug delivery", "biomedical"),
+    ),
+    "cof_transfer_methods": QueryProfile(
+        name="cof_transfer_methods",
+        description="COF-side methods that may transfer to MOFs, especially MLIP, representation learning, and screening workflows.",
+        queries=(
+            "covalent organic framework machine learning interatomic potential",
+            "covalent organic framework adsorption machine learning high-throughput screening",
+            "covalent organic framework catalysis density functional theory machine learning",
+            "covalent organic framework band structure prediction machine learning",
+        ),
+        must_have_any=("covalent organic framework", "cof"),
+        boost_keywords=(
+            "machine learning",
+            "interatomic potential",
+            "representation learning",
+            "screening",
+            "descriptor",
+            "band structure",
+            "adsorption",
+            "catalysis",
+            "density functional theory",
+            "molecular dynamics",
+        ),
+        required_any_tags=("ml", "interatomic_potential", "high_throughput", "dft", "md"),
+        required_any_method_tags=("ml", "interatomic_potential", "high_throughput", "dft", "md"),
+        exclude_keywords=("membrane", "sensor", "drug delivery", "biomedical"),
+    ),
+}
+
+
+def get_profile(name: str) -> QueryProfile:
+    try:
+        return PROFILES[name]
+    except KeyError as exc:
+        available = ", ".join(sorted(PROFILES))
+        raise KeyError(f"Unknown profile '{name}'. Available profiles: {available}") from exc

@@ -1,0 +1,197 @@
+from __future__ import annotations
+
+import json
+import shutil
+import unittest
+import uuid
+from pathlib import Path
+from unittest.mock import patch
+
+from core import build_parser, run_cli
+
+
+REPO_ROOT = Path(__file__).resolve().parents[1]
+
+
+OPENALEX_PAYLOAD = {
+    "results": [
+        {
+            "id": "https://openalex.org/W1",
+            "display_name": "Machine-learned interatomic potentials for water diffusion in MOF-303",
+            "doi": "https://doi.org/10.1000/mof303",
+            "publication_date": "2026-03-03",
+            "publication_year": 2026,
+            "type": "journal-article",
+            "cited_by_count": 5,
+            "primary_location": {
+                "landing_page_url": "https://example.org/mof303",
+                "source": {"display_name": "Journal of Mock Materials"},
+            },
+            "authorships": [
+                {"author": {"display_name": "Alice Example"}},
+                {"author": {"display_name": "Bob Example"}},
+            ],
+            "abstract_inverted_index": {
+                "We": [0],
+                "develop": [1],
+                "a": [2],
+                "machine-learned": [3],
+                "interatomic": [4],
+                "potential": [5],
+                "for": [6],
+                "water": [7],
+                "diffusion": [8],
+                "in": [9],
+                "MOF-303.": [10],
+            },
+        }
+    ]
+}
+
+
+CROSSREF_PAYLOAD = {
+    "message": {
+        "items": [
+            {
+                "DOI": "10.1000/mof303",
+                "title": ["Machine-learned interatomic potentials for water diffusion in MOF-303"],
+                "container-title": ["Journal of Mock Materials"],
+                "author": [{"given": "Alice", "family": "Example"}],
+                "abstract": "<jats:p>We develop a machine-learned interatomic potential for water diffusion in MOF-303.</jats:p>",
+                "published-online": {"date-parts": [[2026, 3, 3]]},
+                "URL": "https://doi.org/10.1000/mof303",
+                "type": "journal-article",
+                "is-referenced-by-count": 8,
+            },
+            {
+                "DOI": "10.1000/cofmlip",
+                "title": ["Machine-learning interatomic potentials for flexible COFs with van der Waals interactions"],
+                "container-title": ["Journal of Transferable Methods"],
+                "author": [{"given": "Carol", "family": "Example"}],
+                "abstract": (
+                    "<jats:p>We present a machine-learning interatomic-potential workflow for flexible COFs "
+                    "with van der Waals interactions and discuss transfer to framework materials.</jats:p>"
+                ),
+                "published-online": {"date-parts": [[2026, 2, 20]]},
+                "URL": "https://doi.org/10.1000/cofmlip",
+                "type": "journal-article",
+                "is-referenced-by-count": 3,
+            },
+        ]
+    }
+}
+
+
+def fake_fetch_json(url: str, *, headers: dict[str, str] | None = None, timeout: int = 30) -> dict[str, object]:
+    if "openalex" in url:
+        return OPENALEX_PAYLOAD
+    if "crossref" in url:
+        return CROSSREF_PAYLOAD
+    raise AssertionError(f"Unexpected URL: {url}")
+
+
+class LiteratureToolTests(unittest.TestCase):
+    def setUp(self) -> None:
+        tmp_root = REPO_ROOT / "tests" / "tmp_literature"
+        tmp_root.mkdir(parents=True, exist_ok=True)
+        self.output_dir = tmp_root / f"run_{uuid.uuid4().hex[:8]}"
+
+    def tearDown(self) -> None:
+        if self.output_dir.exists():
+            shutil.rmtree(self.output_dir, ignore_errors=True)
+
+    @patch("core.fetch_json", side_effect=fake_fetch_json)
+    def test_cli_writes_outputs_and_deduplicates(self, _mock_fetch: object) -> None:
+        parser = build_parser()
+        args = parser.parse_args(
+            [
+                "--profile",
+                "mof_latest",
+                "--days",
+                "400",
+                "--limit",
+                "5",
+                "--rows-per-query",
+                "5",
+                "--output-dir",
+                str(self.output_dir),
+            ]
+        )
+        outputs = run_cli(args)
+
+        report_text = outputs["report"].read_text(encoding="utf-8")
+        papers = json.loads(outputs["json"].read_text(encoding="utf-8"))
+
+        self.assertTrue(outputs["report"].is_file())
+        self.assertTrue(outputs["json"].is_file())
+        self.assertTrue(outputs["tsv"].is_file())
+        self.assertEqual(len(papers), 1)
+        self.assertIn("Machine-learned interatomic potentials for water diffusion in MOF-303", report_text)
+        self.assertIn("MOF relevance", report_text)
+        self.assertGreaterEqual(papers[0]["citation_count"], 8)
+        self.assertIn("interatomic_potential", papers[0]["tags"])
+
+    @patch("core.fetch_json", side_effect=fake_fetch_json)
+    def test_transfer_profile_keeps_cof_method_paper(self, _mock_fetch: object) -> None:
+        parser = build_parser()
+        args = parser.parse_args(
+            [
+                "--profile",
+                "cof_transfer_methods",
+                "--query",
+                "covalent organic framework machine learning interatomic potential",
+                "--days",
+                "400",
+                "--limit",
+                "5",
+                "--rows-per-query",
+                "5",
+                "--output-dir",
+                str(self.output_dir),
+            ]
+        )
+        outputs = run_cli(args)
+        papers = json.loads(outputs["json"].read_text(encoding="utf-8"))
+        titles = {paper["title"] for paper in papers}
+        self.assertIn("Machine-learning interatomic potentials for flexible COFs with van der Waals interactions", titles)
+
+    @patch("core.fetch_json", side_effect=fake_fetch_json)
+    def test_config_driven_run_uses_queries_and_timestamped_output_root(self, _mock_fetch: object) -> None:
+        self.output_dir.mkdir(parents=True, exist_ok=True)
+        config_path = self.output_dir / "weekly_config.json"
+        config_path.write_text(
+            json.dumps(
+                {
+                    "profile": "mof_adsorption",
+                    "days": 400,
+                    "limit": 5,
+                    "rows_per_query": 5,
+                    "queries": [
+                        "metal-organic framework water adsorption machine learning",
+                        "MOF-303 water diffusion interatomic potential",
+                    ],
+                    "output_root": "scheduled_reports",
+                    "timestamped_output": True,
+                },
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+
+        parser = build_parser()
+        args = parser.parse_args(
+            [
+                "--config",
+                str(config_path),
+            ]
+        )
+        outputs = run_cli(args)
+        self.assertTrue(outputs["report"].is_file())
+        self.assertIn("scheduled_reports", str(outputs["report"]))
+        manifest = json.loads(outputs["manifest"].read_text(encoding="utf-8"))
+        self.assertEqual(len(manifest["queries"]), 2)
+        self.assertTrue(manifest["outputs"]["report"].endswith("report.md"))
+
+
+if __name__ == "__main__":
+    unittest.main()

@@ -1,0 +1,21 @@
+{
+  "name": "weekly_mof_adsorption",
+  "profile": "mof_adsorption",
+  "days": 365,
+  "limit": 20,
+  "rows_per_query": 12,
+  "output_root": "../reports/weekly_mof_adsorption",
+  "timestamped_output": true,
+  "use_openai": false,
+  "openai_model": "gpt-5.4-mini",
+  "queries": [
+    "metal-organic framework water adsorption machine learning",
+    "metal-organic framework carbon capture high-throughput screening",
+    "MOF-303 water diffusion interatomic potential",
+    "Mg-MOF-74 CO2 adsorption machine learning"
+  ],
+  "schedule": {
+    "weekday": "MON",
+    "time": "09:00"
+  }
+}

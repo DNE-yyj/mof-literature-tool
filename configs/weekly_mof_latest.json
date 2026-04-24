@@ -1,0 +1,21 @@
+{
+  "name": "weekly_mof_latest",
+  "profile": "mof_latest",
+  "days": 365,
+  "limit": 20,
+  "rows_per_query": 12,
+  "output_root": "../reports/weekly_mof_latest",
+  "timestamped_output": true,
+  "use_openai": false,
+  "openai_model": "gpt-5.4-mini",
+  "queries": [
+    "metal-organic framework adsorption machine learning density functional theory",
+    "metal-organic framework catalysis machine learning density functional theory",
+    "metal-organic framework water adsorption diffusion machine learning",
+    "metal-organic framework interatomic potential molecular dynamics adsorption"
+  ],
+  "schedule": {
+    "weekday": "MON",
+    "time": "09:00"
+  }
+}
