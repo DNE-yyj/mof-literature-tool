@@ -1,0 +1,4 @@
+interface:
+  display_name: "Literature Search Summary"
+  short_description: "Search literature and triage research ideas locally"
+  default_prompt: "Use $literature-search-summary to collect recent MOF/COF or cross-material ML papers, summarize content/innovation/limitations/fit, and turn high-fit ideas into executable research plans without using any API key."

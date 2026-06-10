@@ -77,6 +77,20 @@ CROSSREF_PAYLOAD = {
                 "type": "journal-article",
                 "is-referenced-by-count": 3,
             },
+            {
+                "DOI": "10.1000/oxidediffusion",
+                "title": ["Equivariant diffusion models for inverse design of oxide catalysts"],
+                "container-title": ["Nature Materials"],
+                "author": [{"given": "Dana", "family": "Example"}],
+                "abstract": (
+                    "<jats:p>We introduce a generative diffusion model with E(3)-equivariant graph neural networks "
+                    "and uncertainty-aware active learning for crystal oxide catalyst discovery.</jats:p>"
+                ),
+                "published-online": {"date-parts": [[2026, 1, 15]]},
+                "URL": "https://doi.org/10.1000/oxidediffusion",
+                "type": "journal-article",
+                "is-referenced-by-count": 12,
+            },
         ]
     }
 }
@@ -154,6 +168,63 @@ class LiteratureToolTests(unittest.TestCase):
         papers = json.loads(outputs["json"].read_text(encoding="utf-8"))
         titles = {paper["title"] for paper in papers}
         self.assertIn("Machine-learning interatomic potentials for flexible COFs with van der Waals interactions", titles)
+
+    @patch("core.fetch_json", side_effect=fake_fetch_json)
+    def test_materials_ml_transfer_profile_keeps_non_mof_method_paper(self, _mock_fetch: object) -> None:
+        parser = build_parser()
+        args = parser.parse_args(
+            [
+                "--profile",
+                "materials_ml_transfer",
+                "--query",
+                "materials generative model diffusion inverse design crystal structure",
+                "--days",
+                "1095",
+                "--limit",
+                "5",
+                "--rows-per-query",
+                "5",
+                "--output-dir",
+                str(self.output_dir),
+            ]
+        )
+        outputs = run_cli(args)
+        papers = json.loads(outputs["json"].read_text(encoding="utf-8"))
+        oxide_paper = next(
+            paper for paper in papers if paper["title"] == "Equivariant diffusion models for inverse design of oxide catalysts"
+        )
+
+        self.assertNotIn("mof", oxide_paper["tags"])
+        self.assertIn("generative_model", oxide_paper["tags"])
+        self.assertIn("equivariant_ml", oxide_paper["tags"])
+        self.assertIn("priority_journal", oxide_paper["tags"])
+        self.assertIn("transfer to MOFs", oxide_paper["mof_relevance"])
+
+    @patch("core.fetch_json", side_effect=fake_fetch_json)
+    def test_mof_method_prior_art_profile_keeps_mof_method_paper(self, _mock_fetch: object) -> None:
+        parser = build_parser()
+        args = parser.parse_args(
+            [
+                "--profile",
+                "mof_ml_method_prior_art",
+                "--query",
+                "metal-organic framework machine learned interatomic potential molecular dynamics",
+                "--days",
+                "3650",
+                "--limit",
+                "5",
+                "--rows-per-query",
+                "5",
+                "--output-dir",
+                str(self.output_dir),
+            ]
+        )
+        outputs = run_cli(args)
+        papers = json.loads(outputs["json"].read_text(encoding="utf-8"))
+        titles = {paper["title"] for paper in papers}
+
+        self.assertIn("Machine-learned interatomic potentials for water diffusion in MOF-303", titles)
+        self.assertNotIn("Equivariant diffusion models for inverse design of oxide catalysts", titles)
 
     @patch("core.fetch_json", side_effect=fake_fetch_json)
     def test_config_driven_run_uses_queries_and_timestamped_output_root(self, _mock_fetch: object) -> None:

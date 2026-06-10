@@ -29,10 +29,91 @@ DEFAULT_ROWS_PER_QUERY = 20
 DEFAULT_OUTPUT_DIR = MODULE_ROOT / "output"
 DEFAULT_OPENAI_MODEL = "gpt-5.4-mini"
 
+PRIORITY_JOURNAL_EXACT = {
+    "nature",
+    "science",
+    "cell",
+    "chem",
+    "matter",
+    "joule",
+}
+
+PRIORITY_JOURNAL_PHRASES = {
+    "nature materials",
+    "nature chemistry",
+    "nature machine intelligence",
+    "nature computational science",
+    "nature communications",
+    "nature catalysis",
+    "science advances",
+    "science robotics",
+    "proceedings of the national academy of sciences",
+    "journal of the american chemical society",
+    "jacs au",
+    "angewandte chemie",
+    "acs central science",
+    "chemical science",
+    "energy environmental science",
+    "advanced materials",
+    "advanced energy materials",
+    "materials horizons",
+    "npj computational materials",
+    "physical review letters",
+    "nano letters",
+    "acs nano",
+    "small methods",
+}
+
+TRANSFER_NOVELTY_TAGS = frozenset(
+    {
+        "active_learning",
+        "equivariant_ml",
+        "foundation_model",
+        "generative_model",
+        "gnn",
+        "interatomic_potential",
+        "multimodal",
+        "physics_informed",
+        "self_supervised",
+        "surrogate_model",
+        "symbolic_regression",
+        "transfer_learning",
+        "uncertainty",
+    }
+)
+
+TRANSFER_MATERIAL_TAGS = frozenset(
+    {
+        "alloy",
+        "battery",
+        "catalysis",
+        "cof",
+        "crystal",
+        "electrolyte",
+        "mof",
+        "oxide",
+        "perovskite",
+        "polymer",
+        "porous_material",
+        "two_d_material",
+        "zeolite",
+    }
+)
+
 
 TAG_RULES: dict[str, tuple[str, ...]] = {
     "mof": ("metal-organic framework", "metal organic framework", " mof", "mof-", "mofs"),
     "cof": ("covalent organic framework", "covalent organic frameworks", " cof", "cof-", "cofs"),
+    "porous_material": ("porous material", "porous materials", "porosity", "nanoporous", "microporous"),
+    "zeolite": ("zeolite", "zeolites"),
+    "crystal": ("crystal", "crystalline", "crystal structure", "periodic structure"),
+    "oxide": ("oxide", "oxides", "perovskite oxide", "metal oxide"),
+    "perovskite": ("perovskite", "perovskites", "halide perovskite"),
+    "battery": ("battery", "batteries", "cathode", "anode", "solid electrolyte", "electrolyte"),
+    "electrolyte": ("electrolyte", "electrolytes", "ion conductor", "ionic conductivity"),
+    "polymer": ("polymer", "polymers", "polymeric"),
+    "alloy": ("alloy", "alloys", "high-entropy alloy", "high entropy alloy"),
+    "two_d_material": ("two-dimensional material", "2d material", "2d materials", "graphene", "mxene", "mos2"),
     "adsorption": ("adsorption", "adsorbent", "uptake", "isotherm", "guest-host"),
     "separation": ("separation", "selectivity", "purification", "capture"),
     "catalysis": ("catalysis", "catalyst", "reaction pathway", "turnover"),
@@ -56,6 +137,90 @@ TAG_RULES: dict[str, tuple[str, ...]] = {
         "neural network potential",
         "potential energy surface",
     ),
+    "gnn": (
+        "graph neural network",
+        "graph neural networks",
+        "message passing",
+        "crystal graph",
+        "cgcnn",
+        "megnet",
+        "alignn",
+    ),
+    "equivariant_ml": (
+        "equivariant",
+        "e(3)",
+        "e3",
+        "se(3)",
+        "o(3)",
+        "nequip",
+        "allegro",
+        "mace",
+        "e3nn",
+    ),
+    "foundation_model": (
+        "foundation model",
+        "foundation models",
+        "large language model",
+        "llm",
+        "pretrained model",
+        "pre-trained model",
+        "universal model",
+        "matbert",
+        "chgnet",
+        "m3gnet",
+    ),
+    "self_supervised": ("self-supervised", "self supervised", "contrastive learning", "pretraining", "pre-training"),
+    "generative_model": (
+        "generative model",
+        "generative models",
+        "diffusion model",
+        "diffusion models",
+        "variational autoencoder",
+        "vae",
+        "inverse design",
+        "text-to-material",
+        "generative ai",
+    ),
+    "active_learning": (
+        "active learning",
+        "bayesian optimization",
+        "closed-loop",
+        "closed loop",
+        "self-driving laboratory",
+        "autonomous laboratory",
+        "sequential learning",
+        "adaptive design",
+    ),
+    "uncertainty": (
+        "uncertainty",
+        "uncertainty quantification",
+        "calibration",
+        "out-of-distribution",
+        "out of distribution",
+        "ood",
+        "bayesian neural",
+    ),
+    "physics_informed": (
+        "physics-informed",
+        "physics informed",
+        "physical constraint",
+        "physically constrained",
+        "symmetry-aware",
+        "charge equilibration",
+        "long-range electrostatics",
+        "electrostatics",
+    ),
+    "symbolic_regression": (
+        "symbolic regression",
+        "descriptor discovery",
+        "interpretable machine learning",
+        "explainable machine learning",
+        "sisso",
+        "sure independence screening and sparsifying operator",
+    ),
+    "transfer_learning": ("transfer learning", "domain adaptation", "few-shot", "few shot", "low-data", "small data", "fine-tuning", "finetuning"),
+    "surrogate_model": ("surrogate model", "surrogate models", "emulator", "emulators", "delta learning", "multi-fidelity", "multifidelity"),
+    "multimodal": ("multimodal", "multi-modal", "text mining", "literature mining", "language-material", "image-text"),
     "gcmc": ("gcmc", "grand canonical monte carlo"),
     "md": ("molecular dynamics", "md simulation", "diffusion", "dynamics"),
     "force_field": ("force field", "uff", "dreiding"),
@@ -132,6 +297,26 @@ def normalize_title(value: str) -> str:
     lowered = value.lower()
     lowered = re.sub(r"[^a-z0-9]+", " ", lowered)
     return re.sub(r"\s+", " ", lowered).strip()
+
+
+def normalize_journal(value: str) -> str:
+    lowered = value.lower()
+    lowered = lowered.replace("&", " ")
+    lowered = re.sub(r"[^a-z0-9]+", " ", lowered)
+    return re.sub(r"\s+", " ", lowered).strip()
+
+
+def is_priority_journal(value: str) -> bool:
+    normalized = normalize_journal(value)
+    if not normalized:
+        return False
+    if normalized in PRIORITY_JOURNAL_EXACT:
+        return True
+    return any(phrase in normalized for phrase in PRIORITY_JOURNAL_PHRASES)
+
+
+def is_materials_transfer_profile(profile: QueryProfile) -> bool:
+    return profile.name.startswith("materials_ml_transfer")
 
 
 def clean_text(value: str | None) -> str:
@@ -358,6 +543,8 @@ def tag_paper(paper: Paper) -> list[str]:
         tags.append("cof")
     if "review" not in tags and ("review" in paper.type.lower() or "review" in paper.title.lower()):
         tags.append("review")
+    if is_priority_journal(paper.journal):
+        tags.append("priority_journal")
     return sorted(set(tags))
 
 
@@ -368,7 +555,7 @@ def keyword_hits(text: str, keywords: tuple[str, ...]) -> int:
 
 def paper_matches_profile(paper: Paper, profile: QueryProfile) -> bool:
     haystack = f"{paper.title} {paper.abstract}".lower()
-    if not any(token.lower() in haystack for token in profile.must_have_any):
+    if profile.must_have_any and not any(token.lower() in haystack for token in profile.must_have_any):
         return False
     if any(keyword.lower() in haystack for keyword in profile.exclude_keywords):
         return False
@@ -376,6 +563,10 @@ def paper_matches_profile(paper: Paper, profile: QueryProfile) -> bool:
         return False
     if profile.required_any_method_tags and not set(profile.required_any_method_tags).intersection(paper.tags):
         return False
+    if is_materials_transfer_profile(profile):
+        tags = set(paper.tags)
+        if not tags.intersection(TRANSFER_NOVELTY_TAGS):
+            return False
     return True
 
 
@@ -390,7 +581,17 @@ def score_paper(paper: Paper, profile: QueryProfile) -> float:
     abstract_bonus = 1.0 if paper.abstract else 0.0
     review_bonus = 1.0 if "review" in paper.tags else 0.0
     method_bonus = 0.5 if {"dft", "ml"} <= set(paper.tags) else 0.0
-    return recency_score + keyword_score + citation_score + abstract_bonus + review_bonus + method_bonus
+    priority_bonus = 2.5 if "priority_journal" in paper.tags else 0.0
+    transfer_bonus = 0.0
+    if is_materials_transfer_profile(profile):
+        tags = set(paper.tags)
+        novelty_hits = tags.intersection(TRANSFER_NOVELTY_TAGS)
+        transfer_bonus = 0.8 * len(novelty_hits)
+        if novelty_hits and "mof" not in tags:
+            transfer_bonus += 1.0
+        if "mof" in tags and not novelty_hits:
+            transfer_bonus -= 3.0
+    return recency_score + keyword_score + citation_score + abstract_bonus + review_bonus + method_bonus + priority_bonus + transfer_bonus
 
 
 def split_sentences(text: str) -> list[str]:
@@ -415,6 +616,14 @@ def choose_key_sentence(paper: Paper) -> str:
 def infer_limitations(paper: Paper) -> str:
     tags = set(paper.tags)
     points: list[str] = []
+    if "generative_model" in tags:
+        points.append("Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer.")
+    if "foundation_model" in tags or "self_supervised" in tags:
+        points.append("Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures.")
+    if "active_learning" in tags or "uncertainty" in tags:
+        points.append("Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.")
+    if "equivariant_ml" in tags or "gnn" in tags:
+        points.append("Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled.")
     if "ml" in tags:
         points.append("Likely sensitive to training-set coverage and transferability across chemistries.")
     if "dft" in tags and "md" not in tags:
@@ -433,6 +642,14 @@ def infer_limitations(paper: Paper) -> str:
 def infer_next_steps(paper: Paper) -> str:
     tags = set(paper.tags)
     steps: list[str] = []
+    if "generative_model" in tags:
+        steps.append("Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints.")
+    if "foundation_model" in tags or "self_supervised" in tags or "transfer_learning" in tags:
+        steps.append("Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.")
+    if "active_learning" in tags or "uncertainty" in tags:
+        steps.append("Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.")
+    if "equivariant_ml" in tags or "gnn" in tags:
+        steps.append("Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.")
     if "adsorption" in tags or "separation" in tags:
         steps.append("Test humid or multicomponent conditions and connect material metrics to process-level targets.")
     if "catalysis" in tags:
@@ -450,12 +667,25 @@ def infer_next_steps(paper: Paper) -> str:
 
 def infer_mof_relevance(paper: Paper) -> str:
     tags = set(paper.tags)
+    novelty_hits = tags.intersection(TRANSFER_NOVELTY_TAGS)
     if "mof" in tags:
-        return "Directly relevant to MOF work."
+        if novelty_hits:
+            return "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+        return "Directly relevant to MOF work, but likely less novel for this transfer-focused profile."
     if "cof" in tags and "interatomic_potential" in tags:
         return "Method is transferable to MOFs if metal-node electrostatics and coordination chemistry are added."
     if "cof" in tags and ("ml" in tags or "high_throughput" in tags):
         return "Workflow is likely transferable to MOFs with node-aware descriptors and stronger charge treatment."
+    if "generative_model" in tags:
+        return "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit."
+    if "foundation_model" in tags or "self_supervised" in tags or "transfer_learning" in tags:
+        return "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties."
+    if "active_learning" in tags or "uncertainty" in tags:
+        return "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next."
+    if "equivariant_ml" in tags or "gnn" in tags:
+        return "Representation-learning advance may transfer to MOFs after adding porous-crystal topology and metal-node chemistry."
+    if "interatomic_potential" in tags:
+        return "MLIP route can transfer to MOFs if trained on flexible, guest-loaded, and charged configurations."
     return "Potentially useful as a neighboring-method reference."
 
 
@@ -496,7 +726,57 @@ def aggregate_tag_counts(papers: list[Paper]) -> dict[str, int]:
     return dict(sorted(counts.items(), key=lambda item: (-item[1], item[0])))
 
 
+def count_papers_with_any_tag(papers: list[Paper], tags: frozenset[str]) -> int:
+    return sum(1 for paper in papers if tags.intersection(paper.tags))
+
+
+def build_materials_transfer_summary(papers: list[Paper], *, profile: QueryProfile) -> CorpusSummary:
+    counts = aggregate_tag_counts(papers)
+    total = len(papers)
+    novelty_count = count_papers_with_any_tag(papers, TRANSFER_NOVELTY_TAGS)
+    material_count = count_papers_with_any_tag(papers, TRANSFER_MATERIAL_TAGS)
+    priority_count = counts.get("priority_journal", 0)
+    mof_count = counts.get("mof", 0)
+    non_mof_count = max(total - mof_count, 0)
+    overview_bits = [
+        f"Collected {total} deduplicated papers for profile `{profile.name}`.",
+        f"This transfer profile keeps cross-material ML papers when they carry a concrete method signal; {non_mof_count} retained papers are outside direct MOF literature.",
+        f"{novelty_count} papers contain transferable method tags and {priority_count} appear in priority journals or major venue families.",
+    ]
+    if material_count:
+        overview_bits.append(f"{material_count} papers also carry explicit material-system tags, helping judge whether the chemistry is close enough to MOFs.")
+    innovation_points: list[str] = []
+    if counts.get("foundation_model", 0) or counts.get("self_supervised", 0) or counts.get("transfer_learning", 0):
+        innovation_points.append("Foundation, self-supervised, and transfer-learning models are the main route for reusing labels across sparse MOF property tasks.")
+    if counts.get("generative_model", 0):
+        innovation_points.append("Generative and inverse-design workflows are most useful for MOFs when topology, charge, linker-node compatibility, and synthesizability are built in.")
+    if counts.get("active_learning", 0) or counts.get("uncertainty", 0):
+        innovation_points.append("Uncertainty-aware active learning offers a practical way to decide which MOF DFT, GCMC, or MD calculations to run next.")
+    if counts.get("interatomic_potential", 0) or counts.get("equivariant_ml", 0):
+        innovation_points.append("Equivariant models and ML interatomic potentials are strong candidates for flexible, guest-loaded, or dynamic MOF problems.")
+    if not innovation_points:
+        innovation_points.append("The retained set is method-oriented, but the strongest MOF transfer route will require full-paper inspection.")
+    common_limitations = [
+        "Many cross-material ML methods report strong in-domain metrics but do not prove transfer to porous, metal-node-containing frameworks.",
+        "Methods already used in recent MOF work are only useful here if they add a new representation, label space, uncertainty treatment, or experimental loop.",
+        "High-impact venue status is helpful for triage, but MOF feasibility still depends on data availability, charge treatment, topology constraints, and validation cost.",
+    ]
+    next_opportunities = [
+        "For each retained method, run a quick MOF prior-art check and keep only routes that are not already saturated in recent MOF papers.",
+        "Translate promising non-MOF methods into MOF-specific benchmarks with metal-node-aware descriptors, topology constraints, and guest-loaded validation cases.",
+        "Prioritize workflows that reduce label-generation cost or open a new observable, such as flexibility, defects, humid adsorption, diffusion barriers, or active-site reconstruction.",
+    ]
+    return CorpusSummary(
+        overview=" ".join(overview_bits),
+        innovation_points=innovation_points[:3],
+        common_limitations=common_limitations[:3],
+        next_opportunities=next_opportunities[:3],
+    )
+
+
 def build_rule_based_corpus_summary(papers: list[Paper], *, profile: QueryProfile) -> CorpusSummary:
+    if is_materials_transfer_profile(profile):
+        return build_materials_transfer_summary(papers, profile=profile)
     counts = aggregate_tag_counts(papers)
     total = len(papers)
     ml_count = counts.get("ml", 0)
@@ -675,6 +955,13 @@ def build_markdown_report(
         "## Innovation Patterns",
         "",
     ]
+    if is_materials_transfer_profile(profile):
+        lines.extend(
+            [
+                "- Selection lens: cross-material ML papers are retained when they show a concrete transferable method signal; generic MOF-side ML is treated as lower novelty unless it adds a new angle.",
+                "",
+            ]
+        )
     for point in summary.innovation_points:
         lines.append(f"- {point}")
     lines.extend(["", "## Common Gaps", ""])
@@ -749,6 +1036,7 @@ def write_outputs(
                 "innovation",
                 "limitations",
                 "next_steps",
+                "mof_relevance",
             ]
         )
     ]
@@ -765,6 +1053,7 @@ def write_outputs(
             paper.innovation,
             paper.limitations,
             paper.next_steps,
+            paper.mof_relevance,
         ]
         csv_lines.append("\t".join(value.replace("\t", " ").replace("\n", " ") for value in row))
     csv_path.write_text("\n".join(csv_lines) + "\n", encoding="utf-8")

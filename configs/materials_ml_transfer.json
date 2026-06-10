@@ -1,0 +1,15 @@
+{
+  "name": "materials_ml_transfer",
+  "profile": "materials_ml_transfer",
+  "days": 1095,
+  "limit": 30,
+  "rows_per_query": 15,
+  "output_root": "../reports/materials_ml_transfer",
+  "timestamped_output": true,
+  "use_openai": false,
+  "openai_model": "gpt-5.4-mini",
+  "schedule": {
+    "weekday": "MON",
+    "time": "09:30"
+  }
+}
