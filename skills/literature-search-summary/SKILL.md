@@ -1,6 +1,6 @@
 ---
 name: literature-search-summary
-description: Search, rank, summarize, and triage recent MOF/COF computational-chemistry literature and transferable cross-material ML-method papers with the local literature_tool project and public OpenAlex/Crossref APIs. Use when Codex should run or inspect literature scans, generate Markdown/JSON/TSV briefs, assess MOF transfer opportunities, produce biweekly research-radar summaries, evaluate paper content/innovation/limitations/fit, or turn high-fit literature ideas into executable research proposals without relying on any API key.
+description: Search, rank, summarize, and triage recent MOF/COF computational-chemistry literature and transferable cross-material ML-method papers with the local literature_tool project and public OpenAlex/Crossref APIs. Use when Codex should run or inspect literature scans, generate Markdown/JSON/TSV briefs, assess MOF transfer opportunities, produce biweekly research-radar summaries, evaluate paper content/innovation/limitations/fit, map methods to scientific questions or applications, or turn high-fit literature ideas into executable research proposals without relying on any API key.
 ---
 
 # Literature Search Summary
@@ -24,7 +24,7 @@ For MOF/COF domain tracking, use `mof_latest`, `mof_adsorption`, `mof_catalysis`
 4. Read generated artifacts before drafting the answer.
    Start with `report.md` for the human-readable brief. Open `papers.json` when exact metadata, tags, or queries matter. Use `papers.tsv` only when the user needs spreadsheet-style export or quick tabular inspection.
 5. Summarize or triage the run in agent terms.
-   Report the profile, lookback window, retained paper count, and the most important themes, methods, gaps, and next steps. For research-radar requests, also summarize each core paper's main content, innovation, limitations, and fit to the user's current MOF/ML/adsorption-mechanism direction. If the result set is thin, say no strong recommendation and optionally review the last 1-3 months of high-fit ideas.
+   Report the profile, lookback window, retained paper count, and the most important themes, methods, gaps, and next steps. For research-radar requests, also summarize each core paper's main content, innovation, limitations, and fit to the user's current MOF/ML/adsorption-mechanism direction. For executable ideas, require a method-to-problem or problem-to-method mapping before recommending follow-up. If the result set is thin, say no strong recommendation and optionally review the last 1-3 months of high-fit ideas.
 
 ## Research Radar Output
 
@@ -32,10 +32,11 @@ When the user asks whether recent work is interesting, meaningful, feasible, or 
 
 1. State whether this scan has strong high-fit work.
 2. For each core paper, include `main content`, `innovation`, `limitations`, `fit`, and `evidence status`.
-3. Select only 1-3 high-fit ideas for deeper follow-up.
-4. For each selected idea, provide a concise executable plan: research question, verified literature basis, data sources, simulation or calculation workflow, ML method, validation metrics, risks, and fallback route.
-5. Include a Mermaid flowchart when proposing a research plan.
-6. Separate `reported facts`, `inferences`, and `recommendations`.
+3. Classify each selected idea's entry point as `method-driven` or `problem-driven`.
+4. Select only 1-3 high-fit ideas for deeper follow-up.
+5. For each selected idea, provide a concise executable plan: entry point, scientific question or application, method lever, expected improvement mechanism, verified literature basis, data sources, simulation or calculation workflow, ML method, validation metrics, risks, and fallback route.
+6. Include a Mermaid flowchart when proposing a research plan.
+7. Separate `reported facts`, `inferences`, and `recommendations`.
 
 Use this compact table shape unless the user asks for another format:
 
@@ -52,8 +53,30 @@ flowchart TD
   B --> C["Summarize content, innovation, and limitations"]
   C --> D["Score fit with the current research direction"]
   D --> E["Select high-fit executable ideas"]
-  E --> F["Design data, simulation, ML, and validation workflow"]
-  F --> G["Stress-test risks and evidence limits"]
+  E --> F["Map method to scientific problem or problem to method"]
+  F --> G["Design data, simulation, ML, and validation workflow"]
+  G --> H["Stress-test risks and evidence limits"]
+```
+
+## Method-Problem Alignment
+
+Every executable research idea must answer both sides of the method/problem pair:
+
+- For `method-driven` papers, state the concrete scientific question, application, or bottleneck where the method can land. Examples include humid MOF adsorption mechanism shifts, defect/functionality effects on water diffusion, MLIP uncertainty in flexible MOFs, or adsorption-regime classification.
+- For `problem-driven` or application-first papers, state which method family could improve the study, what it would improve, and how that improvement would be validated. Examples include active learning to reduce DFT/MD labels, equivariant MLIP to extend time/length scales, uncertainty calibration for screening, or interpretable descriptors for mechanism transitions.
+- Down-rank ideas where the method is technically interesting but the scientific question is vague, or where the application is meaningful but the proposed method does not clearly improve data quality, mechanistic insight, speed, generalization, or validation.
+- Prefer ideas that connect sequentially: data generated for one scientific question should be reusable for later MLIP training, transfer-error analysis, uncertainty benchmarking, or broader MOF screening.
+
+Use this compact idea shape when proposing follow-up:
+
+```markdown
+**Idea:** ...
+**Entry point:** method-driven | problem-driven
+**Scientific question/application:** ...
+**Method lever:** ...
+**Expected improvement:** ...
+**Reusable outputs:** ...
+**Validation:** ...
 ```
 
 ## Academic Research Suite Coordination
@@ -142,6 +165,7 @@ Read the newest `report.md` under the target output directory first. Re-run only
 - If network access blocks OpenAlex or Crossref, explain that the repository depends on live public APIs and fall back to summarizing any existing local outputs.
 - When comparing MOF and cross-material ML runs, check each report's `Generated` and `Since` fields. If the timestamps differ materially, run `weekly_mof_latest`, `materials_ml_transfer`, and `mof_ml_method_prior_art` back-to-back or label novelty conclusions as provisional.
 - Treat cross-material novelty as three-stage: first identify non-MOF method innovation, then check whether the same method class appears in recent MOF papers, then check the long-horizon MOF prior-art baseline. Keep saturated MOF-transfer ideas only when they add a new representation, label space, uncertainty/active-learning strategy, or experimental/computational loop.
+- Do not recommend a method-transfer idea unless it names the scientific question, application, or bottleneck it would address. Do not recommend an application-first idea unless it names the method lever, expected improvement, and validation path.
 - Never invent papers, authors, journals, DOIs, venue status, datasets, or claims. Use `papers.json`, `report.md`, DOI/arXiv/ChemRxiv/official journal pages, or clearly labelled local outputs as evidence. If a claim cannot be verified, mark it as unverified or omit it.
 - Do not overstate preprints as peer-reviewed papers. Mark ChemRxiv/arXiv-style records as preprints unless a verified journal version is found.
 - Prefer high-fit, high-feasibility ideas over simply newest papers. A sparse week or biweekly scan can validly produce no strong recommendation.

@@ -66,7 +66,7 @@ Preferred recurring setup is a Codex app automation that runs the combined workf
 python -B run_method_transfer_novelty.py
 ```
 
-The automation should read the newest combined report under `reports/method_transfer_novelty/` and summarize high-fit research opportunities, including each core paper's main content, innovation, limitations, fit, and executable next steps. If the scan is thin, it should say there is no strong recommendation rather than forcing a novelty claim.
+The automation should read the newest combined report under `reports/method_transfer_novelty/` and summarize high-fit research opportunities, including each core paper's main content, innovation, limitations, fit, method-problem alignment, and executable next steps. If the scan is thin, it should say there is no strong recommendation rather than forcing a novelty claim.
 
 Manual config test:
 
@@ -131,8 +131,11 @@ For biweekly summaries, do not only list new papers. Read `report.md` and `paper
 - what is innovative
 - what is missing or weak
 - how closely it fits the current MOF/ML/adsorption-mechanism direction
+- whether the idea is method-driven or problem-driven, and how the other side is made concrete
 - which 1-3 ideas are worth turning into executable projects
 - a concise workflow, preferably with a Mermaid flowchart, for high-fit ideas
+- for method-driven ideas, the scientific question, application, or bottleneck where the method can land
+- for problem-driven ideas, the method lever, expected improvement, and validation path
 
 Do not invent papers, DOIs, venue status, or conclusions. Mark preprints, metadata-only records, and unverified claims explicitly.
 

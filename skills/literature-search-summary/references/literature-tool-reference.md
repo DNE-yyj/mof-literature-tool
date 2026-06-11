@@ -75,11 +75,22 @@ Default output:
 - Current conclusion: whether there is a strong high-fit opportunity.
 - Paper table: main content, innovation, limitations, fit to the user's MOF/ML/adsorption-mechanism direction, and evidence status.
 - Selected ideas: only 1-3 high-fit ideas.
-- Executable plan for each selected idea: research question, literature basis, data sources, calculation/simulation workflow, ML method, validation metrics, risks, and fallback route.
+- Method-problem alignment: whether each selected idea is method-driven or problem-driven, and how the other side is made concrete.
+- Executable plan for each selected idea: entry point, scientific question or application, method lever, expected improvement mechanism, literature basis, data sources, calculation/simulation workflow, ML method, validation metrics, risks, and fallback route.
 - Mermaid flowchart for the workflow.
 - Evidence limits: preprint status, metadata-only records, missing full text, old report timestamps, or unverified claims.
 
 Fit should weigh topic match and practicality more than short-term novelty. A scan with little relevant content should say "no strong recommendation" and may recap the last 1-3 months of high-fit directions.
+
+## Method-Problem Alignment Checklist
+
+Use this checklist before recommending an executable project:
+
+- If the source paper is mainly a method paper, name the scientific question, application, or bottleneck where the method can land in the user's work. Do not stop at "this method is transferable."
+- If the source paper starts from a specific application or scientific question, name the method family that could improve it, what will improve, and how to test the improvement.
+- Acceptable improvement targets include better mechanistic resolution, less DFT/MD labeling, longer simulations, uncertainty-aware screening, clearer regime classification, improved wet/defective MOF transferability, or better validation against known adsorption/diffusion observables.
+- Prefer topic chains where the first project's computed data can be reused for later MLIP training, universal-MLIP error analysis, uncertainty benchmarking, or broader MOF screening.
+- Down-rank ideas with weak mapping between method and science problem even when either side is individually interesting.
 
 ## Academic Research Suite Coordination
 
