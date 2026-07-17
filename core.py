@@ -67,6 +67,7 @@ PRIORITY_JOURNAL_PHRASES = {
 TRANSFER_NOVELTY_TAGS = frozenset(
     {
         "active_learning",
+        "catalyst_descriptor",
         "equivariant_ml",
         "foundation_model",
         "generative_model",
@@ -74,6 +75,7 @@ TRANSFER_NOVELTY_TAGS = frozenset(
         "interatomic_potential",
         "multimodal",
         "physics_informed",
+        "reaction_dataset",
         "self_supervised",
         "surrogate_model",
         "symbolic_regression",
@@ -97,6 +99,13 @@ TRANSFER_MATERIAL_TAGS = frozenset(
         "porous_material",
         "two_d_material",
         "zeolite",
+    }
+)
+
+DISTANT_TRANSFER_TAGS = frozenset(
+    {
+        "image_analysis",
+        "remote_sensing",
     }
 )
 
@@ -221,6 +230,56 @@ TAG_RULES: dict[str, tuple[str, ...]] = {
     "transfer_learning": ("transfer learning", "domain adaptation", "few-shot", "few shot", "low-data", "small data", "fine-tuning", "finetuning"),
     "surrogate_model": ("surrogate model", "surrogate models", "emulator", "emulators", "delta learning", "multi-fidelity", "multifidelity"),
     "multimodal": ("multimodal", "multi-modal", "text mining", "literature mining", "language-material", "image-text"),
+    "reaction_dataset": (
+        "reaction-specific dataset",
+        "reaction-specific datasets",
+        "reaction specific dataset",
+        "reaction specific datasets",
+        "reaction dataset",
+        "reaction datasets",
+        "reaction-specific",
+        "reaction specific",
+        "reaction generality",
+        "catalyst generality",
+        "general catalysts",
+        "underexplored catalyst",
+        "underexplored catalysts",
+        "historically biased",
+        "biased dataset",
+        "biased datasets",
+        "sparse dataset",
+        "sparse datasets",
+    ),
+    "catalyst_descriptor": (
+        "active-site descriptor",
+        "active site descriptor",
+        "active site configuration",
+        "atomic descriptor",
+        "electronic descriptor",
+        "structure-activity relationship",
+        "structure activity relationship",
+        "structure–activity relationship",
+        "descriptor-driven",
+        "descriptor driven",
+        "subgroup discovery",
+        "data mining",
+        "model-selection criterion",
+        "model selection criterion",
+        "feature importance",
+        "metal-metal coupling",
+        "metal–metal coupling",
+    ),
+    "image_analysis": (
+        "image analysis",
+        "image classification",
+        "image segmentation",
+        "image forgery",
+        "visual artifact",
+        "visual artifacts",
+        "metadata consistency",
+        "computer vision",
+    ),
+    "remote_sensing": ("remote sensing", "satellite imagery", "hyperspectral", "land cover", "geospatial"),
     "gcmc": ("gcmc", "grand canonical monte carlo"),
     "md": ("molecular dynamics", "md simulation", "diffusion", "dynamics"),
     "force_field": ("force field", "uff", "dreiding"),
@@ -267,6 +326,8 @@ class Paper:
     limitations: str = ""
     next_steps: str = ""
     mof_relevance: str = ""
+    transfer_distance: str = ""
+    mof_transfer_route: str = ""
 
     def dedupe_key(self) -> str:
         if self.doi:
@@ -316,7 +377,7 @@ def is_priority_journal(value: str) -> bool:
 
 
 def is_materials_transfer_profile(profile: QueryProfile) -> bool:
-    return profile.name.startswith("materials_ml_transfer")
+    return profile.name.startswith(("materials_ml_transfer", "reaction_catalyst_ml_transfer"))
 
 
 def clean_text(value: str | None) -> str:
@@ -616,6 +677,10 @@ def choose_key_sentence(paper: Paper) -> str:
 def infer_limitations(paper: Paper) -> str:
     tags = set(paper.tags)
     points: list[str] = []
+    if "reaction_dataset" in tags:
+        points.append("Catalyst generality inferred from sparse historical reaction data can still reflect reporting bias and needs targeted validation.")
+    if "catalyst_descriptor" in tags:
+        points.append("Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments.")
     if "generative_model" in tags:
         points.append("Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer.")
     if "foundation_model" in tags or "self_supervised" in tags:
@@ -642,6 +707,14 @@ def infer_limitations(paper: Paper) -> str:
 def infer_next_steps(paper: Paper) -> str:
     tags = set(paper.tags)
     steps: list[str] = []
+    if "reaction_dataset" in tags:
+        steps.append("Rebuild the workflow on MOF catalytic reaction families with explicit scaffold generality, reporting-bias, and validation splits.")
+    if "catalyst_descriptor" in tags:
+        steps.append("Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes.")
+    if "image_analysis" in tags:
+        steps.append("Map the method onto MOF structure images, spectra, isotherm curves, or generated-structure consistency checks.")
+    if "remote_sensing" in tags:
+        steps.append("Test whether multi-scale segmentation or domain adaptation ideas help classify pore regions, topology families, or morphology maps.")
     if "generative_model" in tags:
         steps.append("Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints.")
     if "foundation_model" in tags or "self_supervised" in tags or "transfer_learning" in tags:
@@ -665,6 +738,54 @@ def infer_next_steps(paper: Paper) -> str:
     return " ".join(steps[:2])
 
 
+def infer_transfer_distance(paper: Paper) -> str:
+    tags = set(paper.tags)
+    if "mof" in tags:
+        return "direct MOF"
+    if tags.intersection(TRANSFER_MATERIAL_TAGS):
+        return "adjacent materials"
+    if tags.intersection(DISTANT_TRANSFER_TAGS):
+        return "distant cross-domain method"
+    if tags.intersection(TRANSFER_NOVELTY_TAGS):
+        return "distant method analogy"
+    return "unclear"
+
+
+def infer_mof_transfer_route(paper: Paper) -> str:
+    tags = set(paper.tags)
+    if "mof" in tags:
+        return "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+    if "image_analysis" in tags:
+        return (
+            "Translate visual-artifact or metadata-consistency logic to MOF structure images/renders, spectra, "
+            "isotherm curves, generated CIF validation, or multimodal paper-structure consistency checks."
+        )
+    if "remote_sensing" in tags:
+        return (
+            "Translate multi-scale segmentation, domain adaptation, or change-detection logic to pore-region maps, "
+            "morphology images, topology families, or spatially resolved MOF characterization data."
+        )
+    if "reaction_dataset" in tags:
+        return "Adapt catalyst-generality scoring to MOF catalytic reaction families, biased literature data, and targeted experimental or DFT validation."
+    if "catalyst_descriptor" in tags:
+        return "Adapt active-site model-selection and descriptor mining to MOF metal nodes, defects, bimetallic sites, or local-field catalytic motifs."
+    if "catalysis" in tags:
+        return "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+    if "cof" in tags:
+        return "Port the workflow from COFs to MOFs by adding metal-node chemistry, stronger electrostatics, and node/linker descriptors."
+    if "generative_model" in tags:
+        return "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+    if "foundation_model" in tags or "self_supervised" in tags or "transfer_learning" in tags:
+        return "Fine-tune or adapt the representation on sparse MOF labels such as flexibility, defects, guest response, or adsorption regimes."
+    if "active_learning" in tags or "uncertainty" in tags:
+        return "Use uncertainty or acquisition logic to choose which MOF DFT, MD, or GCMC labels to compute next."
+    if "equivariant_ml" in tags or "gnn" in tags:
+        return "Benchmark the representation on periodic MOF graphs with explicit node/linker chemistry and pore topology."
+    if "interatomic_potential" in tags:
+        return "Use the MLIP workflow for flexible, guest-loaded, charged, or diffusion-transition MOF configurations."
+    return "Keep only if the full paper exposes a reusable representation, validation loop, or data-efficiency strategy for a concrete MOF task."
+
+
 def infer_mof_relevance(paper: Paper) -> str:
     tags = set(paper.tags)
     novelty_hits = tags.intersection(TRANSFER_NOVELTY_TAGS)
@@ -676,6 +797,12 @@ def infer_mof_relevance(paper: Paper) -> str:
         return "Method is transferable to MOFs if metal-node electrostatics and coordination chemistry are added."
     if "cof" in tags and ("ml" in tags or "high_throughput" in tags):
         return "Workflow is likely transferable to MOFs with node-aware descriptors and stronger charge treatment."
+    if "reaction_dataset" in tags:
+        return "Reaction-specific small-data workflow is useful for MOF catalysis if catalyst generality, literature bias, and scaffold validation are made explicit."
+    if "catalyst_descriptor" in tags:
+        return "Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors."
+    if "image_analysis" in tags or "remote_sensing" in tags:
+        return "Distant-domain method can be useful if it maps to a concrete MOF object such as structure images, spectra, isotherms, pore maps, or multimodal consistency checks."
     if "generative_model" in tags:
         return "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit."
     if "foundation_model" in tags or "self_supervised" in tags or "transfer_learning" in tags:
@@ -697,6 +824,8 @@ def annotate_paper(paper: Paper, profile: QueryProfile) -> Paper:
     paper.limitations = infer_limitations(paper)
     paper.next_steps = infer_next_steps(paper)
     paper.mof_relevance = infer_mof_relevance(paper)
+    paper.transfer_distance = infer_transfer_distance(paper)
+    paper.mof_transfer_route = infer_mof_transfer_route(paper)
     return paper
 
 
@@ -740,7 +869,7 @@ def build_materials_transfer_summary(papers: list[Paper], *, profile: QueryProfi
     non_mof_count = max(total - mof_count, 0)
     overview_bits = [
         f"Collected {total} deduplicated papers for profile `{profile.name}`.",
-        f"This transfer profile keeps cross-material ML papers when they carry a concrete method signal; {non_mof_count} retained papers are outside direct MOF literature.",
+        f"This transfer profile keeps non-MOF ML papers when they carry a concrete method signal; {non_mof_count} retained papers are outside direct MOF literature.",
         f"{novelty_count} papers contain transferable method tags and {priority_count} appear in priority journals or major venue families.",
     ]
     if material_count:
@@ -1037,6 +1166,8 @@ def write_outputs(
                 "limitations",
                 "next_steps",
                 "mof_relevance",
+                "transfer_distance",
+                "mof_transfer_route",
             ]
         )
     ]
@@ -1054,6 +1185,8 @@ def write_outputs(
             paper.limitations,
             paper.next_steps,
             paper.mof_relevance,
+            paper.transfer_distance,
+            paper.mof_transfer_route,
         ]
         csv_lines.append("\t".join(value.replace("\t", " ").replace("\n", " ") for value in row))
     csv_path.write_text("\n".join(csv_lines) + "\n", encoding="utf-8")

@@ -14,11 +14,15 @@ REPO_ROOT = Path(__file__).resolve().parent
 RUNS = (
     ("Recent MOF literature", "configs/weekly_mof_latest.json"),
     ("Cross-material ML transfer", "configs/materials_ml_transfer.json"),
+    ("Reaction/catalyst ML transfer", "configs/reaction_catalyst_ml_transfer.json"),
     ("Long-horizon MOF method prior art", "configs/mof_ml_method_prior_art.json"),
 )
 
+CANDIDATE_RUNS = ("Cross-material ML transfer", "Reaction/catalyst ML transfer")
+
 METHOD_LABELS = {
     "active_learning": "active learning / Bayesian optimization",
+    "catalyst_descriptor": "catalyst active-site descriptor",
     "equivariant_ml": "equivariant ML",
     "foundation_model": "foundation or pretrained model",
     "generative_model": "generative / diffusion / inverse design",
@@ -26,6 +30,7 @@ METHOD_LABELS = {
     "interatomic_potential": "ML interatomic potential",
     "multimodal": "multimodal or literature-mining model",
     "physics_informed": "physics-informed ML",
+    "reaction_dataset": "reaction-specific dataset learning",
     "self_supervised": "self-supervised learning",
     "surrogate_model": "surrogate or multi-fidelity model",
     "symbolic_regression": "symbolic regression / descriptor discovery",
@@ -127,6 +132,28 @@ def short_paper_line(paper: dict[str, Any]) -> str:
     return f"{title_of(paper)} ({journal}, {date})"
 
 
+def dedupe_candidate_papers(paper_sets: dict[str, list[dict[str, Any]]]) -> list[dict[str, Any]]:
+    merged: dict[str, dict[str, Any]] = {}
+    for label in CANDIDATE_RUNS:
+        for paper in paper_sets[label]:
+            doi = str(paper.get("doi") or "").strip().lower()
+            key = f"doi::{doi}" if doi else f"title::{title_of(paper).lower()}"
+            existing = merged.get(key)
+            if existing is None:
+                copy = dict(paper)
+                copy["candidate_source"] = label
+                merged[key] = copy
+                continue
+
+            sources = {part.strip() for part in str(existing.get("candidate_source") or "").split(";") if part.strip()}
+            sources.add(label)
+            existing["candidate_source"] = "; ".join(sorted(sources))
+            if float(paper.get("score", 0.0)) > float(existing.get("score", 0.0)):
+                for field in ("score", "mof_relevance", "next_steps", "transfer_distance", "mof_transfer_route"):
+                    existing[field] = paper.get(field, existing.get(field))
+    return list(merged.values())
+
+
 def evidence_lines(methods: list[str], index: dict[str, list[dict[str, Any]]], *, limit: int = 3) -> list[str]:
     seen: set[str] = set()
     lines: list[str] = []
@@ -211,7 +238,7 @@ def build_report(
         "# Method Transfer Novelty Report",
         "",
         f"- Generated: `{generated_at}`",
-        "- Logic: cross-material ML methods are candidate ideas; recent MOF literature checks current adoption; long-horizon MOF prior art checks older adoption.",
+        "- Logic: non-MOF transfer scans provide candidate ideas; recent MOF literature checks current adoption; long-horizon MOF prior art checks older adoption.",
         "",
         "## Source Runs",
         "",
@@ -239,7 +266,7 @@ def build_report(
             "",
             "## Method-Class Baseline",
             "",
-            "| Method class | Cross-material ML | Recent MOF | Long-horizon MOF prior art |",
+            "| Method class | Candidate transfer scans | Recent MOF | Long-horizon MOF prior art |",
             "|---|---:|---:|---:|",
         ]
     )
@@ -263,8 +290,11 @@ def build_report(
                 f"### {index}. [{status}] {title_of(paper)}",
                 "",
                 f"- Journal/date: {paper.get('journal') or 'unknown'}; `{paper.get('publication_date') or 'unknown'}`",
+                f"- Candidate source: {paper.get('candidate_source') or 'unknown'}",
                 f"- Link: {url or 'N/A'}",
                 f"- Method tags: {', '.join(methods)}",
+                f"- Transfer distance: {paper.get('transfer_distance') or 'unclassified'}",
+                f"- Candidate MOF route: {paper.get('mof_transfer_route') or 'Needs manual mapping to a concrete MOF task.'}",
                 f"- MOF transfer note: {paper.get('mof_relevance') or 'Needs manual assessment.'}",
                 f"- Suggested next step: {paper.get('next_steps') or 'Check full paper and MOF benchmark fit.'}",
             ]
@@ -286,6 +316,7 @@ def build_report(
             "## Reading Rules",
             "",
             "- Fresh means no same method-class tag was found in the recent or long-horizon MOF baselines. It still needs full-paper confirmation.",
+            "- Distant cross-domain methods are allowed when the method can be mapped to a concrete MOF object, such as structure images, spectra, isotherms, pore maps, generated CIF checks, or multimodal literature-structure consistency.",
             "- Older prior art means the idea is not new to MOFs, but it may still be worth pursuing if the cross-material paper adds a new representation, label space, uncertainty loop, active-learning strategy, or validation regime.",
             "- Recent MOF activity means lower novelty unless the new method opens a clearly different MOF task or implementation path.",
         ]
@@ -316,7 +347,7 @@ def main() -> int:
         generated_at=generated_at,
         run_outputs=run_outputs,
         manifests=manifests,
-        cross_papers=paper_sets["Cross-material ML transfer"],
+        cross_papers=dedupe_candidate_papers(paper_sets),
         recent_mof_papers=paper_sets["Recent MOF literature"],
         prior_art_papers=paper_sets["Long-horizon MOF method prior art"],
         limit_opportunities=args.limit_opportunities,

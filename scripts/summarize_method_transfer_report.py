@@ -13,6 +13,8 @@ TRIAGE_PATTERNS = {
 }
 
 OPPORTUNITY_PATTERN = re.compile(r"^### \d+\. \[(.+?)\] (.+)$")
+SOURCE_PATTERN = re.compile(r"^- Candidate source: (.+)$")
+TRANSFER_DISTANCE_PATTERN = re.compile(r"^- Transfer distance: (.+)$")
 
 
 def parse_args() -> argparse.Namespace:
@@ -61,7 +63,24 @@ def parse_report(report_path: Path, top_n: int) -> dict[str, object]:
 
         match = OPPORTUNITY_PATTERN.match(line)
         if match and len(ideas) < max(top_n, 1):
-            ideas.append({"status": match.group(1), "title": match.group(2)})
+            ideas.append(
+                {
+                    "status": match.group(1),
+                    "title": match.group(2),
+                    "candidate_source": "unknown",
+                    "transfer_distance": "unclassified",
+                }
+            )
+            continue
+
+        match = SOURCE_PATTERN.match(line)
+        if match and ideas:
+            ideas[-1]["candidate_source"] = match.group(1)
+            continue
+
+        match = TRANSFER_DISTANCE_PATTERN.match(line)
+        if match and ideas:
+            ideas[-1]["transfer_distance"] = match.group(1)
 
     missing = [key for key, value in triage.items() if value is None]
     if missing:
@@ -88,7 +107,9 @@ def to_markdown(summary: dict[str, object]) -> str:
         "## Top opportunities",
     ]
     for idx, idea in enumerate(ideas, start=1):
-        lines.append(f"{idx}. `{idea['status']}` - {idea['title']}")
+        lines.append(
+            f"{idx}. `{idea['status']}` `{idea['transfer_distance']}` `{idea['candidate_source']}` - {idea['title']}"
+        )
     return "\n".join(lines) + "\n"
 
 

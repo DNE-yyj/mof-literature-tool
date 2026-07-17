@@ -91,6 +91,54 @@ CROSSREF_PAYLOAD = {
                 "type": "journal-article",
                 "is-referenced-by-count": 12,
             },
+            {
+                "DOI": "10.1000/imageforgery",
+                "title": [
+                    "Multi-Modal Deep Learning for Image Forgery Detection: Visual Artifacts and Metadata Consistency Analysis"
+                ],
+                "container-title": ["Journal of Transferable AI Methods"],
+                "author": [{"given": "Evan", "family": "Example"}],
+                "abstract": (
+                    "<jats:p>We introduce a multimodal transfer learning method that combines visual artifacts "
+                    "and metadata consistency analysis for robust out-of-distribution detection.</jats:p>"
+                ),
+                "published-online": {"date-parts": [[2026, 4, 10]]},
+                "URL": "https://doi.org/10.1000/imageforgery",
+                "type": "journal-article",
+                "is-referenced-by-count": 6,
+            },
+            {
+                "DOI": "10.1002/anie.8169897",
+                "title": [
+                    "Underexplored Catalysts as General Structures: Application of Machine Learning Techniques for Reaction-Specific Datasets"
+                ],
+                "container-title": ["Angewandte Chemie International Edition"],
+                "author": [{"given": "Jiajing", "family": "Li"}],
+                "abstract": (
+                    "<jats:p>We apply machine learning techniques to sparse and historically biased "
+                    "reaction-specific datasets to identify underexplored catalysts with broad catalyst generality.</jats:p>"
+                ),
+                "published-online": {"date-parts": [[2026, 7, 10]]},
+                "URL": "https://doi.org/10.1002/anie.8169897",
+                "type": "journal-article",
+                "is-referenced-by-count": 2,
+            },
+            {
+                "DOI": "10.1021/jacs.6c04989",
+                "title": [
+                    "Strength of Interlayer Metal-Metal Coupling as Key Active Site Configuration and Atomic Descriptor for Single-Atom Catalysts"
+                ],
+                "container-title": ["Journal of the American Chemical Society"],
+                "author": [{"given": "Liangliang", "family": "Xu"}],
+                "abstract": (
+                    "<jats:p>Guided by simulations and machine learning, we identify active site configuration "
+                    "and atomic descriptor relationships for single-atom catalysts using data mining and subgroup discovery.</jats:p>"
+                ),
+                "published-online": {"date-parts": [[2026, 7, 9]]},
+                "URL": "https://doi.org/10.1021/jacs.6c04989",
+                "type": "journal-article",
+                "is-referenced-by-count": 1,
+            },
         ]
     }
 }
@@ -199,6 +247,65 @@ class LiteratureToolTests(unittest.TestCase):
         self.assertIn("equivariant_ml", oxide_paper["tags"])
         self.assertIn("priority_journal", oxide_paper["tags"])
         self.assertIn("transfer to MOFs", oxide_paper["mof_relevance"])
+
+    @patch("core.fetch_json", side_effect=fake_fetch_json)
+    def test_materials_ml_transfer_profile_keeps_distant_cross_domain_method(self, _mock_fetch: object) -> None:
+        parser = build_parser()
+        args = parser.parse_args(
+            [
+                "--profile",
+                "materials_ml_transfer",
+                "--query",
+                "multimodal transfer learning metadata consistency out-of-distribution",
+                "--days",
+                "1095",
+                "--limit",
+                "5",
+                "--rows-per-query",
+                "5",
+                "--output-dir",
+                str(self.output_dir),
+            ]
+        )
+        outputs = run_cli(args)
+        papers = json.loads(outputs["json"].read_text(encoding="utf-8"))
+        image_paper = next(
+            paper for paper in papers if paper["title"].startswith("Multi-Modal Deep Learning for Image Forgery")
+        )
+
+        self.assertIn("image_analysis", image_paper["tags"])
+        self.assertIn("multimodal", image_paper["tags"])
+        self.assertEqual(image_paper["transfer_distance"], "distant cross-domain method")
+        self.assertIn("structure images", image_paper["mof_transfer_route"])
+
+    @patch("core.fetch_json", side_effect=fake_fetch_json)
+    def test_reaction_catalyst_transfer_profile_keeps_user_seed_papers(self, _mock_fetch: object) -> None:
+        parser = build_parser()
+        args = parser.parse_args(
+            [
+                "--profile",
+                "reaction_catalyst_ml_transfer",
+                "--days",
+                "3650",
+                "--limit",
+                "10",
+                "--rows-per-query",
+                "5",
+                "--output-dir",
+                str(self.output_dir),
+            ]
+        )
+        outputs = run_cli(args)
+        papers = json.loads(outputs["json"].read_text(encoding="utf-8"))
+        by_doi = {paper["doi"].lower(): paper for paper in papers if paper["doi"]}
+
+        angew = by_doi["10.1002/anie.8169897"]
+        jacs = by_doi["10.1021/jacs.6c04989"]
+
+        self.assertIn("reaction_dataset", angew["tags"])
+        self.assertIn("catalyst_descriptor", jacs["tags"])
+        self.assertIn("MOF catalytic reaction families", angew["next_steps"])
+        self.assertIn("MOF nodes", jacs["next_steps"])
 
     @patch("core.fetch_json", side_effect=fake_fetch_json)
     def test_mof_method_prior_art_profile_keeps_mof_method_paper(self, _mock_fetch: object) -> None:

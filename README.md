@@ -36,6 +36,7 @@ python run.py --profile mof_adsorption --days 180 --limit 15
 python run.py --profile mof_catalysis --days 365 --limit 15
 python run.py --profile cof_transfer_methods --days 365 --limit 15
 python run.py --profile materials_ml_transfer --days 1095 --limit 30 --rows-per-query 15
+python run.py --profile reaction_catalyst_ml_transfer --days 3650 --limit 30 --rows-per-query 15
 python run.py --profile mof_ml_method_prior_art --days 3650 --limit 60 --rows-per-query 25
 python run.py --profile mof_adsorption --query "metal-organic framework water adsorption machine learning" --query "MOF-303 water diffusion interatomic potential" --limit 10
 ```
@@ -44,6 +45,12 @@ Cross-material ML transfer config:
 
 ```powershell
 python run.py --config configs/materials_ml_transfer.json
+```
+
+Reaction/catalyst ML transfer config:
+
+```powershell
+python run.py --config configs/reaction_catalyst_ml_transfer.json
 ```
 
 Long-horizon MOF method prior-art config:
@@ -73,6 +80,10 @@ python -B run_method_transfer_novelty.py
 ```
 
 and then writes an Actions summary with the latest combined report path, triage counts, and the top five ranked transfer ideas. The full `reports/method_transfer_novelty/` tree is uploaded as an artifact.
+
+Cross-domain methods are intentionally allowed. A remote-sensing, image-forensics, or other distant-domain ML paper can stay in the shortlist when its method can be mapped to a concrete MOF task such as structure-image analysis, spectra or isotherm anomaly detection, pore-region segmentation, generated-CIF validation, or multimodal literature-structure consistency. The combined report labels these cases with a transfer-distance field so they can be judged separately from direct materials papers.
+
+Reaction and catalyst ML papers are also intentionally retained through `reaction_catalyst_ml_transfer`. This catches work such as bias-aware catalyst generality from reaction-specific datasets and active-site descriptor mining in single-atom catalysts, then asks whether the method can be transferred to MOF catalytic nodes, defects, bimetallic sites, or reaction-family datasets.
 
 To use GitHub Actions as the main executor:
 
