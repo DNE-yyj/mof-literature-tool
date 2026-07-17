@@ -9,3 +9,5 @@ output/
 output_smoke/
 output_smoke_365/
 reports/
+latest_report_path.txt
+latest_report_summary.md

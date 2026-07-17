@@ -60,13 +60,34 @@ python run_method_transfer_novelty.py
 
 ## Recurring research radar
 
-Preferred recurring setup is a Codex app automation that runs the combined workflow every two weeks:
+Preferred recurring setup is a GitHub Actions schedule that runs the combined workflow every Monday without depending on the local machine's power or login state:
+
+```yaml
+.github/workflows/method-transfer-novelty-weekly.yml
+```
+
+It runs:
 
 ```powershell
 python -B run_method_transfer_novelty.py
 ```
 
-The automation should read the newest combined report under `reports/method_transfer_novelty/` and summarize high-fit research opportunities, including each core paper's main content, innovation, limitations, fit, method-problem alignment, and executable next steps. If the scan is thin, it should say there is no strong recommendation rather than forcing a novelty claim.
+and then writes an Actions summary with the latest combined report path, triage counts, and the top five ranked transfer ideas. The full `reports/method_transfer_novelty/` tree is uploaded as an artifact.
+
+To use GitHub Actions as the main executor:
+
+1. Push this repository to GitHub.
+2. Enable Actions for the repository if they are not already enabled.
+3. Keep `.github/workflows/method-transfer-novelty-weekly.yml` on the default branch.
+4. Check the weekly run under the Actions tab; the default schedule is Monday `01:15 UTC` (Monday `09:15` in China Standard Time).
+
+Recommended local backup command:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\register_method_transfer_task.ps1 -TaskName "MOF Method Transfer Novelty Weekly" -LogonType Interactive -Force
+```
+
+The intended interpretation layer is still the same: read the newest combined report under `reports/method_transfer_novelty/` and produce a Chinese research-radar synthesis by default. The synthesis should summarize high-fit research opportunities, including each core paper's main content, innovation, limitations, fit, method-problem alignment, and executable next steps. Keep paper titles, journal names, DOI/arXiv links, dataset names, and software names in their original language. If the scan is thin, it should say there is no strong recommendation rather than forcing a novelty claim.
 
 Manual config test:
 
@@ -74,7 +95,7 @@ Manual config test:
 powershell -ExecutionPolicy Bypass -File .\run_weekly.ps1 -ConfigPath .\configs\weekly_mof_latest.json
 ```
 
-Legacy Windows Scheduled Task helper:
+Legacy Windows Scheduled Task helper for one individual scan:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\register_weekly_task.ps1 -ConfigPath .\configs\weekly_mof_latest.json -TaskName "MOF Literature Weekly" -Force
@@ -92,12 +113,18 @@ Register the long-horizon MOF method prior-art scan:
 powershell -ExecutionPolicy Bypass -File .\register_weekly_task.ps1 -ConfigPath .\configs\mof_ml_method_prior_art.json -TaskName "MOF ML Method Prior Art" -Force
 ```
 
-The preferred Codex automation path is to schedule `python -B run_method_transfer_novelty.py` instead of registering the three Windows tasks separately. That workflow runs all three scans and writes one combined report under `reports/method_transfer_novelty/`.
-
-Trigger the registered task immediately:
+For local-only automation, prefer the single combined task instead of the three legacy Windows tasks:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File .\trigger_weekly_task_now.ps1 -TaskName "MOF Literature Weekly"
+powershell -ExecutionPolicy Bypass -File .\register_method_transfer_task.ps1 -TaskName "MOF Method Transfer Novelty Weekly" -LogonType Interactive -Force
+```
+
+That workflow runs all three scans and writes one combined report under `reports/method_transfer_novelty/`. Use the local task as a backup when GitHub Actions is the main executor.
+
+Trigger a registered Windows task immediately:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\trigger_weekly_task_now.ps1 -TaskName "MOF Method Transfer Novelty Weekly"
 ```
 
 If you want a better field-level synthesis and already have an OpenAI API key:
@@ -125,7 +152,7 @@ The combined novelty workflow writes:
 
 ## Research-radar output
 
-For biweekly summaries, do not only list new papers. Read `report.md` and `papers.json`, then report:
+For biweekly summaries, do not only list new papers. Read `report.md` and `papers.json`, then write a Chinese synthesis that reports:
 
 - what each core paper mainly did
 - what is innovative
@@ -136,8 +163,9 @@ For biweekly summaries, do not only list new papers. Read `report.md` and `paper
 - a concise workflow, preferably with a Mermaid flowchart, for high-fit ideas
 - for method-driven ideas, the scientific question, application, or bottleneck where the method can land
 - for problem-driven ideas, the method lever, expected improvement, and validation path
+- readable visuals such as Mermaid evidence maps, method-problem matrices, timelines, or project-flow diagrams when supported by the collected evidence
 
-Do not invent papers, DOIs, venue status, or conclusions. Mark preprints, metadata-only records, and unverified claims explicitly.
+Do not invent papers, DOIs, venue status, conclusions, figure categories, or quantitative values. Mark preprints, metadata-only records, and unverified claims explicitly.
 
 ## Notes
 

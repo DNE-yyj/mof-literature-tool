@@ -1,0 +1,42 @@
+name: Method Transfer Novelty Weekly
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "15 1 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: method-transfer-novelty-weekly
+  cancel-in-progress: false
+
+jobs:
+  run-weekly-scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run combined novelty workflow
+        run: python -B run_method_transfer_novelty.py
+
+      - name: Summarize latest combined report
+        run: python scripts/summarize_method_transfer_report.py >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload combined reports artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: method-transfer-novelty-reports
+          path: |
+            reports/method_transfer_novelty/
+            latest_report_path.txt
+            latest_report_summary.md
+          if-no-files-found: error
