@@ -35,8 +35,26 @@ function Convert-Weekday {
 
 $repoRoot = $PSScriptRoot
 $runScript = (Resolve-Path (Join-Path $PSScriptRoot "run_method_transfer_novelty.ps1")).Path
-$actionArgs = "-ExecutionPolicy Bypass -File `"$runScript`" -PythonExe `"$PythonExe`""
-$action = New-ScheduledTaskAction -Execute "powershell.exe" -Argument $actionArgs -WorkingDirectory $repoRoot
+
+function Resolve-Executable {
+    param([Parameter(Mandatory = $true)][string]$Value)
+
+    if (Test-Path -LiteralPath $Value -PathType Leaf) {
+        return (Resolve-Path -LiteralPath $Value).Path
+    }
+
+    $command = Get-Command $Value -ErrorAction Stop
+    if (-not $command.Source) {
+        throw "Could not resolve executable from '$Value'."
+    }
+
+    return $command.Source
+}
+
+$resolvedPythonExe = Resolve-Executable -Value $PythonExe
+$powerShellExe = Resolve-Executable -Value "powershell.exe"
+$actionArgs = "-NoProfile -ExecutionPolicy Bypass -File `"$runScript`" -PythonExe `"$resolvedPythonExe`""
+$action = New-ScheduledTaskAction -Execute $powerShellExe -Argument $actionArgs -WorkingDirectory $repoRoot
 $trigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek (Convert-Weekday -Value $Weekday) -At $Time
 $settings = New-ScheduledTaskSettingsSet `
     -StartWhenAvailable `
@@ -53,4 +71,4 @@ if ($Force -and (Get-ScheduledTask -TaskName $TaskName -ErrorAction SilentlyCont
 }
 
 Register-ScheduledTask -TaskName $TaskName -Action $action -Trigger $trigger -Settings $settings -Principal $principal -Description $description | Out-Null
-Write-Host "Registered scheduled task '$TaskName' for $Weekday at $Time using run_method_transfer_novelty.ps1 (logon=$LogonType, wake=$WakeToRun)"
+Write-Host "Registered scheduled task '$TaskName' for $Weekday at $Time using run_method_transfer_novelty.ps1 (python=$resolvedPythonExe, logon=$LogonType, wake=$WakeToRun)"
