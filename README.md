@@ -79,7 +79,9 @@ It runs:
 python -B run_method_transfer_novelty.py
 ```
 
-and then writes an Actions summary with the latest combined report path, triage counts, and the top five ranked transfer ideas. The full `reports/method_transfer_novelty/` tree is uploaded as an artifact.
+and then writes an Actions summary with the latest combined report path, triage counts, and the top five ranked transfer ideas. The full generated `reports/` tree is uploaded as an artifact.
+
+The workflow also publishes the generated `reports/` tree to a dedicated `automation-reports` branch. Local machines can pull that branch into the ignored local `reports/` directory without committing report files to `main`.
 
 Cross-domain methods are intentionally allowed. A remote-sensing, image-forensics, or other distant-domain ML paper can stay in the shortlist when its method can be mapped to a concrete MOF task such as structure-image analysis, spectra or isotherm anomaly detection, pore-region segmentation, generated-CIF validation, or multimodal literature-structure consistency. The combined report labels these cases with a transfer-distance field so they can be judged separately from direct materials papers.
 
@@ -96,6 +98,18 @@ Recommended local backup command:
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\register_method_transfer_task.ps1 -TaskName "MOF Method Transfer Novelty Weekly" -LogonType Interactive -Force
+```
+
+Recommended local report-sync task:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\register_report_sync_task.ps1 -Force
+```
+
+Manual report sync:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\sync_method_transfer_reports.ps1
 ```
 
 The intended interpretation layer is still the same: read the newest combined report under `reports/method_transfer_novelty/` and produce a Chinese research-radar synthesis by default. The synthesis should summarize high-fit research opportunities, including each core paper's main content, innovation, limitations, fit, method-problem alignment, and executable next steps. Keep paper titles, journal names, DOI/arXiv links, dataset names, and software names in their original language. If the scan is thin, it should say there is no strong recommendation rather than forcing a novelty claim.
@@ -130,7 +144,7 @@ For local-only automation, prefer the single combined task instead of the three 
 powershell -ExecutionPolicy Bypass -File .\register_method_transfer_task.ps1 -TaskName "MOF Method Transfer Novelty Weekly" -LogonType Interactive -Force
 ```
 
-That workflow runs all three scans and writes one combined report under `reports/method_transfer_novelty/`. Use the local task as a backup when GitHub Actions is the main executor.
+That workflow runs the source scans and writes one combined report under `reports/method_transfer_novelty/`. Use the local task as a backup when GitHub Actions is the main executor.
 
 Trigger a registered Windows task immediately:
 
@@ -159,7 +173,7 @@ Config files under `configs/` use `output_root`, so each scheduled run creates a
 The combined novelty workflow writes:
 
 - `reports/method_transfer_novelty/<timestamp>/report.md`: one triage report comparing cross-material ML ideas against recent and long-horizon MOF baselines
-- `reports/method_transfer_novelty/<timestamp>/manifest.json`: paths to all three source runs
+- `reports/method_transfer_novelty/<timestamp>/manifest.json`: paths to all source runs
 
 ## Research-radar output
 

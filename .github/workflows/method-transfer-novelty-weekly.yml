@@ -6,7 +6,7 @@ on:
     - cron: "15 1 * * 1"
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: method-transfer-novelty-weekly
@@ -31,12 +31,45 @@ jobs:
       - name: Summarize latest combined report
         run: python scripts/summarize_method_transfer_report.py >> "$GITHUB_STEP_SUMMARY"
 
+      - name: Publish reports for local sync
+        shell: bash
+        run: |
+          set -euo pipefail
+          publish_dir="$(mktemp -d)"
+          cp -R reports "$publish_dir/"
+          cp latest_report_path.txt latest_report_summary.md "$publish_dir/"
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git ls-remote --exit-code --heads origin automation-reports >/dev/null 2>&1; then
+            git fetch origin automation-reports
+            git switch --detach FETCH_HEAD
+            rm -rf reports latest_report_path.txt latest_report_summary.md
+          else
+            git switch --orphan automation-reports
+            git rm -rf . >/dev/null 2>&1 || true
+            find . -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          fi
+
+          cp -R "$publish_dir/reports" reports
+          cp "$publish_dir/latest_report_path.txt" latest_report_path.txt
+          cp "$publish_dir/latest_report_summary.md" latest_report_summary.md
+
+          git add -f reports latest_report_path.txt latest_report_summary.md
+          if git diff --cached --quiet; then
+            echo "No report changes to publish."
+          else
+            git commit -m "Publish method transfer novelty reports from run ${GITHUB_RUN_NUMBER}"
+            git push origin HEAD:automation-reports
+          fi
+
       - name: Upload combined reports artifact
         uses: actions/upload-artifact@v4
         with:
           name: method-transfer-novelty-reports
           path: |
-            reports/method_transfer_novelty/
+            reports/
             latest_report_path.txt
             latest_report_summary.md
           if-no-files-found: error
