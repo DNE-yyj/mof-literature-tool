@@ -1,0 +1,611 @@
+[
+  {
+    "title": "Evaluating mechanical property prediction across material classes using molecular dynamics simulations with universal machine-learned interatomic potentials",
+    "authors": [
+      "Konstantin Stracke",
+      "Connor Edwards",
+      "Jack D. Evans"
+    ],
+    "journal": "Communications Chemistry",
+    "publication_date": "2026-05-06",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s42004-026-02057-9",
+    "url": "https://doi.org/10.1038/s42004-026-02057-9",
+    "abstract": "Simulating the mechanical and thermal properties of materials requires accurate treatment of interatomic interactions, yet quantum-mechanical methods can be computationally prohibitive for the time scales needed. Universal machine-learned interatomic potentials (MLIPs) offer a promising alternative, but their reliability for dynamics across diverse material classes remains largely untested. Here, we assess the accuracy of six universal MLIPs for predicting the temperature and pressure response of 13 diverse materials (nine metal-organic frameworks and four inorganic compounds), computing bulk modulus, thermal expansion, and thermal decomposition. These MLIPs employ three architectures (graph neural networks, graph network simulators, and graph transformers) with varying training datasets. We observe qualitative agreement with experiment, outperforming UFF4MOF, but also systematic underestimation of bulk modulus and overestimation of thermal expansion across all models, consistent with potential energy surface softening. From all tested models, three top performers arise; ‘MACE-MP-0a’, ‘fairchem_OMAT’, and ‘Orb-v3’, with average error across metrics and materials of 41%, 43%, and 43%, respectively. Beyond overall performance, dataset homogeneity and structural representation dominate model accuracy, while certain architectures can compensate for biases, a step closer to truly universal MLIPs. The application of quantum-mechanical methods to complex systems is often computationally prohibitive, prompting the exploration of machine learning alternatives for modeling interatomic forces. Here, the authors benchmark machine-learned interatomic potentials (MLIPs) against density functional theory (DFT) and classical potentials for nine metal-organic frameworks and four inorganic compounds, highlighting the necessity of dynamic modeling for accurate mechanical property assessment.",
+    "type": "article",
+    "source_id": "https://openalex.org/W4416949668",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 11.211111111111112,
+    "tags": [
+      "dft",
+      "equivariant_ml",
+      "force_field",
+      "gnn",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "ml",
+      "mof"
+    ],
+    "takeaway": "Simulating the mechanical and thermal properties of materials requires accurate treatment of interatomic interactions, yet quantum-mechanical methods can be computationally prohibitive for the time scales needed.",
+    "innovation": "Simulating the mechanical and thermal properties of materials requires accurate treatment of interatomic interactions, yet quantum-mechanical methods can be computationally prohibitive for the time scales needed.",
+    "limitations": "Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties. Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "Harnessing AtomisticSkills for Agentic Atomistic Research",
+    "authors": [
+      "Bowen Deng",
+      "Bohan Li",
+      "Matthew Cox",
+      "Hoje Chun",
+      "Juno Nam",
+      "Artur Lyssenko",
+      "Sathya Edamadaka",
+      "Jurgis Ruza",
+      "Xiaochen Du",
+      "Nofit Segal",
+      "Jesus Diaz Sanchez",
+      "Mingrou Xie",
+      "Ty Perez",
+      "Yu Yao",
+      "Miguel Steiner",
+      "Sauradeep Majumdar",
+      "Charles B. Musgrave III",
+      "Anirban Chandra",
+      "A. K. Patra",
+      "Detlef Hohl",
+      "Connor W. Coley",
+      "Ju Li",
+      "Rafael Gómez-Bombarelli"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-05-18",
+    "year": 2026,
+    "doi": null,
+    "url": "https://arxiv.org/abs/2605.24002",
+    "abstract": "Computational materials science and chemistry span vast knowledge domains and fractured software ecosystems. Although large language models (LLMs) have demonstrated research capabilities, scaling monolithic agents to manage the rigor and complexity of atomistic research remains a challenge. Here, we introduce AtomisticSkills, an open-source harness framework that empowers general-purpose AI coding agents to conduct atomistic research across materials science, chemistry, and drug discovery. By hierarchically decomposing scientific workflows into agent skills and tools, AtomisticSkills provides agents with modular, extensible, and plug-and-play research capabilities. The framework integrates more than 100 human-curated multidisciplinary skills, including database access, thermodynamics and kinetics modeling, and diverse simulation engines employing machine learning interatomic potentials (MLIPs) and density functional theory (DFT). We validate its functional coverage against scientific literature and demonstrate robust orchestration capabilities across diverse scientific campaigns: generative design of Li-ion solid-state electrolytes, high-throughput screening of metal-organic frameworks for CO2 capture, autonomous MLIP benchmarking and fine-tuning, multi-stage structure-based virtual screening for drug design, multimodal X-ray diffraction pattern analysis, and screening of Fe-oxide catalysts for oxygen evolution reaction. AtomisticSkills provides a critical agent infrastructure towards building fully autonomous AI scientists.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7162606028",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework generative model inverse design machine learning",
+      "metal-organic framework graph neural network property prediction"
+    ],
+    "citation_count": 0,
+    "score": 10.344444444444445,
+    "tags": [
+      "battery",
+      "catalysis",
+      "co2",
+      "dft",
+      "electrolyte",
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "ml",
+      "mof",
+      "multimodal",
+      "oxide",
+      "separation",
+      "transfer_learning"
+    ],
+    "takeaway": "Here, we introduce AtomisticSkills, an open-source harness framework that empowers general-purpose AI coding agents to conduct atomistic research across materials science, chemistry, and drug discovery.",
+    "innovation": "Here, we introduce AtomisticSkills, an open-source harness framework that empowers general-purpose AI coding agents to conduct atomistic research across materials science, chemistry, and drug discovery.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "PoroNet: An Intrinsically Interpretable Pore Graph Neural Network for Resolving Pore-Level Adsorption in Metal–Organic Frameworks",
+    "authors": [
+      "Chao Zheng",
+      "Arun Gopalan",
+      "Kaihang Shi"
+    ],
+    "journal": "Journal of Chemical Theory and Computation",
+    "publication_date": "2026-05-28",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acs.jctc.6c00100",
+    "url": "https://doi.org/10.1021/acs.jctc.6c00100",
+    "abstract": "Machine learning (ML) models have been widely used as efficient surrogates to predict adsorption in metal–organic frameworks (MOFs) for gas storage, chemical separations, and catalysis applications. The “black box” nature of these ML models, however, remains a significant barrier between predictions and the design of novel MOFs. In this work, we introduce PoroNet, an intrinsically interpretable graph neural network architecture built on a graph representation of the pore network (i.e., pore graph). In a pore graph, nodes represent individual pores, and edges represent pore connections. PoroNet shows highly accurate predictions of hydrogen (H2) uptake and deliverable capacity in MOFs, as well as on a benchmark simulated adsorption data set that contains spherical and linear alkane adsorbates. More importantly, accurate pore-level contributions to total adsorption can be learned using PoroNet either through direct supervised learning or as latent representations while fitting the total adsorption capacity. In direct supervised learning with explicit pore-level labels, we show that the PoroNet architecture is data-efficient, achieving comparable performance to the standard approach with only a fraction of simulation runs needed for model training. The pore-level contribution helps interpret the ML predictions of the total adsorption behavior, identify the key pore properties that govern the adsorption, and provide significant insights into pore engineering. We demonstrate that PoroNet is a powerful tool for high-throughput pore screening and for deriving valuable MOF design rules for cryogenic H2 storage applications. Lastly, we discuss the potential of leveraging interpretable ML for scalable scientific and material discovery.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7162757579",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework graph neural network property prediction"
+    ],
+    "citation_count": 0,
+    "score": 9.955555555555556,
+    "tags": [
+      "adsorption",
+      "catalysis",
+      "gnn",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof",
+      "separation"
+    ],
+    "takeaway": "In this work, we introduce PoroNet, an intrinsically interpretable graph neural network architecture built on a graph representation of the pore network (i.e., pore graph).",
+    "innovation": "In this work, we introduce PoroNet, an intrinsically interpretable graph neural network architecture built on a graph representation of the pore network (i.e., pore graph).",
+    "limitations": "Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "Smart Catalyst Design: Integrating Structure–Activity Relationships with Computational and Data-Driven Approaches",
+    "authors": [
+      "Ramandeep Singh Ramandeep Singh",
+      "Rekha Rana Rekha Rana",
+      "Subhi Sharma Subhi Sharma",
+      "Jeewanjot Singh Jeewanjot Singh",
+      "Isha dhiman Isha dhiman",
+      "Sahibpreet Singh Sahibpreet Singh",
+      "Aubair Manzoor Wani Aubair Manzoor Wani"
+    ],
+    "journal": "International Journal of Creative and Open Research in Engineering and Management",
+    "publication_date": "2026-04-22",
+    "year": 2026,
+    "doi": "https://doi.org/10.55041/ijcope.v2i4.571",
+    "url": "https://doi.org/10.55041/ijcope.v2i4.571",
+    "abstract": "Similar rational design of catalysts is a paradigm shift of the old-fashioned trial and error discovery to the predictive mechanism-oriented development of catalytic systems with improved activity, selectivity and stability. This review article reviews the current state of catalyst design in many related aspects: active site engineering, at both the atomic and molecular scale, improved structure-activity relationship (SAR) studies through operando characterization methods, computational and machine learning methods of catalyst screening and optimization, and creating sustainable catalytic processes, with respect to the principles of green chemistry. We critically examine recent advances in single-atom catalysts (SACs), metal-organic frameworks (MOFs), defect-engineered materials, and bifunctional catalytic systems and how interdisciplinary integration of chemistry, materials science, and chemical engineering has spurred this development. Special attention is given to the emerging approaches based on the exploitation of designer-like methods, high-throughput experimentation, and data-driven approaches, to explore huge compositional and structural spaces. The review is concluded with a prospective outlook of the persisting challenges and opportunities such as catalyst design of electrochemical reduction of CO2, biomass valorization, and ambient-condition fixation of nitrogen. Keywords catalyst design, structure-activity relationships, single-atom catalysts, computational catalysis, active site engineering, green catalysis, machine learning, operando characterization",
+    "type": "article",
+    "source_id": "https://openalex.org/W7155227880",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework active learning Bayesian optimization materials discovery",
+      "metal-organic framework generative model inverse design machine learning",
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 0,
+    "score": 9.555555555555555,
+    "tags": [
+      "catalysis",
+      "co2",
+      "electrocatalysis",
+      "high_throughput",
+      "ml",
+      "mof",
+      "review",
+      "separation"
+    ],
+    "takeaway": "Special attention is given to the emerging approaches based on the exploitation of designer-like methods, high-throughput experimentation, and data-driven approaches, to explore huge compositional and structural spaces.",
+    "innovation": "Special attention is given to the emerging approaches based on the exploitation of designer-like methods, high-throughput experimentation, and data-driven approaches, to explore huge compositional and structural spaces.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile."
+  },
+  {
+    "title": "aim2dat: A Python infrastructure for automated ab initio material modeling and data analysis",
+    "authors": [
+      "Holger‐Dietrich Saßnick",
+      "Joshua Edzards",
+      "Timo Reents",
+      "Caterina Cocchi"
+    ],
+    "journal": "ArXiv.org",
+    "publication_date": "2026-04-29",
+    "year": 2026,
+    "doi": null,
+    "url": "https://arxiv.org/abs/2604.26551",
+    "abstract": "The emergence of data-driven computational materials science offers unprecedented opportunities to explore complex material landscapes, complementing experimental research with the discovery of novel compounds. To enable these developments, it is essential to establish robust, reliable, and easy-to-use software supporting workflow automation and large dataset processing. Herein, we introduce the Automated Ab Initio Materials Modeling and Data Analysis Toolkit (aim2dat), a Python package offering a user-friendly interface to generate and handle big data, design high-throughput workflows based on density functional theory calculations, and analyze the output. Its key features include interfaces to online databases for structure query and analysis, high-throughput screening routines, and seamless integration of machine learning models. The capabilities of aim2dat are showcased with a variety of use-cases, ranging from photocathode materials to metal-organic frameworks.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7159734266",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework active learning Bayesian optimization materials discovery",
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 9.133333333333333,
+    "tags": [
+      "battery",
+      "dft",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof"
+    ],
+    "takeaway": "Herein, we introduce the Automated Ab Initio Materials Modeling and Data Analysis Toolkit (aim2dat), a Python package offering a user-friendly interface to generate and handle big data, design high-throughput workflows based on density functional theory calculations, and analyze the output.",
+    "innovation": "Herein, we introduce the Automated Ab Initio Materials Modeling and Data Analysis Toolkit (aim2dat), a Python package offering a user-friendly interface to generate and handle big data, design high-throughput workflows based on density functional theory calculations, and analyze the output.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.",
+    "next_steps": "Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile."
+  },
+  {
+    "title": "Supporting Dataset for Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry",
+    "authors": [
+      "Connor Edwards",
+      "Jack D. Evans"
+    ],
+    "journal": "The University of Adelaide",
+    "publication_date": "2026-04-28",
+    "year": 2026,
+    "doi": "https://doi.org/10.25909/32061111",
+    "url": "https://doi.org/10.25909/32061111",
+    "abstract": "This dataset contains computational data supporting the research article \"Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry.\" The repository includes ab initio molecular dynamics (AIMD) trajectories, CP2K input files, and analysis scripts used in the study. File Format & Access The complete dataset is provided as a compressed .tar.xz archive. Users must extract this archive to access the directory structure and files described below. Content Overview Once extracted, the repository is organised into three primary directories covering analysis tooling, AIMD trajectory data, and simulation input files: 1-scripts/ : Contains a comprehensive suite of Python scripts for analysing DFT trajectories and evaluating model performance. This directory houses:Evaluation utilities for calculating Mean Absolute Error (MAE) across models ( evaluate.py ).Core analysis functions for computing carbon cluster size, molecule counts, ring statistics, and radial distribution functions (RDFs) ( analysis_functions.py , run_all.py , plot.py ).Structural analysis scripts for metal coordination numbers ( calc_coord_num.py , plot_cn.py ) and root-mean-square deviation (RMSD) calculations over time ( RMSD_calc.py , plot_RMSD.py ).Training set generation and sampling utilities ( gen_training_sets.py , sampling_functions.py ).RDF comparison plotting between crystalline references and final structures at each temperature ( first_last_RDF_plot.py ).Simulation files for running 1 ns quench simulations with orbital ( quench_files/ ). 2-trajectories/ : Contains XYZ trajectory files for each AIMD simulation, with embedded energies, forces, and stress tensors. Trajectories are provided for nine metal-organic frameworks: CALF-20, MIP-206, MOF-5, MOF-10, NU-1000, UiO-66, UiO-66-NH2, UiO-67, and ZIF-8. 3-CP2K_inputs/ : Contains the CP2K input files used to run AIMD simulations of each MOF at 2000 K, with one input file per framework matching those listed in the trajectories directory.For a detailed breakdown of the file tree and specific script descriptions, please refer to the README.md included within the root of the extracted archive.",
+    "type": "dataset",
+    "source_id": "https://openalex.org/W7157196046",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 8.622222222222222,
+    "tags": [
+      "crystal",
+      "dft",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "mof"
+    ],
+    "takeaway": "This dataset contains computational data supporting the research article \"Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry.\" The repository includes ab initio molecular dynamics (AIMD) trajectories, CP2K input files, and analysis scripts used in the study.",
+    "innovation": "This dataset contains computational data supporting the research article \"Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry.\" The repository includes ab initio molecular dynamics (AIMD) trajectories, CP2K input files, and analysis scripts used in the study.",
+    "limitations": "Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry",
+    "authors": [
+      "Connor Edwards",
+      "Jack D. Evans"
+    ],
+    "journal": "ArXiv.org",
+    "publication_date": "2026-04-28",
+    "year": 2026,
+    "doi": null,
+    "url": "https://arxiv.org/abs/2604.25262",
+    "abstract": "Universal machine-learned interatomic potentials (uMLIPs) offer a promising approach to performing atomistic simulations at near-DFT accuracy with greatly reduced computational cost. Here, we present a new high-temperature benchmarking dataset of 40~ps ab~initio molecular dynamics (AIMD) trajectories simulated at 300, 1000, and 2000 K for nine zinc- and zirconium-based metal-organic frameworks (MOFs): ZIF-8, CALF-20, MOF-10, MOF-5, MIP-206, UiO-66, UiO-67, UiO-66-NH2, and NU-1000. These trajectories capture equilibrium dynamics, thermally induced distortions, and early-stage decomposition events, including linker degradation and metal node aggregation. Subsequently, we use this dataset to benchmark five leading uMLIPs: ORB-v3, MACE-MP-0a, MACE-MPA-0, fairchem ODAC23, and fairchem OMAT. Our results reveal that ORB-v3 and fairchem OMAT achieve the lowest energy, force, and stress errors across all temperatures. However, all models exhibit significant error under high-temperature conditions. Long-timescale molecular dynamics simulations produced with ORB-v3 demonstrate that the generative error of uMLIPs far exceeds model losses captured during static validation, highlighting the limitations of current universal models for simulating high-temperature MOF dynamics. This work provides a benchmark for assessing the robustness of uMLIPs in extreme regimes and guides future development of potentials capable of accurately modeling the chemistry of high-temperature MOF dynamics.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7159547434",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 8.622222222222222,
+    "tags": [
+      "co2",
+      "dft",
+      "equivariant_ml",
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "mof",
+      "separation"
+    ],
+    "takeaway": "Here, we present a new high-temperature benchmarking dataset of 40~ps ab~initio molecular dynamics (AIMD) trajectories simulated at 300, 1000, and 2000 K for nine zinc- and zirconium-based metal-organic frameworks (MOFs): ZIF-8, CALF-20, MOF-10, MOF-5, MIP-206, UiO-66, UiO-67, UiO-66-NH2, and NU-1000.",
+    "innovation": "Here, we present a new high-temperature benchmarking dataset of 40~ps ab~initio molecular dynamics (AIMD) trajectories simulated at 300, 1000, and 2000 K for nine zinc- and zirconium-based metal-organic frameworks (MOFs): ZIF-8, CALF-20, MOF-10, MOF-5, MIP-206, UiO-66, UiO-67, UiO-66-NH2, and NU-1000.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "Supporting Dataset for Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry",
+    "authors": [
+      "Connor Edwards",
+      "Jack D. Evans"
+    ],
+    "journal": "The University of Adelaide",
+    "publication_date": "2026-04-28",
+    "year": 2026,
+    "doi": "https://doi.org/10.25909/32061111.v1",
+    "url": "https://doi.org/10.25909/32061111.v1",
+    "abstract": "This dataset contains computational data supporting the research article \"Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry.\" The repository includes ab initio molecular dynamics (AIMD) trajectories, CP2K input files, and analysis scripts used in the study. File Format & Access The complete dataset is provided as a compressed .tar.xz archive. Users must extract this archive to access the directory structure and files described below. Content Overview Once extracted, the repository is organised into three primary directories covering analysis tooling, AIMD trajectory data, and simulation input files: 1-scripts/ : Contains a comprehensive suite of Python scripts for analysing DFT trajectories and evaluating model performance. This directory houses:Evaluation utilities for calculating Mean Absolute Error (MAE) across models ( evaluate.py ).Core analysis functions for computing carbon cluster size, molecule counts, ring statistics, and radial distribution functions (RDFs) ( analysis_functions.py , run_all.py , plot.py ).Structural analysis scripts for metal coordination numbers ( calc_coord_num.py , plot_cn.py ) and root-mean-square deviation (RMSD) calculations over time ( RMSD_calc.py , plot_RMSD.py ).Training set generation and sampling utilities ( gen_training_sets.py , sampling_functions.py ).RDF comparison plotting between crystalline references and final structures at each temperature ( first_last_RDF_plot.py ).Simulation files for running 1 ns quench simulations with orbital ( quench_files/ ). 2-trajectories/ : Contains XYZ trajectory files for each AIMD simulation, with embedded energies, forces, and stress tensors. Trajectories are provided for nine metal-organic frameworks: CALF-20, MIP-206, MOF-5, MOF-10, NU-1000, UiO-66, UiO-66-NH2, UiO-67, and ZIF-8. 3-CP2K_inputs/ : Contains the CP2K input files used to run AIMD simulations of each MOF at 2000 K, with one input file per framework matching those listed in the trajectories directory.For a detailed breakdown of the file tree and specific script descriptions, please refer to the README.md included within the root of the extracted archive.",
+    "type": "dataset",
+    "source_id": "https://openalex.org/W7157017329",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 8.622222222222222,
+    "tags": [
+      "crystal",
+      "dft",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "mof"
+    ],
+    "takeaway": "This dataset contains computational data supporting the research article \"Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry.\" The repository includes ab initio molecular dynamics (AIMD) trajectories, CP2K input files, and analysis scripts used in the study.",
+    "innovation": "This dataset contains computational data supporting the research article \"Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry.\" The repository includes ab initio molecular dynamics (AIMD) trajectories, CP2K input files, and analysis scripts used in the study.",
+    "limitations": "Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "Benchmarking Universal Machine-Learned Interatomic Potentials for High-Temperature Metal-Organic Framework Chemistry",
+    "authors": [
+      "Connor Edwards",
+      "Jack D. Evans"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-04-28",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2604.25262",
+    "url": "https://doi.org/10.48550/arxiv.2604.25262",
+    "abstract": "Universal machine-learned interatomic potentials (uMLIPs) offer a promising approach to performing atomistic simulations at near-DFT accuracy with greatly reduced computational cost. Here, we present a new high-temperature benchmarking dataset of 40~ps ab~initio molecular dynamics (AIMD) trajectories simulated at 300, 1000, and 2000 K for nine zinc- and zirconium-based metal-organic frameworks (MOFs): ZIF-8, CALF-20, MOF-10, MOF-5, MIP-206, UiO-66, UiO-67, UiO-66-NH2, and NU-1000. These trajectories capture equilibrium dynamics, thermally induced distortions, and early-stage decomposition events, including linker degradation and metal node aggregation. Subsequently, we use this dataset to benchmark five leading uMLIPs: ORB-v3, MACE-MP-0a, MACE-MPA-0, fairchem ODAC23, and fairchem OMAT. Our results reveal that ORB-v3 and fairchem OMAT achieve the lowest energy, force, and stress errors across all temperatures. However, all models exhibit significant error under high-temperature conditions. Long-timescale molecular dynamics simulations produced with ORB-v3 demonstrate that the generative error of uMLIPs far exceeds model losses captured during static validation, highlighting the limitations of current universal models for simulating high-temperature MOF dynamics. This work provides a benchmark for assessing the robustness of uMLIPs in extreme regimes and guides future development of potentials capable of accurately modeling the chemistry of high-temperature MOF dynamics.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7157931063",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 8.622222222222222,
+    "tags": [
+      "co2",
+      "dft",
+      "equivariant_ml",
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "mof",
+      "separation"
+    ],
+    "takeaway": "Here, we present a new high-temperature benchmarking dataset of 40~ps ab~initio molecular dynamics (AIMD) trajectories simulated at 300, 1000, and 2000 K for nine zinc- and zirconium-based metal-organic frameworks (MOFs): ZIF-8, CALF-20, MOF-10, MOF-5, MIP-206, UiO-66, UiO-67, UiO-66-NH2, and NU-1000.",
+    "innovation": "Here, we present a new high-temperature benchmarking dataset of 40~ps ab~initio molecular dynamics (AIMD) trajectories simulated at 300, 1000, and 2000 K for nine zinc- and zirconium-based metal-organic frameworks (MOFs): ZIF-8, CALF-20, MOF-10, MOF-5, MIP-206, UiO-66, UiO-67, UiO-66-NH2, and NU-1000.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "ReadMOF: Structure-Free Semantic Embeddings from Systematic MOF Nomenclature for Machine Learning",
+    "authors": [
+      "Kewei Zhu",
+      "Cameron Wilson",
+      "Bartosz Mazur",
+      "Yi Li",
+      "Ashleigh M. Chester",
+      "Peyman Z. Moghadam"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-04-13",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15001888/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15001888/v1",
+    "abstract": "Systematic chemical names, such as IUPAC-style nomenclature for metal-organic frameworks (MOFs), contain rich structural and compositional information in a standardized textual format. Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs. By employing pretrained language models, ReadMOF converts systematic MOF names from the Cambridge Structural Database (CSD) into vector embeddings that closely represent traditional structure-based descriptors. These embeddings enable applications in materials informatics, including property prediction, similarity retrieval, and clustering, with performance comparable to geometry-dependent methods. When combined with large language models, ReadMOF also establishes chemically meaningful reasoning ability with textual input only. Our results show that structured chemical language, interpreted through modern natural language processing techniques, can provide a scalable, interpretable, and geometry-independent alternative to conventional molecular representations. This approach opens new opportunities for language-driven discovery in materials science.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7154178710",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 0,
+    "score": 8.455555555555556,
+    "tags": [
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof"
+    ],
+    "takeaway": "Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs.",
+    "innovation": "Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "ReadMOF: Structure-Free Semantic Embeddings from Systematic MOF Nomenclature for Machine Learning",
+    "authors": [
+      "Kewei Zhu",
+      "Cameron Wilson",
+      "Bartosz Mazur",
+      "Yi Li",
+      "Ashleigh M. Chester",
+      "Peyman Z. Moghadam"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-04-12",
+    "year": 2026,
+    "doi": null,
+    "url": "https://arxiv.org/abs/2604.10568",
+    "abstract": "Systematic chemical names, such as IUPAC-style nomenclature for metal-organic frameworks (MOFs), contain rich structural and compositional information in a standardized textual format. Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs. By employing pretrained language models, ReadMOF converts systematic MOF names from the Cambridge Structural Database (CSD) into vector embeddings that closely represent traditional structure-based descriptors. These embeddings enable applications in materials informatics, including property prediction, similarity retrieval, and clustering, with performance comparable to geometry-dependent methods. When combined with large language models, ReadMOF also establishes chemically meaningful reasoning ability with textual input only. Our results show that structured chemical language, interpreted through modern natural language processing techniques, can provide a scalable, interpretable, and geometry-independent alternative to conventional molecular representations. This approach opens new opportunities for language-driven discovery in materials science.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7154538663",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 0,
+    "score": 8.444444444444445,
+    "tags": [
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof"
+    ],
+    "takeaway": "Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs.",
+    "innovation": "Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "Hunting Structural Demons in Digital Reticular Chemistry: Lessons From Metal‐Organic Frameworks",
+    "authors": [
+      "Yongchul G. Chung",
+      "Myoung Soo Lah"
+    ],
+    "journal": "Israel Journal of Chemistry",
+    "publication_date": "2026-05-21",
+    "year": 2026,
+    "doi": "https://doi.org/10.1002/ijch.70028",
+    "url": "https://doi.org/10.1002/ijch.70028",
+    "abstract": "Digital reticular chemistry relies on accurate crystal structures to power computational screening, data‐driven discovery, and structure‐property analysis, yet recent studies reveal that more than half of the top‐performing candidates in major computational screening campaigns are chemically invalid. In experimental MOF databases, structural errors arise when disordered or incomplete structural models are incorrectly converted into fully specified simulation inputs. In hypothetical MOF database, structures are complete by construction but may encode chemically implausible oxidation states, coordination environments, or charge distributions. We term these erroneous structural models “structural demons.” This mini‐review asks three questions: where these errors enter, how we find them, and how we prevent them. On the prevention side, the key steps are keeping diffraction data and synthesis details together from the start, using consistent curation when structures enter a database, and filtering topology choices before structure generation. Connecting these steps can keep many bad structures out of downstream databases and reduce the need to fix them later.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7162036201",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework graph neural network property prediction"
+    ],
+    "citation_count": 0,
+    "score": 7.877777777777778,
+    "tags": [
+      "crystal",
+      "h2",
+      "high_throughput",
+      "mof",
+      "review"
+    ],
+    "takeaway": "Digital reticular chemistry relies on accurate crystal structures to power computational screening, data‐driven discovery, and structure‐property analysis, yet recent studies reveal that more than half of the top‐performing candidates in major computational screening campaigns are chemically invalid.",
+    "innovation": "Digital reticular chemistry relies on accurate crystal structures to power computational screening, data‐driven discovery, and structure‐property analysis, yet recent studies reveal that more than half of the top‐performing candidates in major computational screening campaigns are chemically invalid.",
+    "limitations": "Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Validate the method on a broader material set and compare against experimental observables.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile."
+  },
+  {
+    "title": "Comparative entropy analysis of 2D transition metal tetrahydroxyquinones via machine learning approaches",
+    "authors": [
+      "Muhammad Irfan",
+      "Nabeela Bashir",
+      "AbdulGuddoos S. A. Gaid",
+      "Turke Althobaiti",
+      "Hamood Ur Rehman",
+      "Andrea Semaničová-Feňovčíková"
+    ],
+    "journal": "Scientific Reports",
+    "publication_date": "2026-01-31",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s41598-026-37731-4",
+    "url": "https://doi.org/10.1038/s41598-026-37731-4",
+    "abstract": "This paper focuses on the study of the framework of transition metal tetrahydroxyquinone (TM-THQ) which is a chemical belonging to the metal-organic framework (MOF) family. These materials are becoming relevant due to their stability and high surface area that makes them prospective in terms of carbon-dioxide conversion and other uses. To explore the structure of TM-THQ, we apply molecular graph theory, in which atoms and bonds are represented as mathematical graphs. We determine some topological indices, the Zagreb indices, Randić index, the atom-bond connectivity index, the geometric-arithmetic index, and the sum-connectivity index to explain the connection between atoms and predict the stability and reactivity of the material used. Moreover, Shannon's entropy model is applied to estimate the entropy of the indices. To this end, we develop and compare three machine learning based regression models: logarithmic, random forest, and XGBoost. All computational work, data analysis, and machine learning modeling were performed using Python. The findings reveal a strong predictive relationship, indicating that the entropy of TM-THQ can be accurately forecasted from its topological descriptors, with the ensemble methods providing superior predictive performance.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7126241736",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 0,
+    "score": 7.655555555555555,
+    "tags": [
+      "h2",
+      "ml",
+      "mof",
+      "oxide"
+    ],
+    "takeaway": "To this end, we develop and compare three machine learning based regression models: logarithmic, random forest, and XGBoost.",
+    "innovation": "To this end, we develop and compare three machine learning based regression models: logarithmic, random forest, and XGBoost.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile."
+  },
+  {
+    "title": "Generation of magnetic metal-organic frameworks",
+    "authors": [
+      "Alexander C. Tyner",
+      "Avinash Pathapati",
+      "Alexander V. Balatsky"
+    ],
+    "journal": "ArXiv.org",
+    "publication_date": "2026-04-30",
+    "year": 2026,
+    "doi": null,
+    "url": "https://arxiv.org/abs/2604.27879",
+    "abstract": "The potential to utilize metal-organic frameworks as a replacement for rare earth materials as well as in technological applications has prompted increased interested in this material class. The simulation of organic materials, including metal-organic frameworks (MOFs), represents a computational challenge due to an increased average number of atoms in the unit cell. Compounding this challenge, modern materials databases are generally limited to inorganic structures due to their utility in modern technologies such as batteries and integrated circuits. Machine-learning tools appear ideally suited to study these systems. However, organic materials are generally underrepresented in the training sets of foundational models. In this work we leverage the the Organic Materials Database (OMDB) to create a training dataset comprised of more than 15,000 single-point first-principles computations for finetuning machine learned interatomic potentials. Specifically, we fine tune CHGNet and implement a site substitution workflow to identify novel, highly magnetic, MOFs from structural prototypes within the QMOF database.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7159891182",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 7.644444444444445,
+    "tags": [
+      "battery",
+      "dft",
+      "foundation_model",
+      "high_throughput",
+      "interatomic_potential",
+      "mof",
+      "transfer_learning"
+    ],
+    "takeaway": "The potential to utilize metal-organic frameworks as a replacement for rare earth materials as well as in technological applications has prompted increased interested in this material class.",
+    "innovation": "The potential to utilize metal-organic frameworks as a replacement for rare earth materials as well as in technological applications has prompted increased interested in this material class.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "BaLoRA: Bayesian Low-Rank Adaptation of Large Scale Models",
+    "authors": [
+      "Dario Coscia",
+      "Sindy Löwe",
+      "Max Welling"
+    ],
+    "journal": "ArXiv.org",
+    "publication_date": "2026-04-27",
+    "year": 2026,
+    "doi": null,
+    "url": "https://arxiv.org/abs/2605.08110",
+    "abstract": "Low-Rank Adaptation (LoRA) has become the standard for fine-tuning large pre-trained models at reduced computational cost. However, its low-rank point-estimate updates limit expressiveness, leave a persistent gap relative to full fine-tuning accuracy, and provide no built-in uncertainty quantification, limiting its applicability in settings where reliability matters as much as accuracy. We introduce BaLoRA, a Bayesian extension of LoRA with a novel input-adaptive Bayesian parameterization of LoRA matrices that adds minimal parameters and compute. Surprisingly, not only does the Bayesian extension yield well-calibrated uncertainty estimates, but the adaptive noise injection underlying our approach also significantly improves prediction accuracy, narrowing the gap with full fine-tuning across both natural language reasoning and vision tasks. When applied to band gap prediction in metal-organic frameworks, BaLoRA produces zero-shot test-time uncertainty estimates that correlate more strongly with model error than a trained ensemble of LoRA models, and improve monotonically with compute without sacrificing accuracy.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7161090804",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework active learning Bayesian optimization materials discovery"
+    ],
+    "citation_count": 0,
+    "score": 7.611111111111111,
+    "tags": [
+      "foundation_model",
+      "h2",
+      "mof",
+      "transfer_learning",
+      "uncertainty"
+    ],
+    "takeaway": "We introduce BaLoRA, a Bayesian extension of LoRA with a novel input-adaptive Bayesian parameterization of LoRA matrices that adds minimal parameters and compute.",
+    "innovation": "We introduce BaLoRA, a Bayesian extension of LoRA with a novel input-adaptive Bayesian parameterization of LoRA matrices that adds minimal parameters and compute.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  }
+]

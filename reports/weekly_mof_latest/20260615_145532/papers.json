@@ -1,0 +1,46 @@
+[
+  {
+    "title": "FLAMES – A flexible and extensible code for Monte Carlo simulations of nanoporous materials",
+    "authors": [
+      "Felipe Lopes Oliveira",
+      "Holger‐Dietrich Saßnick",
+      "Guillaume Maurin"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-06-11",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15004623/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15004623/v1",
+    "abstract": "Molecular dynamics (MD) and Monte Carlo (MC) simulations are the cornerstone for computational studies of adsorption in nanoporous materials such as zeolites, Metal-Organic Frameworks, and Covalent Organic Frameworks. Currently, most of these simulations rely on classical force fields, which are often limited in their ability to describe specific interactions or the intrinsic flexibility of the host framework. Machine learned interatomic potentials (MLIPs) have emerged as a powerful alternative, offering near ab initio accuracy while remaining computationally feasible, potentially capturing framework flexibility and complex potential energy surfaces. Despite this promise, there is a significant gap, as current tools implementing MLIPs are often general-purpose codes adapted for adsorption or in-house solutions. Here, we introduce FLAMES (Flexible Lattice Adsorption by Monte Carlo Engine Simulation), a new software package designed to perform Monte Carlo-based simulations of nanoporous materials using MLIPs and other energy calculation methods, paving the way for more accurate and physically realistic molecular simulations. We detailed the implementation of different methodologies, including Widom insertion, Grand Canonical Monte Carlo (GCMC), hybrid GCMC/MD, and Transition Matrix Monte Carlo simulations presenting validation examples for each method and evaluating the performance and accuracy of different energy calculation methodologies.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7164392301",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework adsorption machine learning density functional theory",
+      "metal-organic framework interatomic potential molecular dynamics adsorption",
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 9.955555555555556,
+    "tags": [
+      "adsorption",
+      "cof",
+      "dft",
+      "force_field",
+      "gcmc",
+      "h2",
+      "interatomic_potential",
+      "md",
+      "mof",
+      "porous_material",
+      "zeolite"
+    ],
+    "takeaway": "Here, we introduce FLAMES (Flexible Lattice Adsorption by Monte Carlo Engine Simulation), a new software package designed to perform Monte Carlo-based simulations of nanoporous materials using MLIPs and other energy calculation methods, paving the way for more accurate and physically realistic molecular simulations.",
+    "innovation": "Here, we introduce FLAMES (Flexible Lattice Adsorption by Monte Carlo Engine Simulation), a new software package designed to perform Monte Carlo-based simulations of nanoporous materials using MLIPs and other energy calculation methods, paving the way for more accurate and physically realistic molecular simulations.",
+    "limitations": "Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  }
+]

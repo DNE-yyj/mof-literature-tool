@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-05-25T14:26:54",
+  "profile": "mof_ml_method_prior_art",
+  "from_date": "2016-05-27",
+  "paper_count": 16,
+  "queries": [
+    "metal-organic framework graph neural network property prediction",
+    "metal-organic framework foundation model deep learning materials",
+    "metal-organic framework generative model inverse design machine learning",
+    "metal-organic framework active learning Bayesian optimization materials discovery",
+    "metal-organic framework machine learned interatomic potential molecular dynamics",
+    "metal-organic framework uncertainty quantification out-of-distribution machine learning",
+    "metal-organic framework transfer learning self-supervised property prediction",
+    "metal-organic framework symbolic regression descriptor discovery machine learning"
+  ],
+  "outputs": {
+    "report": "D:\\rose_data\\博士阶段\\research_complate\\work1\\literature_tool\\reports\\mof_ml_method_prior_art\\20260525_142654\\report.md",
+    "json": "D:\\rose_data\\博士阶段\\research_complate\\work1\\literature_tool\\reports\\mof_ml_method_prior_art\\20260525_142654\\papers.json",
+    "tsv": "D:\\rose_data\\博士阶段\\research_complate\\work1\\literature_tool\\reports\\mof_ml_method_prior_art\\20260525_142654\\papers.tsv"
+  }
+}

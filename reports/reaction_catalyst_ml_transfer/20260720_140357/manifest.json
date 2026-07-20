@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-07-20T14:03:57",
+  "profile": "reaction_catalyst_ml_transfer",
+  "from_date": "2016-07-22",
+  "paper_count": 27,
+  "queries": [
+    "underexplored catalysts general structures machine learning reaction-specific datasets",
+    "reaction-specific datasets machine learning catalyst generality underexplored catalysts",
+    "10.1002/anie.8169897",
+    "single-atom catalysts active site descriptor machine learning data mining",
+    "metal-metal coupling active site descriptor machine learning single-atom catalysts",
+    "10.1021/jacs.6c04989",
+    "catalyst machine learning sparse biased datasets reaction generality",
+    "electrocatalysis active-site descriptor machine learning structure activity relationship"
+  ],
+  "outputs": {
+    "report": "D:\\rose_data\\博士阶段\\research_complate\\work1\\literature_tool\\reports\\reaction_catalyst_ml_transfer\\20260720_140357\\report.md",
+    "json": "D:\\rose_data\\博士阶段\\research_complate\\work1\\literature_tool\\reports\\reaction_catalyst_ml_transfer\\20260720_140357\\papers.json",
+    "tsv": "D:\\rose_data\\博士阶段\\research_complate\\work1\\literature_tool\\reports\\reaction_catalyst_ml_transfer\\20260720_140357\\papers.tsv"
+  }
+}

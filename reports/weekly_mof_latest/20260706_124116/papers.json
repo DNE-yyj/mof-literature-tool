@@ -1,0 +1,136 @@
+[
+  {
+    "title": "AI-integrated manufacturing of advanced materials for energy storage, catalysis, and environmental applications",
+    "authors": [
+      "Sreenivas Punna",
+      "Suvarshitha Pusuluru",
+      "Madhumita Ravikumar",
+      "Farid Menaa"
+    ],
+    "journal": "Frontiers in Chemistry",
+    "publication_date": "2026-07-03",
+    "year": 2026,
+    "doi": "https://doi.org/10.3389/fchem.2026.1864044",
+    "url": "https://doi.org/10.3389/fchem.2026.1864044",
+    "abstract": "The incorporation of artificial intelligence (AI) into energy systems has become a transformative strategy for tackling global energy related challenges, particularly energy vulnerability (EVI). This work examines how AI contributes to mitigating EVI by evaluating its influence across several dimensions, including energy availability, operational efficiency, consumption patterns, renewable energy integration, and overall energy security. Based on insights derived from machine learning (ML) enabled developments in catalytic materials and CO 2 capture technologies, this study demonstrates how data-centric approaches expedite material discovery, refine energy processes, and strengthen system resilience. ML methodologies, including artificial neural networks (ANN), support vector regression (SVR), and ensemble learning techniques, exhibit strong predictive performance in estimating activation energies, adsorption properties, and catalytic efficiencies. These methods substantially decrease reliance on computationally intensive density functional theory (DFT) simulations, thereby enabling rapid identification of high-performance catalyst. Moreover, ML-assisted framework supports the detection of active catalytic sites, these optimization of electrocatalytic processes, and the design of materials for hydrogen evolution, CO 2 reduction, and ammonia synthesis. Simultaneously, ML applications in CO 2 capture systems particularly in metal-organic frameworks (MOFs) facilitate high throughput screening and predictive evaluation of adsorption capacity and structural behaviour. Through the application of quantitative structure-property relationships and feature importance analyses, ML models identify key variables governing CO 2 capture performance, thus lowering computational demands and accelerating material development. The study highlights the rise of integrated, closed-loop systems that combine ML, theoretically modelling, and automated experimentation to streamline catalyst development and carbon capture process. Collectively, the results indicate that AI-driven methodologies substantially improve the efficiency, sustainability, and scalability of advanced energy technologies. These developments not only help mitigate energy vulnerability but also promote the global shift toward low-carbon, resilient energy systems.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7167228378",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework adsorption machine learning density functional theory",
+      "metal-organic framework catalysis machine learning density functional theory",
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 13.466666666666667,
+    "tags": [
+      "active_learning",
+      "adsorption",
+      "catalysis",
+      "co2",
+      "dft",
+      "electrocatalysis",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof",
+      "separation"
+    ],
+    "takeaway": "The incorporation of artificial intelligence (AI) into energy systems has become a transformative strategy for tackling global energy related challenges, particularly energy vulnerability (EVI).",
+    "innovation": "The incorporation of artificial intelligence (AI) into energy systems has become a transformative strategy for tackling global energy related challenges, particularly energy vulnerability (EVI).",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  },
+  {
+    "title": "Pore Geometry–Driven Capture of Trace Aromatic Volatile Organic Compounds in Al-Based MOFs",
+    "authors": [
+      "A. O. Blokhina",
+      "Yutao Li",
+      "Iurii Dovgaliuk",
+      "Debanjan Chakraborty",
+      "Aysu Ozturk",
+      "Nency P. Domingues",
+      "Хип Zhang",
+      "Fatmah Mish Ebrahim",
+      "Bettina Baumgartner",
+      "Christian Serre",
+      "Georges Mouchaham",
+      "Berend Smit"
+    ],
+    "journal": "ACS Nano",
+    "publication_date": "2026-07-02",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acsnano.6c05710",
+    "url": "https://doi.org/10.1021/acsnano.6c05710",
+    "abstract": "High Resolution Image Download MS PowerPoint Slide Aromatic volatile organic compounds (VOCs) are toxic air pollutants that pose serious health risks even at trace concentrations. Their nonpolar character makes the design of efficient sorbents particularly challenging, as adsorption is governed mainly by weak dispersion forces. Here, we identify pore geometry as an effective structural descriptor for discovering metal–organic frameworks (MOFs) capable of efficient trace-level VOC capture. Screening a diverse set of MOFs revealed that one-dimensional channels with rhombic or square cross sections enhance host–guest interactions and promote strong affinity for aromatic molecules. Guided by this principle and sustainability-by-design criteria, we identify MIP-211(Al) (Materials from the Institute of Porous Materials of Paris) as a top performer with among the highest toluene uptake of 4.7 mmol g –1 at 0.0008 P / P 0 (31 ppm). This material combines excellent cycling stability, facile regeneration under vacuum, and scalable green synthesis. Synchrotron powder X-ray diffraction (SPXRD) and density functional theory (DFT) calculations confirm that rhombic pore geometry governs strong toluene affinity at trace amounts. Attenuated Total Reflectance Fourier Transform Infrared (ATR-FTIR) spectroscopy showed that MIP-211(Al) retains 60% of its performance up to 15% relative humidity. Applying pore geometry as a descriptor in a secondary screening identified a candidate with a toluene uptake of 3.6 mmol g –1 at 0.0008 P / P 0 (31 ppm) at dry conditions, with potential applicability up to 70% relative humidity. This study demonstrates the importance of pore geometry as a nanoscale parameter for efficient trace aromatic VOC adsorption.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7167062165",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework adsorption machine learning density functional theory",
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 13.455555555555556,
+    "tags": [
+      "adsorption",
+      "dft",
+      "h2",
+      "high_throughput",
+      "mof",
+      "porous_material",
+      "priority_journal",
+      "separation",
+      "water"
+    ],
+    "takeaway": "Here, we identify pore geometry as an effective structural descriptor for discovering metal–organic frameworks (MOFs) capable of efficient trace-level VOC capture.",
+    "innovation": "Here, we identify pore geometry as an effective structural descriptor for discovering metal–organic frameworks (MOFs) capable of efficient trace-level VOC capture.",
+    "limitations": "Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile."
+  },
+  {
+    "title": "Descriptor Adequacy as a Materials-Regime Principle in MOF Adsorption Machine Learning",
+    "authors": [
+      "Hossein Alimardani",
+      "Shayan Abaei",
+      "Mehrdad Asgari"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-07-03",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15002252/v2",
+    "url": "https://doi.org/10.26434/chemrxiv.15002252/v2",
+    "abstract": "Machine learning is changing how metal--organic frameworks (MOFs) are screened for gas storage and separation, but its reliability depends on a basic question: does the descriptor contain the physics that controls the adsorption property? Here we show that descriptor adequacy is not a universal property of a feature set, but a property of the materials regime being studied. Using a topology-held-out benchmark of 255939 MOFs and 27 adsorption targets covering uptake, working capacity, and selectivity, we identify when simple pore descriptors are sufficient and when local chemical information is needed. Pore geometry is highly transferable for high-pressure, volume-controlled adsorption, especially methane storage and hydrogen-rich pre-combustion conditions. Local chemistry becomes important for low-pressure CO 2 and CH 4 uptake and for separation-derived targets, where framework--guest interactions control adsorption preferences. We also find that good regression accuracy does not always give reliable discovery: post-combustion selectivity can show high R 2 while still missing many top-ranked candidates. These results provide a process-resolved guide for matching descriptor complexity to adsorption mechanism, topology transfer, and screening objective. More broadly, the study establishes descriptor adequacy as a materials-regime principle for MOF informatics.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7167268882",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 9.966666666666667,
+    "tags": [
+      "adsorption",
+      "force_field",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof",
+      "separation",
+      "uncertainty"
+    ],
+    "takeaway": "Machine learning is changing how metal--organic frameworks (MOFs) are screened for gas storage and separation, but its reliability depends on a basic question: does the descriptor contain the physics that controls the adsorption property?",
+    "innovation": "Machine learning is changing how metal--organic frameworks (MOFs) are screened for gas storage and separation, but its reliability depends on a basic question: does the descriptor contain the physics that controls the adsorption property?",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle."
+  }
+]

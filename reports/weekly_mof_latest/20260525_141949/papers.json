@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Modeling of CO2/CH4 Mixture Adsorption in Flexible Mg-MOF-74 via Machine-Learned Potentials",
+    "authors": [
+      "Ömer Tayfuroğlu",
+      "Seda Keskin"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-05-05",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15002721/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15002721/v1",
+    "abstract": "Metal-organic frameworks (MOFs), particularly Mg-MOF-74 with open metal sites, offer a promising platform for the selective adsorption of CO2 over CH4. However, accurately modeling multicomponent gas adsorption in flexible frameworks remains challenging. In this work, we developed a fragment-based machine-learned potential (MLP) trained on high-level density functional theory data (PBE-D4/def2-TZVP) to describe all intramolecular and intermolecular interactions between the components of CO2/CH4 mixture and Mg-MOF-74. By integrating this MLP with a combined molecular dynamic-grand canonical Monte Carlo (MD-GCMC) hybrid scheme, we captured both framework flexibility and adsorption thermodynamics, enabling simulations of competitive adsorption and diffusion in multicomponent systems. Our results demonstrate that fragment-based MLPs can accurately represent binary gas mixtures in MOFs and reveal the critical role of framework flexibility in governing adsorption and transport behavior.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7160335254",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework interatomic potential molecular dynamics adsorption"
+    ],
+    "citation_count": 0,
+    "score": 8.777777777777779,
+    "tags": [
+      "adsorption",
+      "co2",
+      "dft",
+      "gcmc",
+      "h2",
+      "md",
+      "mof",
+      "separation"
+    ],
+    "takeaway": "In this work, we developed a fragment-based machine-learned potential (MLP) trained on high-level density functional theory data (PBE-D4/def2-TZVP) to describe all intramolecular and intermolecular interactions between the components of CO2/CH4 mixture and Mg-MOF-74.",
+    "innovation": "In this work, we developed a fragment-based machine-learned potential (MLP) trained on high-level density functional theory data (PBE-D4/def2-TZVP) to describe all intramolecular and intermolecular interactions between the components of CO2/CH4 mixture and Mg-MOF-74.",
+    "limitations": "Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile."
+  }
+]

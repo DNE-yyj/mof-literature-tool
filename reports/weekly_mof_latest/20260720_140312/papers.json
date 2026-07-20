@@ -1,0 +1,130 @@
+[
+  {
+    "title": "The impact of spurious imaginary phonon modes on thermal properties of Metal-organic Frameworks",
+    "authors": [
+      "P.S. Kamath",
+      "Kristin Persson"
+    ],
+    "journal": "npj Computational Materials",
+    "publication_date": "2026-07-17",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s41524-026-02231-6",
+    "url": "https://doi.org/10.1038/s41524-026-02231-6",
+    "abstract": "Abstract Metal-organic Frameworks (MOFs) have emerged as potential candidates for direct air capture (DAC) of green house gases and water. Thermal properties of MOFs, such as their heat capacity, are used to determine the energy penalty associated with the adsorbent retrieval during the Temperature Swing Adsorption process. To aid exploration of the vast experimental design space of MOFs for such applications, computational methods like Density Functional Theory (DFT) or surrogate machine learning models trained on DFT data have been developed for obtaining phonon-derived heat capacities of MOFs. However, the high cost of explicit phonon computation in large and flexible nanoporous MOFs often necessitates the use of small supercells or lower convergence criteria which decrease predictive accuracy. These approximations often result in spurious imaginary phonon modes which are commonly ignored in practice. At present, there is no clear consensus in the literature on what magnitude of negative frequency or what fraction of imaginary modes can be considered acceptable. Here, we systematically demonstrate that spurious imaginary phonon modes can introduce substantial errors in heat capacity estimates, leading to incorrect ranking of MOFs in thermal-property-based screening. We further show that benchmarking machine learning interatomic potentials (MLIPs) against DFT datasets containing spurious imaginary modes can misrepresent models that predict physically meaningful phonon spectra for dynamically stable MOFs. Finally, we introduce a simple, rapid post-processing workflow that can be applied to standard phonon calculations to effectively correct heat capacity estimates and account for spurious imaginary modes in MOFs.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7169536540",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework adsorption machine learning density functional theory",
+      "metal-organic framework interatomic potential molecular dynamics adsorption",
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 15.966666666666667,
+    "tags": [
+      "adsorption",
+      "co2",
+      "dft",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "ml",
+      "mof",
+      "porous_material",
+      "priority_journal",
+      "separation"
+    ],
+    "takeaway": "Finally, we introduce a simple, rapid post-processing workflow that can be applied to standard phonon calculations to effectively correct heat capacity estimates and account for spurious imaginary modes in MOFs.",
+    "innovation": "Finally, we introduce a simple, rapid post-processing workflow that can be applied to standard phonon calculations to effectively correct heat capacity estimates and account for spurious imaginary modes in MOFs.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Data-Driven Design of Metal-Organic Frameworks for Photoelectrochemical Reactions",
+    "authors": [
+      "Hyunsoo Park",
+      "Tianshu Li",
+      "Ashna Jose",
+      "Seung‐Jae Shin",
+      "Aron Walsh"
+    ],
+    "journal": "ACS Energy Letters",
+    "publication_date": "2026-07-15",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acsenergylett.6c00550",
+    "url": "https://doi.org/10.1021/acsenergylett.6c00550",
+    "abstract": "High Resolution Image Download MS PowerPoint Slide Metal-organic frameworks (MOFs) are modular materials that are chemically versatile, offering vast design possibilities through the combination of metal clusters, organic ligands, and framework topologies. Traditionally utilized in gas storage and separation, the high porosity and tunable properties of MOFs position them as attractive candidates for (photo)electrochemical applications, including batteries, fuel cells, and solar-driven fuel conversion. We present a data-driven workflow integrating hybrid quantum chemical calculations with a multimodal AI model (MOFTransformer) to efficiently predict oxidation and reduction potentials for over 270,000 known and hypothetical MOFs. Through high-throughput screening, we identify MOFs with band-edge alignments that are thermodynamically compatible with coupled CO 2 -to-CO reduction and oxygen evolution, highlighting structural motifs and electronic properties for further investigation with significantly reduced computational effort compared to traditional approaches.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7168863599",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework catalysis machine learning density functional theory"
+    ],
+    "citation_count": 0,
+    "score": 8.944444444444445,
+    "tags": [
+      "battery",
+      "electrocatalysis",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof",
+      "multimodal",
+      "photocatalysis",
+      "porous_material",
+      "separation"
+    ],
+    "takeaway": "We present a data-driven workflow integrating hybrid quantum chemical calculations with a multimodal AI model (MOFTransformer) to efficiently predict oxidation and reduction potentials for over 270,000 known and hypothetical MOFs.",
+    "innovation": "We present a data-driven workflow integrating hybrid quantum chemical calculations with a multimodal AI model (MOFTransformer) to efficiently predict oxidation and reduction potentials for over 270,000 known and hypothetical MOFs.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Performance Benchmarking of MOF-Based Adsorbents for Organic Dye Removal: A PRISMA-Guided Bibliometric and Statistical Analysis",
+    "authors": [
+      "Arelly Montserrat Canton-Diaz",
+      "Juan Jose Alonso-Tijerina",
+      "Nancy Elizabeth Davila-Guzman"
+    ],
+    "journal": "Colorants",
+    "publication_date": "2026-07-14",
+    "year": 2026,
+    "doi": "https://doi.org/10.3390/colorants5030025",
+    "url": "https://doi.org/10.3390/colorants5030025",
+    "abstract": "This study presents a PRISMA-guided bibliometric and statistical analysis of MOF-based adsorbents for organic dye removal, covering publications from 2014 to 2026. A total of 59 studies were analyzed to evaluate research trends, material classification, and adsorption performance under diverse experimental conditions. The results revealed clear differences in adsorption behavior depending on dye type, molecular properties, and operational conditions, highlighting the key role of electrostatic interactions and solution chemistry. From a materials perspective, pristine MOFs dominated the literature; however, a transition toward functionalized and composite materials was identified, driven by the need to improve adsorption efficiency, selectivity, and stability. MIL-, UiO-, and ZIF-type frameworks were the most frequently investigated due to their balance between structural stability and adsorption performance. The analysis also identified critical limitations, particularly the inconsistent reporting of key experimental parameters, which limits comparability and hinders the identification of reliable structure–property relationships. Overall, this study provides a benchmarking framework supporting the rational design of MOF-based adsorbents for wastewater treatment applications.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7168234974",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 8.933333333333334,
+    "tags": [
+      "adsorption",
+      "high_throughput",
+      "mof",
+      "review",
+      "separation"
+    ],
+    "takeaway": "This study presents a PRISMA-guided bibliometric and statistical analysis of MOF-based adsorbents for organic dye removal, covering publications from 2014 to 2026.",
+    "innovation": "This study presents a PRISMA-guided bibliometric and statistical analysis of MOF-based adsorbents for organic dye removal, covering publications from 2014 to 2026.",
+    "limitations": "Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  }
+]
