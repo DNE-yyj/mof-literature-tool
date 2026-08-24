@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-08-24T02:36:11",
+  "profile": "materials_ml_transfer",
+  "from_date": "2023-08-25",
+  "paper_count": 30,
+  "queries": [
+    "materials machine learning foundation model crystal property prediction",
+    "materials graph neural network equivariant representation learning crystal",
+    "materials generative model diffusion inverse design crystal structure",
+    "machine learned interatomic potential active learning materials molecular dynamics",
+    "materials discovery Bayesian optimization active learning autonomous laboratory",
+    "self-supervised transfer learning materials property prediction small data",
+    "physics-informed machine learning symbolic regression materials descriptors",
+    "battery catalyst perovskite oxide polymer machine learning transferable model"
+  ],
+  "outputs": {
+    "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20260824_023611/report.md",
+    "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20260824_023611/papers.json",
+    "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20260824_023611/papers.tsv"
+  }
+}

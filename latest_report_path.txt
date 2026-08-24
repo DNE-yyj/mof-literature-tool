@@ -1,1 +1,1 @@
-reports\method_transfer_novelty\20260720_140312\report.md
+/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20260824_023606/report.md
