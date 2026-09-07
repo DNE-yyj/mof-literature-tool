@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Band Engineering of Benzothiadiazole‐Derived Metal‐Organic Frameworks for Photocatalytic Organic Transformations",
+    "authors": [
+      "Xin Li",
+      "Long‐Shuang Chen",
+      "Meng‐Hao Li",
+      "Ying‐Wei Yang"
+    ],
+    "journal": "National Materials",
+    "publication_date": "2026-09-04",
+    "year": 2026,
+    "doi": "https://doi.org/10.1002/nam2.70016",
+    "url": "https://doi.org/10.1002/nam2.70016",
+    "abstract": "ABSTRACT Metal‐organic frameworks (MOFs) have emerged as versatile platforms for photocatalysis, with their activity intrinsically governed by electronic structure. Parameters such as band alignment, redox potentials, and frontier orbital distributions regulate light absorption, charge separation efficiency, and interfacial reactivity. Among the available organic linkers, 2,1,3‐benzothiadiazole and its derivatives (BTID) have emerged as electron‐deficient building blocks that impart strong intramolecular charge‐transfer characteristics and tunable band structures. Incorporation of BTID units into MOF architectures improves visible‐light harvesting and extends excited‐state lifetimes, thereby enhancing photocatalytic efficiency. From a band‐structure‐oriented perspective, this review systematically discusses how linker design, metal node selection, and interfacial engineering collectively tailor the electronic properties of BTID‐based MOFs. Representative applications, including selective sulfoxidation, oxidative amine coupling, cross‐dehydrogenative coupling, and heterocycle synthesis, are analyzed to clarify mechanistic diversity. Density functional theory calculations and photoelectrochemical studies are integrated to establish clear correlations between structure, electronic properties, and catalytic performance, providing strategic guidance for the rational design of acceptor‐linker‐driven MOF photocatalysts.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7208823935",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework catalysis machine learning density functional theory"
+    ],
+    "citation_count": 0,
+    "score": 9.966666666666667,
+    "tags": [
+      "catalysis",
+      "dft",
+      "electrocatalysis",
+      "h2",
+      "mof",
+      "photocatalysis",
+      "review",
+      "separation"
+    ],
+    "takeaway": "ABSTRACT Metal‐organic frameworks (MOFs) have emerged as versatile platforms for photocatalysis, with their activity intrinsically governed by electronic structure.",
+    "innovation": "ABSTRACT Metal‐organic frameworks (MOFs) have emerged as versatile platforms for photocatalysis, with their activity intrinsically governed by electronic structure.",
+    "limitations": "Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics. Catalytic conclusions are likely thermodynamics-heavy unless kinetics or explicit environment are included.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  }
+]

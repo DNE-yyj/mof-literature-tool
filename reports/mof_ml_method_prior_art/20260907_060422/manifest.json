@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-08-24T02:36:35",
+  "generated_at": "2026-09-07T06:04:22",
   "profile": "mof_ml_method_prior_art",
-  "from_date": "2016-08-26",
-  "paper_count": 15,
+  "from_date": "2016-09-09",
+  "paper_count": 18,
   "queries": [
     "metal-organic framework graph neural network property prediction",
     "metal-organic framework foundation model deep learning materials",
@@ -15,8 +15,8 @@
     "metal-organic framework catalysis reaction-specific dataset machine learning active site descriptor"
   ],
   "outputs": {
-    "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20260824_023635/report.md",
-    "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20260824_023635/papers.json",
-    "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20260824_023635/papers.tsv"
+    "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20260907_060422/report.md",
+    "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20260907_060422/papers.json",
+    "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20260907_060422/papers.tsv"
   }
 }

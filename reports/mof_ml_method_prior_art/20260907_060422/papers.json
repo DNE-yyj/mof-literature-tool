@@ -1,0 +1,805 @@
+[
+  {
+    "title": "Computational and ML methods in MOF based supercapacitors - from mechanistic understanding to future materials design",
+    "authors": [
+      "Achal Siddharth Fulmali",
+      "Himanshu Sekhar Panda"
+    ],
+    "journal": "Journal of Materials Science Materials Theory",
+    "publication_date": "2026-08-29",
+    "year": 2026,
+    "doi": "https://doi.org/10.1186/s41313-026-00087-3",
+    "url": "https://doi.org/10.1186/s41313-026-00087-3",
+    "abstract": "Metal organic frameworks (MOFs) have emerged as promising electrode materials for supercapacitor (SC) due to their high surface areas, tunable porosity, and redox active sites. However, the vast chemical space of MOFs leads to millions of possible structures, makes experimental trial and error discovery inefficient. This review provides a focused perspective on how density functional theory (DFT) and machine learning (ML) are enabling the accelerated discovery and rational design of MOF-based SC electrodes. Key insights from DFT are discussed in relation to three critical performance descriptors as electrical conductivity, electrochemical and structural stability, and redox activity. In parallel, recent advances in ML-driven screening are reviewed, covering the development and use of large-scale MOF databases, descriptor engineering strategies, and predictive model architectures. Case studies demonstrating the successful integration of DFT and ML for identifying high-performance MOFs are highlighted in the review. Finally, the current limitations are analysed, including the discrepancy between idealized computational models and real polycrystalline electrodes, intrinsic trade-offs between conductivity and stability, and the need for interpretable and physics-informed ML models. Overall, this review outlines a computational roadmap for the rapid discovery and optimization of next-generation MOF-based SC electrodes. This is the comprehensive review on ML-driven prediction of electrochemical performance in MOF based electrode for SC applications. It integrates DFT-calculated electronic descriptors with ML models to discover hidden structure-property relationships. It identifies critical data gaps, model transferability issues, lack of dynamic ion-transport modelling in current studies. It proposed a multi-fidelity active learning framework combining DFT, ML and experiments for accelerated MOF discovery. It outlines standardized database protocols and explainable AI strategies to guide future high-performance MOF design.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7204621204",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework active learning Bayesian optimization materials discovery",
+      "metal-organic framework graph neural network property prediction",
+      "metal-organic framework machine learned interatomic potential molecular dynamics",
+      "metal-organic framework transfer learning self-supervised property prediction"
+    ],
+    "citation_count": 0,
+    "score": 13.4,
+    "tags": [
+      "active_learning",
+      "catalyst_descriptor",
+      "crystal",
+      "dft",
+      "electrocatalysis",
+      "high_throughput",
+      "ml",
+      "mof",
+      "physics_informed",
+      "porous_material",
+      "review",
+      "surrogate_model"
+    ],
+    "takeaway": "Key insights from DFT are discussed in relation to three critical performance descriptors as electrical conductivity, electrochemical and structural stability, and redox activity.",
+    "innovation": "Key insights from DFT are discussed in relation to three critical performance descriptors as electrical conductivity, electrochemical and structural stability, and redox activity.",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "uMOF: A Universal Database, Benchmark, and Machine Learning Interatomic Potentials for Metal-Organic Frameworks",
+    "authors": [
+      "Théo Jaffrelot Inizan",
+      "P.S. Kamath",
+      "Alin M. Elena",
+      "Kristin A. Persson"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-08-28",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2608.28100",
+    "url": "https://arxiv.org/abs/2608.28100",
+    "abstract": "Foundation machine learning interatomic potentials (MLIPs) deliver near-ab-initio accuracy at a fraction of the computational cost, yet their promise for Metal-organic Frameworks (MOFs) remains largely unrealized as large unit cells make first-principles training data expensive to generate, fine-tuned models are scarce, and experimentally grounded benchmarks are scarcer still. We introduce uMOF, a three-part contribution addressing this gap. First, we release the largest and most accurate density functional theory dataset for MOFs to date, computed at the r$^2$SCAN-D4 level of theory across 85524 configurations spanning 19950 unique frameworks and 79 elements, covering empty and gas-loaded structures, geometry optimizations, equations of state, and finite-temperature molecular dynamics. Second, we release a literature-mined benchmark of 3986 verified property values (3146 experimental) extracted from 626 papers by a seven-stage, checkpointed multi-pass large language model pipeline, linked to more than 650 crystallographic information files. Third, we release two universal MLIPs for MOFs, uMOF-MH and uMOF-POLAR, fine-tuned from two architecturally distinct MACE foundation models on the uMOF dataset. On near-equilibrium, ``Tier-1'' properties (bulk modulus, phonon-derived heat capacity) the uMOF models perform comparably to existing foundation and fine-tuned baselines. On harder, dynamics-sensitive properties like gas adsorption enthalpies via Widom insertion and adsorption isotherms, the uMOF models outperform every baseline we test, including MOF-specialized gas-capture models trained on datasets up to three orders of magnitude larger, cutting error by more than 80% to within experimental uncertainty. We trace this advantage to the physical diversity of the training data and to level of theory where a small (1.7%) fraction of MD simulations is decisive for MLIP stability.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7204807328",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework graph neural network property prediction",
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 12.38888888888889,
+    "tags": [
+      "adsorption",
+      "crystal",
+      "dft",
+      "equivariant_ml",
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "ml",
+      "mof",
+      "separation",
+      "uncertainty"
+    ],
+    "takeaway": "We introduce uMOF, a three-part contribution addressing this gap.",
+    "innovation": "We introduce uMOF, a three-part contribution addressing this gap.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Mesoporous single-atom and nano-confined catalysts: Enabling low-energy integrated CO2 capture and direct conversion",
+    "authors": [
+      "Fazal Raziq",
+      "Sharafat Ali",
+      "Rajwali Khan",
+      "Ashfaq Ahmad",
+      "Muhammad Shoaib",
+      "Asad Ali",
+      "Muhammad Ashraf",
+      "Sher Ali",
+      "Ahmad Bahgat Radwan",
+      "Mohmed Abdellah",
+      "Noora H Al-Qahtani"
+    ],
+    "journal": "Materials Today Sustainability",
+    "publication_date": "2026-09-03",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.mtsust.2026.101445",
+    "url": "https://doi.org/10.1016/j.mtsust.2026.101445",
+    "abstract": "Mesoporous architecture confinement engineering has become an effective approach to address major limitations of single-atom catalysts (SACs) and integrated CO 2 capture-conversion systems. These techniques may provide enhanced control of the spatial distribution, local microenvironment and pore size to attain high activity, selectivity and permanence in photocatalytic and electrocatalytic CO 2 reduction. The recent trends in confinement mechanisms that have been highlighted in the present paper include two step space-confinement pyrolysis, hierarchical porosity in MOFs, single-micelle assembly and defect engineering. These methods enable the fabrication of well-defined nanoreactors, allowing synergistic reactions between photoactive and catalytic species, cascade reactions, tremendous charge separation and carrier lifetimes. Mesoporous supports with both single-atom and dual-atom sites are given special consideration, where tunable coordination environments and dynamic structural evolution under operating conditions play critical roles in dictating selectivity to high value C 1 or C 2 products at low over potentials. When mesoporous SAC systems are compared with traditional amine-based sorbents and nanoparticle catalysts, it can be seen that mesoporous materials have clear advantages in regard to regeneration energy, humidity resistance, cycling stability, and combined capture-conversion efficiency. Physical confinement and electronic modulation (with a state-of-the-art inverse design and Bayesian optimization) offers the paradigm of scalable, energy-efficient use of CO 2 . Finally, low active-site density, long-term stability, and industrial translation have been identified as key issues and a roadmap to the future that incorporates the development of hierarchical multi-scale porous structures to host both SACs, full CCUS loops with renewables, and technologies that produce negative emissions using the sun as the power source have been discussed.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7207746468",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework active learning Bayesian optimization materials discovery",
+      "metal-organic framework graph neural network property prediction"
+    ],
+    "citation_count": 0,
+    "score": 10.955555555555556,
+    "tags": [
+      "active_learning",
+      "catalysis",
+      "co2",
+      "electrocatalysis",
+      "generative_model",
+      "h2",
+      "mof",
+      "photocatalysis",
+      "porous_material",
+      "review",
+      "separation",
+      "water"
+    ],
+    "takeaway": "Mesoporous architecture confinement engineering has become an effective approach to address major limitations of single-atom catalysts (SACs) and integrated CO 2 capture-conversion systems.",
+    "innovation": "Mesoporous architecture confinement engineering has become an effective approach to address major limitations of single-atom catalysts (SACs) and integrated CO 2 capture-conversion systems.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Generalized Machine Learning Potentials for Predicting Low-Pressure Water Adsorption in Flexible Al-Based Metal–Organic Frameworks",
+    "authors": [
+      "Yutao Li",
+      "Xiaoqi Zhang",
+      "Xin Jin",
+      "Berend Smit"
+    ],
+    "journal": "Journal of Chemical Theory and Computation",
+    "publication_date": "2026-08-25",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acs.jctc.6c01162",
+    "url": "https://doi.org/10.1021/acs.jctc.6c01162",
+    "abstract": "Abstract Metal–organic frameworks (MOFs) are promising materials for adsorption and separation, but accurately predicting water adsorption remains a major challenge in molecular simulation. Classical force fields, such as UFF, often fail to capture the strong, directional hydrogen-bonding interactions between water and MOFs, while high-throughput density functional theory (DFT) calculations are computationally prohibitive. Here, we develop a transferable machine-learning potential (MLP) for water adsorption in Al-based MOFs by fine-tuning the pretrained MACE foundation model. Using a data set of 420 Al-MOFs with diverse chemical environments, we show that accurate prediction of water adsorption thermodynamics requires not only an improved description of water–framework interactions but also explicit treatment of framework flexibility. The resulting model reproduces experimental heats of adsorption and Henry coefficients for a series of benchmark Al-MOFs and achieves DFT-level accuracy across more than 400 Al-MOFs. Analysis of MIL-160 establishes practical accuracy requirements of approximately 10 kJ mol–1 in total energies and 40 meV Å–1 in atomic forces for reliable adsorption thermodynamics. Compared with DFT-level predictions, UFF underestimates water adsorption enthalpies by more than 10 kJ mol–1 for 74% of the materials studied. In addition, the MLP identifies lower-energy framework configurations than previously reported DFT-optimized structures, highlighting the importance of enhanced configurational sampling. These results demonstrate that foundation-model-based machine-learning potentials can enable DFT-accurate, high-throughput screening of water adsorption in flexible MOFs.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7204766173",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 10.355555555555554,
+    "tags": [
+      "adsorption",
+      "dft",
+      "equivariant_ml",
+      "force_field",
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "ml",
+      "mof",
+      "separation",
+      "transfer_learning",
+      "water"
+    ],
+    "takeaway": "Classical force fields, such as UFF, often fail to capture the strong, directional hydrogen-bonding interactions between water and MOFs, while high-throughput density functional theory (DFT) calculations are computationally prohibitive.",
+    "innovation": "Classical force fields, such as UFF, often fail to capture the strong, directional hydrogen-bonding interactions between water and MOFs, while high-throughput density functional theory (DFT) calculations are computationally prohibitive.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Active Sites in Motion: Principles, Materials Platforms, and Sustainable Applications in Heterogeneous Catalysis",
+    "authors": [
+      "John Sackey",
+      "Nana Abena Owusuwaa Ansah",
+      "Mohammed Islam Tahseen",
+      "Nelson Donkor"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-08-30",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15008045/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15008045/v1",
+    "abstract": "Heterogeneous catalysis stands as a cornerstone of modern chemical science, underpinning the sustainable production of fuels, chemicals, and materials across industries ranging from petroleum refining to environmental protection. This review provides a comprehensive, entry-level guide to the current frontiers of heterogeneous catalysis, structured to move from fundamental principles to advanced materials, characterization methodologies, and real-world applications. We frame the discussion around three linked questions: What is the active site? How is it measured under working conditions? And how can it be rationally designed for sustainable chemistry? Beginning with surface phenomena and classic kinetic frameworks, we examine the evolving conceptual landscape of active sites from isolated single atoms and dual-atom ensembles to dynamic, defect-rich interfaces that restructure under reaction conditions. A critical exposition of operando and in situ characterization methods reveals how the field is transitioning from static, ex situ descriptions to dynamic, site-resolved understanding. We then survey frontier materials platforms, including zeolites, metal–organic frameworks (MOFs), metal oxides, single-atom catalysts, and carbon-based systems, illustrating how synthesis strategies such as defect engineering, confinement, and interfacial tuning enable precise control over reactivity and selectivity. These materials foundations are linked to sustainable reaction classes in biomass valorization, CO2 utilization, green synthesis, and energy conversion. We further discuss the emerging role of computational modeling, machine learning, and knowledge graphs in accelerating catalyst discovery, alongside the pressing need for reproducibility and standardized benchmarking. Throughout, we emphasize the integration of site-specific characterization, theoretical insight, and sustainability-driven objectives.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7204797810",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework catalysis reaction-specific dataset machine learning active site descriptor"
+    ],
+    "citation_count": 0,
+    "score": 9.911111111111111,
+    "tags": [
+      "catalysis",
+      "co2",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof",
+      "oxide",
+      "review",
+      "separation",
+      "zeolite"
+    ],
+    "takeaway": "Heterogeneous catalysis stands as a cornerstone of modern chemical science, underpinning the sustainable production of fuels, chemicals, and materials across industries ranging from petroleum refining to environmental protection.",
+    "innovation": "Heterogeneous catalysis stands as a cornerstone of modern chemical science, underpinning the sustainable production of fuels, chemicals, and materials across industries ranging from petroleum refining to environmental protection.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Discovering Physically Interpretable Mathematical Expression for Predicting CO2 Adsorption in Metal-Organic Frameworks via Machine Learning-Symbolic Regression",
+    "authors": [
+      "Yimin Shao",
+      "Shengluo Ma",
+      "Shenghong Ju",
+      "Yijun Shi",
+      "Wei Li"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-08-15",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2608.14990",
+    "url": "https://arxiv.org/abs/2608.14990",
+    "abstract": "This work presents a machine learning-symbolic regression (ML-SR) strategy to develop a physically interpretable formula for predicting low pressure CO2 adsorption capacity in hypothetical metal-organic frameworks (hMOFs). Four ML models were trained on a small dataset of 1,000 samples, and five key descriptors-largest cavity diameter, pore limiting diameter, void fraction, gravimetric surface area, and number of hydrogen atoms-were identified through SHAP and feature importance analyses. Symbolic regression was then employed to derive a concise adsorption formula, Q=aA, where a represents an adsorption baseline (mmol/g) and A is a dimensionless adsorption number incorporating four structural descriptors. We interpret A as the ratio between an adsorption binding force and a diffusion driving force, revealing how pore topology and surface chemistry jointly influence adsorption. Validation against a comprehensive dataset of 137,652 hMOFs demonstrates that this formula achieves over 70% prediction accuracy for 62,448 structures, confirming strong applicability within defined structural and operational ranges. Unlike conventional black box ML models, the proposed physics-guided expression enables efficient prediction and provides clearer insight into adsorption mechanisms.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7203667337",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 0,
+    "score": 9.744444444444444,
+    "tags": [
+      "adsorption",
+      "catalyst_descriptor",
+      "co2",
+      "h2",
+      "md",
+      "ml",
+      "mof",
+      "symbolic_regression",
+      "transfer_learning"
+    ],
+    "takeaway": "This work presents a machine learning-symbolic regression (ML-SR) strategy to develop a physically interpretable formula for predicting low pressure CO2 adsorption capacity in hypothetical metal-organic frameworks (hMOFs).",
+    "innovation": "This work presents a machine learning-symbolic regression (ML-SR) strategy to develop a physically interpretable formula for predicting low pressure CO2 adsorption capacity in hypothetical metal-organic frameworks (hMOFs).",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Smart Catalyst Design: Integrating Structure–Activity Relationships with Computational and Data-Driven Approaches",
+    "authors": [
+      "Ramandeep Singh Ramandeep Singh",
+      "Rekha Rana Rekha Rana",
+      "Subhi Sharma Subhi Sharma",
+      "Jeewanjot Singh Jeewanjot Singh",
+      "Isha dhiman Isha dhiman",
+      "Sahibpreet Singh Sahibpreet Singh",
+      "Aubair Manzoor Wani Aubair Manzoor Wani"
+    ],
+    "journal": "International Journal of Creative and Open Research in Engineering and Management",
+    "publication_date": "2026-04-22",
+    "year": 2026,
+    "doi": "https://doi.org/10.55041/ijcope.v2i4.571",
+    "url": "https://doi.org/10.55041/ijcope.v2i4.571",
+    "abstract": "Similar rational design of catalysts is a paradigm shift of the old-fashioned trial and error discovery to the predictive mechanism-oriented development of catalytic systems with improved activity, selectivity and stability. This review article reviews the current state of catalyst design in many related aspects: active site engineering, at both the atomic and molecular scale, improved structure-activity relationship (SAR) studies through operando characterization methods, computational and machine learning methods of catalyst screening and optimization, and creating sustainable catalytic processes, with respect to the principles of green chemistry. We critically examine recent advances in single-atom catalysts (SACs), metal-organic frameworks (MOFs), defect-engineered materials, and bifunctional catalytic systems and how interdisciplinary integration of chemistry, materials science, and chemical engineering has spurred this development. Special attention is given to the emerging approaches based on the exploitation of designer-like methods, high-throughput experimentation, and data-driven approaches, to explore huge compositional and structural spaces. The review is concluded with a prospective outlook of the persisting challenges and opportunities such as catalyst design of electrochemical reduction of CO2, biomass valorization, and ambient-condition fixation of nitrogen. Keywords catalyst design, structure-activity relationships, single-atom catalysts, computational catalysis, active site engineering, green catalysis, machine learning, operando characterization",
+    "type": "article",
+    "source_id": "https://openalex.org/W7155227880",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 0,
+    "score": 9.466666666666667,
+    "tags": [
+      "catalysis",
+      "catalyst_descriptor",
+      "co2",
+      "electrocatalysis",
+      "high_throughput",
+      "ml",
+      "mof",
+      "review",
+      "separation"
+    ],
+    "takeaway": "Special attention is given to the emerging approaches based on the exploitation of designer-like methods, high-throughput experimentation, and data-driven approaches, to explore huge compositional and structural spaces.",
+    "innovation": "Special attention is given to the emerging approaches based on the exploitation of designer-like methods, high-throughput experimentation, and data-driven approaches, to explore huge compositional and structural spaces.",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Machine learning approach for MOF-based photocatalytic CO2 reduction to fuels",
+    "authors": [
+      "Udit Madhusoodan",
+      "M.R. Pinto",
+      "S. Shanmuga Priya",
+      "I. Thirunavukkarasu",
+      "K. Sudhakar",
+      "Muhammad Tahir"
+    ],
+    "journal": "Energy Conversion and Management X",
+    "publication_date": "2026-09-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.ecmx.2026.102268",
+    "url": "https://doi.org/10.1016/j.ecmx.2026.102268",
+    "abstract": "Atmospheric CO 2 concentrations now exceeding 420 ppm are accelerating global warming, prompting urgent interest in solar-driven CO 2 conversion as a carbon–neutral fuel production strategy. Among emerging photocatalyst platforms, Metal-Organic Frameworks (MOFs) offer exceptional tunability through their designable organic linkers, metal ions and porous structure. Yet the complex, nonlinear relationships between their structural properties and catalytic performance remain poorly understood. Herein, we present a machine learning framework trained on 417 experimental data points compiled from the MOF-based photocatalytic CO 2 reduction literature. The dataset was randomly split into training (80%) and testing (20%) to predict and interpret the formation yields of four target products: CH 3 OH, HCOOH, CO, and CH 4 . Six tree-based ensemble models namely CatBoost, XGBoost, LightGBM, GBDT, Random Forest, and AdaBoost, were systematically compared across six performance metrics. SMOGN Augmentation was applied only to the training set. CatBoost model achieved a training R 2 of 0.988 with an RMSE of 50.21, while maintaining strong generalization on the independent test set with a test R 2 of 0.966 and an RMSE of 83.59. Furthermore, validation using an independent dataset also confirmed the excellent performance of the CatBoost model, yielding an R 2 of 0.996 with an RMSE of 30.15 for the training set and an R 2 of 0.976 with an RMSE of 70.07 for the test set. CatBoost was selected for downstream interpretation using SHAP (SHapley Additive exPlanations) analysis. SHAP enabled the quantitative identification of the catalyst properties and reaction conditions that are strongly associated with product formation. These findings establish an interpretable, data-driven roadmap for the rational design of MOF photocatalysts, enabling targeted optimization of both activity and product selectivity for sustainable solar fuel production.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7204970232",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework catalysis reaction-specific dataset machine learning active site descriptor",
+      "metal-organic framework graph neural network property prediction",
+      "metal-organic framework transfer learning self-supervised property prediction"
+    ],
+    "citation_count": 0,
+    "score": 8.933333333333334,
+    "tags": [
+      "catalysis",
+      "co2",
+      "h2",
+      "ml",
+      "mof",
+      "photocatalysis",
+      "review",
+      "separation",
+      "uncertainty"
+    ],
+    "takeaway": "Herein, we present a machine learning framework trained on 417 experimental data points compiled from the MOF-based photocatalytic CO 2 reduction literature.",
+    "innovation": "Herein, we present a machine learning framework trained on 417 experimental data points compiled from the MOF-based photocatalytic CO 2 reduction literature.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "AI-integrated manufacturing of advanced materials for energy storage, catalysis, and environmental applications",
+    "authors": [
+      "Sreenivas Punna",
+      "Suvarshitha Pusuluru",
+      "Madhumita Ravikumar",
+      "Farid Menaa"
+    ],
+    "journal": "Frontiers in Chemistry",
+    "publication_date": "2026-07-03",
+    "year": 2026,
+    "doi": "https://doi.org/10.3389/fchem.2026.1864044",
+    "url": "https://doi.org/10.3389/fchem.2026.1864044",
+    "abstract": "The incorporation of artificial intelligence (AI) into energy systems has become a transformative strategy for tackling global energy related challenges, particularly energy vulnerability (EVI). This work examines how AI contributes to mitigating EVI by evaluating its influence across several dimensions, including energy availability, operational efficiency, consumption patterns, renewable energy integration, and overall energy security. Based on insights derived from machine learning (ML) enabled developments in catalytic materials and CO 2 capture technologies, this study demonstrates how data-centric approaches expedite material discovery, refine energy processes, and strengthen system resilience. ML methodologies, including artificial neural networks (ANN), support vector regression (SVR), and ensemble learning techniques, exhibit strong predictive performance in estimating activation energies, adsorption properties, and catalytic efficiencies. These methods substantially decrease reliance on computationally intensive density functional theory (DFT) simulations, thereby enabling rapid identification of high-performance catalyst. Moreover, ML-assisted framework supports the detection of active catalytic sites, these optimization of electrocatalytic processes, and the design of materials for hydrogen evolution, CO 2 reduction, and ammonia synthesis. Simultaneously, ML applications in CO 2 capture systems particularly in metal-organic frameworks (MOFs) facilitate high throughput screening and predictive evaluation of adsorption capacity and structural behaviour. Through the application of quantitative structure-property relationships and feature importance analyses, ML models identify key variables governing CO 2 capture performance, thus lowering computational demands and accelerating material development. The study highlights the rise of integrated, closed-loop systems that combine ML, theoretically modelling, and automated experimentation to streamline catalyst development and carbon capture process. Collectively, the results indicate that AI-driven methodologies substantially improve the efficiency, sustainability, and scalability of advanced energy technologies. These developments not only help mitigate energy vulnerability but also promote the global shift toward low-carbon, resilient energy systems.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7167228378",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 2,
+    "score": 8.865278955334777,
+    "tags": [
+      "active_learning",
+      "adsorption",
+      "catalysis",
+      "catalyst_descriptor",
+      "co2",
+      "dft",
+      "electrocatalysis",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof",
+      "separation"
+    ],
+    "takeaway": "The incorporation of artificial intelligence (AI) into energy systems has become a transformative strategy for tackling global energy related challenges, particularly energy vulnerability (EVI).",
+    "innovation": "The incorporation of artificial intelligence (AI) into energy systems has become a transformative strategy for tackling global energy related challenges, particularly energy vulnerability (EVI).",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Predicting CO₂ adsorption in Cu- and Zn-metal-organic frameworks using a permutation-invariant deep learning framework",
+    "authors": [
+      "Jaka Fajar Fatriansyah",
+      "Rayhan Hagel Safa",
+      "Sharen Ardyana Khintani",
+      "Andiko Putra Pratama Krisdiawan",
+      "Agrin Febrian Pradana",
+      "Rama Oktavian",
+      "Agus Setiawan",
+      "Ratna Ediati",
+      "Siti Norasmah Surip"
+    ],
+    "journal": "Next Materials",
+    "publication_date": "2026-08-22",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.nxmate.2026.103167",
+    "url": "https://doi.org/10.1016/j.nxmate.2026.103167",
+    "abstract": "A deep-learning framework that predicts CO 2 uptake in Metal-organic frameworks (MOFs) has been proposed. MOFs are promising material adsorbents for carbon dioxide (CO 2 ) capture due to their tunable porosity and surface chemistry. However, their wide range of structural variation rendering experimental screening laborious if not impractical. The proposed framework combines string-based chemical descriptors (SMILES and SELFIES, with one-hot and ordinal encodings) with physical descriptors (pore-limiting diameter, largest cavity diameter, gravimetric and volumetric surface areas, void fraction, topology, and catenation), and incorporating a permutation-invariant aggregator over multiple MOFs linkers. Three deep learning architectures: Multi-Layer Perceptron (MLP), Convolutional Neural Network (CNN), and Long Short-Term Memory (LSTM) were trained and evaluated on the Cu-MOF and Zn-MOF subsets of the MOFX-DB database. The statistical differences in predictive accuracy were assessed using the Diebold–Mariano (DM) test. Chemical descriptors alone yielded coefficient of determination R² below 14% because three-dimensional structural information is lost in string encodings but combining SMILES one-hot encoding with physical descriptors increased R² to 87.07–87.90% for Cu-MOF and 83.50–83.61% for Zn-MOF, with the permutation-invariant aggregator contributing significant improvement gains (from 1% up to 14%). DM testing showed that, for Cu-MOF, the three architectures are statistically equivalent, whereas for Zn-MOF MLP and CNN significantly outperformed LSTM. Training on a combined multi-pressure dataset (0.01–2.5 bar) further improved performance to R² ≥ 0.976. Case-study isotherm reconstructions of hMOF structures yielded R² = 0.9927 for a Cu-MOF (hMOF-5077787) and R² = 0.9991 with average relative errors below 3% above 0.05 bar for Zn-MOF. The results demonstrated the proposed framework application as a rapid screening tool across realistic operating conditions for post-combustion CO 2 capture.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7204008035",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework active learning Bayesian optimization materials discovery",
+      "metal-organic framework generative model inverse design machine learning"
+    ],
+    "citation_count": 0,
+    "score": 8.822222222222223,
+    "tags": [
+      "adsorption",
+      "co2",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof",
+      "oxide",
+      "porous_material",
+      "separation"
+    ],
+    "takeaway": "The proposed framework combines string-based chemical descriptors (SMILES and SELFIES, with one-hot and ordinal encodings) with physical descriptors (pore-limiting diameter, largest cavity diameter, gravimetric and volumetric surface areas, void fraction, topology, and catenation), and incorporating a permutation-invariant aggregator over multiple MOFs linkers.",
+    "innovation": "The proposed framework combines string-based chemical descriptors (SMILES and SELFIES, with one-hot and ordinal encodings) with physical descriptors (pore-limiting diameter, largest cavity diameter, gravimetric and volumetric surface areas, void fraction, topology, and catenation), and incorporating a permutation-invariant aggregator over multiple MOFs linkers.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Fast Isotropic Li-Ion Diffusion in Zeolitic Imidazolate Framework Glass Electrolytes for Batteries",
+    "authors": [
+      "Yong Li",
+      "Tao Du",
+      "Timothée Jamin",
+      "Zhencai Li",
+      "Kasper Tolborg",
+      "Yuanzheng Yue",
+      "Morten M. Smedskjaer"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-08-07",
+    "year": 2026,
+    "doi": null,
+    "url": "https://arxiv.org/abs/2608.06902",
+    "abstract": "All-solid-state lithium batteries require solid electrolytes that combine rapid room-temperature ion transport with mechanical robustness and interfacial compatibility. Zeolitic imidazolate framework (ZIF) glasses, with ZIFs being a sub-set of metal-organic frameworks, offer an attractive yet relatively underexplored platform because they combine an grainboundary-free and amorphous topology with chemically tunable frameworks. Here, we reveal that structural disorder unlocks fast and isotropic lithium diffusion in ZIF glasses. This is realized by using a machine learning interatomic potential to simulate Li+ transport in crystalline and glassy ZIF-4 and ZIF-62. Structural disorder reduces the activation energy for Li+ migration from ~0.35 eV to 0.16 eV and increases the extrapolated room-temperature diffusion coefficient by more than one order of magnitude for ZIF-4 and nearly sevenfold for ZIF-62. Analyses of non-Gaussian dynamics and van Hove correlation functions reveal that Li+ diffusion in crystalline ZIFs occurs via rare, dynamically heterogeneous hopping events among well-defined cages, whereas Li+ diffusion in glassy ZIFs is more homogeneous, continuous, and Fickian-like, benefiting from a wide distribution of coordination geometries and migration barriers. Li+ diffusion in crystalline ZIFs is strongly anisotropic, reflecting that ordered orientations of imidazolate and benzimidazolate rings impose distinct energy barriers along different crystallographic directions. Upon vitrification, these ring orientations become randomized, and hence, the diffusion of Li+ becomes isotropic or near-isotropic. These findings imply that well-designed metal-organic framework glasses are a promising candidate as high-performance solid-state electrolytes.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7202230971",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 8.655555555555555,
+    "tags": [
+      "battery",
+      "crystal",
+      "electrolyte",
+      "h2",
+      "interatomic_potential",
+      "md",
+      "ml",
+      "mof"
+    ],
+    "takeaway": "This is realized by using a machine learning interatomic potential to simulate Li+ transport in crystalline and glassy ZIF-4 and ZIF-62.",
+    "innovation": "This is realized by using a machine learning interatomic potential to simulate Li+ transport in crystalline and glassy ZIF-4 and ZIF-62.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Extend training to guest-loaded, distorted, and diffusion-transition configurations. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "GFN1-xTB-Assisted Machine Learning for Electronic Structure Screening of Metal–Organic Frameworks",
+    "authors": [
+      "Ashna Jose",
+      "Aron Walsh"
+    ],
+    "journal": "Journal of Chemical Theory and Computation",
+    "publication_date": "2026-08-11",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acs.jctc.6c00979",
+    "url": "https://doi.org/10.1021/acs.jctc.6c00979",
+    "abstract": "Metal-organic frameworks (MOFs) are versatile materials with tunable crystal structures, morphologies, and chemistries, offering diverse physical and chemical properties. Although typically electrically insulating, specific combinations of organic and inorganic components can impart electrical conductivity to MOFs. The virtually limitless chemical space of MOFs, however, presents a significant challenge in identifying optimal candidates for various applications. Although density functional theory (DFT) can probe their electronic structure, its high computational cost hinders the discovery of novel electroactive MOFs using machine learning due to limited data. To tackle these challenges, a semiempirical extended tight-binding approach (GFN1-xTB) is employed to compute the electronic properties of a dataset of MOFs, and it is shown that GFN1-xTB approximates MOF band gaps well, as compared to semilocal DFT. These data are used to train an interpretable Δ-learning model that predicts the difference between low- and high-fidelity band gaps, given by xTB and DFT data at the hybrid level, respectively. This model outperforms direct models trained using only the DFT values. The Δ-learning model also outperforms models with deep-learning architecture, fine-tuned on our custom dataset to predict the band gaps of MOFs. With limited high-quality DFT band gaps, taking advantage of Δ-learning using low-cost GFN1-xTB leads to better predictions than relying on DFT data alone.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7202162768",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework active learning Bayesian optimization materials discovery"
+    ],
+    "citation_count": 0,
+    "score": 8.2,
+    "tags": [
+      "crystal",
+      "dft",
+      "high_throughput",
+      "ml",
+      "mof"
+    ],
+    "takeaway": "Metal-organic frameworks (MOFs) are versatile materials with tunable crystal structures, morphologies, and chemistries, offering diverse physical and chemical properties.",
+    "innovation": "Metal-organic frameworks (MOFs) are versatile materials with tunable crystal structures, morphologies, and chemistries, offering diverse physical and chemical properties.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.",
+    "next_steps": "Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Green metal–organic frameworks for circular soil remediation through pollutant sequestration and nutrient regeneration",
+    "authors": [
+      "Irfan Haidri",
+      "Aneeza Ishfaq",
+      "Athakorn Promwee",
+      "Faisal Mahmood"
+    ],
+    "journal": "Discover Green Chemistry",
+    "publication_date": "2026-09-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1007/s44509-026-00032-0",
+    "url": "https://doi.org/10.1007/s44509-026-00032-0",
+    "abstract": "Agricultural soils are increasingly threatened by contamination from pesticides, herbicides, and potentially toxic metals, posing significant risks to food security, ecosystem functioning, and long-term agricultural sustainability. Conventional remediation strategies primarily focus on contaminant removal but often fail to promote resource recovery and soil regeneration. Metal–organic frameworks (MOFs) have emerged as versatile materials capable of addressing both environmental remediation and nutrient management challenges within a green and circular chemistry framework. Recent advances demonstrate that MOFs can achieve contaminant removal efficiencies exceeding 90% and pesticide loading capacities of up to 90.79%, highlighting their potential as highly effective remediation materials. Beyond pollutant sequestration, MOFs undergo microbial and environmental transformations that facilitate the gradual release of plant-essential nutrients, including phosphorus and iron, thereby enhancing nutrient-use efficiency, supporting nutrient recycling, and improving plant performance. Unlike previous reviews that primarily discuss MOFs either as adsorbents for environmental remediation or as carriers for agrochemical delivery, this review presents an integrated perspective on MOFs as regenerative materials that connect pollutant sequestration with nutrient regeneration through biologically mediated transformation. It brings together recent developments in the field of MOF–microbiome interactions, microbial degradation pathways, nutrient recycling, and circular soil remediation in a single conceptual framework. Furthermore, this review identifies critical knowledge gaps related to field-scale validation, standardized environmental risk assessment, scalable green synthesis, economic feasibility, and the long-term fate of MOF transformation products. By integrating these emerging research directions, this review may provides a roadmap for developing next-generation MOF technologies for resilient and circular agricultural systems.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7204965149",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework transfer learning self-supervised property prediction"
+    ],
+    "citation_count": 0,
+    "score": 7.933333333333334,
+    "tags": [
+      "adsorption",
+      "h2",
+      "mof",
+      "review",
+      "uncertainty"
+    ],
+    "takeaway": "Agricultural soils are increasingly threatened by contamination from pesticides, herbicides, and potentially toxic metals, posing significant risks to food security, ecosystem functioning, and long-term agricultural sustainability.",
+    "innovation": "Agricultural soils are increasingly threatened by contamination from pesticides, herbicides, and potentially toxic metals, posing significant risks to food security, ecosystem functioning, and long-term agricultural sustainability.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Metal–Organic Frameworks in Food Biotechnology: Opportunities, Challenges, and Future Perspectives for Probiotic Delivery, Precision Fermentation, and Circular Food Systems",
+    "authors": [
+      "Huy Loc Nguyen"
+    ],
+    "journal": "Nanomaterials",
+    "publication_date": "2026-07-31",
+    "year": 2026,
+    "doi": "https://doi.org/10.3390/nano16150946",
+    "url": "https://doi.org/10.3390/nano16150946",
+    "abstract": "Metal-organic frameworks (MOFs) have emerged as a versatile class of porous nanomaterials with exceptional surface area, tunable pore architectures, and customizable chemical functionalities, creating new opportunities for advanced food applications. Increasing demand for functional foods, precision fermentation, and sustainable bioprocessing has stimulated interest in MOFs as multifunctional platforms for microbial encapsulation, biocatalyst stabilization, and resource recovery. This review examines recent advances in the design and application of MOFs for probiotic delivery, precision fermentation, and circular food systems. The relationships between MOF structure, physicochemical properties, and functional performance are discussed in the context of probiotic encapsulation, protection against environmental and gastrointestinal stress, and controlled release within the intestinal tract. Emerging applications in precision fermentation are evaluated, including microbial immobilization, enzyme stabilization, metabolite separation, and bioprocess intensification. The potential of MOFs to enable circular food systems through the valorization of fermentation by-products, nutrient recovery, and waste-to-value strategies is also assessed. Despite significant progress, challenges related to biocompatibility, food-grade synthesis, scalability, regulatory approval, and long-term safety continue to limit industrial implementation. Future research directions include the development of sustainable and biodegradable MOFs, data-driven material design, and standardized evaluation frameworks to accelerate the translation of MOF-enabled technologies from laboratory research to commercial food applications.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7171919376",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework catalysis reaction-specific dataset machine learning active site descriptor"
+    ],
+    "citation_count": 0,
+    "score": 7.5777777777777775,
+    "tags": [
+      "catalysis",
+      "ml",
+      "mof",
+      "review",
+      "separation",
+      "uncertainty"
+    ],
+    "takeaway": "Metal-organic frameworks (MOFs) have emerged as a versatile class of porous nanomaterials with exceptional surface area, tunable pore architectures, and customizable chemical functionalities, creating new opportunities for advanced food applications.",
+    "innovation": "Metal-organic frameworks (MOFs) have emerged as a versatile class of porous nanomaterials with exceptional surface area, tunable pore architectures, and customizable chemical functionalities, creating new opportunities for advanced food applications.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Large language model agents accelerate inverse design of metal-organic frameworks for gas separation",
+    "authors": [
+      "Zhaolin Hu",
+      "Hehe Fan",
+      "Wangyihan Guo",
+      "Meng Xu",
+      "Chenhao Rao",
+      "Qiwei Yang",
+      "Yi Yang"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-07-12",
+    "year": 2026,
+    "doi": null,
+    "url": "https://arxiv.org/abs/2607.10559",
+    "abstract": "Metal-organic frameworks (MOFs) offer a highly modular platform for adsorptive gas separation, yet their vast reticular design space makes inverse design difficult under simultaneous constraints of chemical validity, separation performance, and structural diversity. Here, we present LEMO Agent, a large-language-model agent framework for closed-loop inverse design of gas-separation MOFs in MOFid space. LEMO Agent couples language-based candidate generation with MOFid standardization, explicit validity checking, Transformer-based property prediction, structured design memory, and multi-island exploration. Through iterative generate--validate--evaluate--remember cycles, the agent uses feedback from both successful and failed candidates to guide chemically constrained search across linker, metal, and topology choices. We evaluate LEMO Agent on CH$_4$/N$_2$ and CO$_2$/N$_2$ separation tasks. Compared with representative generative, optimization, and agentic baselines, LEMO Agent enriches high-performing candidates, improves predicted separation performance, and maintains broad chemical and topological diversity. Selected candidates are further reconstructed, evaluated by GCMC simulations, and passed through an experimental down-selection workflow based on chemical feasibility and ligand purchasability, leading to initial wet-lab synthesis and SEM characterization. These results demonstrate that large language model agents can serve as interpretable and scalable design engines for accelerating MOF discovery beyond conventional fixed-library screening.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7168433400",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 0,
+    "score": 7.366666666666667,
+    "tags": [
+      "active_learning",
+      "foundation_model",
+      "gcmc",
+      "generative_model",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof",
+      "separation"
+    ],
+    "takeaway": "Here, we present LEMO Agent, a large-language-model agent framework for closed-loop inverse design of gas-separation MOFs in MOFid space.",
+    "innovation": "Here, we present LEMO Agent, a large-language-model agent framework for closed-loop inverse design of gas-separation MOFs in MOFid space.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "ReadMOF: Structure-Free Semantic Embeddings from Systematic MOF Nomenclature for Machine Learning",
+    "authors": [
+      "Kewei Zhu",
+      "Cameron Wilson",
+      "Bartosz Mazur",
+      "Yi Li",
+      "Ashleigh M. Chester",
+      "Peyman Z. Moghadam"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-04-13",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15001888/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15001888/v1",
+    "abstract": "Systematic chemical names, such as IUPAC-style nomenclature for metal-organic frameworks (MOFs), contain rich structural and compositional information in a standardized textual format. Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs. By employing pretrained language models, ReadMOF converts systematic MOF names from the Cambridge Structural Database (CSD) into vector embeddings that closely represent traditional structure-based descriptors. These embeddings enable applications in materials informatics, including property prediction, similarity retrieval, and clustering, with performance comparable to geometry-dependent methods. When combined with large language models, ReadMOF also establishes chemically meaningful reasoning ability with textual input only. Our results show that structured chemical language, interpreted through modern natural language processing techniques, can provide a scalable, interpretable, and geometry-independent alternative to conventional molecular representations. This approach opens new opportunities for language-driven discovery in materials science.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7154178710",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 0,
+    "score": 7.366666666666667,
+    "tags": [
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof"
+    ],
+    "takeaway": "Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs.",
+    "innovation": "Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "ReadMOF: Structure-Free Semantic Embeddings from Systematic MOF Nomenclature for Machine Learning",
+    "authors": [
+      "Kewei Zhu",
+      "Cameron Wilson",
+      "Bartosz Mazur",
+      "Yi Li",
+      "Ashleigh M. Chester",
+      "Peyman Z. Moghadam"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-04-12",
+    "year": 2026,
+    "doi": null,
+    "url": "https://arxiv.org/abs/2604.10568",
+    "abstract": "Systematic chemical names, such as IUPAC-style nomenclature for metal-organic frameworks (MOFs), contain rich structural and compositional information in a standardized textual format. Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs. By employing pretrained language models, ReadMOF converts systematic MOF names from the Cambridge Structural Database (CSD) into vector embeddings that closely represent traditional structure-based descriptors. These embeddings enable applications in materials informatics, including property prediction, similarity retrieval, and clustering, with performance comparable to geometry-dependent methods. When combined with large language models, ReadMOF also establishes chemically meaningful reasoning ability with textual input only. Our results show that structured chemical language, interpreted through modern natural language processing techniques, can provide a scalable, interpretable, and geometry-independent alternative to conventional molecular representations. This approach opens new opportunities for language-driven discovery in materials science.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7154538663",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework symbolic regression descriptor discovery machine learning"
+    ],
+    "citation_count": 0,
+    "score": 7.355555555555556,
+    "tags": [
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof"
+    ],
+    "takeaway": "Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs.",
+    "innovation": "Here we introduce ReadMOF, which is, to our knowledge, the first nomenclature-free machine learning framework that leverages these names to model structure-property relationships without requiring atomic coordinates or connectivity graphs.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "An LLM agent for end-to-end computational materials discovery",
+    "authors": [
+      "Chen Yuntong",
+      "Huang Ju",
+      "Liu Yu",
+      "Zhao Dan",
+      "Sun Mingqi",
+      "Ju Chentian",
+      "Liu Yanbing",
+      "Huang Lijiang",
+      "ZHAO GUOBIN"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-08-20",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2608.20434",
+    "url": "https://arxiv.org/abs/2608.20434",
+    "abstract": "The coordination of multi-scale tasks is an effective strategy for computational materials discovery, yet the repeated application of diverse algorithms and tools renders it challenging. We report MAESTRO, a large language model (LLM) agent system capable of executing the entire screening pipeline for metal-organic frameworks (MOFs). It processes a large body of MOF literature, links relevant publications to their crystal structures, and curates the results into a computation-ready database, which is then screened through a strategy of progressively increasing computational cost. The promising candidates identified for separation under wet flue gas conditions all originate from unrelated studies. By connecting the heterogeneous stages of computational materials discovery, the LLM-based agents of MAESTRO can operate across application domains and uncover high-performance materials that conventional screening approaches would be unlikely to consider.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7204129694",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework machine learned interatomic potential molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 6.8,
+    "tags": [
+      "crystal",
+      "foundation_model",
+      "high_throughput",
+      "mof",
+      "separation"
+    ],
+    "takeaway": "We report MAESTRO, a large language model (LLM) agent system capable of executing the entire screening pipeline for metal-organic frameworks (MOFs).",
+    "innovation": "We report MAESTRO, a large language model (LLM) agent system capable of executing the entire screening pipeline for metal-organic frameworks (MOFs).",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  }
+]
