@@ -1,13 +1,13 @@
 # Literature Update
 
-- Generated: `2026-09-07T06:04:22`
+- Generated: `2026-09-14T06:14:52`
 - Profile: `mof_ml_method_prior_art`
-- Since: `2016-09-09`
-- Papers retained: `18`
+- Since: `2016-09-16`
+- Papers retained: `16`
 
 ## Overview
 
-Collected 18 deduplicated papers for profile `mof_ml_method_prior_art`. `ML` appears in 15 papers and `DFT` in 5. `Catalysis` themes appear more often (12) than `adsorption/separation` themes (6). `Interatomic-potential` or MLIP-style work appears in 3 papers and is a notable transfer path from COF-side methods to MOFs.
+Collected 16 deduplicated papers for profile `mof_ml_method_prior_art`. `ML` appears in 12 papers and `DFT` in 4. `Catalysis` themes appear more often (12) than `adsorption/separation` themes (6). `Interatomic-potential` or MLIP-style work appears in 2 papers and is a notable transfer path from COF-side methods to MOFs.
 
 ## Innovation Patterns
 
@@ -120,20 +120,7 @@ Collected 18 deduplicated papers for profile `mof_ml_method_prior_art`. `ML` app
 - Next step: Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.
 - MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
 
-### 8. Machine learning approach for MOF-based photocatalytic CO2 reduction to fuels
-
-- Date: `2026-09-01`
-- Journal: Energy Conversion and Management X
-- Link: https://doi.org/10.1016/j.ecmx.2026.102268
-- Tags: catalysis, co2, h2, ml, mof, photocatalysis, review, separation, uncertainty
-- Authors: Udit Madhusoodan, M.R. Pinto, S. Shanmuga Priya, I. Thirunavukkarasu, K. Sudhakar
-- Why it matters: Herein, we present a machine learning framework trained on 417 experimental data points compiled from the MOF-based photocatalytic CO 2 reduction literature.
-- Innovation: Herein, we present a machine learning framework trained on 417 experimental data points compiled from the MOF-based photocatalytic CO 2 reduction literature.
-- Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.
-- Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.
-- MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
-
-### 9. AI-integrated manufacturing of advanced materials for energy storage, catalysis, and environmental applications
+### 8. AI-integrated manufacturing of advanced materials for energy storage, catalysis, and environmental applications
 
 - Date: `2026-07-03`
 - Journal: Frontiers in Chemistry
@@ -144,6 +131,19 @@ Collected 18 deduplicated papers for profile `mof_ml_method_prior_art`. `ML` app
 - Innovation: The incorporation of artificial intelligence (AI) into energy systems has become a transformative strategy for tackling global energy related challenges, particularly energy vulnerability (EVI).
 - Likely limitations: Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.
 - Next step: Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.
+- MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
+
+### 9. Machine learning approach for MOF-based photocatalytic CO2 reduction to fuels
+
+- Date: `2026-09-01`
+- Journal: Energy Conversion and Management X
+- Link: https://doi.org/10.1016/j.ecmx.2026.102268
+- Tags: catalysis, co2, h2, ml, mof, photocatalysis, review, separation, uncertainty
+- Authors: Udit Madhusoodan, M.R. Pinto, S. Shanmuga Priya, I. Thirunavukkarasu, K. Sudhakar
+- Why it matters: Herein, we present a machine learning framework trained on 417 experimental data points compiled from the MOF-based photocatalytic CO 2 reduction literature.
+- Innovation: Herein, we present a machine learning framework trained on 417 experimental data points compiled from the MOF-based photocatalytic CO 2 reduction literature.
+- Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.
+- Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.
 - MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
 
 ### 10. Predicting CO₂ adsorption in Cu- and Zn-metal-organic frameworks using a permutation-invariant deep learning framework
@@ -159,59 +159,20 @@ Collected 18 deduplicated papers for profile `mof_ml_method_prior_art`. `ML` app
 - Next step: Test humid or multicomponent conditions and connect material metrics to process-level targets. Benchmark uncertainty and out-of-domain behavior before broad screening claims.
 - MOF relevance: Directly relevant to MOF work, but likely less novel for this transfer-focused profile.
 
-### 11. Fast Isotropic Li-Ion Diffusion in Zeolitic Imidazolate Framework Glass Electrolytes for Batteries
+### 11. Recent advances in the strategies of developing water-resistant catalysts for the removal of atmospheric pollutants
 
-- Date: `2026-08-07`
-- Journal: arXiv (Cornell University)
-- Link: https://arxiv.org/abs/2608.06902
-- Tags: battery, crystal, electrolyte, h2, interatomic_potential, md, ml, mof
-- Authors: Yong Li, Tao Du, Timothée Jamin, Zhencai Li, Kasper Tolborg
-- Why it matters: This is realized by using a machine learning interatomic potential to simulate Li+ transport in crystalline and glassy ZIF-4 and ZIF-62.
-- Innovation: This is realized by using a machine learning interatomic potential to simulate Li+ transport in crystalline and glassy ZIF-4 and ZIF-62.
-- Likely limitations: Likely sensitive to training-set coverage and transferability across chemistries.
-- Next step: Extend training to guest-loaded, distorted, and diffusion-transition configurations. Benchmark uncertainty and out-of-domain behavior before broad screening claims.
+- Date: `2026-09-11`
+- Journal: Greenverse Science
+- Link: https://doi.org/10.20517/greenvsci.2026.13
+- Tags: adsorption, catalysis, catalyst_descriptor, crystal, h2, md, mof, oxide, review, water
+- Authors: Xiaoyang Wang, Xin Zhou, Mengwei Hua, Zhiquan Hou, Wenming Sun
+- Why it matters: In the catalytic oxidation of atmospheric pollutants such as volatile organic compounds (VOCs), catalyst deactivation induced by water under realistic operating conditions has emerged as a critical bottleneck constraining the large-scale application of this technology.
+- Innovation: In the catalytic oxidation of atmospheric pollutants such as volatile organic compounds (VOCs), catalyst deactivation induced by water under realistic operating conditions has emerged as a critical bottleneck constraining the large-scale application of this technology.
+- Likely limitations: Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments.
+- Next step: Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.
 - MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
 
-### 12. GFN1-xTB-Assisted Machine Learning for Electronic Structure Screening of Metal–Organic Frameworks
-
-- Date: `2026-08-11`
-- Journal: Journal of Chemical Theory and Computation
-- Link: https://doi.org/10.1021/acs.jctc.6c00979
-- Tags: crystal, dft, high_throughput, ml, mof
-- Authors: Ashna Jose, Aron Walsh
-- Why it matters: Metal-organic frameworks (MOFs) are versatile materials with tunable crystal structures, morphologies, and chemistries, offering diverse physical and chemical properties.
-- Innovation: Metal-organic frameworks (MOFs) are versatile materials with tunable crystal structures, morphologies, and chemistries, offering diverse physical and chemical properties.
-- Likely limitations: Likely sensitive to training-set coverage and transferability across chemistries. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.
-- Next step: Benchmark uncertainty and out-of-domain behavior before broad screening claims.
-- MOF relevance: Directly relevant to MOF work, but likely less novel for this transfer-focused profile.
-
-### 13. Green metal–organic frameworks for circular soil remediation through pollutant sequestration and nutrient regeneration
-
-- Date: `2026-09-01`
-- Journal: Discover Green Chemistry
-- Link: https://doi.org/10.1007/s44509-026-00032-0
-- Tags: adsorption, h2, mof, review, uncertainty
-- Authors: Irfan Haidri, Aneeza Ishfaq, Athakorn Promwee, Faisal Mahmood
-- Why it matters: Agricultural soils are increasingly threatened by contamination from pesticides, herbicides, and potentially toxic metals, posing significant risks to food security, ecosystem functioning, and long-term agricultural sustainability.
-- Innovation: Agricultural soils are increasingly threatened by contamination from pesticides, herbicides, and potentially toxic metals, posing significant risks to food security, ecosystem functioning, and long-term agricultural sustainability.
-- Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.
-- Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.
-- MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
-
-### 14. Metal–Organic Frameworks in Food Biotechnology: Opportunities, Challenges, and Future Perspectives for Probiotic Delivery, Precision Fermentation, and Circular Food Systems
-
-- Date: `2026-07-31`
-- Journal: Nanomaterials
-- Link: https://doi.org/10.3390/nano16150946
-- Tags: catalysis, ml, mof, review, separation, uncertainty
-- Authors: Huy Loc Nguyen
-- Why it matters: Metal-organic frameworks (MOFs) have emerged as a versatile class of porous nanomaterials with exceptional surface area, tunable pore architectures, and customizable chemical functionalities, creating new opportunities for advanced food applications.
-- Innovation: Metal-organic frameworks (MOFs) have emerged as a versatile class of porous nanomaterials with exceptional surface area, tunable pore architectures, and customizable chemical functionalities, creating new opportunities for advanced food applications.
-- Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.
-- Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.
-- MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
-
-### 15. Large language model agents accelerate inverse design of metal-organic frameworks for gas separation
+### 12. Large language model agents accelerate inverse design of metal-organic frameworks for gas separation
 
 - Date: `2026-07-12`
 - Journal: arXiv (Cornell University)
@@ -224,7 +185,7 @@ Collected 18 deduplicated papers for profile `mof_ml_method_prior_art`. `ML` app
 - Next step: Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.
 - MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
 
-### 16. ReadMOF: Structure-Free Semantic Embeddings from Systematic MOF Nomenclature for Machine Learning
+### 13. ReadMOF: Structure-Free Semantic Embeddings from Systematic MOF Nomenclature for Machine Learning
 
 - Date: `2026-04-13`
 - Journal: ChemRxiv
@@ -237,7 +198,7 @@ Collected 18 deduplicated papers for profile `mof_ml_method_prior_art`. `ML` app
 - Next step: Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark uncertainty and out-of-domain behavior before broad screening claims.
 - MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
 
-### 17. ReadMOF: Structure-Free Semantic Embeddings from Systematic MOF Nomenclature for Machine Learning
+### 14. ReadMOF: Structure-Free Semantic Embeddings from Systematic MOF Nomenclature for Machine Learning
 
 - Date: `2026-04-12`
 - Journal: arXiv (Cornell University)
@@ -250,7 +211,20 @@ Collected 18 deduplicated papers for profile `mof_ml_method_prior_art`. `ML` app
 - Next step: Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark uncertainty and out-of-domain behavior before broad screening claims.
 - MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
 
-### 18. An LLM agent for end-to-end computational materials discovery
+### 15. PORMAKE2: Topology-Based Generation of Hypothetical Metal-Organic Frameworks through Single-Metal Nodes and Symmetry-Aware Linker Rotation
+
+- Date: `2026-09-09`
+- Journal: ChemRxiv
+- Link: https://doi.org/10.26434/chemrxiv.15008555/v1
+- Tags: co2, h2, high_throughput, mof, oxide, physics_informed, separation
+- Authors: Jungwoo Lee, Young-Hun Kim, Gunho Lee, Jihan Kim
+- Why it matters: Here, we present PORMAKE2, an upgraded topology-based hypothetical MOF generator designed to improve both access to small-pore structures and geometric fidelity.
+- Innovation: Here, we present PORMAKE2, an upgraded topology-based hypothetical MOF generator designed to improve both access to small-pore structures and geometric fidelity.
+- Likely limitations: Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.
+- Next step: Test humid or multicomponent conditions and connect material metrics to process-level targets.
+- MOF relevance: Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.
+
+### 16. An LLM agent for end-to-end computational materials discovery
 
 - Date: `2026-08-20`
 - Journal: arXiv (Cornell University)

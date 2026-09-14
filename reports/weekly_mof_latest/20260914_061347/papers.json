@@ -1,0 +1,144 @@
+[
+  {
+    "title": "MOF-assisted cryo-adsorption delivers near-liquid volumetric capacity and suppressed boil-off for LH₂ transport",
+    "authors": [
+      "J.-H. Park",
+      "J.-H. Park",
+      "Junsu Ha",
+      "Hong Kyu Lee",
+      "Hyunlim Kim",
+      "Minji Jung",
+      "Minji Jung",
+      "Taeung Park",
+      "Mónica Jiménez-Ruiz",
+      "Margarita Russina",
+      "Hoi Ri Moon",
+      "J. T. Park",
+      "J. T. Park",
+      "Hyunchul Oh"
+    ],
+    "journal": "Nature Communications",
+    "publication_date": "2026-09-07",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s41467-026-77420-4",
+    "url": "https://doi.org/10.1038/s41467-026-77420-4",
+    "abstract": "Liquid hydrogen (LH2) offers exceptional energy density but suffers from boil-off losses that limit long-term storage and global transport. We introduce a materials-based solution using metal–organic frameworks (MOFs) to suppress boil-off by enhancing gas–surface interactions and stabilizing confined hydrogen. IRMOF-20 achieves up to ~97% of neat-LH2 volumetric capacity, while MIL-53(Al) shifts desorption onsets to higher temperatures (over the critical point of H2), both markedly reducing modeled boil-off rates under realistic tank conditions (e.g., from 2 to 7 months extended dormancy under a mid-vacuum stack). Inelastic neutron scattering provides indirect evidence for confined, super-dense H₂. Importantly, these values represent theoretical upper bounds (e.g., crystal-density occupancy, idealized void fraction) that benchmark feasibility; incorporating practical packing density and inter-particle voids will lower absolute numbers but preserve trends. Here authors show that hydrogen adsorbed at 20 K in MOFs can be denser than LH2, preserving nearly the same transport capacity as in conventional liquid-hydrogen tanks while sharply reducing boil-off losses during storage and delivery.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7211871673",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework interatomic potential molecular dynamics adsorption"
+    ],
+    "citation_count": 0,
+    "score": 10.422222222222222,
+    "tags": [
+      "adsorption",
+      "crystal",
+      "force_field",
+      "h2",
+      "high_throughput",
+      "mof",
+      "priority_journal"
+    ],
+    "takeaway": "We introduce a materials-based solution using metal–organic frameworks (MOFs) to suppress boil-off by enhancing gas–surface interactions and stabilizing confined hydrogen.",
+    "innovation": "We introduce a materials-based solution using metal–organic frameworks (MOFs) to suppress boil-off by enhancing gas–surface interactions and stabilizing confined hydrogen.",
+    "limitations": "Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Recent advances in the strategies of developing water-resistant catalysts for the removal of atmospheric pollutants",
+    "authors": [
+      "Xiaoyang Wang",
+      "Xin Zhou",
+      "Mengwei Hua",
+      "Zhiquan Hou",
+      "Wenming Sun",
+      "Yuxi Liu",
+      "Jiguang Deng",
+      "Hongxing Dai"
+    ],
+    "journal": "Greenverse Science",
+    "publication_date": "2026-09-11",
+    "year": 2026,
+    "doi": "https://doi.org/10.20517/greenvsci.2026.13",
+    "url": "https://doi.org/10.20517/greenvsci.2026.13",
+    "abstract": "In the catalytic oxidation of atmospheric pollutants such as volatile organic compounds (VOCs), catalyst deactivation induced by water under realistic operating conditions has emerged as a critical bottleneck constraining the large-scale application of this technology. This review aims to provide a systematic global perspective for developing highly efficient and water-resistant catalytic materials for the oxidation of atmospheric pollutants. First, the underlying mechanisms of water-induced catalyst deactivation in humid atmospheres are dissected in depth from the perspectives of micro-kinetics and thermodynamics, and critical evolution processes including competitive adsorption initiated by polar water molecules, poisoning by surface persistent hydroxyl groups, blockage of active oxygen recycling, and irreversible hydrothermal reconstruction on the macroscale are systematically delineated. Subsequently, recent frontier materials design strategies to enhance the water resistance of catalysts are reviewed, with emphasis place on elucidating the structure-activity relationships behind the development of single-atom catalysts, modulation of metal-support interactions (MSI), exploitation of bimetallic synergy, modification of metal oxides, regulation of crystal structures, and utilization of metal-organic framework (MOF) derivatives, as well as photo/photothermal and ozone-assisted catalysis. Finally, the core challenges associated with the current water-resistant catalytic technologies for their industrialization are summarized, aiming to provide solid theoretical support for rational research.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7212179819",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 9.966666666666667,
+    "tags": [
+      "adsorption",
+      "catalysis",
+      "catalyst_descriptor",
+      "crystal",
+      "h2",
+      "md",
+      "mof",
+      "oxide",
+      "review",
+      "water"
+    ],
+    "takeaway": "In the catalytic oxidation of atmospheric pollutants such as volatile organic compounds (VOCs), catalyst deactivation induced by water under realistic operating conditions has emerged as a critical bottleneck constraining the large-scale application of this technology.",
+    "innovation": "In the catalytic oxidation of atmospheric pollutants such as volatile organic compounds (VOCs), catalyst deactivation induced by water under realistic operating conditions has emerged as a critical bottleneck constraining the large-scale application of this technology.",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "PORMAKE2: Topology-Based Generation of Hypothetical Metal-Organic Frameworks through Single-Metal Nodes and Symmetry-Aware Linker Rotation",
+    "authors": [
+      "Jungwoo Lee",
+      "Young-Hun Kim",
+      "Gunho Lee",
+      "Jihan Kim"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-09-09",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15008555/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15008555/v1",
+    "abstract": "Topology-based hypothetical metal–organic framework (MOF) generators enable scalable exploration of chemical space beyond experimentally reported structures, but their accessible design space is constrained by the building blocks and assembly rules they encode. Here, we present PORMAKE2, an upgraded topology-based hypothetical MOF generator designed to improve both access to small-pore structures and geometric fidelity. PORMAKE2 introduces an expanded buildingblock library, including single-metal nodes, and implements symmetry-aware linker rotation for higher-fidelity framework assembly. These upgrades substantially expand the accessible small-pore MOF space and enable MOF designs that were inaccessible to earlier workflows, including ZIF-type and CALF-20-like structures with improved geometrical agreement. Carbon dioxide direct air capture (DAC) and Xenon/Krypton separation are included as case studies demonstrating that improved generator framework can influence downstream screening outcomes. These results establish PORMAKE2 as a more expressive and chemically faithful front-end platform for hypothetical MOF generation.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7212033715",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework adsorption machine learning density functional theory",
+      "metal-organic framework catalysis machine learning density functional theory",
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 7.944444444444445,
+    "tags": [
+      "co2",
+      "h2",
+      "high_throughput",
+      "mof",
+      "oxide",
+      "physics_informed",
+      "separation"
+    ],
+    "takeaway": "Here, we present PORMAKE2, an upgraded topology-based hypothetical MOF generator designed to improve both access to small-pore structures and geometric fidelity.",
+    "innovation": "Here, we present PORMAKE2, an upgraded topology-based hypothetical MOF generator designed to improve both access to small-pore structures and geometric fidelity.",
+    "limitations": "Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  }
+]

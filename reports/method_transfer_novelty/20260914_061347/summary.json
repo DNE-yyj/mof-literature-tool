@@ -1,17 +1,11 @@
 {
-  "report_path": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20260907_060337/report.md",
+  "report_path": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20260914_061347/report.md",
   "counts": {
-    "fresh": 7,
-    "prior_art": 49,
-    "recent_active": 0
+    "fresh": 3,
+    "prior_art": 36,
+    "recent_active": 14
   },
   "top_ideas": [
-    {
-      "status": "Fresh MOF transfer candidate",
-      "title": "Scaling multimodal materials representation learning with synthetic narratives",
-      "candidate_source": "Cross-material ML transfer",
-      "transfer_distance": "adjacent materials"
-    },
     {
       "status": "Fresh MOF transfer candidate",
       "title": "TAME: Element-wise Mixture-of-Experts Fusion for Data-Efficient and Interpretable Molecular Property Prediction",
@@ -26,13 +20,19 @@
     },
     {
       "status": "Fresh MOF transfer candidate",
-      "title": "Materials Behavior as Mechanism Ensembles: A Probabilistic Framework for Emergent Behaviors",
+      "title": "Expert-Informed Contrastive Learning of Condition Space for Amide Coupling Reactions",
       "candidate_source": "Reaction/catalyst ML transfer",
       "transfer_distance": "distant method analogy"
     },
     {
-      "status": "Fresh MOF transfer candidate",
-      "title": "Competition-Derived Relative Reactivity and 3D Electronic-State Analysis of Site- and Facial Selectivity in NaBH4/MeOH Ketone Reductions",
+      "status": "Older MOF prior art exists",
+      "title": "SHAP-guided Machine Learning for Interpretable Band Gap Prediction and Inverse Design in ABX₃ Perovskites",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Older MOF prior art exists",
+      "title": "Accelerating Catalyst Materials Discovery With Large Artificial Intelligence Models",
       "candidate_source": "Cross-material ML transfer",
       "transfer_distance": "adjacent materials"
     }
