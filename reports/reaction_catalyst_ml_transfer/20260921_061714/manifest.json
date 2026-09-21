@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-09-14T06:14:29",
+  "generated_at": "2026-09-21T06:17:14",
   "profile": "reaction_catalyst_ml_transfer",
-  "from_date": "2016-09-16",
-  "paper_count": 24,
+  "from_date": "2016-09-23",
+  "paper_count": 25,
   "queries": [
     "underexplored catalysts general structures machine learning reaction-specific datasets",
     "reaction-specific datasets machine learning catalyst generality underexplored catalysts",
@@ -14,8 +14,8 @@
     "electrocatalysis active-site descriptor machine learning structure activity relationship"
   ],
   "outputs": {
-    "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20260914_061429/report.md",
-    "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20260914_061429/papers.json",
-    "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20260914_061429/papers.tsv"
+    "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20260921_061714/report.md",
+    "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20260921_061714/papers.json",
+    "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20260921_061714/papers.tsv"
   }
 }

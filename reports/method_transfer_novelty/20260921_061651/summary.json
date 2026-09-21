@@ -1,0 +1,40 @@
+{
+  "report_path": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20260921_061651/report.md",
+  "counts": {
+    "fresh": 2,
+    "prior_art": 39,
+    "recent_active": 13
+  },
+  "top_ideas": [
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Multiplexed embryo profiling links cellular state to zygotic genome activation in single cells",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant cross-domain method"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "A multimodal semantic learning framework for data-driven discovery of nitrate-to-ammonia electrocatalysts",
+      "candidate_source": "Reaction/catalyst ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Older MOF prior art exists",
+      "title": "Machine learning approaches for electrocatalyst design in water splitting: a review for green hydrogen production",
+      "candidate_source": "Reaction/catalyst ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Older MOF prior art exists",
+      "title": "Physics-guided diffusion models for inverse design of disordered metamaterials",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Older MOF prior art exists",
+      "title": "Physics-informed automated surface reconstruction via low-energy electron diffraction based on Bayesian optimization",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    }
+  ]
+}
