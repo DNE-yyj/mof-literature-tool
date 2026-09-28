@@ -1,0 +1,40 @@
+{
+  "report_path": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20260928_064833/report.md",
+  "counts": {
+    "fresh": 10,
+    "prior_art": 29,
+    "recent_active": 17
+  },
+  "top_ideas": [
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Topology-aware E(3)-equivariant learning for physically consistent piezoelectric tensor prediction",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Artificial intelligence for predictive mixture toxicology",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Transferable Graph Neural Network Surrogates for Molecular Dynamics Across Crystal Symmetries",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "ARTIFICIAL INTELLIGENCE IN STEEL STRUCTURES: METHODS, APPLICATIONS AND PERSPECTIVES ON JOINT BEHAVIOUR",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Machine Learning Applications to Physical Processes",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    }
+  ]
+}

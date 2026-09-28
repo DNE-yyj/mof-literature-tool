@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-09-21T06:16:57",
+  "generated_at": "2026-09-28T06:48:39",
   "profile": "materials_ml_transfer",
-  "from_date": "2023-09-22",
+  "from_date": "2023-09-29",
   "paper_count": 30,
   "queries": [
     "materials machine learning foundation model crystal property prediction",
@@ -14,8 +14,8 @@
     "battery catalyst perovskite oxide polymer machine learning transferable model"
   ],
   "outputs": {
-    "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20260921_061657/report.md",
-    "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20260921_061657/papers.json",
-    "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20260921_061657/papers.tsv"
+    "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20260928_064839/report.md",
+    "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20260928_064839/papers.json",
+    "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20260928_064839/papers.tsv"
   }
 }
