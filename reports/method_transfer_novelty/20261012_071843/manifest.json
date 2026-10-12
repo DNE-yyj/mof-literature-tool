@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-10-12T07:18:43",
+  "runs": {
+    "Recent MOF literature": {
+      "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/weekly_mof_latest/20261012_071843/report.md",
+      "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/weekly_mof_latest/20261012_071843/papers.json",
+      "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/weekly_mof_latest/20261012_071843/papers.tsv",
+      "manifest": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/weekly_mof_latest/20261012_071843/manifest.json"
+    },
+    "Cross-material ML transfer": {
+      "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20261012_071849/report.md",
+      "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20261012_071849/papers.json",
+      "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20261012_071849/papers.tsv",
+      "manifest": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/materials_ml_transfer/20261012_071849/manifest.json"
+    },
+    "Reaction/catalyst ML transfer": {
+      "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20261012_071905/report.md",
+      "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20261012_071905/papers.json",
+      "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20261012_071905/papers.tsv",
+      "manifest": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/reaction_catalyst_ml_transfer/20261012_071905/manifest.json"
+    },
+    "Long-horizon MOF method prior art": {
+      "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20261012_071920/report.md",
+      "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20261012_071920/papers.json",
+      "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20261012_071920/papers.tsv",
+      "manifest": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/mof_ml_method_prior_art/20261012_071920/manifest.json"
+    }
+  },
+  "combined_report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20261012_071843/report.md"
+}

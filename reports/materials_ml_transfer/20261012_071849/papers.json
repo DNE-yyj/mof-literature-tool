@@ -1,0 +1,1287 @@
+[
+  {
+    "title": "AI-Driven Electrocatalyst Discovery: Integrating Machine Learning, Density Functional Theory, and High-Throughput Screening for Sustainable Energy Conversion",
+    "authors": [
+      "Frank Onyiriuka",
+      "Obojobo Donatus Obukeajeta",
+      "Micheal Abimbola Oladosu",
+      "Moses Adondua Abah",
+      "Felix Sekayo Olagbenro",
+      "Ezekiel Izudike Odimgbe"
+    ],
+    "journal": "International Journal of Soft Computing and Engineering",
+    "publication_date": "2026-09-29",
+    "year": 2026,
+    "doi": "https://doi.org/10.35940/ijsce.e3727.16051126",
+    "url": "https://doi.org/10.35940/ijsce.e3727.16051126",
+    "abstract": "Efficient electrochemical processes are essential for a sustainable, low-carbon energy economy, involving hydrogen production, oxygen evolution/reduction, and carbon dioxide valorisation, all of which require high-performing electrocatalysts. Traditional catalyst development methods, which involve sequential trial-and-error synthesis and density functional theory (DFT) calculations, cannot keep pace with the combinatorial complexity of multi-metallic, single-atom, and high-entropy alloy catalysts. This review summarizes recent advances in AI-driven electrocatalyst discovery in the past five years (2020–2025) with a focus on the three pillars that have enabled this development: (1) machine learning (ML) algorithms and interpretable/explainable frameworks that extract descriptors of catalytic data that are physically meaningful; (2) the ability to couple ML with DFT using surrogate models, graph neural network interatomic potentials, and large benchmark datasets that reduce computational costs by orders of magnitude at close to DFT accuracy; and (3) high throughput screening pipelines for virtual and experimental screening, involving active learning and Bayesian optimisation, that have been applied to a diverse range of electrocatalytic reactions, including the hydrogen evolution reaction, the oxygen evolution/reduction reaction, and the carbon dioxide reduction reaction. Single-atom catalysts, perovskite oxides, and high-entropy alloys are discussed as representative examples that have helped discover new, high-performance candidates and reduced the need for one to two orders of magnitude of DFT calculations. The review also covers emerging autonomous, closed-loop ‘selfdriving’ laboratories, where robotised synthesis and characterisation are coupled with ML-driven decision-making. The review critically discusses persistent challenges in data scarcity, model interpretability and transferability across chemical spaces, and experiment-theory reproducibility, and envisions future directions such as foundation models for atomistic simulation and multimodal data fusion toward fully autonomous electrocatalyst discovery for sustainable energy conversion.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7214740622",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "physics-informed machine learning symbolic regression materials descriptors"
+    ],
+    "citation_count": 0,
+    "score": 21.155555555555555,
+    "tags": [
+      "active_learning",
+      "alloy",
+      "catalysis",
+      "co2",
+      "dft",
+      "electrocatalysis",
+      "foundation_model",
+      "gnn",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "ml",
+      "multimodal",
+      "oxide",
+      "perovskite",
+      "review",
+      "surrogate_model"
+    ],
+    "takeaway": "This review summarizes recent advances in AI-driven electrocatalyst discovery in the past five years (2020–2025) with a focus on the three pillars that have enabled this development: (1) machine learning (ML) algorithms and interpretable/explainable frameworks that extract descriptors of catalytic data that are physically meaningful; (2) the ability to couple ML with DFT using surrogate models, graph neural network interatomic potentials, and large benchmark datasets that reduce computational costs by orders of magnitude at close to DFT accuracy; and (3) high throughput screening pipelines for virtual and experimental screening, involving active learning and Bayesian optimisation, that have been applied to a diverse range of electrocatalytic reactions, including the hydrogen evolution reaction, the oxygen evolution/reduction reaction, and the carbon dioxide reduction reaction.",
+    "innovation": "This review summarizes recent advances in AI-driven electrocatalyst discovery in the past five years (2020–2025) with a focus on the three pillars that have enabled this development: (1) machine learning (ML) algorithms and interpretable/explainable frameworks that extract descriptors of catalytic data that are physically meaningful; (2) the ability to couple ML with DFT using surrogate models, graph neural network interatomic potentials, and large benchmark datasets that reduce computational costs by orders of magnitude at close to DFT accuracy; and (3) high throughput screening pipelines for virtual and experimental screening, involving active learning and Bayesian optimisation, that have been applied to a diverse range of electrocatalytic reactions, including the hydrogen evolution reaction, the oxygen evolution/reduction reaction, and the carbon dioxide reduction reaction.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "A Review of Artificial Intelligence Methods for Laser-Based Diagnostics: From Measurement Physics to Autonomous Sensing Systems",
+    "authors": [
+      "Saleh Mahmoud",
+      "Turki AlQemlas"
+    ],
+    "journal": "Engineering Technology & Applied Science Research",
+    "publication_date": "2026-10-02",
+    "year": 2026,
+    "doi": "https://doi.org/10.48084/etasr.21437",
+    "url": "https://doi.org/10.48084/etasr.21437",
+    "abstract": "Laser-based diagnostic techniques are indispensable for non-intrusive, high-resolution measurements in fluid mechanics, combustion, and multiphase flows. However, modern experiments increasingly generate high-dimensional spatiotemporal datasets that strain traditional workflows and remain limited by core measurement-physics constraints, including signal-to-noise degradation, spatiotemporal resolution trade-offs, calibration uncertainty, and real-time processing demands. Artificial Intelligence (AI) and Machine Learning (ML) offer new capabilities for automated feature extraction, physics-aware reconstruction, Uncertainty Quantification (UQ), and real-time inference. This review synthesizes AI-enabled advances across laser velocimetry, fluorescence thermometry and species imaging, soot diagnostics, and tomographic/volumetric reconstruction. The review covers supervised and self-supervised deep learning, Physics-Informed Neural Networks (PINNs), Bayesian uncertainty-aware approaches, and generative models, emphasizing how these methods address measurement-physics limitations and what is required for reliable experimental deployment. A comparative synthesis highlights cross-modality trade-offs in accuracy, interpretability, scalability, and real-time capability, and identifies persistent challenges including generalization to unseen conditions, physical consistency, calibrated uncertainty, and closed-loop integration. The review concludes with a forward-looking framework and roadmap toward physics-aware, uncertainty-informed autonomous laser diagnostics capable of adaptive measurement strategies and real-time decision-making in complex experimental environments.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7218535426",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials discovery Bayesian optimization active learning autonomous laboratory"
+    ],
+    "citation_count": 0,
+    "score": 18.88888888888889,
+    "tags": [
+      "active_learning",
+      "generative_model",
+      "h2",
+      "ml",
+      "physics_informed",
+      "review",
+      "self_supervised",
+      "uncertainty"
+    ],
+    "takeaway": "Laser-based diagnostic techniques are indispensable for non-intrusive, high-resolution measurements in fluid mechanics, combustion, and multiphase flows.",
+    "innovation": "Laser-based diagnostic techniques are indispensable for non-intrusive, high-resolution measurements in fluid mechanics, combustion, and multiphase flows.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+  },
+  {
+    "title": "Toward automated discovery with generative models multimodal learning and closed loop workflows in inverse materials design",
+    "authors": [
+      "Anand Babu",
+      "Rogério Almeida Gouvêa",
+      "Gian‐Marco Rignanese"
+    ],
+    "journal": "Cell Reports Physical Science",
+    "publication_date": "2026-10-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.xcrp.2026.103561",
+    "url": "https://doi.org/10.1016/j.xcrp.2026.103561",
+    "abstract": "Summary: Inverse materials design is shifting materials discovery from forward prediction to targeted proposal of candidates that satisfy objectives under physical constraints. Here, we review advances in generative crystal structure modeling, multimodal learning, and closed-loop design pipelines for crystalline solids. We compare generative model classes, including variational autoencoders, normalizing flows, and autoregressive and diffusion models, focusing on their inverse design trade-offs, how physical and chemical constraints are imposed, and how reliably generated candidates survive downstream validation. We examine multimodal learning as a design interface connecting structures with properties, characterization, processing context, and scientific text and coupling these representations with latent optimization, Bayesian optimization, reinforcement learning, and active learning to guide search under limited validation budgets. We set out recurring failure modes, including surrogate exploitation, diversity collapse, distribution shift, and the stability-synthesizability gap and define a nine-rung discovery-credibility ladder, proposing a minimum reporting standard specifying evidence required to support credible materials discovery claims.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7214940440",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials generative model diffusion inverse design crystal structure"
+    ],
+    "citation_count": 0,
+    "score": 18.07777777777778,
+    "tags": [
+      "active_learning",
+      "crystal",
+      "generative_model",
+      "h2",
+      "md",
+      "multimodal",
+      "physics_informed",
+      "review"
+    ],
+    "takeaway": "Summary: Inverse materials design is shifting materials discovery from forward prediction to targeted proposal of candidates that satisfy objectives under physical constraints.",
+    "innovation": "Summary: Inverse materials design is shifting materials discovery from forward prediction to targeted proposal of candidates that satisfy objectives under physical constraints.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+  },
+  {
+    "title": "Mechanism–AI fusion in refining simulation software: A module-level review",
+    "authors": [
+      "Jiahang Han",
+      "Xueliang Zhao",
+      "Lijun Han"
+    ],
+    "journal": "Results in Engineering",
+    "publication_date": "2026-10-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.rineng.2026.113315",
+    "url": "https://doi.org/10.1016/j.rineng.2026.113315",
+    "abstract": "Refining simulation software has remained functionally static for decades: property calculation, reaction kinetics, unit-operation modeling, and computational fluid dynamics (CFD) solving modules are hard-coded, unidirectional, and cannot be calibrated online against drifting plant conditions. Purely mechanistic approaches provide irreplaceable rigor but are constrained by computational cost; purely data-driven approaches offer speed and adaptivity but lack the interpretability, generalization, and physical guarantees required for safety-critical deployment. This review examines how mechanism–AI fusion—encompassing physics-informed neural networks (PINNs), reduced-order models (ROMs), operator learning, and closure-model augmentation—is reshaping these functional modules at the architectural level. We propose a module-level taxonomy that maps each fusion strategy to the specific simulation module it transforms, and we distinguish this paradigm from related concepts (hybrid modeling, physics-informed machine learning, grey-box modeling, and digital twins) by specifying the bidirectional information flows between mechanistic and AI components. A systematic literature survey following PRISMA-style methodology identified 133 references from Web of Science, Scopus, and IEEE Xplore (2000–2025). We provide enhanced comparative tables that include training cost, data requirements, extrapolation ability, uncertainty quantification (UQ), scalability, and industrial maturity for each method class. Industrial software benchmarking is presented as a qualitative comparison rather than a subjective ranking. Three industrial case studies (gasifier, FCC unit, distillation column) are analyzed with explicit baselines, deployment durations, and performance indicators, clearly identifying vendor-reported versus independently verified data. We discuss emerging topics—AI-native scientific software, foundation models for scientific computing, autonomous engineering agents, trustworthy and explainable AI, verification & validation (V&V), and MLOps for scientific applications—that will shape the next decade. The review concludes with graded findings (verified, supported, emerging, conceptual, and policy-level) to clearly distinguish established results from industrial observations and conceptual proposals. The central finding is that mechanism–AI fusion transforms refining simulation software from a fixed-algorithm tool into an adaptive multi-fidelity platform, but the transition from advisory and optimization applications to safety-critical closed-loop control requires standardized V&V protocols, UQ frameworks, and process-industry-specific safety governance that do not yet exist.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7215032335",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials discovery Bayesian optimization active learning autonomous laboratory"
+    ],
+    "citation_count": 0,
+    "score": 16.87777777777778,
+    "tags": [
+      "active_learning",
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "md",
+      "ml",
+      "physics_informed",
+      "review",
+      "surrogate_model",
+      "uncertainty"
+    ],
+    "takeaway": "Refining simulation software has remained functionally static for decades: property calculation, reaction kinetics, unit-operation modeling, and computational fluid dynamics (CFD) solving modules are hard-coded, unidirectional, and cannot be calibrated online against drifting plant conditions.",
+    "innovation": "Refining simulation software has remained functionally static for decades: property calculation, reaction kinetics, unit-operation modeling, and computational fluid dynamics (CFD) solving modules are hard-coded, unidirectional, and cannot be calibrated online against drifting plant conditions.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Fine-tune or adapt the representation on sparse MOF labels such as flexibility, defects, guest response, or adsorption regimes."
+  },
+  {
+    "title": "AIMNet2-rxn: A machine-learned potential for generalized reaction modeling on a millions-of-pathways scale",
+    "authors": [
+      "Dylan M. Anstine",
+      "Qiyuan Zhao",
+      "R.I. Zubatyuk",
+      "Shuhao Zhang",
+      "Veerupaksh Singla",
+      "Filipp Nikitin",
+      "Brett Matthew Savoie",
+      "Olexandr Isayev"
+    ],
+    "journal": "Science Advances",
+    "publication_date": "2026-10-07",
+    "year": 2026,
+    "doi": "https://doi.org/10.1126/sciadv.aea1557",
+    "url": "https://doi.org/10.1126/sciadv.aea1557",
+    "abstract": "Mechanistic modeling of chemical transformations offers a compelling basis for understanding reactivity and allows for prediction of reaction outcomes before attempting experiments. Despite progress in machine-learned interatomic potentials (MLIPs), we demonstrate that available models lack the accuracy for diverse reaction modeling. With this motivation, we developed a general MLIP for mechanistic modeling of closed-shell carbon, hydrogen, nitrogen, and oxygen reactions, AIMNet2-rxn, using a dataset of ∼4.7 × 10 6 range-separated density functional theory calculations. AIMNet2-rxn enables reaction modeling ∼10 6 faster than the reference quantum mechanical (QM) methods while substantially outperforming graph-based ML, reaffirming the value using three-dimensional chemical information for training. On a test suite of well-known reaction mechanisms—such as amide formation, proton transfers, and pericyclics—AIMNet2-rxn yields 1 to 2 kilocalories per mole accuracy across reaction coordinates without retraining or system-specific fine-tuning. To exploit graphics processing unit parallelism and AIMNet2-rxn efficiency, we introduce a batched nudged elastic band procedure that readily achieves minimum energy pathway search on a millions-of-reactions scale. To demonstrate complex reaction characterization, the thermodynamics of an 11-step pathway producing hydroxymethylfurfural, the experimentally observed major product of glucose pyrolysis, is evaluated. Overall, the accuracy and efficiency afforded by AIMNet2-rxn create opportunities in high-throughput reaction discovery and deep reaction network analysis that would be infeasible with QM methods.",
+    "type": "article",
+    "source_id": "https://openalex.org/W4411574945",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "machine learned interatomic potential active learning materials molecular dynamics",
+      "materials discovery Bayesian optimization active learning autonomous laboratory"
+    ],
+    "citation_count": 13,
+    "score": 16.683501774059703,
+    "tags": [
+      "dft",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "priority_journal",
+      "transfer_learning"
+    ],
+    "takeaway": "Despite progress in machine-learned interatomic potentials (MLIPs), we demonstrate that available models lack the accuracy for diverse reaction modeling.",
+    "innovation": "Despite progress in machine-learned interatomic potentials (MLIPs), we demonstrate that available models lack the accuracy for diverse reaction modeling.",
+    "limitations": "Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Fine-tune or adapt the representation on sparse MOF labels such as flexibility, defects, guest response, or adsorption regimes."
+  },
+  {
+    "title": "Tuning Pore Confinement and Chemistry of Fluorine-Free Membranes",
+    "authors": [
+      "Muhammad Saad Naeem",
+      "Zan Lian",
+      "Jordi Guardià",
+      "Ranga Rohit Seemakurthi",
+      "Pol Sanz Berman",
+      "Marta Giamberini",
+      "Ricard Garcia‐Valls",
+      "Núria López"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "publication_date": "2026-10-09",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/jacs.6c15621",
+    "url": "https://doi.org/10.1021/jacs.6c15621",
+    "abstract": "Abstract The design of low-temperature fuel cells and electrolyzers involving proton exchange membranes (PEMs) has been dominated by the exceptional performance and industrial dominance of Nafion. With emerging regulations banning the use of fluorinated compounds, the search for F-free alternatives must be accelerated. Here, we optimize a fluorine-free, sustainable, and low-cost liquid crystalline poly(epichlorohydrin)membrane, based on the identification of key descriptors for proton mobility obtained using machine learning interatomic potentials (MLIPs) derived from first-principles calculations for extensive molecular dynamics. Proton transfer is controlled by the interplay between water confinement and internal pore chemistry. This allows us to modify the active functional groups so that they directly participate in the proton diffusion process, increasing three times the diffusion rate in the membrane, thus being closer to Nafion standards. This work provides key descriptors for a targeted design approach essential for catalyzing the commercial development of next-generation fluorine-free PEMs.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7221151626",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "machine learned interatomic potential active learning materials molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 15.766666666666667,
+    "tags": [
+      "crystal",
+      "dft",
+      "h2",
+      "interatomic_potential",
+      "md",
+      "ml",
+      "priority_journal",
+      "water"
+    ],
+    "takeaway": "Here, we optimize a fluorine-free, sustainable, and low-cost liquid crystalline poly(epichlorohydrin)membrane, based on the identification of key descriptors for proton mobility obtained using machine learning interatomic potentials (MLIPs) derived from first-principles calculations for extensive molecular dynamics.",
+    "innovation": "Here, we optimize a fluorine-free, sustainable, and low-cost liquid crystalline poly(epichlorohydrin)membrane, based on the identification of key descriptors for proton mobility obtained using machine learning interatomic potentials (MLIPs) derived from first-principles calculations for extensive molecular dynamics.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Extend training to guest-loaded, distorted, and diffusion-transition configurations. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "MLIP route can transfer to MOFs if trained on flexible, guest-loaded, and charged configurations.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use the MLIP workflow for flexible, guest-loaded, charged, or diffusion-transition MOF configurations."
+  },
+  {
+    "title": "Modeling Phase Separation in Polymer-Derived Silicon Carbonitride Ceramics through Extended Machine Learning Molecular Dynamics",
+    "authors": [
+      "Fabien Mortier",
+      "Sylvian Cadars",
+      "Olivier Masson",
+      "Mauro Boero",
+      "Guido Ori",
+      "Yun Wang",
+      "Samuel Bernard",
+      "Assil Bouzid"
+    ],
+    "journal": "ACS Nano",
+    "publication_date": "2026-10-06",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acsnano.6c11958",
+    "url": "https://doi.org/10.1021/acsnano.6c11958",
+    "abstract": "Abstract Polymer-derived ceramics combine the thermal stability of ceramics with the versatile properties of carbon domains, but modeling their atomic-scale evolution during processing remains elusive because of the limitations of traditional computational methods. To address this issue, here, we develop and apply a machine learning interatomic potential for hydrogen-containing silicon carbonitride-based (SiCNH) ceramics, trained on a diversified database of over 9000 configurations─including amorphous models, high-temperature states, surfaces, and crystal structure predictions─to capture the full complexity of these materials. This potential enables large-scale molecular dynamics simulations of 8000-atom systems, revealing the atomic-scale evolution of the polymer-derived ceramic during thermal treatment. A key result of this work is the occurrence of a phase separation, where carbon domains progressively nucleate from the amorphous SiCN matrix during thermal processing, forming distinct graphene-like sheets while preserving the integrity of the ceramic network. The resulting models reproduce the experimental atomic pair distribution functions, supporting our approach and providing microscopic explanations for the material combination of the ceramic and graphitic properties. In this process, defective 5- and/or 7-member carbon rings mediate the transformation to stable 6-member aromatic structures. These findings provide atomic-scale information about the thermal stability and structural transformation pathways of polymer-derived ceramics and demonstrate the applicability of the methodology to complex amorphous systems at experimentally relevant scales.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7161980567",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials graph neural network equivariant representation learning crystal"
+    ],
+    "citation_count": 0,
+    "score": 15.233333333333334,
+    "tags": [
+      "crystal",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "md",
+      "ml",
+      "polymer",
+      "priority_journal",
+      "separation",
+      "two_d_material"
+    ],
+    "takeaway": "To address this issue, here, we develop and apply a machine learning interatomic potential for hydrogen-containing silicon carbonitride-based (SiCNH) ceramics, trained on a diversified database of over 9000 configurations─including amorphous models, high-temperature states, surfaces, and crystal structure predictions─to capture the full complexity of these materials.",
+    "innovation": "To address this issue, here, we develop and apply a machine learning interatomic potential for hydrogen-containing silicon carbonitride-based (SiCNH) ceramics, trained on a diversified database of over 9000 configurations─including amorphous models, high-temperature states, surfaces, and crystal structure predictions─to capture the full complexity of these materials.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "MLIP route can transfer to MOFs if trained on flexible, guest-loaded, and charged configurations.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use the MLIP workflow for flexible, guest-loaded, charged, or diffusion-transition MOF configurations."
+  },
+  {
+    "title": "Closing the learning loop in lithium–sulfur batteries through physics-informed and trustworthy artificial intelligence",
+    "authors": [
+      "Ka Chun Li",
+      "King-cheong Antony LAM",
+      "Chi Ho WONG",
+      "Wai Kwan LIU"
+    ],
+    "journal": "Energy and AI",
+    "publication_date": "2026-10-05",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.egyai.2026.100934",
+    "url": "https://doi.org/10.1016/j.egyai.2026.100934",
+    "abstract": "Lithium–sulfur (Li–S) batteries combine a high theoretical specific energy with low-cost active materials, yet their development remains constrained by coupled reaction pathways, mobile intermediates, lithium-metal instability, and a large design space that changes with loading, electrolyte inventory, temperature, format, and cycling history. Artificial intelligence (AI) offers a way to connect these variables, but most published demonstrations remain isolated within small computational datasets, literature-derived tables, or single-laboratory cell series. This review develops an evidence-first, closed-loop framework for AI-enabled Li–S research that links observation, learning, decision, validation, and model updating. It critically examines data infrastructure, text and multimodal extraction, descriptor learning, catalyst and electrolyte design, physics-informed state inference, degradation prognosis, autonomous experimentation, and digital twins. The available evidence shows that machine learning (ML) can compress high-dimensional calculations, recover useful structure–property relations, and predict selected cell outcomes within bounded domains. However, ML has not yet demonstrated robust transfer across laboratories, cell formats, or practical operating conditions. The main barriers are incomplete metadata, non-independent data splits, uncertain labels, weak uncertainty calibration, and limited prospective validation. To address these gaps, the review introduces a minimum data schema, an evidence-fidelity pathway that separates proxy prediction from decision-grade evidence, task-specific benchmarking requirements, and a minimum viable digital-twin architecture for Li–S cells. The central conclusion is that AI becomes decision-grade only when its predictions are physically credible, uncertainty-aware, experimentally actionable, and iteratively validated.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7220396301",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials discovery Bayesian optimization active learning autonomous laboratory"
+    ],
+    "citation_count": 0,
+    "score": 15.122222222222224,
+    "tags": [
+      "active_learning",
+      "battery",
+      "catalysis",
+      "electrolyte",
+      "high_throughput",
+      "ml",
+      "multimodal",
+      "physics_informed",
+      "review",
+      "uncertainty"
+    ],
+    "takeaway": "It critically examines data infrastructure, text and multimodal extraction, descriptor learning, catalyst and electrolyte design, physics-informed state inference, degradation prognosis, autonomous experimentation, and digital twins.",
+    "innovation": "It critically examines data infrastructure, text and multimodal extraction, descriptor learning, catalyst and electrolyte design, physics-informed state inference, degradation prognosis, autonomous experimentation, and digital twins.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Explainable Machine Learning in Composite Material Design Bridging Data Driven Models and Physical Interpretability",
+    "authors": [
+      "R Elayaraja",
+      "Divya Jagadeesan",
+      "S Suresh",
+      "D Subramaniam",
+      "V. Jayasree"
+    ],
+    "journal": "International Journal of Advanced Science and Engineering",
+    "publication_date": "2026-09-24",
+    "year": 2026,
+    "doi": "https://doi.org/10.29294/ijase.13.1.2026.7254-7283",
+    "url": "https://doi.org/10.29294/ijase.13.1.2026.7254-7283",
+    "abstract": "The increasing demand of composite materials in aerospace, automotive, marine and civil engineering applications including their superior strength-to-weight ratio and customizable properties has made them invaluable in these fields [1].Iterative experimental testing and empirical rules are the traditional approaches, which are time-consuming and economically inefficient.With the advent of machine learning, material discovery, and optimization have been transformed, with the ability to predict complex material properties from limited data, and to discover novel material compositions [2][3][4].One of the strengths of ML is its ability to identify non-linear relationships in large, highdimensional datasets that a human might not be able to spot.Other methods such as deep neural ABSTRACT: Machine learning (ML) has shown significant promise in the ability to make accurate predictions of material properties and optimize formulations to improve composite material development.But many ML models are \"black-box\" models and this lack of interpretability of the physics is a big obstacle to their use in engineering and manufacturing applications where physical interpretability is essential.This review delves into the current state of Explainable Artificial Intelligence (XAI) methods used in the design of composite materials, which spans from prediction to understanding the physical material.Various techniques of interpretability are explained, such as SHAP (SHapley Additive exPlanations), LIME (Local Interpretable Model-agnostic Explanations), feature importance and attention mechanisms, given in the context of composite material science.The review summarizes the existing issues, new solutions, and future prospects of trustworthy ML systems which complement but do not supplant domain expertise.Multi-scale modeling, uncertainty quantification and coupling to physics-informed machine learning are highlighted.This paper is intended to be used by materials scientists, engineers and ML practitioners interested in using explainable AI to help grow the development of composites.Most of the previous reviews focus on machine learning, materials informatics or EAI in isolation.A comprehensive review of the use of explainable machine learning techniques in composite material design, manufacture, performance prediction and physics-informed modeling, however, has not yet been done.The review addresses this gap, bringing together a holistic view of the methodologies of XAI, their engineering significance and recent use in sustainable composite systems.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7215071607",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "physics-informed machine learning symbolic regression materials descriptors"
+    ],
+    "citation_count": 0,
+    "score": 15.0,
+    "tags": [
+      "catalyst_descriptor",
+      "h2",
+      "ml",
+      "physics_informed",
+      "review",
+      "symbolic_regression",
+      "uncertainty"
+    ],
+    "takeaway": "The increasing demand of composite materials in aerospace, automotive, marine and civil engineering applications including their superior strength-to-weight ratio and customizable properties has made them invaluable in these fields [1].Iterative experimental testing and empirical rules are the traditional approaches, which are time-consuming and economically inefficient.With the advent of machine learning, material discovery, and optimization have been transformed, with the ability to predict complex material properties from limited data, and to discover novel material compositions [2][3][4].One of the strengths of ML is its ability to identify non-linear relationships in large, highdimensional datasets that a human might not be able to spot.Other methods such as deep neural ABSTRACT: Machine learning (ML) has shown significant promise in the ability to make accurate predictions of material properties and optimize formulations to improve composite material development.But many ML models are \"black-box\" models and this lack of interpretability of the physics is a big obstacle to their use in engineering and manufacturing applications where physical interpretability is essential.This review delves into the current state of Explainable Artificial Intelligence (XAI) methods used in the design of composite materials, which spans from prediction to understanding the physical material.Various techniques of interpretability are explained, such as SHAP (SHapley Additive exPlanations), LIME (Local Interpretable Model-agnostic Explanations), feature importance and attention mechanisms, given in the context of composite material science.The review summarizes the existing issues, new solutions, and future prospects of trustworthy ML systems which complement but do not supplant domain expertise.Multi-scale modeling, uncertainty quantification and coupling to physics-informed machine learning are highlighted.This paper is intended to be used by materials scientists, engineers and ML practitioners interested in using explainable AI to help grow the development of composites.Most of the previous reviews focus on machine learning, materials informatics or EAI in isolation.A comprehensive review of the use of explainable machine learning techniques in composite material design, manufacture, performance prediction and physics-informed modeling, however, has not yet been done.The review addresses this gap, bringing together a holistic view of the methodologies of XAI, their engineering significance and recent use in sustainable composite systems.",
+    "innovation": "The increasing demand of composite materials in aerospace, automotive, marine and civil engineering applications including their superior strength-to-weight ratio and customizable properties has made them invaluable in these fields [1].Iterative experimental testing and empirical rules are the traditional approaches, which are time-consuming and economically inefficient.With the advent of machine learning, material discovery, and optimization have been transformed, with the ability to predict complex material properties from limited data, and to discover novel material compositions [2][3][4].One of the strengths of ML is its ability to identify non-linear relationships in large, highdimensional datasets that a human might not be able to spot.Other methods such as deep neural ABSTRACT: Machine learning (ML) has shown significant promise in the ability to make accurate predictions of material properties and optimize formulations to improve composite material development.But many ML models are \"black-box\" models and this lack of interpretability of the physics is a big obstacle to their use in engineering and manufacturing applications where physical interpretability is essential.This review delves into the current state of Explainable Artificial Intelligence (XAI) methods used in the design of composite materials, which spans from prediction to understanding the physical material.Various techniques of interpretability are explained, such as SHAP (SHapley Additive exPlanations), LIME (Local Interpretable Model-agnostic Explanations), feature importance and attention mechanisms, given in the context of composite material science.The review summarizes the existing issues, new solutions, and future prospects of trustworthy ML systems which complement but do not supplant domain expertise.Multi-scale modeling, uncertainty quantification and coupling to physics-informed machine learning are highlighted.This paper is intended to be used by materials scientists, engineers and ML practitioners interested in using explainable AI to help grow the development of composites.Most of the previous reviews focus on machine learning, materials informatics or EAI in isolation.A comprehensive review of the use of explainable machine learning techniques in composite material design, manufacture, performance prediction and physics-informed modeling, however, has not yet been done.The review addresses this gap, bringing together a holistic view of the methodologies of XAI, their engineering significance and recent use in sustainable composite systems.",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Adapt active-site model-selection and descriptor mining to MOF metal nodes, defects, bimetallic sites, or local-field catalytic motifs."
+  },
+  {
+    "title": "Advanced engineering of inorganic semiconductor nanowires: Materials-by-design for next-generation green energy technologies",
+    "authors": [
+      "Sunday Temitope Oyinbo",
+      "Hoe-Gil Lee",
+      "Sikiru Oluwarotimi Ismail",
+      "Tien‐Chien Jen"
+    ],
+    "journal": "Energy Reviews",
+    "publication_date": "2026-10-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.enrev.2026.100216",
+    "url": "https://doi.org/10.1016/j.enrev.2026.100216",
+    "abstract": "Inorganic semiconductor nanowires (NWs) provide an unusually versatile platform for green-energy technologies because composition, crystal phase, defects, interfaces, morphology, and dimensionality can be engineered across multiple length scales. This review critically examines how these coupled design variables govern charge generation and transport, surface recombination, catalytic activity, ion diffusion, thermal transport, and operational stability. Rather than cataloguing individual materials, we identify transferable structure–property–performance relationships across photovoltaics, photoelectrochemical water splitting, photocatalysis, electrochemical energy storage, and thermoelectric conversion. A central conclusion is that nanoscale advantages are intrinsically conditional: reduced dimensions can enhance light trapping, carrier collection, reaction kinetics, and strain accommodation, but simultaneously intensify surface recombination, interfacial instability, defect sensitivity, and integration losses. We therefore evaluate competing engineering strategies in terms of these trade-offs and their implications for device-scale performance, durability, manufacturability, and sustainability. Recent advances in operando characterization, multiscale simulation, density functional theory, machine learning, and active learning are further assessed as tools for connecting synthesis conditions with experimentally validated material states and functional performance. Particular attention is given to the remaining gap between idealized computational predictions and structurally complex experimental NWs. Finally, we identify reproducibility, standardized data, device integration, scalable manufacturing, long-term stability, and uncertainty-aware human-supervised automation as critical requirements for translating semiconductor NWs from laboratory optimization toward deployable green-energy systems.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7220362276",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "battery catalyst perovskite oxide polymer machine learning transferable model"
+    ],
+    "citation_count": 0,
+    "score": 14.977777777777778,
+    "tags": [
+      "active_learning",
+      "catalysis",
+      "crystal",
+      "dft",
+      "electrocatalysis",
+      "h2",
+      "md",
+      "ml",
+      "photocatalysis",
+      "review",
+      "uncertainty",
+      "water"
+    ],
+    "takeaway": "Inorganic semiconductor nanowires (NWs) provide an unusually versatile platform for green-energy technologies because composition, crystal phase, defects, interfaces, morphology, and dimensionality can be engineered across multiple length scales.",
+    "innovation": "Inorganic semiconductor nanowires (NWs) provide an unusually versatile platform for green-energy technologies because composition, crystal phase, defects, interfaces, morphology, and dimensionality can be engineered across multiple length scales.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Cross-chemistry battery state-of-health estimation from adaptive partial charging using interpretable physics-informed Efficient Kolmogorov-Arnold networks",
+    "authors": [
+      "Zekariyas Yohannes",
+      "Yonghong Xu",
+      "Yidi Wei",
+      "Jian Li",
+      "Boru Jia"
+    ],
+    "journal": "Energy and AI",
+    "publication_date": "2026-10-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.egyai.2026.100928",
+    "url": "https://doi.org/10.1016/j.egyai.2026.100928",
+    "abstract": "ABSTRACT Accurate, robust state-of-health (SOH) estimation is essential for safe battery operation and second-life deployment, yet most existing methods depend on fixed feature extraction windows rarely available in real-world charging and offer limited interpretability or cross-chemistry generalization. To address these issues, we propose the physics-informed efficient Kolmogorov-Arnold network (PI-EKAN), which estimates SOH from adaptive partial charging. Prefix-specific Bayesian optimization (PS-BO) selects the most informative state-of-charge window for each chemistry and extracts seven voltage-based descriptors; this feed-coupled solution and dynamics networks are trained under a bounded uncertainty-weighted objective that keeps the data, physics, and monotonicity constraints balanced. Across eight datasets, PI-EKAN reaches an average MAPE of 0.466%, an RMSE of 0.529%, and an R² above 0.979, cutting MAPE by 35.6% relative to a physics-informed baseline while using only 1,800 parameters, far fewer than comparable recurrent Kolmogorov-Arnold models. PS-BO identifies chemistry-specific charging windows that stay informative under restricted SOC visibility, reduced sampling frequency, and simulated battery-management-system errors. In cross-chemistry tests, adapting the pretrained model with one labeled target cell cuts average MAPE from 6.35% source-only transfer to 1.19% using hybrid low-rank EKAN-LoRA fine-tuning with half the trainable parameters across sixteen transfer pairs. Component ablation identifies the bounded adaptive weighting as the key stabilizing element, and post-hoc attribution and learned-spline analyses consistently rank voltage-shape descriptors as the leading inputs, indicating that the model captures degradation-related structure rather than dataset artifacts. These results establish PI-EKAN as a compact, interpretable, chemistry-transferable framework for SOH estimation from the incomplete charging data real battery systems produce.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7220376147",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "physics-informed machine learning symbolic regression materials descriptors"
+    ],
+    "citation_count": 0,
+    "score": 14.877777777777778,
+    "tags": [
+      "active_learning",
+      "battery",
+      "foundation_model",
+      "h2",
+      "md",
+      "physics_informed",
+      "separation",
+      "transfer_learning",
+      "uncertainty"
+    ],
+    "takeaway": "Prefix-specific Bayesian optimization (PS-BO) selects the most informative state-of-charge window for each chemistry and extracts seven voltage-based descriptors; this feed-coupled solution and dynamics networks are trained under a bounded uncertainty-weighted objective that keeps the data, physics, and monotonicity constraints balanced.",
+    "innovation": "Prefix-specific Bayesian optimization (PS-BO) selects the most informative state-of-charge window for each chemistry and extracts seven voltage-based descriptors; this feed-coupled solution and dynamics networks are trained under a bounded uncertainty-weighted objective that keeps the data, physics, and monotonicity constraints balanced.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Fine-tune or adapt the representation on sparse MOF labels such as flexibility, defects, guest response, or adsorption regimes."
+  },
+  {
+    "title": "General-purpose LLMs as constrained crystal composition generators",
+    "authors": [
+      "Hedda Oschinski",
+      "Maximilian L. Ach",
+      "Konstantin S. Jakob",
+      "Christian Carbogno",
+      "Karsten Reuter"
+    ],
+    "journal": "npj Computational Materials",
+    "publication_date": "2026-10-09",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s41524-026-02339-9",
+    "url": "https://doi.org/10.1038/s41524-026-02339-9",
+    "abstract": "Abstract The targeted discovery of inorganic materials remains challenging due to the vastness of compositional design spaces and the high cost of exhaustive screening. Task-specific generative artificial intelligence represents a particularly efficient alternative to screening, yet demands tedious collection of training data before providing real benefit. General-purpose large language models (LLMs) have recently shown tremendous potential for the targeted generation of single, optimal materials compositions without the need for task-specific fine-tuning. However, it is unclear whether LLMs generally pose an advantage compared to specialized generative models, in particular in large design spaces. Here, we demonstrate that such models are capable of covering entire regions of the targeted property space effectively and systematically. Using Elpasolite materials as an established benchmark for generative tasks in large chemical spaces, we find that an iterative prompt-and-response framework is able to recover on average 96% of all low-energy Elpasolites in the target region. This performance, driven mainly by iterative in-context learning, surpasses the generative abilities of previous, task-specific models. Our results establish general-purpose LLMs as flexible and accessible components for inverse materials design workflows.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7163015398",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials discovery Bayesian optimization active learning autonomous laboratory",
+      "materials machine learning foundation model crystal property prediction"
+    ],
+    "citation_count": 0,
+    "score": 14.866666666666667,
+    "tags": [
+      "crystal",
+      "foundation_model",
+      "generative_model",
+      "h2",
+      "high_throughput",
+      "priority_journal",
+      "transfer_learning"
+    ],
+    "takeaway": "Here, we demonstrate that such models are capable of covering entire regions of the targeted property space effectively and systematically.",
+    "innovation": "Here, we demonstrate that such models are capable of covering entire regions of the targeted property space effectively and systematically.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+  },
+  {
+    "title": "Digital twins for energy wells through multiscale physics-data fusion: Review, challenges, and a conceptual framework",
+    "authors": [
+      "Jiapei Du",
+      "Annan Zhou",
+      "Ergün Kuru"
+    ],
+    "journal": "Geoenergy Science and Engineering",
+    "publication_date": "2026-10-07",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.geoen.2026.214860",
+    "url": "https://doi.org/10.1016/j.geoen.2026.214860",
+    "abstract": "Energy wells underpin critical technologies in the global energy transition, including geothermal energy extraction, carbon capture and storage, and underground hydrogen storage. In recent years, digital twin (DT) concepts have been increasingly explored to support well design, monitoring, and integrity management. However, most existing DT implementations for energy wells remain limited in scope and maturity, with incomplete integration of multiscale physics, evolving field data, and adaptive operational decision support. These limitations arise from heavy reliance on high-fidelity physics-based simulations with prohibitive computational costs, or on purely data-driven models that exhibit limited generalizability under evolving geological and operational conditions. To clarify the current state of the field, this paper first reviews recent DT developments for energy wells across oil and gas, geothermal, and subsurface energy storage applications. Building on this, we further synthesize advances in molecular dynamics, pore-scale simulation, continuum-scale thermo–hydro–mechanical–chemical modeling, and physics-informed machine learning, highlighting how multiscale physical processes governing clay–cement–fluid interactions, deformation, damage, and transport are currently treated in isolation. Motivated by these gaps, we propose a conceptual multiscale physics–data fusion DT framework for energy wells. The framework outlines an integrated architecture in which molecular- and mesoscale descriptors are systematically upscaled into continuum constitutive relationships, while top-down geological and operational constraints are incorporated to ensure cross-scale physical consistency. A central artificial intelligence layer is introduced to conceptually combine physics-informed surrogate models with ensemble-based data assimilation of heterogeneous monitoring data (e.g., pressure, temperature, deformation, and acoustic responses), enabling real-time updating primarily at the continuum-scale THMC and surrogate-model layers, while molecular- and pore-scale modules provide offline mechanistic priors and event-triggered feedback within a hierarchical multiscale DT architecture. An illustrative lifecycle workflow based on a geological CO 2 storage well is presented to demonstrate how the proposed framework could, in principle, support design optimization, operational anomaly diagnosis, and long-term integrity assessment. This study provides a unifying methodological foundation for the future development of predictive and data-adaptive DTs for subsurface energy systems.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7221018636",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials discovery Bayesian optimization active learning autonomous laboratory",
+      "materials generative model diffusion inverse design crystal structure"
+    ],
+    "citation_count": 0,
+    "score": 14.544444444444444,
+    "tags": [
+      "co2",
+      "h2",
+      "md",
+      "ml",
+      "physics_informed",
+      "review",
+      "separation",
+      "surrogate_model"
+    ],
+    "takeaway": "The framework outlines an integrated architecture in which molecular- and mesoscale descriptors are systematically upscaled into continuum constitutive relationships, while top-down geological and operational constraints are incorporated to ensure cross-scale physical consistency.",
+    "innovation": "The framework outlines an integrated architecture in which molecular- and mesoscale descriptors are systematically upscaled into continuum constitutive relationships, while top-down geological and operational constraints are incorporated to ensure cross-scale physical consistency.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Potentially useful as a neighboring-method reference.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Keep only if the full paper exposes a reusable representation, validation loop, or data-efficiency strategy for a concrete MOF task."
+  },
+  {
+    "title": "A review on foundation models for polymer informatics",
+    "authors": [
+      "Yihan Zhu",
+      "Eric Inae",
+      "Yuhan Liu",
+      "Weijiang Li",
+      "Sobin Alosious",
+      "Renzheng Zhang",
+      "Gang Liu",
+      "Tengfei Luo",
+      "Meng Jiang"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-10-05",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15009949/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15009949/v1",
+    "abstract": "Foundation models have emerged as a powerful paradigm for learning transferable knowledge from broad, heterogeneous data and adapting them to diverse downstream tasks, driving a growing interest in AI-accelerated scientific discovery. In polymer science, this paradigm offers a promising route beyond conventional machine learning methods that are often confined to isolated tasks and struggle to generalize under data scarcity and across heterogeneous downstream settings. Polymer foundation models (PFMs), however, are not merely general scientific foundation models applied to polymer datasets. They must address representation, generation, transfer, and evaluation challenges specific to polymer informatics. This review synthesizes recent progress in PFMs for representation learning and generative modeling, spanning models designed for polymer systems and those adapted from general foundation models. We organize this review around two stages: (1) polymer modeling as the foundation, covering representations, datasets, model architectures, and pretraining objectives; and (2) downstream applications, evaluation, and adaptation. By synthesizing recent progress, open challenges, and future directions, this review outlines a roadmap toward robust and generalizable foundation models for polymer informatics.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7220681316",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "machine learned interatomic potential active learning materials molecular dynamics",
+      "materials discovery Bayesian optimization active learning autonomous laboratory"
+    ],
+    "citation_count": 0,
+    "score": 14.322222222222223,
+    "tags": [
+      "foundation_model",
+      "generative_model",
+      "ml",
+      "polymer",
+      "review",
+      "self_supervised"
+    ],
+    "takeaway": "Foundation models have emerged as a powerful paradigm for learning transferable knowledge from broad, heterogeneous data and adapting them to diverse downstream tasks, driving a growing interest in AI-accelerated scientific discovery.",
+    "innovation": "Foundation models have emerged as a powerful paradigm for learning transferable knowledge from broad, heterogeneous data and adapting them to diverse downstream tasks, driving a growing interest in AI-accelerated scientific discovery.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+  },
+  {
+    "title": "Beyond Scalar Objectives: Expert-Feedback-Driven Autonomous Experimentation for Scientific Discovery at the Nanoscale",
+    "authors": [
+      "Ralph Bulanadi",
+      "Jefferey Baxter",
+      "Arpan Biswas",
+      "Hiroshi Funakubo",
+      "V. Nagarajan",
+      "Daniel Sando",
+      "Dennis Meier",
+      "Jan Schultheiß",
+      "Rama Krishnan Vasudevan",
+      "Yongtao Liu"
+    ],
+    "journal": "ACS Nano",
+    "publication_date": "2026-10-07",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acsnano.6c09449",
+    "url": "https://doi.org/10.1021/acsnano.6c09449",
+    "abstract": "Abstract Self-driving laboratories or autonomous experimentation are emerging as transformative platforms for accelerating scientific discovery. Bayesian optimization (BO) is among the most widely used machine learning frameworks in self-driving laboratories, but these BO-based frameworks rely on predefined scalar descriptors to guide experimentation. This limits their ability to handle complex phenomena that are difficult to formalize as scalar descriptors. In many situations, the determination of an appropriate scalar descriptor can be challenging, and may fail to capture subtle yet scientifically important phenomena apparent to experts with interdisciplinary insight. This problem is particularly pronounced in nanoscale imaging experiments, where strong local heterogeneity, multidimensional observations, and emergent physical behaviors often cannot be effectively represented using scalar metrics. To overcome this limitation, here we develop deep-kernel pairwise learning (DKPL), an approach for autonomous microscopy experiments which incorporates human expertise and interdisciplinary scientific knowledge into an active learning loop. Instead of relying on explicit scalar objectives, DKPL enables experts to directly evaluate which experimental output is more promising using interdisciplinary knowledge. DKPL then learns a latent utility function from these expert judgments to guide subsequent autonomous microscopy experiments. We demonstrate DKPL’s performance in learning physically meaningful nanoscale structures in lead titanate thin films while effectively prioritizing high-information measurement regions using an experimental model dataset with known ground truth. We further apply DKPL to analyze the character of ferroelectric domain walls, where we find DKPL capable of distinguishing between high and low characteristic domain-wall angles in lead zirconium titanate, and able to discover both head-to-head and tail-to-tail domain-wall character in erbium manganite. Autonomous experiments in mixed-phase bismuth ferrite also demonstrate DKPL’s ability to link material structure with their properties in on-the-fly measurements. This development demonstrates an approach to integrate expert knowledge into autonomous microscopy experiments across a variety of material systems, and demonstrates a pathway toward expert-guided self-driving laboratories capable of addressing scientific problems beyond the limits of scalar-metrics-driven learning.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7162124772",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials discovery Bayesian optimization active learning autonomous laboratory"
+    ],
+    "citation_count": 0,
+    "score": 14.244444444444445,
+    "tags": [
+      "active_learning",
+      "h2",
+      "ml",
+      "priority_journal",
+      "separation"
+    ],
+    "takeaway": "Bayesian optimization (BO) is among the most widely used machine learning frameworks in self-driving laboratories, but these BO-based frameworks rely on predefined scalar descriptors to guide experimentation.",
+    "innovation": "Bayesian optimization (BO) is among the most widely used machine learning frameworks in self-driving laboratories, but these BO-based frameworks rely on predefined scalar descriptors to guide experimentation.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Use uncertainty or acquisition logic to choose which MOF DFT, MD, or GCMC labels to compute next."
+  },
+  {
+    "title": "SSCHA-based evolutionary crystal structure prediction at finite temperatures with account for quantum nuclear motion",
+    "authors": [
+      "Daniil Poletaev",
+      "Artem Oganov"
+    ],
+    "journal": "npj Computational Materials",
+    "publication_date": "2026-10-09",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s41524-026-02333-1",
+    "url": "https://doi.org/10.1038/s41524-026-02333-1",
+    "abstract": "Abstract Reliable crystal structure prediction (CSP) at finite temperatures, including quantum anharmonic effects, remains challenging but is particularly important for systems containing light atoms such as superconducting hydrides. Here, we integrate machine-learned interatomic potentials (MLIPs) with the stochastic self-consistent harmonic approximation (SSCHA) to enable evolutionary CSP on the quantum anharmonic free-energy landscape. Using LaH 10 as a test case, we compare three approaches: (i) active-learning MLIPs (AL-MLIPs) trained on the fly, (ii) universal MLIPs (uMLIPs), and (iii) temperature-dependent effective potentials (TDEPs) trained on SSCHA ensemble data. AL-MLIPs correctly predict the cubic Fm $$\\bar{3}$$ 3 ¯ m phase but require thermodynamic perturbation theory corrections for consistent results. The foundation uMLIP Mattersim-5m enables SSCHA-based CSP without per-structure training, but fine-tuning is required for higher accuracy. Temperature-dependent effective potentials trained on SSCHA data enable accurate and very efficient CSP for large unit cells on the quantum anharmonic free-energy landscape. We demonstrate that quantum anharmonicity simplifies the free-energy landscape and is essential for the correct energy ranking of LaH 10 structures.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7117987889",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "machine learned interatomic potential active learning materials molecular dynamics",
+      "materials machine learning foundation model crystal property prediction",
+      "self-supervised transfer learning materials property prediction small data"
+    ],
+    "citation_count": 0,
+    "score": 14.066666666666666,
+    "tags": [
+      "crystal",
+      "h2",
+      "interatomic_potential",
+      "priority_journal",
+      "transfer_learning"
+    ],
+    "takeaway": "We demonstrate that quantum anharmonicity simplifies the free-energy landscape and is essential for the correct energy ranking of LaH 10 structures.",
+    "innovation": "We demonstrate that quantum anharmonicity simplifies the free-energy landscape and is essential for the correct energy ranking of LaH 10 structures.",
+    "limitations": "Abstract-level evidence is promising, but validation breadth is unclear without reading the full paper.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Fine-tune or adapt the representation on sparse MOF labels such as flexibility, defects, guest response, or adsorption regimes."
+  },
+  {
+    "title": "Integration of density functional theory and machine learning for materials discovery in energy applications",
+    "authors": [
+      "Jeslin Jebish G P"
+    ],
+    "journal": "Discover Chemistry.",
+    "publication_date": "2026-09-22",
+    "year": 2026,
+    "doi": "https://doi.org/10.1007/s44371-026-00985-y",
+    "url": "https://doi.org/10.1007/s44371-026-00985-y",
+    "abstract": "The global transition toward clean and renewable energy systems demands the rapid identification of novel functional materials for hydrogen production, photocatalysis, CO₂ reduction, and electrochemical energy storage. Traditional experimental trial and error approaches, combined with computationally expensive standalone density functional theory (DFT) calculations, have long constrained the pace of materials discovery. The convergence of machine learning (ML) and DFT has emerged as a transformative paradigm that accelerates the identification, screening, and validation of energy-relevant materials. This review critically surveys the integration of DFT and ML across the energy-materials landscape. Examine how DFT generated datasets, encompassing bandgap values, formation energies, adsorption energies, and electronic structure descriptors, serve as the foundation for training predictive ML models, and delineate the methodological pipeline that connects them. The roles of curated materials databases, including the Materials Project, the Open Quantum Materials Database (OQMD), and AFLOW, in enabling data-driven discovery are discussed alongside the workflow-automation frameworks that operationalise them. Applications spanning the hydrogen evolution reaction (HER), photocatalytic water splitting, CO₂ reduction, and lithium-ion battery materials are reviewed. Current challenges, including data quality and coverage, DFT accuracy limitations, model interpretability, out of distribution generalisation, and the reproducibility of several landmark large-scale demonstrations, are addressed, and future directions toward autonomous materials discovery platforms integrating artificial intelligence, robotics, and quantum computing are outlined together with their present-day limitations and motivating open problems. The DFT - ML framework has matured from a proof of concept into an important engine of energy materials discovery. DFT - ML integration enables accelerated discovery and screening of functional energy materials. Graph-based learning provides efficient prediction of key DFT-derived materials properties. Active learning couples ML screening with targeted DFT calculations for efficient materials exploration. High-throughput workflows and open databases establish scalable, data-driven materials discovery pipelines. Critical assessment identifies data, accuracy, interpretability, reproducibility, and generalisation challenges.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7213967115",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "physics-informed machine learning symbolic regression materials descriptors"
+    ],
+    "citation_count": 0,
+    "score": 13.877777777777778,
+    "tags": [
+      "active_learning",
+      "adsorption",
+      "battery",
+      "catalysis",
+      "dft",
+      "electrocatalysis",
+      "h2",
+      "high_throughput",
+      "ml",
+      "photocatalysis",
+      "review",
+      "uncertainty",
+      "water"
+    ],
+    "takeaway": "Examine how DFT generated datasets, encompassing bandgap values, formation energies, adsorption energies, and electronic structure descriptors, serve as the foundation for training predictive ML models, and delineate the methodological pipeline that connects them.",
+    "innovation": "Examine how DFT generated datasets, encompassing bandgap values, formation energies, adsorption energies, and electronic structure descriptors, serve as the foundation for training predictive ML models, and delineate the methodological pipeline that connects them.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Distilling First-Principles Accuracy into Compact Machine Learning Potentials for Condensed-Phase Chemistry",
+    "authors": [
+      "Sijia Chen",
+      "Niamh O'Neill",
+      "Benjamin X. Shi",
+      "Venkat Kapil"
+    ],
+    "journal": "Journal of Chemical Theory and Computation",
+    "publication_date": "2026-10-09",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acs.jctc.6c01131",
+    "url": "https://doi.org/10.1021/acs.jctc.6c01131",
+    "abstract": "Abstract Accurate machine learning interatomic potentials (MLIPs) have made first-principles-quality potential energy surfaces increasingly accessible for condensed-phase chemistry, but their inference cost can still limit the sampling needed to compute experimentally relevant observables. In this work, we use knowledge distillation to construct compact “student” models that retain the accuracy of much larger “teacher” models obtained through either finetuning of foundation models or Δ-learning. The resulting students reduce production simulation cost by approximately an order of magnitude, making high-accuracy sampling practical for challenging condensed-phase problems. We demonstrate this across three problems of increasing sampling complexity: finite-temperature NPT simulations of ice Ih, classical and path-integral simulations of liquid water over 240–370 K, and path-integral umbrella-sampling simulations of water dissociation at the anatase TiO2(101)/water interface. When compared, the distilled students reproduce the target observables of their teachers more reliably than equally compact models trained only on the available reference data. The liquid water student, distilled from a Δ-learned CCSD(T)-quality teacher, reproduces thermodynamic, structural, transport, and nuclear quantum effects over the full temperature range studied. At the TiO2/water interface, knowledge distillation makes PIMD umbrella sampling practical and shows that nuclear quantum effects lower the dissociation barrier by approximately 2 kcal/mol and shift the molecular–dissociated free energy difference into closer agreement with recent solid-state 17O NMR measurements. Our work demonstrates how knowledge distillation can make accurate MLIPs practical for the sampling methods needed to connect condensed-phase reaction thermodynamics with experiment, notably for interfacial chemistry and catalysis.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7163865113",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "machine learned interatomic potential active learning materials molecular dynamics",
+      "materials graph neural network equivariant representation learning crystal",
+      "materials machine learning foundation model crystal property prediction"
+    ],
+    "citation_count": 0,
+    "score": 13.866666666666667,
+    "tags": [
+      "catalysis",
+      "dft",
+      "foundation_model",
+      "h2",
+      "interatomic_potential",
+      "md",
+      "ml",
+      "transfer_learning",
+      "water"
+    ],
+    "takeaway": "We demonstrate this across three problems of increasing sampling complexity: finite-temperature NPT simulations of ice Ih, classical and path-integral simulations of liquid water over 240–370 K, and path-integral umbrella-sampling simulations of water dissociation at the anatase TiO2(101)/water interface.",
+    "innovation": "We demonstrate this across three problems of increasing sampling complexity: finite-temperature NPT simulations of ice Ih, classical and path-integral simulations of liquid water over 240–370 K, and path-integral umbrella-sampling simulations of water dissociation at the anatase TiO2(101)/water interface.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "From Trial-and-Error to Closed-Loop Design: A Data-Driven Review on Biomass-Derived Carbon for Supercapacitors",
+    "authors": [
+      "Xin Ning",
+      "Honghui Wang",
+      "Yunping Chen",
+      "Cheng Chen",
+      "Haofeng Lu",
+      "LeXing You",
+      "Huijuan Guan",
+      "Donghai Lin"
+    ],
+    "journal": "Environmental Surfaces and Interfaces",
+    "publication_date": "2026-10-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.esi.2026.09.004",
+    "url": "https://doi.org/10.1016/j.esi.2026.09.004",
+    "abstract": "Supercapacitors are vital for sustainable energy storage, and biomass-derived carbons are promising electrode materials owing to their low cost, renewability, and inherent hierarchical porosity. However, their electrochemical performance arises from a complex interplay of pore architecture, graphitization degree, and heteroatom doping, making trial-and-error optimization inefficient. This review adopts a data-driven perspective, systematically covering the entire value chain (from precursor selection and carbonization to pore engineering, surface modification, and characterization) while emphasizing how each variable can be quantified as input features for machine learning (ML). We discuss the mechanistic roles of structure, graphitization, and surface chemistry in regulating ion transport, electron conduction, and charge storage, and summarize common characterization (Raman, XRD, XPS, FTIR, BET) and electrochemical (CV, GCD, EIS) techniques. Critically, we highlight several problematic practices: the misleading “green” activation narrative, scalability limits of templating, non-linear trade-offs in chasing ultra-high surface area and heavy doping, oversimplified interpretation of the Raman I D / I G ratio, and deceptive reliance on three-electrode data for device-level predictions. To overcome these, we advocate for a closed-loop, data-driven design framework that integrates standardized databases, active learning, and inverse design to guide the rational development of biomass-derived carbon electrodes. This framework integrates ML not as an add-on but as the central engine connecting precursor–process–structure–performance relationships. Realizing the full potential of biomass-derived carbons demands a cultural shift from pursuing idealized metrics toward reproducibility, scalability, and rigorous device-relevant validation. By merging closed-loop data-driven discovery with mechanistic understanding, the field can effectively bridge the gap between laboratory findings and practical supercapacitor technologies.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7215041529",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials generative model diffusion inverse design crystal structure"
+    ],
+    "citation_count": 0,
+    "score": 13.477777777777778,
+    "tags": [
+      "active_learning",
+      "electrocatalysis",
+      "generative_model",
+      "h2",
+      "high_throughput",
+      "ml",
+      "porous_material",
+      "review"
+    ],
+    "takeaway": "Supercapacitors are vital for sustainable energy storage, and biomass-derived carbons are promising electrode materials owing to their low cost, renewability, and inherent hierarchical porosity.",
+    "innovation": "Supercapacitors are vital for sustainable energy storage, and biomass-derived carbons are promising electrode materials owing to their low cost, renewability, and inherent hierarchical porosity.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+  },
+  {
+    "title": "Large language models, ChatGPT, and beyond: A new paradigm for condition monitoring and prognosis in power and energy systems",
+    "authors": [
+      "Mohamed Benbouzid"
+    ],
+    "journal": "Energy and AI",
+    "publication_date": "2026-10-05",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.egyai.2026.100926",
+    "url": "https://doi.org/10.1016/j.egyai.2026.100926",
+    "abstract": "Large language models and related foundation models offer new capabilities for interpreting heterogeneous information, retrieving engineering knowledge, and supporting high-level decision processes in power and energy systems. This Perspective examines their role in condition monitoring and prognostics and health management, with particular emphasis on remaining useful life estimation. To support language and multimodal model interpretation of structured and validated estimates, we propose a digital twin-centric architecture comprising physics-guided hybrid estimation, digital twin synchronization, rule-governed semantic translation, foundation model reasoning, output validation, and human supervision. The specific contribution is threefold. First, the proposed layering principle distinguishes physically consistent estimation, system integration, and higher-level reasoning functions. Second, an auditable semantic interface is defined to encode health indicators, degradation states, remaining useful life distributions, uncertainty information, operating context, provenance, retrieved evidence, and permitted reasoning scope. Third, a deployment-oriented reliability framework relates physical consistency, digital twin consistency, explanation fidelity, uncertainty preservation, robustness, traceability, safe deferral, latency, data sensitivity, and computational requirements to edge, on premises, cloud, and hybrid implementations. An illustrative battery state-of-health and remaining useful life use case demonstrates the resulting information flow. The foundation model layer is primarily intended for slow-timescale, human-supervised functions such as diagnostic explanation, degradation interpretation, maintenance prioritization, inspection planning, and fleet-level assessment, rather than protection or real-time control. The Perspective also examines complementary roles for small language models, tiny recursive models, world models, large language models, and multimodal foundation models and identifies priorities for their reliable evaluation and deployment in power and energy prognostics and health management.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7220439991",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "physics-informed machine learning symbolic regression materials descriptors"
+    ],
+    "citation_count": 0,
+    "score": 13.322222222222223,
+    "tags": [
+      "battery",
+      "foundation_model",
+      "h2",
+      "multimodal",
+      "review",
+      "uncertainty"
+    ],
+    "takeaway": "Large language models and related foundation models offer new capabilities for interpreting heterogeneous information, retrieving engineering knowledge, and supporting high-level decision processes in power and energy systems.",
+    "innovation": "Large language models and related foundation models offer new capabilities for interpreting heterogeneous information, retrieving engineering knowledge, and supporting high-level decision processes in power and energy systems.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Fine-tune or adapt the representation on sparse MOF labels such as flexibility, defects, guest response, or adsorption regimes."
+  },
+  {
+    "title": "A Comprehensive Review of Battery State of Health Estimation: Methods, Challenges and Future Perspectives",
+    "authors": [
+      "Hakan Çoban",
+      "Koray Erhan",
+      "Mustafa Baysal"
+    ],
+    "journal": "International Journal of Automotive Science And Technology",
+    "publication_date": "2026-10-03",
+    "year": 2026,
+    "doi": "https://doi.org/10.30939/ijastech..1995891",
+    "url": "https://doi.org/10.30939/ijastech..1995891",
+    "abstract": "Lithium-ion battery state of health (SOH) cannot be measured directly and must be inferred from capacity, resistance, voltage, current, temperature, and usage history. This structured narrative review integrates degradation mechanisms with feature-based, model-based, data-driven, and physics-informed/hybrid estimation methods, and evaluates them against validation design, chemistry dependence, uncertainty, computational burden, and on-board feasibility. The literature was updated through targeted searches of Crossref-indexed publisher platforms, IEEE Xplore, ScienceDirect, SpringerLink/Nature, Wiley Online Library, and MDPI; 117 unique publications, institutional reports, and regulatory documents were retained after duplicate removal and relevance screening. Reported errors are treated as study-specific results rather than universal characteristics of method families. The synthesis shows that no single estimator is uniformly superior: feature-based diagnostics provide physical insight but require informative and low-noise operating segments; equivalent-circuit observers are compatible with embedded implementation but depend on model adaptation; data-driven models can achieve low error within their validation domain but require rigorous cross-cell and cross-condition testing; and physics-informed or hybrid approaches offer a promising compromise when their added complexity is justified. Future progress depends on transparent validation, uncertain-aware estimation, chemistry transfer, compact edge implementation, multimodal sensing, and auditable life-cycle data under emerging battery regulations.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7218342478",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials generative model diffusion inverse design crystal structure"
+    ],
+    "citation_count": 0,
+    "score": 13.3,
+    "tags": [
+      "battery",
+      "h2",
+      "high_throughput",
+      "ml",
+      "multimodal",
+      "physics_informed",
+      "review",
+      "uncertainty"
+    ],
+    "takeaway": "Lithium-ion battery state of health (SOH) cannot be measured directly and must be inferred from capacity, resistance, voltage, current, temperature, and usage history.",
+    "innovation": "Lithium-ion battery state of health (SOH) cannot be measured directly and must be inferred from capacity, resistance, voltage, current, temperature, and usage history.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use uncertainty or acquisition logic to choose which MOF DFT, MD, or GCMC labels to compute next."
+  },
+  {
+    "title": "Reinforcement Learning on the Discrete Composition Channel of a Crystal Generator: Validated Gains and Reward Hacking",
+    "authors": [
+      "Pawan Prakash",
+      "Philipp Höllmer",
+      "Addis Fuhr",
+      "Peter Hirschfeld",
+      "P. Ganesh",
+      "Stefano Martiniani",
+      "Richard Hennig"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-10-02",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2610.03880",
+    "url": "https://arxiv.org/abs/2610.03880",
+    "abstract": "Inverse materials design is a long-standing goal of computational materials discovery. Generative models for crystalline materials are typically trained to match the distribution of a structure database, while nothing in their training objective points them at specific design goals such as targeted properties. We use group-relative policy optimization (GRPO) to align a generative model based on stochastic interpolants and discrete flow matching with general black-box reward functions through reinforcement learning. Atom types are generated by a discrete flow and the policy gradient of our generalization of GRPO directly acts on the likelihoods of the atom-type transitions, which differentiates our work from previous reinforcement-learning approaches for diffusion and flow-based generative models of crystalline materials. We introduce a reward function that raises the yield of metastable, unique and novel structures (mSUN) from 13.4% for the pretrained model to 45.5% for the reinforced model, as evaluated by a community benchmark. Our reward also improves the performance of a reinforcement learning framework for crystalline materials based on latent denoising diffusion models. At the same time, we find that directly reinforcing atom-type transition likelihoods enables reward exploitation that has to be prevented with explicit guards. The same analysis also exposes a gap in the community metric. Single-element structures in distinct packings are counted as metastable, unique and novel materials and inflate mSUN without yielding any new compounds. A stability claim is only as good as its reference hull. We report every result split by the number of reference phases behind it and argue that benchmarks should do the same.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7220690816",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials generative model diffusion inverse design crystal structure",
+      "materials graph neural network equivariant representation learning crystal"
+    ],
+    "citation_count": 0,
+    "score": 13.28888888888889,
+    "tags": [
+      "crystal",
+      "foundation_model",
+      "generative_model",
+      "high_throughput",
+      "md",
+      "uncertainty"
+    ],
+    "takeaway": "We introduce a reward function that raises the yield of metastable, unique and novel structures (mSUN) from 13.4% for the pretrained model to 45.5% for the reinforced model, as evaluated by a community benchmark.",
+    "innovation": "We introduce a reward function that raises the yield of metastable, unique and novel structures (mSUN) from 13.4% for the pretrained model to 45.5% for the reinforced model, as evaluated by a community benchmark.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+  },
+  {
+    "title": "GEODE: Symmetry-Preserving Cartesian Diffusion for Crystal Generation",
+    "authors": [
+      "Yuchen Lou",
+      "Alex M. Ganose"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-10-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2610.01898",
+    "url": "https://arxiv.org/abs/2610.01898",
+    "abstract": "Most known inorganic crystals exhibit symmetric atomic arrangements, yet generative models often fail to reproduce them. Explicitly enforcing these symmetries has so far yielded fewer stable and novel structures than unconstrained generation. We introduce Generative Equivariant Orbit Diffusion Engine (GEODE), to our knowledge the first model to combine coordinate and lattice diffusion in Cartesian space. GEODE first samples symmetry templates, then jointly generates the lattice, atomic coordinates and atom types while preserving the specified symmetry with a novel Wyckoff-constrained loss. Cartesian diffusion gives coordinate noise a consistent physical scale that we empirically demonstrate improves performance. Unconditional generation achieves a metastable, unique and novel (mSUN) rate of 11.9%, compared with 7.7% for the next best symmetry-aware model. We also introduce sampling time template filtering, which increases mSUN by ~6% without retraining, making GEODE competitive with leading symmetry-agnostic models. Template selection also enables joint symmetry and property guidance, which we demonstrate through classifier-free guidance of permittivity.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7215982523",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials graph neural network equivariant representation learning crystal"
+    ],
+    "citation_count": 0,
+    "score": 13.277777777777779,
+    "tags": [
+      "crystal",
+      "equivariant_ml",
+      "generative_model",
+      "md",
+      "physics_informed"
+    ],
+    "takeaway": "We introduce Generative Equivariant Orbit Diffusion Engine (GEODE), to our knowledge the first model to combine coordinate and lattice diffusion in Cartesian space.",
+    "innovation": "We introduce Generative Equivariant Orbit Diffusion Engine (GEODE), to our knowledge the first model to combine coordinate and lattice diffusion in Cartesian space.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+  },
+  {
+    "title": "Artificial intelligence in microplastic and nanoplastic research: State-of-Art review from automated detection to environmental fate modeling",
+    "authors": [
+      "Jianqiao Song",
+      "Kaushik Venkiteshwaran",
+      "Shenghua Wu"
+    ],
+    "journal": "Journal of Hazardous Materials Plastics",
+    "publication_date": "2026-09-24",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.hazmp.2026.100083",
+    "url": "https://doi.org/10.1016/j.hazmp.2026.100083",
+    "abstract": "Microplastic and nanoplastic research has entered a data-intensive phase in which analytical throughput, interlaboratory comparability, and environmental interpretability determine whether monitoring results can support mechanistic understanding and management decisions. This critical review evaluates where artificial intelligence (AI) adds analytical value and where performance claims remain fragile across sampling, imaging, spectroscopy, multimodal characterization, environmental fate and transport, engineered treatment, toxicity, and risk assessment. Rather than treating reported accuracy as a sufficient indicator of readiness, competing AI approaches are compared according to label provenance, robustness to domain shift, external validation, uncertainty quantification, computational burden, and feasibility for routine laboratories. Computer vision and spectral classifiers can reduce manual screening under controlled acquisition, but performance commonly deteriorates across instruments, staining protocols, particle aging states, size ranges, and environmental matrices; visual classification alone cannot establish polymer identity. Explainable AI is useful only when attribution is stable and chemically interpretable, while physics-informed learning is most defensible when mass conservation, boundary conditions, and dimensionally consistent transport equations constrain model behavior. Public image and spectral resources are expanding, but they remain fragmented, single-modality, and incompletely standardized. Regulatory translation is further limited by insufficient proficiency testing, locked model validation, traceable version control, and demonstrated equivalence to accepted analytical methods. A tiered implementation framework is therefore proposed in which AI supports prescreening, uncertainty-based triage, spectroscopic confirmation, mechanistic modeling, and auditable decision support rather than operating as an unverified stand-alone classifier.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7214173072",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "physics-informed machine learning symbolic regression materials descriptors"
+    ],
+    "citation_count": 0,
+    "score": 13.200000000000001,
+    "tags": [
+      "force_field",
+      "h2",
+      "high_throughput",
+      "image_analysis",
+      "multimodal",
+      "physics_informed",
+      "polymer",
+      "review",
+      "uncertainty"
+    ],
+    "takeaway": "Microplastic and nanoplastic research has entered a data-intensive phase in which analytical throughput, interlaboratory comparability, and environmental interpretability determine whether monitoring results can support mechanistic understanding and management decisions.",
+    "innovation": "Microplastic and nanoplastic research has entered a data-intensive phase in which analytical throughput, interlaboratory comparability, and environmental interpretability determine whether monitoring results can support mechanistic understanding and management decisions.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Map the method onto MOF structure images, spectra, isotherm curves, or generated-structure consistency checks. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Distant-domain method can be useful if it maps to a concrete MOF object such as structure images, spectra, isotherms, pore maps, or multimodal consistency checks.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Translate visual-artifact or metadata-consistency logic to MOF structure images/renders, spectra, isotherm curves, generated CIF validation, or multimodal paper-structure consistency checks."
+  },
+  {
+    "title": "Polymer Informatics in the Era of Foundation Models: From Representation to Autonomous Design",
+    "authors": [
+      "Jianxin He",
+      "Ying Li"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-09-23",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15009334/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15009334/v1",
+    "abstract": "Foundation models, pretrained on broad datasets and adapted to multiple tasks, offer a way to reuse chemical knowledge across polymer property prediction and inverse design. Realizing this opportunity requires connecting learned representations to materials whose properties also depend on molecular populations, formulation, processing, and measurement conditions. Here, we review advances in polymer foundation models and the data, representations, and experimental workflows that support their use in materials design. We organize these developments around the polymer material state, a description linking chemical identity to molecular distributions, architecture, morphology, and preparation history relevant to a target property. This organization connects data resources and pretraining strategies to questions about what models learn, how that knowledge transfers, and which experimental choices it can support. We compare learning objectives and adaptation methods, examine representations of polymer chemistry and state, and follow inverse design from candidate generation through synthesis and processing to validation. Pretrained models now support prediction across multiple properties and generation for specified targets, with selected polymer candidates reaching synthesis and thermal characterization. Broader polymer design campaigns show how precursor accessibility, polymerization outcomes, and specimen preparation influence whether a predicted advantage becomes a measured material response. Building on this evidence, we discuss opportunities to combine chemical pretraining with richer sample information and to assess transfer across polymer families, preparation conditions, and experimental campaigns. The resulting synthesis connects model development to a practical objective for polymer informatics: reducing the new experimentation needed to obtain materials with reproducible, targeted performance.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7214107647",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "physics-informed machine learning symbolic regression materials descriptors"
+    ],
+    "citation_count": 0,
+    "score": 13.188888888888888,
+    "tags": [
+      "foundation_model",
+      "generative_model",
+      "h2",
+      "polymer",
+      "review",
+      "self_supervised"
+    ],
+    "takeaway": "Foundation models, pretrained on broad datasets and adapted to multiple tasks, offer a way to reuse chemical knowledge across polymer property prediction and inverse design.",
+    "innovation": "Foundation models, pretrained on broad datasets and adapted to multiple tasks, offer a way to reuse chemical knowledge across polymer property prediction and inverse design.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+  },
+  {
+    "title": "Improved electrostatic machine learning embedding ML/MM scheme for a phosphoryl transfer reaction",
+    "authors": [
+      "Laetitia Kantin",
+      "Iñaki Tuñón",
+      "Kirill Zinovjev",
+      "Élise Duboué-Dijon"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-10-07",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15010047/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15010047/v1",
+    "abstract": "The promise of hybrid machine learning/molecular mechanics (ML/MM) simulations is to provide QM/MM-quality free energy profiles at a fraction of the cost. One of the challenges is to accurately treat the interaction between the ML subsystem and the MM environment. Here we test the Electrostatic ML Embedding (EMLE) scheme on a minimal model of RNA cleavage in water, which is already challenging due to a doubly charged reactant dissociating into two anions. The original scheme, a MACE potential embedded by an independent EMLE model, is compared with a new EMLE–MACE architecture, in which a single equivariant network predicts the gas-phase energy together with the atomic charges, valence widths, polarizabilities and static dipoles required by the embedding. The models were trained by active learning against M06-2X/def2- TZVP data, with structures selected by query-by-committee from the ML/MM dynamics itself. About 1500 single point calculations were sufficient for stable 100 ps umbrella sampling simulations in 73 windows along the reaction pathway. The EMLE–MACE profile reproduces the reference DFT/MM profile within its sampling error, including a metastable pentacoordinate intermediate. Energy decomposition shows that the static dipoles are essential: without them the static error stays above chemical accuracy even for an ideally trained model, due to the irreducible error of approximating electron density with spherical atoms.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7220869537",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "machine learned interatomic potential active learning materials molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 13.044444444444444,
+    "tags": [
+      "active_learning",
+      "catalysis",
+      "dft",
+      "equivariant_ml",
+      "force_field",
+      "h2",
+      "md",
+      "ml"
+    ],
+    "takeaway": "Here we test the Electrostatic ML Embedding (EMLE) scheme on a minimal model of RNA cleavage in water, which is already challenging due to a doubly charged reactant dissociating into two anions.",
+    "innovation": "Here we test the Electrostatic ML Embedding (EMLE) scheme on a minimal model of RNA cleavage in water, which is already challenging due to a doubly charged reactant dissociating into two anions.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "OxiGen: Oxidation-State-Aware Crystal Generation",
+    "authors": [
+      "Dylan John",
+      "Kim E. Jelfs",
+      "Alex M. Ganose",
+      "Eleonora Giunchiglia"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-10-06",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2610.08296",
+    "url": "https://arxiv.org/abs/2610.08296",
+    "abstract": "Generative models have the potential to accelerate inorganic materials discovery by enabling inverse design, but generating experimentally realisable crystals remains challenging. Oxidation states are widely used to assess the compositional validity of crystals and guide inorganic materials discovery. While existing generative models for crystals can generate materials with charge-neutral oxidation-state assignments, they poorly reproduce the distributions of oxidation states observed in synthesised materials. To address this limitation, we propose OxiGen, an oxidation-state-aware crystal diffusion model that explicitly represents oxidation states during generation. OxiGen enforces global charge neutrality by construction using a structured output layer with exact inference over a finite-state automaton. Empirically, OxiGen substantially improves oxidation-state fidelity, generates the highest rate of stable, unique, and novel crystals among evaluated methods, and maintains high compositional validity even under property conditioning.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7220893942",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials generative model diffusion inverse design crystal structure",
+      "materials graph neural network equivariant representation learning crystal"
+    ],
+    "citation_count": 0,
+    "score": 12.733333333333334,
+    "tags": [
+      "crystal",
+      "generative_model",
+      "md"
+    ],
+    "takeaway": "Generative models have the potential to accelerate inorganic materials discovery by enabling inverse design, but generating experimentally realisable crystals remains challenging.",
+    "innovation": "Generative models have the potential to accelerate inorganic materials discovery by enabling inverse design, but generating experimentally realisable crystals remains challenging.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt the generator to MOF topology, linker-node compatibility, charge balance, and synthesizability constraints."
+  },
+  {
+    "title": "Machine-Learning-Driven Simulations of Hyperthermal Atomic Oxygen Impacts on (0001) Al2O3 for Low-Altitude Satellite Design.",
+    "authors": [
+      "Nico Segreto",
+      "Јован Бошковић",
+      "Andrea Beck",
+      "Johannes Kästner"
+    ],
+    "journal": "PubMed",
+    "publication_date": "2026-10-08",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acsami.6c14110",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/42848461",
+    "abstract": "In Very Low Earth Orbit (VLEO), spacecraft encounter residual atmosphere primarily composed of atomic oxygen (AO). The drag and operational lifetime of these spacecraft are determined by the interaction between AO and the surface, which for aluminum is a passivation layer of Al2O3. We present a blueprint for developing machine-learned interatomic potentials for reactive gas-surface systems. Gaussian-Moment Neural Networks, implemented in apax, are trained using an active learning workflow that incorporates a spin-state switching scheme. This approach accounts for the triplet-to-singlet transition that AO undergoes upon adsorption, a process usually neglected in machine-learned potential studies. This methodology enables the simulation of thousands of hyperthermal impacts on (0001) Al2O3 at orbital velocity with near-first-principles accuracy for systems four times larger and four orders of magnitude cheaper than ab initio molecular dynamics. Alumina is not an inert surface. Most impacting atoms adsorb rather than reflect, and with continuous exposure, the surface reaches a dynamic steady state where ∼14% of the binding sites are occupied. The surface remains intact. Atoms desorb primarily as O2 formed by recombination, indicating that surface chemistry, rather than simple scattering, governs the energy transfer during impact. Conventional spacecraft drag models assume that impacting atoms desorb thermally in equilibrium with the surface. Our findings demonstrate that this assumption is invalid for alumina. We determine an energy accommodation coefficient of 0.61, which is lower than the 0.82 to 1.0 range measured on actual spacecraft surfaces. This discrepancy quantifies the effect of technical surface roughness. When scaling the simulated momentum transfer to the European Space Agency's GOCE satellite, the measured reentry drag force is reproduced within a factor of 1.8. Since an atomically smooth surface still exhibits strong energy accommodation through chemical bond formation, effective drag reduction in VLEO requires materials that are both atomically smooth and chemically inert.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7221170117",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "machine learned interatomic potential active learning materials molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 12.555555555555555,
+    "tags": [
+      "active_learning",
+      "adsorption",
+      "dft",
+      "h2",
+      "interatomic_potential",
+      "md"
+    ],
+    "takeaway": "We present a blueprint for developing machine-learned interatomic potentials for reactive gas-surface systems.",
+    "innovation": "We present a blueprint for developing machine-learned interatomic potentials for reactive gas-surface systems.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Use uncertainty or acquisition logic to choose which MOF DFT, MD, or GCMC labels to compute next."
+  },
+  {
+    "title": "Tractable and Thermodynamically Consistent p K a Prediction via First-Dissociation Aggregation",
+    "authors": [
+      "Zhuoyan Liu",
+      "Qiuyin Zhu",
+      "Qingkun Li",
+      "Yuanxi Zhu",
+      "You Xu",
+      "Bin Dai",
+      "Yongsheng Li",
+      "Zhenming Liu",
+      "Shengwen Yang"
+    ],
+    "journal": "bioRxiv (Cold Spring Harbor Laboratory)",
+    "publication_date": "2026-10-06",
+    "year": 2026,
+    "doi": "https://doi.org/10.64898/2026.09.30.755586",
+    "url": "https://doi.org/10.64898/2026.09.30.755586",
+    "abstract": "Abstract Ionization governs molecular behavior, yet predicting aqueous pKa accurately and tractably remains a fundamental challenge. Rigorous ensemble methods require enumerating a protonation-state space that grows exponentially with the number of ionizable sites, while fast graph predictors return numbers without thermodynamic consistency. Here we derive an exact thermodynamic identity showing that the macroscopic first-dissociation constant is fully determined by protonated-microstate populations and unique first-deprotonation events, eliminating the deprotonated ensemble algebraically and reducing aggregation to O(n+E) operations. We implement this identity in DTi-pKa, a dual-head graph neural network whose free-energy and dissociation heads are coupled by thermodynamic constraints. On four external benchmarks (355 molecules), DTi-pKa achieves a pooled MAE of 0.5665 pKa units, with 0.6285 on the 169 records lacking training-cache matches, while providing site-resolved micro-pKa values and protonation-state populations. Controlled ablations show that constraint placement at the level of the reported macroscopic equilibrium matters more than microscopic label precision—a design principle transferable to physics-informed machine learning beyond chemistry. Closure diagnostics expose numerical self-consistency as an open frontier, which we report transparently. By replacing an intractable computation with a physical identity, DTi-pKa unifies macroscopic accuracy and microscopic interpretability in a single framework.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7220665036",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "machine learned interatomic potential active learning materials molecular dynamics"
+    ],
+    "citation_count": 0,
+    "score": 12.533333333333333,
+    "tags": [
+      "gnn",
+      "h2",
+      "high_throughput",
+      "ml",
+      "physics_informed",
+      "water"
+    ],
+    "takeaway": "Here we derive an exact thermodynamic identity showing that the macroscopic first-dissociation constant is fully determined by protonated-microstate populations and unique first-deprotonation events, eliminating the deprotonated ensemble algebraically and reducing aggregation to O(n+E) operations.",
+    "innovation": "Here we derive an exact thermodynamic identity showing that the macroscopic first-dissociation constant is fully determined by protonated-microstate populations and unique first-deprotonation events, eliminating the deprotonated ensemble algebraically and reducing aggregation to O(n+E) operations.",
+    "limitations": "Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Representation-learning advance may transfer to MOFs after adding porous-crystal topology and metal-node chemistry.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Benchmark the representation on periodic MOF graphs with explicit node/linker chemistry and pore topology."
+  },
+  {
+    "title": "Artificial intelligence for scanning probe microscopy: From data analysis to autonomous experimentation",
+    "authors": [
+      "Masayuki Abe",
+      "Zhuo Diao"
+    ],
+    "journal": "Applied Physics Express",
+    "publication_date": "2026-10-02",
+    "year": 2026,
+    "doi": "https://doi.org/10.35848/1882-0786/aeafac",
+    "url": "https://doi.org/10.35848/1882-0786/aeafac",
+    "abstract": "Abstract Advanced scanning probe microscopy (SPM) measurements have traditionally required highly specialized skills, but the integration of artificial intelligence (AI) and machine learning has begun to transform how SPM is operated. This review surveys AI methods applied to SPM, organized by technique rather than chronology: unsupervised learning for feature extraction, support vector machines for real-time classification, convolutional neural networks for image analysis, Bayesian optimization for experiment planning, reinforcement learning for atomic and molecular manipulation, and object detection for feature localization. The emerging use of large language models as natural-language interfaces for microscope operation is discussed as a distinct topic. For each method, the operating principles and representative SPM applications are presented. This method-centric organization enables direct comparison of AI approaches applied to similar SPM tasks and clarifies the complementary roles---perception, decision-making, control, and orchestration---that each technique plays in integrated autonomous SPM systems.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7215889076",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "materials discovery Bayesian optimization active learning autonomous laboratory"
+    ],
+    "citation_count": 0,
+    "score": 12.488888888888889,
+    "tags": [
+      "active_learning",
+      "foundation_model",
+      "h2",
+      "image_analysis",
+      "ml",
+      "review"
+    ],
+    "takeaway": "Abstract Advanced scanning probe microscopy (SPM) measurements have traditionally required highly specialized skills, but the integration of artificial intelligence (AI) and machine learning has begun to transform how SPM is operated.",
+    "innovation": "Abstract Advanced scanning probe microscopy (SPM) measurements have traditionally required highly specialized skills, but the integration of artificial intelligence (AI) and machine learning has begun to transform how SPM is operated.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Map the method onto MOF structure images, spectra, isotherm curves, or generated-structure consistency checks. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.",
+    "mof_relevance": "Distant-domain method can be useful if it maps to a concrete MOF object such as structure images, spectra, isotherms, pore maps, or multimodal consistency checks.",
+    "transfer_distance": "distant cross-domain method",
+    "mof_transfer_route": "Translate visual-artifact or metadata-consistency logic to MOF structure images/renders, spectra, isotherm curves, generated CIF validation, or multimodal paper-structure consistency checks."
+  }
+]

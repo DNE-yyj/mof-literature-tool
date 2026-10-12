@@ -1,0 +1,40 @@
+{
+  "report_path": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20261012_071843/report.md",
+  "counts": {
+    "fresh": 12,
+    "prior_art": 45,
+    "recent_active": 0
+  },
+  "top_ideas": [
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Digital twins for energy wells through multiscale physics-data fusion: Review, challenges, and a conceptual framework",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "A Comprehensive Review of Battery State of Health Estimation: Methods, Challenges and Future Perspectives",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Artificial intelligence in microplastic and nanoplastic research: State-of-Art review from automated detection to environmental fate modeling",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Tractable and Thermodynamically Consistent p K a Prediction via First-Dissociation Aggregation",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "How Far Does an Active Site Reach? Defining Interaction Radii in Covalent Organic Framework Electrocatalysts for Nitrate Reduction",
+      "candidate_source": "Reaction/catalyst ML transfer",
+      "transfer_distance": "adjacent materials"
+    }
+  ]
+}

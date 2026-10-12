@@ -1,0 +1,1345 @@
+[
+  {
+    "title": "AI-Driven Electrocatalyst Discovery: Integrating Machine Learning, Density Functional Theory, and High-Throughput Screening for Sustainable Energy Conversion",
+    "authors": [
+      "Frank Onyiriuka",
+      "Obojobo Donatus Obukeajeta",
+      "Micheal Abimbola Oladosu",
+      "Moses Adondua Abah",
+      "Felix Sekayo Olagbenro",
+      "Ezekiel Izudike Odimgbe"
+    ],
+    "journal": "International Journal of Soft Computing and Engineering",
+    "publication_date": "2026-09-29",
+    "year": 2026,
+    "doi": "https://doi.org/10.35940/ijsce.e3727.16051126",
+    "url": "https://doi.org/10.35940/ijsce.e3727.16051126",
+    "abstract": "Efficient electrochemical processes are essential for a sustainable, low-carbon energy economy, involving hydrogen production, oxygen evolution/reduction, and carbon dioxide valorisation, all of which require high-performing electrocatalysts. Traditional catalyst development methods, which involve sequential trial-and-error synthesis and density functional theory (DFT) calculations, cannot keep pace with the combinatorial complexity of multi-metallic, single-atom, and high-entropy alloy catalysts. This review summarizes recent advances in AI-driven electrocatalyst discovery in the past five years (2020–2025) with a focus on the three pillars that have enabled this development: (1) machine learning (ML) algorithms and interpretable/explainable frameworks that extract descriptors of catalytic data that are physically meaningful; (2) the ability to couple ML with DFT using surrogate models, graph neural network interatomic potentials, and large benchmark datasets that reduce computational costs by orders of magnitude at close to DFT accuracy; and (3) high throughput screening pipelines for virtual and experimental screening, involving active learning and Bayesian optimisation, that have been applied to a diverse range of electrocatalytic reactions, including the hydrogen evolution reaction, the oxygen evolution/reduction reaction, and the carbon dioxide reduction reaction. Single-atom catalysts, perovskite oxides, and high-entropy alloys are discussed as representative examples that have helped discover new, high-performance candidates and reduced the need for one to two orders of magnitude of DFT calculations. The review also covers emerging autonomous, closed-loop ‘selfdriving’ laboratories, where robotised synthesis and characterisation are coupled with ML-driven decision-making. The review critically discusses persistent challenges in data scarcity, model interpretability and transferability across chemical spaces, and experiment-theory reproducibility, and envisions future directions such as foundation models for atomistic simulation and multimodal data fusion toward fully autonomous electrocatalyst discovery for sustainable energy conversion.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7214740622",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "electrocatalysis active-site descriptor machine learning structure activity relationship"
+    ],
+    "citation_count": 0,
+    "score": 16.155555555555555,
+    "tags": [
+      "active_learning",
+      "alloy",
+      "catalysis",
+      "co2",
+      "dft",
+      "electrocatalysis",
+      "foundation_model",
+      "gnn",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "ml",
+      "multimodal",
+      "oxide",
+      "perovskite",
+      "review",
+      "surrogate_model"
+    ],
+    "takeaway": "This review summarizes recent advances in AI-driven electrocatalyst discovery in the past five years (2020–2025) with a focus on the three pillars that have enabled this development: (1) machine learning (ML) algorithms and interpretable/explainable frameworks that extract descriptors of catalytic data that are physically meaningful; (2) the ability to couple ML with DFT using surrogate models, graph neural network interatomic potentials, and large benchmark datasets that reduce computational costs by orders of magnitude at close to DFT accuracy; and (3) high throughput screening pipelines for virtual and experimental screening, involving active learning and Bayesian optimisation, that have been applied to a diverse range of electrocatalytic reactions, including the hydrogen evolution reaction, the oxygen evolution/reduction reaction, and the carbon dioxide reduction reaction.",
+    "innovation": "This review summarizes recent advances in AI-driven electrocatalyst discovery in the past five years (2020–2025) with a focus on the three pillars that have enabled this development: (1) machine learning (ML) algorithms and interpretable/explainable frameworks that extract descriptors of catalytic data that are physically meaningful; (2) the ability to couple ML with DFT using surrogate models, graph neural network interatomic potentials, and large benchmark datasets that reduce computational costs by orders of magnitude at close to DFT accuracy; and (3) high throughput screening pipelines for virtual and experimental screening, involving active learning and Bayesian optimisation, that have been applied to a diverse range of electrocatalytic reactions, including the hydrogen evolution reaction, the oxygen evolution/reduction reaction, and the carbon dioxide reduction reaction.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Machine learning approaches for electrocatalyst design in water splitting: a review for green hydrogen production",
+    "authors": [
+      "Vamsi Krishna Kudapa",
+      "Shoaib Mohd",
+      "Vijayakumar Sivasundar",
+      "Akanksha Mishra",
+      "Santosh Kumar Sahu",
+      "Diaa S. Metwally",
+      "Mohammed Aman"
+    ],
+    "journal": "Frontiers in Chemistry",
+    "publication_date": "2026-07-31",
+    "year": 2026,
+    "doi": "https://doi.org/10.3389/fchem.2026.1894425",
+    "url": "https://doi.org/10.3389/fchem.2026.1894425",
+    "abstract": "The production of green hydrogen through water splitting requires highly efficient electrocatalysts, but the current trial-and-error-based synthesis or discovery is time-consuming, costly and resource-intensive. Machine learning (ML) provides a powerful, data-driven alternative that can model complex structure-activity relationships across large chemical spaces at orders-of-magnitude speed. This review systematically overviews the life cycle of the electrocatalyst research and development application of ML. First, the thermodynamic and kinetic principles of the hydrogen and oxygen evolution reactions are summarised, along with some well-adopted and accepted activity descriptors. Then we explore data sources, featurization approaches, and algorithms, and discuss the model space, from a simple interpretable model to a graph neural network to a generative model, in the context of the ML toolkit. Strategic applications are discussed for high-throughput virtual screening of alloys and single-atom catalysts, as well as multifunctional activity prediction for overall water splitting, and stability optimisation under operating conditions. The topic of emerging frontiers is highlighted, including high-entropy alloys, amorphous materials, and linking atomic-scale understanding to device-level performance through integration with density functional theory. Finally, the problems of data scarcity, model interpretability and the discrepancy between computational predictions and industrial implementation are discussed, along with future directions for closed-loop discovery and self-driving laboratories. Incorporating ML into electrocatalyst design and combining it with autonomous experimentation will revolutionise this process, from simulation to energy solution, dramatically speeding it up.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7172013596",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "catalyst machine learning sparse biased datasets reaction generality"
+    ],
+    "citation_count": 1,
+    "score": 15.582036069448836,
+    "tags": [
+      "active_learning",
+      "alloy",
+      "catalysis",
+      "catalyst_descriptor",
+      "dft",
+      "generative_model",
+      "gnn",
+      "h2",
+      "high_throughput",
+      "ml",
+      "review",
+      "water"
+    ],
+    "takeaway": "First, the thermodynamic and kinetic principles of the hydrogen and oxygen evolution reactions are summarised, along with some well-adopted and accepted activity descriptors.",
+    "innovation": "First, the thermodynamic and kinetic principles of the hydrogen and oxygen evolution reactions are summarised, along with some well-adopted and accepted activity descriptors.",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints.",
+    "mof_relevance": "Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt active-site model-selection and descriptor mining to MOF metal nodes, defects, bimetallic sites, or local-field catalytic motifs."
+  },
+  {
+    "title": "Accelerating Catalyst Materials Discovery With Large Artificial Intelligence Models",
+    "authors": [
+      "Di Zhang",
+      "Yuanzheng Chen",
+      "Chuanyu Liu",
+      "Y. H. Liu",
+      "Hongliang Xin",
+      "Jiayu Peng",
+      "Pengfei Ou",
+      "H. C. Li"
+    ],
+    "journal": "Angewandte Chemie International Edition",
+    "publication_date": "2026-02-17",
+    "year": 2026,
+    "doi": "https://doi.org/10.1002/anie.202526150",
+    "url": "https://doi.org/10.1002/anie.202526150",
+    "abstract": "The integration of artificial intelligence (AI) into catalysis is fundamentally reshaping the research paradigm of catalyst discovery. Unlike traditional trial-and-error approaches, AI-empowered data-driven technologies, particularly large AI models such as universal machine learning interatomic potentials (MLIPs) and large language models (LLMs), offer unprecedented capabilities in exploring complex spaces, predicting catalytic performance, and accelerating rational design. Standing at the forefront of data-driven science, we underscore how databases, universal MLIPs, and LLMs are revolutionizing the traditional catalysis paradigm and bridging the ontology-concept-computation-experiment continuum. We then demonstrate significant recent progress, and discuss their potential and challenges in the catalytic field. By leveraging cutting-edge universal MLIPs and LLMs, researchers can conduct large-scale simulations, highly efficient data acquisition, training, and prediction, and even self-directed research in the field of catalysis. Looking ahead, these advantages enable the rapid development of target catalysts, which will be propelled by integrated universal MLIPs, multimodal LLMs, and automation systems. Developments in these domains will pave the way toward AI-empowered closed-loop platforms and cross-disciplinary Digital Materials Ecosystems that broaden the discovery landscape and foster cross-materials innovation, marking the dawn of a new era in which catalyst materials discovery is perpetually accelerating.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7129648353",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "reaction-specific datasets machine learning catalyst generality underexplored catalysts"
+    ],
+    "citation_count": 30,
+    "score": 15.500653871151812,
+    "tags": [
+      "active_learning",
+      "catalysis",
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "ml",
+      "multimodal",
+      "priority_journal"
+    ],
+    "takeaway": "The integration of artificial intelligence (AI) into catalysis is fundamentally reshaping the research paradigm of catalyst discovery.",
+    "innovation": "The integration of artificial intelligence (AI) into catalysis is fundamentally reshaping the research paradigm of catalyst discovery.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Boosting Computational Catalysis and Chemical Reactivity with Artificial Intelligence",
+    "authors": [
+      "Konstantinos D. Vogiatzis",
+      "Clémence Corminbœuf",
+      "Ainara Nova",
+      "Kjell Jorner",
+      "Johannes Kästner",
+      "Markus Meuwly",
+      "Philippe Schwaller",
+      "Victor Böttcher",
+      "Μαρία Δρόσου",
+      "Edvin Fako",
+      "Hannes Hoppe",
+      "Žarko Ivković",
+      "Nestor M. Iwanojko",
+      "Dimitrios A. Pantazis",
+      "Stefan P. Schmid",
+      "Kalman Szenes",
+      "Auguste Tetenoire",
+      "Markus Reiher"
+    ],
+    "journal": "Journal of the American Chemical Society",
+    "publication_date": "2026-02-20",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/jacs.5c17786",
+    "url": "https://doi.org/10.1021/jacs.5c17786",
+    "abstract": "Artificial intelligence (AI) and machine learning (ML) are rapidly reshaping the landscape of computational chemistry, offering new opportunities for accelerating catalyst discovery and deepening our understanding of chemical reactivity. This perspective highlights emerging methodologies ranging from machine learning potentials and reinforcement learning to generative AI and large language models that are poised to transform computational catalysis. We discuss challenges in developing robust molecular representations for transition-metal complexes, bridging mechanistic understanding with AI-driven predictions, and constructing reliable data sets that capture both successful and failed reactivity outcomes. By drawing on the authors' practical experience across computational, experimental, and AI-driven domains, we emphasize the importance of integrating chemical intuition and methodological expertise with data-driven approaches while remaining open to serendipitous discoveries enabled by automation and self-driving laboratories. Ultimately, the future of computational catalysis lies in balancing human intuition with algorithmic power, leveraging AI not as a replacement but as an accelerator of chemical insight, mechanistic understanding, and catalyst design.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7130725860",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "reaction-specific datasets machine learning catalyst generality underexplored catalysts"
+    ],
+    "citation_count": 10,
+    "score": 14.697895272798371,
+    "tags": [
+      "catalysis",
+      "foundation_model",
+      "generative_model",
+      "interatomic_potential",
+      "ml",
+      "priority_journal",
+      "review",
+      "separation"
+    ],
+    "takeaway": "Artificial intelligence (AI) and machine learning (ML) are rapidly reshaping the landscape of computational chemistry, offering new opportunities for accelerating catalyst discovery and deepening our understanding of chemical reactivity.",
+    "innovation": "Artificial intelligence (AI) and machine learning (ML) are rapidly reshaping the landscape of computational chemistry, offering new opportunities for accelerating catalyst discovery and deepening our understanding of chemical reactivity.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Machine learning-accelerated inverse design of energy materials: A critical review of graph neural networks, physics-informed models, and generative AI for batteries, perovskite solar cells, and electrocatalysts",
+    "authors": [
+      "Ignatius Echezona Ekengwu",
+      "Bonaventure Onyeka Ekengwu"
+    ],
+    "journal": "Next Materials",
+    "publication_date": "2026-07-30",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.nxmate.2026.102969",
+    "url": "https://doi.org/10.1016/j.nxmate.2026.102969",
+    "abstract": "The global urgency to transition away from fossil fuels has placed extraordinary pressure on materials scientists to deliver breakthroughs in energy storage, solar energy conversion, and electrocatalysis — and to deliver them faster than the conventional trial-and-error research cycle allows. This review examines, critically and in depth, how machine learning is reshaping that cycle for three pivotal material families: lithium-ion and solid-state battery electrodes and electrolytes, halide perovskite solar absorbers, and transition-metal electrocatalysts for the hydrogen and oxygen evolution reactions. We pay particular attention to three classes of algorithm that have proven most consequential: graph neural networks (GNNs), which learn directly from the topology and chemistry of crystal structures; physics-informed neural networks and symmetry-constrained architectures, which embed conservation laws and quantum-mechanical constraints into the learning process; and generative models — variational autoencoders, generative adversarial networks, and diffusion-based frameworks — which can propose novel structures with pre-specified target properties. We trace the intellectual evolution of these methods, benchmark their performance on standardized datasets, and situate them within the broader context of active-learning workflows where computational prediction and experimental feedback operate in a closed loop. The evidence confirms substantial progress: GNN-based property predictors now routinely approach density functional theory accuracy at a tiny fraction of the computational expense, and conditional generative frameworks are beginning to propose experimentally synthesizable candidates that fall outside previously known chemical families. We are equally candid about what remains unresolved: the synthesis reality gap, systematic biases in training databases, poorly calibrated uncertainty estimates, and the still-limited ability to extract physically interpretable insight from deep architectures. The review closes with concrete recommendations for how the field should evolve — algorithmically, experimentally, and in terms of data infrastructure — if machine learning-guided inverse design is to deliver materials that meaningfully advance the clean energy transition.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7171773090",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "catalyst machine learning sparse biased datasets reaction generality",
+      "reaction-specific datasets machine learning catalyst generality underexplored catalysts"
+    ],
+    "citation_count": 0,
+    "score": 14.677777777777777,
+    "tags": [
+      "active_learning",
+      "battery",
+      "catalysis",
+      "crystal",
+      "dft",
+      "electrocatalysis",
+      "electrolyte",
+      "generative_model",
+      "gnn",
+      "h2",
+      "high_throughput",
+      "md",
+      "ml",
+      "perovskite",
+      "physics_informed",
+      "review",
+      "uncertainty"
+    ],
+    "takeaway": "The global urgency to transition away from fossil fuels has placed extraordinary pressure on materials scientists to deliver breakthroughs in energy storage, solar energy conversion, and electrocatalysis — and to deliver them faster than the conventional trial-and-error research cycle allows.",
+    "innovation": "The global urgency to transition away from fossil fuels has placed extraordinary pressure on materials scientists to deliver breakthroughs in energy storage, solar energy conversion, and electrocatalysis — and to deliver them faster than the conventional trial-and-error research cycle allows.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Systematic fine-tuning of MACE interatomic potentials for catalysis",
+    "authors": [
+      "Nima Karimitari",
+      "Gábor Cśanyi",
+      "Derek Vigil‐Fowler",
+      "Ravishankar Sundararaman",
+      "Gábor Csányi",
+      "Christopher Sutton"
+    ],
+    "journal": "npj Computational Materials",
+    "publication_date": "2026-10-02",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s41524-026-02335-z",
+    "url": "https://doi.org/10.1038/s41524-026-02335-z",
+    "abstract": "Abstract Once trained, machine-learned interatomic potentials (MLIPs) offer a fast and accurate way to investigate catalytic reaction pathways, but their performance depends strongly on training-set design. We compared nine MLIPs developed using from-scratch (FS) training and fine-tuning (FT) of foundation models. The models were evaluated on reaction energies ( E r ) and activation barriers ( E a ) for 141 reactions, including CO 2 RR to C 2 /C 3 products, propane dehydrogenation, hydrogen intercalation on Pd, and out-of-distribution OER on metal oxides. The FS models containing 5–10% perturbed, high-energy configurations from molecular dynamics or contour exploration reduced errors by more than twofold relative to models trained only on relaxation trajectories. However, FT models were less sensitive to sampling and generalized better to out-of-distribution chemistry. For example, the FT model fine-tuned on metallic catalysts achieved an MAE of 0.30 eV for OER on iridium oxide polymorphs, while the FT model fine-tuned on metal-oxides gave an E a of 0.19 eV for CO 2 RR on Cu. The best model, fine-tuned on 49,860 configurations, performed consistently across metallic and oxide catalysts and screened 90,781 bimetallic alloys with a reaction-energy MAE of 0.15 eV, including unseen high-index surfaces. These results identify the necessary training set configurations for training transferable catalytic MLIPs.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7216038633",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-metal coupling active site descriptor machine learning single-atom catalysts"
+    ],
+    "citation_count": 0,
+    "score": 14.38888888888889,
+    "tags": [
+      "alloy",
+      "catalysis",
+      "equivariant_ml",
+      "foundation_model",
+      "h2",
+      "interatomic_potential",
+      "md",
+      "oxide",
+      "priority_journal",
+      "transfer_learning",
+      "uncertainty"
+    ],
+    "takeaway": "Abstract Once trained, machine-learned interatomic potentials (MLIPs) offer a fast and accurate way to investigate catalytic reaction pathways, but their performance depends strongly on training-set design.",
+    "innovation": "Abstract Once trained, machine-learned interatomic potentials (MLIPs) offer a fast and accurate way to investigate catalytic reaction pathways, but their performance depends strongly on training-set design.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Closing the learning loop in lithium–sulfur batteries through physics-informed and trustworthy artificial intelligence",
+    "authors": [
+      "Ka Chun Li",
+      "King-cheong Antony LAM",
+      "Chi Ho WONG",
+      "Wai Kwan LIU"
+    ],
+    "journal": "Energy and AI",
+    "publication_date": "2026-10-05",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.egyai.2026.100934",
+    "url": "https://doi.org/10.1016/j.egyai.2026.100934",
+    "abstract": "Lithium–sulfur (Li–S) batteries combine a high theoretical specific energy with low-cost active materials, yet their development remains constrained by coupled reaction pathways, mobile intermediates, lithium-metal instability, and a large design space that changes with loading, electrolyte inventory, temperature, format, and cycling history. Artificial intelligence (AI) offers a way to connect these variables, but most published demonstrations remain isolated within small computational datasets, literature-derived tables, or single-laboratory cell series. This review develops an evidence-first, closed-loop framework for AI-enabled Li–S research that links observation, learning, decision, validation, and model updating. It critically examines data infrastructure, text and multimodal extraction, descriptor learning, catalyst and electrolyte design, physics-informed state inference, degradation prognosis, autonomous experimentation, and digital twins. The available evidence shows that machine learning (ML) can compress high-dimensional calculations, recover useful structure–property relations, and predict selected cell outcomes within bounded domains. However, ML has not yet demonstrated robust transfer across laboratories, cell formats, or practical operating conditions. The main barriers are incomplete metadata, non-independent data splits, uncertain labels, weak uncertainty calibration, and limited prospective validation. To address these gaps, the review introduces a minimum data schema, an evidence-fidelity pathway that separates proxy prediction from decision-grade evidence, task-specific benchmarking requirements, and a minimum viable digital-twin architecture for Li–S cells. The central conclusion is that AI becomes decision-grade only when its predictions are physically credible, uncertainty-aware, experimentally actionable, and iteratively validated.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7220396301",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-metal coupling active site descriptor machine learning single-atom catalysts",
+      "single-atom catalysts active site descriptor machine learning data mining",
+      "underexplored catalysts general structures machine learning reaction-specific datasets"
+    ],
+    "citation_count": 0,
+    "score": 13.122222222222224,
+    "tags": [
+      "active_learning",
+      "battery",
+      "catalysis",
+      "electrolyte",
+      "high_throughput",
+      "ml",
+      "multimodal",
+      "physics_informed",
+      "review",
+      "uncertainty"
+    ],
+    "takeaway": "It critically examines data infrastructure, text and multimodal extraction, descriptor learning, catalyst and electrolyte design, physics-informed state inference, degradation prognosis, autonomous experimentation, and digital twins.",
+    "innovation": "It critically examines data infrastructure, text and multimodal extraction, descriptor learning, catalyst and electrolyte design, physics-informed state inference, degradation prognosis, autonomous experimentation, and digital twins.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Artificial intelligence for sustainable chemical synthesis: Advances in catalysis, biocatalysis, solvents, materials, and life cycle assessment",
+    "authors": [
+      "Kadimi Anitha",
+      "Raveendra Babu Kothapalli",
+      "Bondigalla Ramachandra",
+      "SrihariSomeswararao Vakkapatla",
+      "Rajeswari Lalam",
+      "Bandaru Madhav"
+    ],
+    "journal": "Next Materials",
+    "publication_date": "2026-09-11",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.nxmate.2026.103445",
+    "url": "https://doi.org/10.1016/j.nxmate.2026.103445",
+    "abstract": "Artificial intelligence (AI) has become an important computational approach in sustainable chemical synthesis, particularly in catalyst discovery, biocatalysis, solvent selection, materials design, and AI-enabled life cycle assessment. This review examines AI-assisted approaches for catalyst and biocatalyst discovery and optimization, solvent selection, toxicity assessment, sustainable materials design, and life cycle assessment in the context of sustainable chemical synthesis. It provides a comprehensive overview of computational methods, AI frameworks, machine learning models, and computational platforms, highlighting their applications, capabilities, limitations, and future opportunities in both academia and industry. This review discusses descriptor-based machine-learning models, graph neural networks, generative design, active-learning strategies, large language models (LLMs) for chemical reasoning, and AI-assisted life cycle assessment for advancing sustainable chemical synthesis and materials development. AI represents a valuable tool for sustainable chemical design, but its reliable application depends on high-quality data, rigorous experimental validation, and careful consideration of environmental impacts.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7212154042",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 12.255555555555555,
+    "tags": [
+      "catalysis",
+      "foundation_model",
+      "gnn",
+      "ml",
+      "review"
+    ],
+    "takeaway": "This review discusses descriptor-based machine-learning models, graph neural networks, generative design, active-learning strategies, large language models (LLMs) for chemical reasoning, and AI-assisted life cycle assessment for advancing sustainable chemical synthesis and materials development.",
+    "innovation": "This review discusses descriptor-based machine-learning models, graph neural networks, generative design, active-learning strategies, large language models (LLMs) for chemical reasoning, and AI-assisted life cycle assessment for advancing sustainable chemical synthesis and materials development.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Advanced engineering of inorganic semiconductor nanowires: Materials-by-design for next-generation green energy technologies",
+    "authors": [
+      "Sunday Temitope Oyinbo",
+      "Hoe-Gil Lee",
+      "Sikiru Oluwarotimi Ismail",
+      "Tien‐Chien Jen"
+    ],
+    "journal": "Energy Reviews",
+    "publication_date": "2026-10-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.enrev.2026.100216",
+    "url": "https://doi.org/10.1016/j.enrev.2026.100216",
+    "abstract": "Inorganic semiconductor nanowires (NWs) provide an unusually versatile platform for green-energy technologies because composition, crystal phase, defects, interfaces, morphology, and dimensionality can be engineered across multiple length scales. This review critically examines how these coupled design variables govern charge generation and transport, surface recombination, catalytic activity, ion diffusion, thermal transport, and operational stability. Rather than cataloguing individual materials, we identify transferable structure–property–performance relationships across photovoltaics, photoelectrochemical water splitting, photocatalysis, electrochemical energy storage, and thermoelectric conversion. A central conclusion is that nanoscale advantages are intrinsically conditional: reduced dimensions can enhance light trapping, carrier collection, reaction kinetics, and strain accommodation, but simultaneously intensify surface recombination, interfacial instability, defect sensitivity, and integration losses. We therefore evaluate competing engineering strategies in terms of these trade-offs and their implications for device-scale performance, durability, manufacturability, and sustainability. Recent advances in operando characterization, multiscale simulation, density functional theory, machine learning, and active learning are further assessed as tools for connecting synthesis conditions with experimentally validated material states and functional performance. Particular attention is given to the remaining gap between idealized computational predictions and structurally complex experimental NWs. Finally, we identify reproducibility, standardized data, device integration, scalable manufacturing, long-term stability, and uncertainty-aware human-supervised automation as critical requirements for translating semiconductor NWs from laboratory optimization toward deployable green-energy systems.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7220362276",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "electrocatalysis active-site descriptor machine learning structure activity relationship",
+      "metal-metal coupling active site descriptor machine learning single-atom catalysts"
+    ],
+    "citation_count": 0,
+    "score": 11.977777777777778,
+    "tags": [
+      "active_learning",
+      "catalysis",
+      "crystal",
+      "dft",
+      "electrocatalysis",
+      "h2",
+      "md",
+      "ml",
+      "photocatalysis",
+      "review",
+      "uncertainty",
+      "water"
+    ],
+    "takeaway": "Inorganic semiconductor nanowires (NWs) provide an unusually versatile platform for green-energy technologies because composition, crystal phase, defects, interfaces, morphology, and dimensionality can be engineered across multiple length scales.",
+    "innovation": "Inorganic semiconductor nanowires (NWs) provide an unusually versatile platform for green-energy technologies because composition, crystal phase, defects, interfaces, morphology, and dimensionality can be engineered across multiple length scales.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "How Far Does an Active Site Reach? Defining Interaction Radii in Covalent Organic Framework Electrocatalysts for Nitrate Reduction",
+    "authors": [
+      "Tsukasa Irie",
+      "Saikat Das",
+      "Yuichi Negishi"
+    ],
+    "journal": "ACS Catalysis",
+    "publication_date": "2026-10-05",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acscatal.6c05600",
+    "url": "https://doi.org/10.1021/acscatal.6c05600",
+    "abstract": "Abstract Electrocatalytic nitrate reduction to ammonia has emerged as a compelling strategy for simultaneously closing the anthropogenic nitrogen cycle and enabling decentralized ammonia production. Despite substantial advances in catalyst development, the origin of high selectivity in porous electrocatalysts remains incompletely understood because current interpretations overwhelmingly regard active sites as localized catalytic points. In this Perspective, we argue that this description neglects a fundamental length scale governing multistep nitrate electroreduction. We introduce the concept of an interaction radius, defined as the spatial domain over which an active site measurably perturbs the energetics, dynamics, and transport of reactants, intermediates, and transition states. Within covalent organic frameworks (COFs), this interaction radius emerges from the coupled action of electronic delocalization, electrostatic fields, hydrogen-bonding networks, steric confinement, and solvent organization, transforming the active site from a discrete coordination center into a spatially distributed catalytic entity. We discuss how interaction radii evolve under electrochemical bias, overlap to produce cooperative reaction domains, and ultimately determine intermediate retention, pathway bifurcation, and ammonia selectivity. We further propose experimental and computational strategies for quantifying interaction radii and establish design principles that relate framework chemistry, pore architecture, site spacing, and local solvation to the reaction length scales of nitrate reduction. By reframing COF electrocatalysis through a spatially resolved perspective, this work establishes interaction radius as a quantitative organizing framework with the potential to evolve into a predictive descriptor for rational catalyst design, while providing a transferable conceptual basis for understanding complex electrocatalytic reactions beyond nitrate reduction.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7220740020",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "electrocatalysis active-site descriptor machine learning structure activity relationship",
+      "metal-metal coupling active site descriptor machine learning single-atom catalysts"
+    ],
+    "citation_count": 0,
+    "score": 11.722222222222223,
+    "tags": [
+      "catalysis",
+      "cof",
+      "electrocatalysis",
+      "h2",
+      "md",
+      "review",
+      "separation",
+      "uncertainty"
+    ],
+    "takeaway": "We introduce the concept of an interaction radius, defined as the spatial domain over which an active site measurably perturbs the energetics, dynamics, and transport of reactants, intermediates, and transition states.",
+    "innovation": "We introduce the concept of an interaction radius, defined as the spatial domain over which an active site measurably perturbs the energetics, dynamics, and transport of reactants, intermediates, and transition states.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Direct transfer to MOFs will require explicit metal-node chemistry and stronger electrostatics.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Assessing the Transferability of General-Purpose MachineLearning Interatomic Potentials for Heterogeneous Catalysis with HetCat26",
+    "authors": [
+      "Alexandre Peuch",
+      "Giaan Kler-Young",
+      "Kaifeng Niu",
+      "Jinwoo Hwang",
+      "Manos Mavrikakis",
+      "Angelos Michaelides",
+      "Fabian Berger"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-09-24",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2609.30621",
+    "url": "https://arxiv.org/abs/2609.30621",
+    "abstract": "Foundation machine learning interatomic potentials (MLIPs) promise near-density functional theory (DFT) accuracy across broad areas of chemistry and materials science. However, their performance in describing systems and processes relevant to heterogeneous catalysis remains underexplored. Here, we introduce HetCat26, a collection of benchmark tests designed to assess pre-trained MLIPs across key aspects of catalytic modeling, including surface energetics, metal-metal oxide interactions, adsorption, and catalytic reaction networks. Evaluating fifteen foundation models, we find that performance on existing general materials benchmarks is only weakly predictive of performance on HetCat26; transferability to heterogeneous catalysis cannot be inferred from these general benchmarks. Across the benchmark tests, current models describe surface energetics and, perhaps surprisingly, reaction barriers well, whereas larger errors are observed for adsorption, and DFT site preferences are often not reproduced. Two models, eSEN-30M-OAM and MACE-MH-1-OMAT, nevertheless achieve high accuracy across the properties evaluated. Beyond model benchmarking, HetCat26 highlights the importance of training data consistency: PBE and PBE+U calculations should not be mixed within a training set. Overall, we identify challenges limiting the transferability of current foundation MLIPs to heterogeneous catalysis and, more broadly, to chemical reactions at interfaces, providing guidance for the development of the next generation of foundation models.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7214608919",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "reaction-specific datasets machine learning catalyst generality underexplored catalysts",
+      "underexplored catalysts general structures machine learning reaction-specific datasets"
+    ],
+    "citation_count": 0,
+    "score": 11.700000000000001,
+    "tags": [
+      "adsorption",
+      "catalysis",
+      "dft",
+      "equivariant_ml",
+      "foundation_model",
+      "h2",
+      "high_throughput",
+      "interatomic_potential",
+      "ml",
+      "oxide"
+    ],
+    "takeaway": "Here, we introduce HetCat26, a collection of benchmark tests designed to assess pre-trained MLIPs across key aspects of catalytic modeling, including surface energetics, metal-metal oxide interactions, adsorption, and catalytic reaction networks.",
+    "innovation": "Here, we introduce HetCat26, a collection of benchmark tests designed to assess pre-trained MLIPs across key aspects of catalytic modeling, including surface energetics, metal-metal oxide interactions, adsorption, and catalytic reaction networks.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Pathways for the integration of bioenergetic and food production: An artificial intelligence-assisted review",
+    "authors": [
+      "Yolvi Prada Millán",
+      "Manuel Francisco Polanco",
+      "Abílio J.N.F. Sobral",
+      "G. Ojeda"
+    ],
+    "journal": "Energy Nexus",
+    "publication_date": "2026-10-06",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.nexus.2026.100880",
+    "url": "https://doi.org/10.1016/j.nexus.2026.100880",
+    "abstract": "ABSTRACT The application of agricultural biomass as a renewable energy source is garnering global attention, particularly for its contribution to the circular economy. However, the production pathways needed to harmonize agricultural production for alimentation and/or as a bioenergy resource remain unclear. Despite growing literature on renewable energy, a research gap persists in the integration of bioenergy into the food security framework. This research aims to identify the conditions under which bioenergy can be produced without jeopardizing food production. A methodology was developed that combined bibliometric clustering with generative artificial intelligence (GenAI), providing a systematic framework for sustainable agricultural biomass and bioenergy co-production. To determine potential pathways for integrated agricultural-bioenergy production, a bibliographic analysis was conducted using the Web of Science (WoS) database and VOSviewer software. A GenAI tool and diagramming software were then used to address the question: Is it possible to produce bioenergy without affecting food production? Two groups of keywords with the highest occurrence and citations, were obtained by data mining and clustering analysis. A total of 10 pathways were identified, supported by AI, able to balance bioenergy and food production. All pathways use agricultural crop residue, food waste, manure, algae, sludge, and torrefied biomass as energy sources. This study corroborates the use of GenAI to identify bioenergetic-food integration pathways and presents a novel methodology for identifying and integrating them into the current food security framework.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7220716286",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "underexplored catalysts general structures machine learning reaction-specific datasets"
+    ],
+    "citation_count": 0,
+    "score": 11.533333333333333,
+    "tags": [
+      "catalyst_descriptor",
+      "high_throughput",
+      "review",
+      "uncertainty"
+    ],
+    "takeaway": "ABSTRACT The application of agricultural biomass as a renewable energy source is garnering global attention, particularly for its contribution to the circular economy.",
+    "innovation": "ABSTRACT The application of agricultural biomass as a renewable energy source is garnering global attention, particularly for its contribution to the circular economy.",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Adapt active-site model-selection and descriptor mining to MOF metal nodes, defects, bimetallic sites, or local-field catalytic motifs."
+  },
+  {
+    "title": "Harnessing Artificial Intelligence (AI) for a greener future: a review of AI advancements in green chemistry, chemical processes and sustainable materials",
+    "authors": [
+      "Ahmed M. Elkhatat",
+      "Shaheen A. Al‐Muhtaseb"
+    ],
+    "journal": "Applied Intelligence",
+    "publication_date": "2026-06-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1007/s10489-026-07326-7",
+    "url": "https://doi.org/10.1007/s10489-026-07326-7",
+    "abstract": "The rise of artificial intelligence (AI), particularly machine learning (ML), is fundamentally reshaping how we pursue green chemistry and sustainable chemical processes. In this work, we explore the far-reaching impact of AI, leveraging techniques such as Artificial Neural Networks (ANNs), Random Forests (RF), and Bayesian Optimization (BO) across green chemistry, from catalysis and CO₂ capture to sustainable materials, drug development, and waste control. Indeed, established applications already abound, seen in catalyst design, solvent optimization for CO₂ capture, polymer innovation, pharmaceutical discovery, and waste management. While AI-driven approaches undeniably accelerate the discovery of new materials and processes, they also confront pressing challenges related to energy efficiency, scalability, and broader environmental impact. We therefore pinpoint critical knowledge gaps and provide actionable guidance for implementing AI models, emphasizing robust data management and rigorous model validation. Future considerations must also extend to the nascent potential of quantum computing, the critical ethical landscape, and the transformative implications of automated laboratories. Crucially, this study moves beyond a mere cataloging of applications; instead, the discussion is structured around deployment-critical questions, including method selection, reproducibility, interpretability, and the experimental meaning of performance metrics within the green chemistry context. It is argued in this study that the true value of AI lies not in a mere collection of tools, but as foundational infrastructure. Its scientific utility ultimately depends on robust data governance, cross-laboratory validation, and a clear alignment with core green chemistry objectives. By distilling current advancements and illuminating key challenges, we hope to better equip researchers and practitioners alike to harness AI’s transformative potential in securing a more sustainable future for chemical science.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7164495388",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "catalyst machine learning sparse biased datasets reaction generality"
+    ],
+    "citation_count": 3,
+    "score": 11.508516583342113,
+    "tags": [
+      "active_learning",
+      "catalysis",
+      "equivariant_ml",
+      "h2",
+      "ml",
+      "polymer",
+      "review",
+      "separation"
+    ],
+    "takeaway": "The rise of artificial intelligence (AI), particularly machine learning (ML), is fundamentally reshaping how we pursue green chemistry and sustainable chemical processes.",
+    "innovation": "The rise of artificial intelligence (AI), particularly machine learning (ML), is fundamentally reshaping how we pursue green chemistry and sustainable chemical processes.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "A Multi‐Scale Machine Learning Framework for the Inverse Design of High Entropy Alloys",
+    "authors": [
+      "Mikael Takoutsin",
+      "Marta Campolucci",
+      "Nicolas A. Ishiki",
+      "Nathan Mirgot",
+      "Nadir Zhamantay",
+      "Frédéric Kanoufi",
+      "Jennifer Péron",
+      "Jean Charléty",
+      "Emiliano Fonda",
+      "Valérie Briois",
+      "Marco Faustini",
+      "Maria Letizia De Marco",
+      "C. Goyhenex",
+      "Ovidiu Ersen",
+      "Hervé Bulou"
+    ],
+    "journal": "Advanced Engineering Materials",
+    "publication_date": "2026-09-28",
+    "year": 2026,
+    "doi": "https://doi.org/10.1002/adem.71304",
+    "url": "https://doi.org/10.1002/adem.71304",
+    "abstract": "High‐entropy alloys (HEAs) are highly promising electrocatalysts, but the vastness of their configurational space severely limits traditional screening approaches. To overcome this challenge, this article proposes a conceptual and methodological paradigm shift toward “Inverse Design” (“property‐to‐material”) by introducing the architecture of REACT2COMPO, a neural network framework designed to deduce the optimal composition and atomic distribution of a nanocatalyst directly from targeted macroscopic catalytic properties. To address the lack of experimental 3D structural data required for its training, we introduce a second network, ATOMOD. This model leverages a multi‐fidelity “Sim‐to‐Real” learning strategy: trained exclusively using in silico generated data, it implicitly reconstructs the 3D geometry of the nanoparticle, layer by layer, from a single 2D transmission electron microscopy (TEM) image. Our results demonstrate the feasibility of achieving accurate 3D geometric reconstruction using TEM while highlighting the need for complementary approaches to resolve elements with similar electron scattering cross‐sections. These findings underscore the importance of multimodal data fusion, integrating TEM with complementary techniques such as extended X‐ray absorption fine structure spectroscopy (EXAFS). While the geometric reconstruction from TEM is already operational, this multimodal strategy opens promising perspectives for overcoming the remaining challenges and achieving full 3D chemical resolution. While the geometric reconstruction from TEM is operational, full 3D chemical resolution remains a challenge. This study lays the theoretical and database foundations for a multimodal fusion integrating EXAFS. Once fully implemented, this multi‐scale framework opens a practical pathway to accelerate the discovery of new functional materials.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7214641461",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "electrocatalysis active-site descriptor machine learning structure activity relationship",
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 11.444444444444445,
+    "tags": [
+      "alloy",
+      "catalysis",
+      "generative_model",
+      "high_throughput",
+      "ml",
+      "multimodal",
+      "review"
+    ],
+    "takeaway": "To address the lack of experimental 3D structural data required for its training, we introduce a second network, ATOMOD.",
+    "innovation": "To address the lack of experimental 3D structural data required for its training, we introduce a second network, ATOMOD.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "High-entropy alloy composites: A review of reinforcement architectures, interfacial thermodynamics, processing routes, and performance",
+    "authors": [
+      "Ifeyinwa Glory Ibekwe",
+      "Samuel Ranti Oke",
+      "Sodiq Abiodun Kareem",
+      "Babatunde Olamide Iwarere",
+      "Oluwasegun Eso Falodun",
+      "Justus Uchenna Anaele",
+      "Michael Oluwatosin Bodunrin"
+    ],
+    "journal": "Journal of Alloys and Compounds",
+    "publication_date": "2026-10-01",
+    "year": 2026,
+    "doi": "https://doi.org/10.1016/j.jallcom.2026.191566",
+    "url": "https://doi.org/10.1016/j.jallcom.2026.191566",
+    "abstract": "High-entropy alloy composites (HEACs) extend compositionally complex alloy design by coupling a multi-principal-element matrix with discrete ceramic, carbonaceous, metallic, or high-entropy reinforcement architectures. Their performance is therefore governed not only by the chemistry of the constituent phases, but by reinforcement size and topology, interfacial reaction thermodynamics, defect populations, and the thermal–mechanical history imposed during consolidation or solidification. This review critically synthesizes the processing–microstructure–property relationships of HEACs produced by mechanical alloying, spark plasma sintering, melt processing, surface deposition, and additive manufacturing. Carbides, borides, nitrides, oxides, graphene, carbon nanotubes, ductile metals, and emerging high-entropy ceramics are compared in terms of grain-boundary pinning, heterogeneous nucleation, load transfer, Orowan bypass, thermal-mismatch dislocation generation, crack-path control, and tribofilm or passive-film stabilization. Particular emphasis is placed on the competition between entropy-stabilized solid solutions and chemically driven intermetallic or interfacial reaction products, and on the complementary roles of empirical descriptors, CALPHAD, first-principles calculations, and machine learning in phase and process selection. The available evidence shows that reinforcement does not yield a universally additive benefit: strength, wear resistance, oxidation resistance, and thermal stability improve only within a processing-dependent window in which porosity, agglomeration, galvanic heterogeneity, and brittle reaction layers remain under control. A mechanistic design framework is consequently proposed in which matrix stability, interface cohesion, reinforcement dispersion, and service-environment compatibility are optimised concurrently. Priority research needs include quantitative interface–property relationships, standardized reporting, long-duration environmental testing, physics-informed data integration, and scalable near-net-shape manufacturing.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7220837705",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "electrocatalysis active-site descriptor machine learning structure activity relationship"
+    ],
+    "citation_count": 0,
+    "score": 11.177777777777779,
+    "tags": [
+      "alloy",
+      "dft",
+      "h2",
+      "md",
+      "ml",
+      "oxide",
+      "physics_informed",
+      "porous_material",
+      "review",
+      "two_d_material"
+    ],
+    "takeaway": "Particular emphasis is placed on the competition between entropy-stabilized solid solutions and chemically driven intermetallic or interfacial reaction products, and on the complementary roles of empirical descriptors, CALPHAD, first-principles calculations, and machine learning in phase and process selection.",
+    "innovation": "Particular emphasis is placed on the competition between entropy-stabilized solid solutions and chemically driven intermetallic or interfacial reaction products, and on the complementary roles of empirical descriptors, CALPHAD, first-principles calculations, and machine learning in phase and process selection.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Potentially useful as a neighboring-method reference.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Keep only if the full paper exposes a reusable representation, validation loop, or data-efficiency strategy for a concrete MOF task."
+  },
+  {
+    "title": "Atoms to Processes: The Role of Artificial Intelligence and Machine Learning in Chemical Engineering",
+    "authors": [
+      "Michael Bâldea",
+      "Linda J. Broadbelt",
+      "Marianthi Ierapetritou",
+      "Akhilesh Jain",
+      "Ankur Kumar",
+      "Thomas Alan Kwan",
+      "Fèlix Llovell",
+      "Andrew James Medford",
+      "Ilias Mitrai",
+      "Joel A. Paulson",
+      "Junyi Qiao",
+      "Matthew P. Rivera",
+      "Kirti Chandra Sahu",
+      "Lev Sarkisov",
+      "Zachary P. Smith",
+      "Calvin Tsay",
+      "Ching-Mei Wen",
+      "Ví­ctor M. Zavala",
+      "Huacheng Zhang",
+      "Dan Zhao"
+    ],
+    "journal": "Industrial & Engineering Chemistry Research",
+    "publication_date": "2026-09-30",
+    "year": 2026,
+    "doi": "https://doi.org/10.1021/acs.iecr.6c01806",
+    "url": "https://doi.org/10.1021/acs.iecr.6c01806",
+    "abstract": "Abstract The rapid maturation of artificial intelligence (AI) and machine learning (ML) has catalyzed a profound shift in how chemical engineering problems are formulated, analyzed, and solved. Advances in computing, data availability, and learning algorithms have enabled AI/ML methods to impact applications spanning atomic-scale simulations, materials and catalyst discovery, transport and thermodynamics, separations, process systems engineering, and industrial operations. This Perspective provides an account of recent methodological developments and representative applications, emphasizing how AI/ML tools are being integrated with first-principles models to address challenges of predictive accuracy, data scarcity, extrapolation, interpretability, and model life cycle management. Across domains, a unifying trend is the move away from purely black-box approaches toward hybrid and physics-informed frameworks that explicitly respect conservation laws, thermodynamic consistency, and known structural constraints. These approaches not only improve robustness and reliability but also enable meaningful human–AI collaboration by providing information at an appropriate level of abstraction for the task and decision context. We conclude that AI and ML are not replacing the core principles of chemical engineering; rather, they are amplifying them. As the field advances toward increasingly autonomous, adaptive, and sustainable systems, the thoughtful integration of AI/ML with first-principles understanding and domain expertise will be essential to realizing their full potential across both research and industrial practice.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7214960001",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "electrocatalysis active-site descriptor machine learning structure activity relationship",
+      "metal-metal coupling active site descriptor machine learning single-atom catalysts",
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 11.166666666666668,
+    "tags": [
+      "catalysis",
+      "dft",
+      "h2",
+      "md",
+      "ml",
+      "physics_informed",
+      "review",
+      "separation"
+    ],
+    "takeaway": "Abstract The rapid maturation of artificial intelligence (AI) and machine learning (ML) has catalyzed a profound shift in how chemical engineering problems are formulated, analyzed, and solved.",
+    "innovation": "Abstract The rapid maturation of artificial intelligence (AI) and machine learning (ML) has catalyzed a profound shift in how chemical engineering problems are formulated, analyzed, and solved.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Potentially useful as a neighboring-method reference.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "AI-Driven Optimization of Electrochemical Fertilizer Processes",
+    "authors": [
+      "Muhammad Qamar Bilal"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-09-22",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15009257/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15009257/v1",
+    "abstract": "Conventional fertilizer production relies on centralized, fossil-fuel-intensive processes such as Haber–Bosch ammonia synthesis, with high energy demand and associated carbon emissions. Electrochemical routes to nitrogen and phosphorus fertilizers offer a potentially decentralized, renewable-powered alternative, but their practical performance remains limited by the interaction of catalyst structure, electrolyte composition, reactor architecture, and operating conditions. These variables do not act independently: fertilizer synthesis is fundamentally a coupled, high-dimensional optimization problem that is difficult to address by varying one factor at a time. This chapter argues that artificial intelligence becomes genuinely useful for this problem not as an isolated computational tool, but as a layer connecting experimental and sensor data with prediction, optimization, and control. The chapter examines four electrochemical fertilizer pathways nitrogen reduction, nitrate reduction, urea synthesis, and phosphorus recovery alongside the functional materials and electrode architectures used to catalyze them. It then considers the reactors, analytical instrumentation, and real-time, in-situ sensors that generate the data on which these AI applications depend, treating this measurement infrastructure as inseparable from AI-enabled optimization. Three distinct roles for AI and machine learning are developed: discovering and screening catalyst candidates across combinatorial design spaces; predicting process behavior under coupled and time-varying operating conditions; and identifying and maintaining optimal conditions through Bayesian optimization, multi-objective search, and autonomous control. Techno-economic and life-cycle assessment are introduced as additional decision criteria, since chemical performance alone cannot define an optimal process once cost and environmental impact are considered. A fully integrated, autonomous electrochemical fertilizer platform has not yet been demonstrated in the literature reviewed here. Instead, the chapter shows that individual components of such a system, together with several partial integrations from adjacent process industries, already exist and provide a technically credible foundation for future integration. Data scarcity, the DFT–experiment gap, sensor reliability, reproducibility, interpretability, and scale-up nevertheless remain major barriers to realizing this integration in practice.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7213982411",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 11.07777777777778,
+    "tags": [
+      "active_learning",
+      "battery",
+      "catalysis",
+      "dft",
+      "electrocatalysis",
+      "electrolyte",
+      "h2",
+      "high_throughput",
+      "ml",
+      "review"
+    ],
+    "takeaway": "Conventional fertilizer production relies on centralized, fossil-fuel-intensive processes such as Haber–Bosch ammonia synthesis, with high energy demand and associated carbon emissions.",
+    "innovation": "Conventional fertilizer production relies on centralized, fossil-fuel-intensive processes such as Haber–Bosch ammonia synthesis, with high energy demand and associated carbon emissions.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "A multimodal semantic learning framework for data-driven discovery of nitrate-to-ammonia electrocatalysts",
+    "authors": [
+      "Jiajia Liu",
+      "Yuying Jiang",
+      "Ran Ma",
+      "Zhenhui Ma",
+      "Shuren Wang",
+      "Yanglong Hou"
+    ],
+    "journal": "npj Computational Materials",
+    "publication_date": "2026-09-15",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s41524-026-02327-z",
+    "url": "https://doi.org/10.1038/s41524-026-02327-z",
+    "abstract": "Data-centric approaches are increasingly driving the discovery of functional materials; however, the heterogeneity of experimental conditions and the fragmented nature of data, especially when embedded in unstructured scientific literature, hinder the development of generalizable predictive models. Here, we present a multimodal artificial intelligence (AI) framework, the Material Semantics Network (MatSemNet), which learns materials semantics by integrating textual, numerical, and reaction pathway information extracted from the literature. By constructing a unified representation of structure-property relationships, MatSemNet enables transferable prediction of catalytic performance across material systems, outperforming conventional single-modal or descriptor-based approaches. As a proof of concept, we apply MatSemNet to the nitrate reduction reaction (NO 3 RR), achieving high predictive accuracy for Faradaic efficiency (FE) and identifying promising catalyst candidates. Guided by the model, we design and experimentally validate rare-earth (RE)-doped Co 3 O 4 catalysts, which deliver an FE of 85.5% and an ammonia yield rate of 28.3 mg h −1 cm −2 under alkaline conditions. Mechanistic studies show that RE incorporation modulates the electronic structure and enhances reaction selectivity. Beyond this specific application, MatSemNet offers a scalable and transferable paradigm for data-driven materials discovery by bridging heterogeneous knowledge with predictive modeling, and it is broadly applicable to diverse catalytic and functional material systems.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7213269644",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 11.0,
+    "tags": [
+      "catalysis",
+      "h2",
+      "ml",
+      "multimodal",
+      "priority_journal",
+      "separation"
+    ],
+    "takeaway": "Here, we present a multimodal artificial intelligence (AI) framework, the Material Semantics Network (MatSemNet), which learns materials semantics by integrating textual, numerical, and reaction pathway information extracted from the literature.",
+    "innovation": "Here, we present a multimodal artificial intelligence (AI) framework, the Material Semantics Network (MatSemNet), which learns materials semantics by integrating textual, numerical, and reaction pathway information extracted from the literature.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Catalytic conclusions are likely thermodynamics-heavy unless kinetics or explicit environment are included.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Potentially useful as a neighboring-method reference.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "A green solvent screening tool for emerging materials via uncertainty aware, transformer enhanced transfer learning",
+    "authors": [
+      "Ioannis Kouroudis",
+      "Simon Ternes",
+      "Zhaosu Gu",
+      "Gohar Ali Siddiqui",
+      "Marina Ustinova",
+      "Angelo Lembo",
+      "Alessio Gagliardi",
+      "Aldo Di Carlo"
+    ],
+    "journal": "Scientific Reports",
+    "publication_date": "2026-09-28",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s41598-026-72415-z",
+    "url": "https://doi.org/10.1038/s41598-026-72415-z",
+    "abstract": "Abstract Accurate prediction of solubility remains a central challenge across materials science and sustainable chemistry. In particular, due to emerging technologies like organic and hybrid photovoltaics, batteries, and catalysis, solvent usage is expected to increase significantly within the coming years. Therefore, substituting solvents with greener alternatives is vital. This is where machine learning can make a substantial impact. However, the limited data on critical parameters of solubility significantly constraints machine learning efficacy. In this work, we transfer a pre-trained foundational model on QM9 targets to our application with minimal data requirements. Additionally, the pipeline integrates uncertainty quantification, allowing the user to gauge the confidence of the predictions. As baseline, we succeed in predicting the Hansen solubility parameters and Dielectric Constant for which extensive databases exist. Importantly, we achieve high model performance on additional targets, such as Gutmann Donor and Acceptor numbers, where the available data is extremely limited. Overall, we augment data on solubility descriptors by up to two orders of magnitude with high-quality predictions. For effective dissemination, we deploy an easy-to-use, easily integratable with high throughput labs, customizable tool for ranking and screening possible solvent substitutes. Finally, we both rediscovered known green solvent alternatives and proposed new candidates, proving its relevance for finding eco-friendly solvents.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7164490189",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "catalyst machine learning sparse biased datasets reaction generality"
+    ],
+    "citation_count": 0,
+    "score": 10.444444444444445,
+    "tags": [
+      "battery",
+      "catalysis",
+      "h2",
+      "high_throughput",
+      "ml",
+      "transfer_learning",
+      "uncertainty"
+    ],
+    "takeaway": "Overall, we augment data on solubility descriptors by up to two orders of magnitude with high-quality predictions.",
+    "innovation": "Overall, we augment data on solubility descriptors by up to two orders of magnitude with high-quality predictions.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Fine-tuning large language models to generate single-atom catalyst synthesis procedures",
+    "authors": [
+      "Manu Suvarna",
+      "Matteo Manica",
+      "Fillipo Ficarra",
+      "Andres M Bran",
+      "Andrea Ruiz‐Ferrando",
+      "Magdalena Lederbauer",
+      "Philippe Schwaller",
+      "Javier Pérez‐Ramírez",
+      "Teodoro Laino"
+    ],
+    "journal": "Communications Chemistry",
+    "publication_date": "2026-06-19",
+    "year": 2026,
+    "doi": "https://doi.org/10.1038/s42004-026-02046-y",
+    "url": "https://doi.org/10.1038/s42004-026-02046-y",
+    "abstract": "Heterogeneous catalyst design is primarily expert-driven and difficult to keep track amidst rapidly growing literature, motivating the use of large language models (LLMs) to learn from existing knowledge. While generalist LLMs show some capability in generating synthesis procedures, they struggle on encountering complex catalytic systems like single-atom catalysts (SAC). Here, we investigate fine-tuning of LLMs to improve the generation of SAC synthesis procedures with chemical relevance. We curate a dataset of 2,964 SAC publications and train the Granite-based LLM to recommend protocols based on user-defined prompts including metal-support combinations, synthesis method, and target reactions. We demonstrate the model's practicality through a user interface allowing researchers to query procedures tailored to their design conditions. Human-in-the-loop validation of 150 model-generated SAC protocols confirmed coherent, context-aware procedures with synthesis sequence steps that align with experimental logic, along with limitations. We underscore LLM-generated protocols must be critically reviewed and used as assistive tools, and highlight fine-tuned LLMs for AI-assisted synthesis planning driving innovation in catalysis research.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7165111938",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "reaction-specific datasets machine learning catalyst generality underexplored catalysts"
+    ],
+    "citation_count": 0,
+    "score": 10.322222222222223,
+    "tags": [
+      "catalysis",
+      "foundation_model",
+      "h2",
+      "review",
+      "transfer_learning"
+    ],
+    "takeaway": "We demonstrate the model's practicality through a user interface allowing researchers to query procedures tailored to their design conditions.",
+    "innovation": "We demonstrate the model's practicality through a user interface allowing researchers to query procedures tailored to their design conditions.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Catalytic conclusions are likely thermodynamics-heavy unless kinetics or explicit environment are included.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Data-Driven Exploration of Literature-Derived Catalyst and Reaction Spaces for the Vapor-Phase Aldol Condensation of Acetate with Formaldehyde",
+    "authors": [
+      "Simon Verstraeten",
+      "Yayati Naresh Palai",
+      "Ekaterina V. Makshina",
+      "Bert F. Sels"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-09-17",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15008977/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15008977/v1",
+    "abstract": "Emerging catalytic processes are often characterized by sparse, heterogeneous, literature-derived datasets, limiting the applicability of conventional predictive machine learning. Herein, we demonstrate a robust approach for extracting mechanistic insights from such challenging datasets using interpretable machine learning. A database comprising 375 observations from 71 publications on the vapor-phase thermocatalytic aldol condensation of acetate with formaldehyde to acrylate was compiled, including catalyst composition, reaction conditions, and catalytic performance. Unsupervised clustering identifies three catalyst families: titanium and vanadium phosphorus oxides, alumina-supported Cs- and Ba-based catalysts, and silica-supported Cs-based catalysts. The small dataset size, restricted catalyst diversity, and inter-study variability result in substantial model overfitting and constrain the accurate prediction of catalyst performance. Robust model development relies on regularized tree-based estimators, publication-grouped cross-validation, and sensitivity analysis across model architectures and random initializations. SHAP analysis identifies liquid hourly space velocity and reactant molar ratio as the dominant operational variables governing acrylate productivity. The presence of water, methanol, or ester-based acetate precursors lowers productivity, while reaction temperature exhibits limited influence. Metal phosphorus oxide and silica-supported Cs materials are ranked as the most and least active catalyst families, respectively. Despite catalyst deactivation being the major limitation, time-on-stream profiles remain largely underreported. Correlation analysis associates the deactivation of metal phosphorus oxide and alumina-supported catalysts primarily with acrylate productivity, consistent with acrylate polymerization, whereas silica-supported Cs catalysts exhibit greater variability, suggesting additional deactivation pathways. Overall, this work provides a transferable framework for extracting reliable insights from sparse literature-derived datasets using interpretable machine learning and robust validation.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7213450073",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 10.322222222222223,
+    "tags": [
+      "catalysis",
+      "h2",
+      "high_throughput",
+      "ml",
+      "oxide",
+      "polymer",
+      "symbolic_regression",
+      "transfer_learning"
+    ],
+    "takeaway": "Herein, we demonstrate a robust approach for extracting mechanistic insights from such challenging datasets using interpretable machine learning.",
+    "innovation": "Herein, we demonstrate a robust approach for extracting mechanistic insights from such challenging datasets using interpretable machine learning.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Machine Learned Interatomic Potentials and MultiobjectiveBayesian Optimization for Hydroxylamine Electrosynthesis overSubstituted COF-366",
+    "authors": [
+      "Zhiyi Yu",
+      "Huaiwen Zhang",
+      "Weiming Zhao"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-10-04",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15009355/v2",
+    "url": "https://doi.org/10.26434/chemrxiv.15009355/v2",
+    "abstract": "Electrochemical nitrogen oxide reduction to hydroxylamine (NH2OH) couples substrate entry, branching among nitrogen–oxygen intermediates, and product release. This study develops a catalyst discovery workflow combining machine-learning interatomic potentials (MLIPs) with multiobjective Bayesian optimization (MOBO). The candidate space comprises 40 substituted COF-366 structures formed from eight metal centers and five linkers. Three thermodynamic quantities jointly define the optimization objectives: formation of the nitrite-derived *NO2 surface state, the first hydrogenation branch of *NO, and release of *NH2OH. The Universal Model for Atoms (UMA) evaluates candidate structures and key reaction states under consistent settings. We then compare G*NO and G*NHO as one-dimensional physical descriptors for Gaussian process (GP) models and expected hypervolume improvement (EHVI) search. With the same initial set, Matérn 5/2 kernel, and EHVI settings, G*NO recovers two preferred Mn candidates in fewer iterations and yields faster hypervolume growth, showing more efficient multiobjective search. The complete 40-candidate thermodynamic landscape further shows that Mn's relatively favorable baseline for substrate entry leaves more room for linker-induced tradeoffs. The vinyl2 and OMe2 linkers improve NH2OH release while maintaining acceptable substrate entry, thereby identifying favorable metal–linker combinations. Local electronic-structure analysis shows similar Mn charge, spin population, and electrostatic potential around vinyl2-Mn and OMe2-Mn. A free-energy pathway for vinyl2-Mn favors N–O bond retention through *NHO toward NH2OH and supports favorable product release. This work illustrates a catalyst discovery strategy that uses mechanistic descriptors as coordinates for multiobjective search and identifies how metal centers and linkers jointly regulate the nitrite-to-hydroxylamine reaction network.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7220470222",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-metal coupling active site descriptor machine learning single-atom catalysts"
+    ],
+    "citation_count": 0,
+    "score": 10.311111111111112,
+    "tags": [
+      "active_learning",
+      "catalysis",
+      "cof",
+      "electrocatalysis",
+      "foundation_model",
+      "h2",
+      "interatomic_potential",
+      "oxide",
+      "water"
+    ],
+    "takeaway": "We then compare G*NO and G*NHO as one-dimensional physical descriptors for Gaussian process (GP) models and expected hypervolume improvement (EHVI) search.",
+    "innovation": "We then compare G*NO and G*NHO as one-dimensional physical descriptors for Gaussian process (GP) models and expected hypervolume improvement (EHVI) search.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.",
+    "mof_relevance": "Method is transferable to MOFs if metal-node electrostatics and coordination chemistry are added.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Ioc-Mldroid: a Hybrid Approach for Detection of Android Based Malicious Applications Using Indicators of Compromise (Iocs) and Machine Learning",
+    "authors": [
+      "V VENKATESWARA RAO"
+    ],
+    "journal": "i-manager's Journal on Computer Science",
+    "publication_date": "2027-06-15",
+    "year": 2027,
+    "doi": "10.26634/jcom.14.1.1372",
+    "url": "https://doi.org/10.26634/jcom.14.1.1372",
+    "abstract": "Android operating system has taken over the mobile ecosystem across the world and thus is a prime target of more advanced malware that uses its ability to obfuscate, dynamically load code, encrypted communications and even environment aware evasion behaviors. These properties severely circumscribe the ability of conventional signature-based detection systems, and are problematic to either all-static or all-dynamic analysis. Although machine learning-based detection methods have promise, most current solutions are black-box systems with no forensic transparency [5][6] , and are not as applicable in security operations and digital investigations. This paper presents an android malware detection system being a hybrid between the static-dynamic framework and powered by Indicators of Compromise (IoCs) and machine learning. The framework uses a constrained dual-VM setup consisting of an analysis host based on Ubuntu and an instrumented android emulator. Standard analysis tools are used to extract the static IoCs, which consist of permissions, manifest components, use of sensitive APIs, cryptographic artifacts, certificate metadata, and embedded network indicators. Controlled application execution can be used to obtain dynamic IoCs by monitoring and instrumenting runtime behaviors related to behavioural indicators like network communication, filesystem activity and sensitive API invocation. A framework IoC correlation and normalization engine is used to combine heterogeneous non-uniform indicators which are static and dynamic, into structured feature vectors. A random Forest model that has been chosen due to its strong ability to predict high-dimensional data, as well as the ability to have an interpretable component, are used to classify these vectors. In addition to binary classification, the framework produces a structured forensic intelligence report, which records the IoCs behind each detection decision, which in turn facilitates evidence-based and explainable malware detection. The suggested framework puts the emphasis on the detectability, interpretability and forensic relevance. It improves resilience to evasion by obfuscation, but does not increase decision-making transparency through the correlation of fixating and moving IoCs. The work provides an expandable and explainable android malware detection architecture that can be used in academic research, enterprise security operations, and advanced digital forensic investigation, and which may be extended in the future to the scale of validation and on-device detection.",
+    "type": "journal-article",
+    "source_id": "10.26634/jcom.14.1.1372",
+    "sources": [
+      "crossref"
+    ],
+    "queries": [
+      "metal-metal coupling active site descriptor machine learning single-atom catalysts",
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 9.8,
+    "tags": [
+      "h2",
+      "ml",
+      "surrogate_model"
+    ],
+    "takeaway": "Android operating system has taken over the mobile ecosystem across the world and thus is a prime target of more advanced malware that uses its ability to obfuscate, dynamically load code, encrypted communications and even environment aware evasion behaviors.",
+    "innovation": "Android operating system has taken over the mobile ecosystem across the world and thus is a prime target of more advanced malware that uses its ability to obfuscate, dynamically load code, encrypted communications and even environment aware evasion behaviors.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Potentially useful as a neighboring-method reference.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Keep only if the full paper exposes a reusable representation, validation loop, or data-efficiency strategy for a concrete MOF task."
+  },
+  {
+    "title": "Defect-engineered semiconductor nanomaterials for photocatalytic hydrogen evolution: mechanistic insights, design strategies, and future perspectives",
+    "authors": [
+      "Ganesan Subbiah",
+      "Yogeesha Pai",
+      "Kunal Sharma",
+      "Honganur Raju Manjunath",
+      "Parin Thakorbhai Patel",
+      "T. Aravinda",
+      "Jayanta Kumar Nath",
+      "Aseel Smerat",
+      "Kamakshi Priya K"
+    ],
+    "journal": "Materials Technology",
+    "publication_date": "2026-10-03",
+    "year": 2026,
+    "doi": "https://doi.org/10.1080/10667857.2026.2739865",
+    "url": "https://doi.org/10.1080/10667857.2026.2739865",
+    "abstract": "Photocatalytic hydrogen production is an insistent route to solar fuel generation, yet its practical efficiency remains limited by charge recombination, photocorrosion, sluggish interfacial kinetics, and inadequate visible-light harvesting. Defect engineering offers a powerful solution by precisely reshaping semiconductor electronic structures, carrier dynamics, surface reactivity, and reaction pathways. Anion vacancies, cation deficiencies, dopant-induced distortions, and surface disorder can create active states, regulate charge separation, and optimise adsorption energetics across oxides, sulphides, nitrides, and carbon-based photocatalysts. Advances in defect-controlled synthesis and operando characterisation are enabling increasingly rational structure–activity relationships. However, defect instability, synthetic reproducibility, ambiguous defect quantification, inconsistent performance benchmarking, and scale-up remain critical barriers. Future progress demands an integrated paradigm coupling defect engineering with morphology control, heterointerface design, and device-level architectures. Such convergence can transform defect-rich photocatalysts from laboratory-scale materials into durable, high-efficiency platforms for economically viable solar hydrogen production.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7218866641",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "electrocatalysis active-site descriptor machine learning structure activity relationship",
+      "metal-metal coupling active site descriptor machine learning single-atom catalysts"
+    ],
+    "citation_count": 0,
+    "score": 9.700000000000001,
+    "tags": [
+      "adsorption",
+      "catalysis",
+      "catalyst_descriptor",
+      "h2",
+      "high_throughput",
+      "md",
+      "oxide",
+      "photocatalysis",
+      "review",
+      "separation"
+    ],
+    "takeaway": "Photocatalytic hydrogen production is an insistent route to solar fuel generation, yet its practical efficiency remains limited by charge recombination, photocorrosion, sluggish interfacial kinetics, and inadequate visible-light harvesting.",
+    "innovation": "Photocatalytic hydrogen production is an insistent route to solar fuel generation, yet its practical efficiency remains limited by charge recombination, photocorrosion, sluggish interfacial kinetics, and inadequate visible-light harvesting.",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Adapt active-site model-selection and descriptor mining to MOF metal nodes, defects, bimetallic sites, or local-field catalytic motifs."
+  },
+  {
+    "title": "Tafel curvature analysis in electrocatalysis: theoretical foundations and microkinetic simulations",
+    "authors": [
+      "Lin Zhuang"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-09-28",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15009586/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15009586/v1",
+    "abstract": "A curved Tafel plot records how an electrocatalytic interface changes its response to potential. Its shape contains the signatures of adsorption, interactions between adsorbates and redistribution of reaction flux, yet these signatures are often compressed into a few fitted slopes. Here we develop Tafel curvature analysis as a quantitative framework for interpreting these transitions. Analytical adsorption theory and reversible microkinetic simulations connect the second derivative of logarithmic current to surface-response identities and experimentally testable features. For a turnover law with a constant explicit potential sensitivity, curvature eliminates both the current prefactor and the linear activation term. Ideal Langmuir adsorption then gives a direct susceptibility relation, a fixed amplitude–width relation and a signed-area sum rule. Competitive adsorption extends this result to a weighted squared response of the entire population vector. Lateral interactions reshape this response and produce a precisely located splitting transition: in the pair-dependent Frumkin model, two curvature peaks emerge above a repulsion parameter of 4/3 even though the surface has a single adsorbate population. Parallel currents generate a complementary positive contribution equal to the variance of their local slopes. These relationships organize the behavior of three catalytic networks. Hydrogen oxidation separates population response from pathway redistribution. CO oxidation predicts an activity-dependent curvature-peak displacement and exposes the kinetic influence of a sparsely occupied intermediate through its product-exit probability. For a four-state oxygen-reduction cycle, an exact decomposition links curvature to reversible driving, population motion and dispersion among elementary-rate products; a shared potential factor explains the zero-curvature limit. Together, the models show how curvature sign, area, width and peak motion characterize kinetic transitions and guide the choice of concentration and spectroscopic measurements. A synthetic measurement study further demonstrates recovery of single and split curvature features from discrete noisy currents by local polynomial regression, with propagated uncertainty and an explicit resolution–noise tradeoff. Tafel curvature thus turns variation in kinetic sensitivity into a set of quantitative physical relationships and practical tests of electrocatalytic surface dynamics.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7214781203",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "electrocatalysis active-site descriptor machine learning structure activity relationship"
+    ],
+    "citation_count": 0,
+    "score": 9.644444444444444,
+    "tags": [
+      "adsorption",
+      "catalysis",
+      "electrocatalysis",
+      "h2",
+      "md",
+      "uncertainty"
+    ],
+    "takeaway": "Here we develop Tafel curvature analysis as a quantitative framework for interpreting these transitions.",
+    "innovation": "Here we develop Tafel curvature analysis as a quantitative framework for interpreting these transitions.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Machine‐Learning‐Powered Screening of CuNi@FeO Electrocatalyst for Nitrate‐to‐Ammonia Conversion in Industrial Wastewater Concentrate",
+    "authors": [
+      "Yongxin Wang",
+      "Yuanxin Yang",
+      "Mengxin Huang",
+      "Shiguang Zhang",
+      "Carlos Alberto Martínez-Huitle",
+      "Jinqiu Zhang",
+      "Jing Ding",
+      "Shijie You"
+    ],
+    "journal": "Advanced Functional Materials",
+    "publication_date": "2026-09-22",
+    "year": 2026,
+    "doi": "https://doi.org/10.1002/adfm.78621",
+    "url": "https://doi.org/10.1002/adfm.78621",
+    "abstract": "ABSTRACT High‐pressure reverse osmosis concentrates (HPROC) generated from coal chemical zero‐liquid‐discharge processes accumulate nitrate in high‐salinity matrices that deteriorate downstream salt recovery and nitrogen management. This necessitates selective nitrate conversion before evaporation‐crystallization. Electrocatalytic reduction offers a promising route to convert nitrate into ammonia, yet electrocatalyst design remains largely empirical, complicating the development of manufacturable electrodes for practical applications. Herein we developed a literature‐informed interpretable machine learning (ML) framework to screen the CuNi@FeO electrocatalyst toward highly selective nitrate‐to‐ammonia conversion under high‐salinity conditions. The self‐supporting CuNi@FeO was fabricated by spontaneous deposition on sacrificial iron foam and it could realize spatially and energetically nitrate activation, hydrogen supply, and hydrogen evolution reaction (HER) suppression, accounting for a Faradaic efficiency (FE) of 98.74% and an ammonia yield of 19.56 mg h −1 cm −2 at −1.0 V vs. reversible hydrogen electrode (RHE). Operando spectroscopy and theoretical calculations revealed a synergistic multisite pathway involving the sequential *NO 3 →*N→*NH x conversion. The membrane‐electrode assembly reactor could sustain 200 mA cm −2 for over 100 h and ammonia FE of 91.46% at cell voltage of 2.5 V during treatment of real industrial wastewater concentrate. This work establishes a paradigm shift to ML‐powered screening of electrocatalyst toward scalable nitrate valorization from industrial concentrates.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7214030891",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 9.577777777777778,
+    "tags": [
+      "catalysis",
+      "crystal",
+      "electrocatalysis",
+      "h2",
+      "high_throughput",
+      "ml",
+      "symbolic_regression"
+    ],
+    "takeaway": "Herein we developed a literature‐informed interpretable machine learning (ML) framework to screen the CuNi@FeO electrocatalyst toward highly selective nitrate‐to‐ammonia conversion under high‐salinity conditions.",
+    "innovation": "Herein we developed a literature‐informed interpretable machine learning (ML) framework to screen the CuNi@FeO electrocatalyst toward highly selective nitrate‐to‐ammonia conversion under high‐salinity conditions.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Add kinetics, explicit environment effects, and active-site reconstruction checks. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Potentially useful as a neighboring-method reference.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "DASyR-LLM: Domain-Aware Symbolic Regression with LLMs for Kinetic Model Discovery",
+    "authors": [
+      "Roberto Aliaga Medina",
+      "Paulina Quintanilla",
+      "Ehecatl Antonio del Rio‐Chanona"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-08-05",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2608.05120",
+    "url": "https://arxiv.org/abs/2608.05120",
+    "abstract": "Kinetic model discovery is a central challenge in chemical engineering, as accurate rate expressions are essential for understanding and controlling chemical and biological processes. Symbolic regression (SR) has emerged as a powerful data-driven approach for identifying interpretable kinetic models, but usually operates without domain knowledge, often exploring physicochemically implausible models. Large language models (LLMs) offer a promising avenue for injecting domain expertise into this search. Here, we introduce an LLM-guided SR framework, embedding an LLM module within an iterative SR algorithm for automated kinetic model discovery. The LLM performs two roles at each iteration: (1) a qualitative physicochemical critique of the best SR candidates, and (2) the proposal of new candidate rate expressions guided by the SR-generated models and embedded chemical knowledge. Our framework is evaluated on four in silico case studies of increasing complexity, spanning heterogeneous catalysis and bioprocess systems. Results show the LLM-guided framework reduces iterations to identify the ground-truth model by $41.7-79.3\\%$ versus a state-of-the-art SR framework, with the LLM directly proposing the correct model structure in over half of the guided runs. In practical settings, where each iteration typically requires a new wet-lab experiment, this translates into a substantial reduction in experimental effort. Predictive performance on an independent validation set is equivalent between both approaches, with $R^2>0.98$ in all case studies. Ablation studies indicate that both the SR component and the LLM scale contribute to this performance, with a reduced-size LLM largely retaining discovery efficiency. These findings demonstrate that LLMs can effectively inject domain knowledge into scientific model discovery, paving the way toward fully automated, domain-aware kinetic modelling pipelines.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7196938332",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "catalyst machine learning sparse biased datasets reaction generality"
+    ],
+    "citation_count": 0,
+    "score": 8.844444444444445,
+    "tags": [
+      "catalysis",
+      "foundation_model",
+      "h2",
+      "ml",
+      "symbolic_regression"
+    ],
+    "takeaway": "Here, we introduce an LLM-guided SR framework, embedding an LLM module within an iterative SR algorithm for automated kinetic model discovery.",
+    "innovation": "Here, we introduce an LLM-guided SR framework, embedding an LLM module within an iterative SR algorithm for automated kinetic model discovery.",
+    "limitations": "Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Physics-Guided Design of Ammonia Decomposition Catalysts with Interpretable Machine Learning",
+    "authors": [
+      "Pragyansh Singh",
+      "Jiaqi Yang",
+      "Fanglin Che"
+    ],
+    "journal": "Research Square",
+    "publication_date": "2026-10-09",
+    "year": 2026,
+    "doi": "https://doi.org/10.21203/rs.3.rs-11284169/v1",
+    "url": "https://doi.org/10.21203/rs.3.rs-11284169/v1",
+    "abstract": "",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7221137887",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "electrocatalysis active-site descriptor machine learning structure activity relationship",
+      "metal-metal coupling active site descriptor machine learning single-atom catalysts",
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 8.766666666666667,
+    "tags": [
+      "catalysis",
+      "ml",
+      "symbolic_regression"
+    ],
+    "takeaway": "Physics-Guided Design of Ammonia Decomposition Catalysts with Interpretable Machine Learning",
+    "innovation": "Physics-Guided Design of Ammonia Decomposition Catalysts with Interpretable Machine Learning",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Catalytic conclusions are likely thermodynamics-heavy unless kinetics or explicit environment are included.",
+    "next_steps": "Add kinetics, explicit environment effects, and active-site reconstruction checks. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Potentially useful as a neighboring-method reference.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "From non-centrosymmetry to surface Janus design: Sparse GW/BSE learning for excitonic two-dimensional photocatalysis candidates",
+    "authors": [
+      "Hao Yu",
+      "Yongai Sun",
+      "Zishang Chen",
+      "Xiaowei Fan"
+    ],
+    "journal": "Chimica Techno Acta",
+    "publication_date": "2026-09-10",
+    "year": 2026,
+    "doi": "https://doi.org/10.15826/chimtech.10339",
+    "url": "https://doi.org/10.15826/chimtech.10339",
+    "abstract": "Janus two-dimensional semiconductors are promising excitonic and photocatalytic platforms because chemically distinct top and bottom surfaces can generate out-of-plane polarity, tune band alignment, and promote charge separation. Database-scale discovery, however, faces two linked obstacles. Crystallographic non-centrosymmetry does not imply true surface Janus asymmetry, so broad non-centrosymmetric searches can substantially overcount relevant materials. In parallel, sparse GW and Bethe-Salpeter equation (BSE) labels leave high-level excitonic screening incomplete. Here we develop a boundary-aware C2DB workflow that integrates structural surface classification, sparse GW/BSE label completion, formula-group validation, uncertainty-aware band-edge screening, and candidate audit. From 805 non-centrosymmetric ternary two-dimensional semiconductors, the structural classifier identifies 229 strict surface-Janus-like entries, while 506 are surface-symmetric despite lacking inversion symmetry. Within the strict subset, formula-group validation yields mean absolute errors of 0.087 eV for GW band gaps, 0.113 eV for GW valence-band maxima, 0.081 eV for GW conduction-band minima, and 0.091 eV for BSE exciton binding energies. Uncertainty-aware pH 0 screening retains 48 candidates, and a practical 1.6-3.2 eV gap window further narrows this set to 18 priority entries, evenly divided between direct GW/BSE-supported candidates and machine-learning-completed validation targets. The strongest direct candidates are AsISe and AsITe, while IrClS stands out as a clean machine-learning-priority target for future GW-BSE validation. Rather than replacing high-level electronic-structure calculations, this atlas defines a validation-readiness map for surface-Janus-like two-dimensional semiconductors and clarifies the boundary between structural polarity, sparse excitonic labels, and uncertainty-aware photocatalytic band-edge screening.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7213454109",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "single-atom catalysts active site descriptor machine learning data mining"
+    ],
+    "citation_count": 0,
+    "score": 8.444444444444445,
+    "tags": [
+      "catalysis",
+      "crystal",
+      "h2",
+      "high_throughput",
+      "photocatalysis",
+      "separation",
+      "uncertainty"
+    ],
+    "takeaway": "Here we develop a boundary-aware C2DB workflow that integrates structural surface classification, sparse GW/BSE label completion, formula-group validation, uncertainty-aware band-edge screening, and candidate audit.",
+    "innovation": "Here we develop a boundary-aware C2DB workflow that integrates structural surface classification, sparse GW/BSE label completion, formula-group validation, uncertainty-aware band-edge screening, and candidate audit.",
+    "limitations": "Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.",
+    "transfer_distance": "adjacent materials",
+    "mof_transfer_route": "Use reaction-specific small-data learning as a template for MOF catalytic active-site or reaction-family datasets."
+  },
+  {
+    "title": "Hierarchical Multi-Fidelity Learning for Predicting Three-Dimensional Flame Wrinkling and Turbulent Burning Velocity",
+    "authors": [
+      "Saghar Zolfaghari",
+      "Yu Xie",
+      "Junfeng Yang",
+      "Safa Jamali"
+    ],
+    "journal": "arXiv (Cornell University)",
+    "publication_date": "2026-05-06",
+    "year": 2026,
+    "doi": "https://doi.org/10.48550/arxiv.2605.08232",
+    "url": "https://arxiv.org/abs/2605.08232",
+    "abstract": "High-fidelity experimental characterization of turbulent premixed flames remains limited by the cost and complexity of advanced diagnostics, particularly under elevated pressures and intense turbulence where measurements of coupled flame morphology and burning dynamics are sparse. Here, we develop a hierarchical multi-fidelity neural network framework (MuFiNNs) to address this challenge by integrating sparse high-fidelity experimental data with structured low-fidelity representations encoding dominant physical trends. The framework combines hierarchical low-fidelity construction with nonlinear multi-fidelity correction to learn coupled geometric and reactive flame behavior while recovering discrepancies that simplified models alone cannot capture. The methodology is applied to expanding turbulent premixed flames to predict three-dimensional flame wrinkling dynamics and turbulent mass burning velocity across varying fuels, pressures, and turbulence intensities. Using experimentally informed low-fidelity trend models with sparse high-fidelity measurements, MuFiNNs accurately reconstruct observed flame behavior, enable interpolation across unseen operating conditions, and demonstrate robust extrapolation beyond the training domain. Importantly, the framework remains effective in noisy, weakly structured, or experimentally inaccessible regimes where conventional data-driven approaches often fail. These results show that hierarchical multi-fidelity learning provides a scalable and physically grounded strategy for predictive combustion modeling in data-limited regimes. More broadly, this work establishes multi-fidelity scientific machine learning as a practical framework for extracting physically meaningful predictive models from sparse experiments, particularly for instability-dominated and turbulence-sensitive reactive flows where high-fidelity data acquisition is demanding.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7160936285",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "catalyst machine learning sparse biased datasets reaction generality"
+    ],
+    "citation_count": 0,
+    "score": 8.033333333333333,
+    "tags": [
+      "h2",
+      "md",
+      "ml",
+      "separation",
+      "surrogate_model"
+    ],
+    "takeaway": "Here, we develop a hierarchical multi-fidelity neural network framework (MuFiNNs) to address this challenge by integrating sparse high-fidelity experimental data with structured low-fidelity representations encoding dominant physical trends.",
+    "innovation": "Here, we develop a hierarchical multi-fidelity neural network framework (MuFiNNs) to address this challenge by integrating sparse high-fidelity experimental data with structured low-fidelity representations encoding dominant physical trends.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Potentially useful as a neighboring-method reference.",
+    "transfer_distance": "distant method analogy",
+    "mof_transfer_route": "Keep only if the full paper exposes a reusable representation, validation loop, or data-efficiency strategy for a concrete MOF task."
+  }
+]
