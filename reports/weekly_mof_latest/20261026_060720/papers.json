@@ -1,0 +1,130 @@
+[
+  {
+    "title": "Mechanism‐Guided and Data‐Driven Design of COF/MOF Photocatalysts Toward H 2 O 2 Production",
+    "authors": [
+      "Shu‐Ya Guo",
+      "Guo‐Hong Ning",
+      "Dan Li"
+    ],
+    "journal": "Chemistry - A European Journal",
+    "publication_date": "2026-10-22",
+    "year": 2026,
+    "doi": "https://doi.org/10.1002/chem.71815",
+    "url": "https://doi.org/10.1002/chem.71815",
+    "abstract": "ABSTRACT Hydrogen peroxide (H 2 O 2 ) is a green oxidant and potential energy carrier, and the photosynthesis of H 2 O 2 from water and oxygen offers a sustainable alternative to the conventional anthraquinone process. Due to the tunable skeletons, adjustable pore microenvironments, and designable active sites, covalent organic frameworks (COFs) and metal‐organic frameworks (MOFs) have emerged as crystalline porous photocatalysts for H 2 O 2 production. This review summarizes recent advances in COF/MOF photocatalysts for H 2 O 2 production, focusing on density functional theory (DFT)‐based mechanistic insights, descriptor construction, and data‐driven catalyst discovery enabled by artificial intelligence (AI) and machine learning (ML). We first discuss how DFT calculations elucidate active sites, charge‐transfer pathways, and reaction mechanisms by revealing electronic structures, excited‐state charge distributions, adsorption behavior, and reaction free‐energy profiles. We then highlight how DFT‐derived descriptors can bridge mechanistic understanding with materials screening. Finally, we discuss how AI and ML approaches integrate experimental performance, reaction conditions, structural features, and theoretical descriptors to enable candidate screening and design‐rule extraction. Overall, the integration of DFT calculations with AI/ML methods provides a promising route toward mechanism‐guided and data‐driven discovery of COF/MOF photocatalysts for solar‐driven H 2 O 2 production.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7223221743",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework adsorption machine learning density functional theory",
+      "metal-organic framework catalysis machine learning density functional theory",
+      "metal-organic framework interatomic potential molecular dynamics adsorption",
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 13.455555555555556,
+    "tags": [
+      "adsorption",
+      "catalysis",
+      "cof",
+      "crystal",
+      "dft",
+      "h2",
+      "high_throughput",
+      "ml",
+      "mof",
+      "oxide",
+      "review",
+      "water"
+    ],
+    "takeaway": "This review summarizes recent advances in COF/MOF photocatalysts for H 2 O 2 production, focusing on density functional theory (DFT)‐based mechanistic insights, descriptor construction, and data‐driven catalyst discovery enabled by artificial intelligence (AI) and machine learning (ML).",
+    "innovation": "This review summarizes recent advances in COF/MOF photocatalysts for H 2 O 2 production, focusing on density functional theory (DFT)‐based mechanistic insights, descriptor construction, and data‐driven catalyst discovery enabled by artificial intelligence (AI) and machine learning (ML).",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Add kinetics, explicit environment effects, and active-site reconstruction checks.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Flexible force field-based screening and machine learning predictions for CO2 sorption and diffusion in MOFs",
+    "authors": [
+      "Clare B. Martin",
+      "Samir Budhathoki",
+      "Janice A. Steckel"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-10-21",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15010813/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15010813/v1",
+    "abstract": "Machine learning offers an efficient route for screening metal–organic frameworks (MOFs), but most existing models rely on rigid-framework simulations that neglect framework flexibility. In this work, DFT-derived flexible force fields were used to calculate CO2 sorption and self-diffusion for 5,418 MOFs, providing the training data for machine-learning models capable of rapidly predicting these properties. We investigated different ML algorithms, featurization methods, and the role of physical descriptors in predicting CO2 sorption and self-diffusion in MOFs. For CO2 sorption, a categorical boosting classifier coupled with Stoichiometric-45 featurization method used with scalar descriptors provided predictive accuracy of 76.1%. For CO2 self-diffusion, we tuned a categorical boosting regressor on revised autocorrelation functions coupled with scalar descriptors and achieved moderate predictive accuracy (R2 = 0.69). These results demonstrate that machine learning trained on properties generated from flexible force field simulations can substantially accelerate computational screening while incorporating key effects of framework flexibility, providing an efficient strategy for discovering MOFs for low-pressure CO2 capture. Summary Computational screening of 5,418 metal–organic frameworks using flexible DFT-based force fields captures framework motion effects on CO2 sorption and self-diffusion. Machine learning models were evaluated across descriptors and algorithms. A CatBoost classifier achieved 76.1% sorption accuracy, while an autocorrelation-based regressor predicted self-diffusion (R2 = 0.69), demonstrating the value of flexibility-aware modeling.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7223179920",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework adsorption machine learning density functional theory"
+    ],
+    "citation_count": 0,
+    "score": 10.444444444444445,
+    "tags": [
+      "co2",
+      "dft",
+      "force_field",
+      "high_throughput",
+      "md",
+      "ml",
+      "mof",
+      "separation"
+    ],
+    "takeaway": "We investigated different ML algorithms, featurization methods, and the role of physical descriptors in predicting CO2 sorption and self-diffusion in MOFs.",
+    "innovation": "We investigated different ML algorithms, featurization methods, and the role of physical descriptors in predicting CO2 sorption and self-diffusion in MOFs.",
+    "limitations": "Likely sensitive to training-set coverage and transferability across chemistries. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Benchmark uncertainty and out-of-domain behavior before broad screening claims.",
+    "mof_relevance": "Directly relevant to MOF work, but likely less novel for this transfer-focused profile.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Mechanical versus thermal amorphization of ZIF-4: from local rearrangements to network disorder",
+    "authors": [
+      "Léna Triestram",
+      "François‐Xavier Coudert"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-10-21",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15010773/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15010773/v1",
+    "abstract": "There is mounting evidence that different amorphization routes can produce metalorganic framework (MOF) glasses with distinct structures and properties, yet the microscopic origins of these differences remain difficult to establish experimentally. Focusing on the two main synthesis methods, which are melt-quenching and ball-milling, we use molecular dynamics simulations with a machine-learning interatomic potential to compare different glasses obtained from ZIF-4. While both routes largely preserve tetrahedral zinc coordination, mechanical deformation generally produces more distorted local environments, showing that average coordination numbers alone do not capture the structural differences between these glasses. At smaller applied strain, mechanical glasses retain substantial memory of the crystalline network topology, despite pronounced changes in ring geometry. Larger strains erase this topological memory, yielding ring-size distributions similar to those of melt-quenched glasses, while differences in local geometry and porosity persist. Simulations of larger systems reveal a heterogeneous amorphization mechanism, involving the formation and growth of disordered domains. These findings from in silico amorphization support process-dependent polyamorphism in ZIF glasses and identify local geometry, topological memory, and spatial heterogeneity as complementary features needed to characterize their structure and understand the influence of mechanical processing.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7223130321",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework interatomic potential molecular dynamics adsorption"
+    ],
+    "citation_count": 0,
+    "score": 8.944444444444445,
+    "tags": [
+      "crystal",
+      "h2",
+      "interatomic_potential",
+      "md",
+      "mof",
+      "porous_material",
+      "separation"
+    ],
+    "takeaway": "Focusing on the two main synthesis methods, which are melt-quenching and ball-milling, we use molecular dynamics simulations with a machine-learning interatomic potential to compare different glasses obtained from ZIF-4.",
+    "innovation": "Focusing on the two main synthesis methods, which are melt-quenching and ball-milling, we use molecular dynamics simulations with a machine-learning interatomic potential to compare different glasses obtained from ZIF-4.",
+    "limitations": "Abstract-level evidence is promising, but validation breadth is unclear without reading the full paper.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  }
+]

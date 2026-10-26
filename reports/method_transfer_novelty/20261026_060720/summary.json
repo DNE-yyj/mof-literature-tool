@@ -1,0 +1,40 @@
+{
+  "report_path": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20261026_060720/report.md",
+  "counts": {
+    "fresh": 8,
+    "prior_art": 31,
+    "recent_active": 16
+  },
+  "top_ideas": [
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Bridging model attention to physical insights in structure-property dynamics",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "A quantum-informed gradient catalyst layer architecture for freeze-resistant proton exchange membrane fuel cell cold startup via DFT guided machine learning",
+      "candidate_source": "Reaction/catalyst ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "SU(2)-Equivariant Spinor Message Passing for Molecular Magnetism",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Designing rigid protein fiducials to visualize GPCR conformational states",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Predicting protein electrostatics with protein language models",
+      "candidate_source": "Reaction/catalyst ML transfer",
+      "transfer_distance": "adjacent materials"
+    }
+  ]
+}
