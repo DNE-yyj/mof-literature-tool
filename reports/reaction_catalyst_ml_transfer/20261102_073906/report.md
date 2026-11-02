@@ -1,13 +1,13 @@
 # Literature Update
 
-- Generated: `2026-10-26T06:07:39`
+- Generated: `2026-11-02T07:39:06`
 - Profile: `reaction_catalyst_ml_transfer`
-- Since: `2016-10-28`
-- Papers retained: `27`
+- Since: `2016-11-04`
+- Papers retained: `28`
 
 ## Overview
 
-Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. This transfer profile keeps non-MOF ML papers when they carry a concrete method signal; 27 retained papers are outside direct MOF literature. 27 papers contain transferable method tags and 4 appear in priority journals or major venue families. 21 papers also carry explicit material-system tags, helping judge whether the chemistry is close enough to MOFs.
+Collected 28 deduplicated papers for profile `reaction_catalyst_ml_transfer`. This transfer profile keeps non-MOF ML papers when they carry a concrete method signal; 28 retained papers are outside direct MOF literature. 28 papers contain transferable method tags and 5 appear in priority journals or major venue families. 23 papers also carry explicit material-system tags, helping judge whether the chemistry is close enough to MOFs.
 
 ## Innovation Patterns
 
@@ -31,7 +31,20 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 
 ## Paper Briefs
 
-### 1. From Atoms to Reactors: A Critical Review of a Decade of Machine Learning in Heterogeneous Catalysis (2017–2026)
+### 1. Accelerating Catalyst Materials Discovery With Large Artificial Intelligence Models
+
+- Date: `2026-02-17`
+- Journal: Angewandte Chemie International Edition
+- Link: https://doi.org/10.1002/anie.202526150
+- Tags: active_learning, catalysis, foundation_model, h2, high_throughput, interatomic_potential, ml, multimodal, priority_journal, review
+- Authors: Di Zhang, Yuanzheng Chen, Chuanyu Liu, Y. H. Liu, Hongliang Xin
+- Why it matters: The integration of artificial intelligence (AI) into catalysis is fundamentally reshaping the research paradigm of catalyst discovery.
+- Innovation: The integration of artificial intelligence (AI) into catalysis is fundamentally reshaping the research paradigm of catalyst discovery.
+- Likely limitations: Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.
+- Next step: Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.
+- MOF relevance: Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.
+
+### 2. From Atoms to Reactors: A Critical Review of a Decade of Machine Learning in Heterogeneous Catalysis (2017–2026)
 
 - Date: `2026-10-23`
 - Journal: Angewandte Chemie International Edition
@@ -40,19 +53,6 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Authors: Rafael Larraz, Avelino Corma
 - Why it matters: ABSTRACT This critical review traces the evolution of machine learning (ML) across the full value chain of heterogeneous catalysis over 2017–2026, from catalyst discovery to reactor and process design, and across the principal reaction families (CO 2 reduction, water splitting, nitrogen chemistry, zeolite‐catalyzed transformations).
 - Innovation: ABSTRACT This critical review traces the evolution of machine learning (ML) across the full value chain of heterogeneous catalysis over 2017–2026, from catalyst discovery to reactor and process design, and across the principal reaction families (CO 2 reduction, water splitting, nitrogen chemistry, zeolite‐catalyzed transformations).
-- Likely limitations: Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.
-- Next step: Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.
-- MOF relevance: Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.
-
-### 2. Accelerating Catalyst Materials Discovery With Large Artificial Intelligence Models
-
-- Date: `2026-02-17`
-- Journal: Angewandte Chemie International Edition
-- Link: https://doi.org/10.1002/anie.202526150
-- Tags: active_learning, catalysis, foundation_model, h2, high_throughput, interatomic_potential, ml, multimodal, priority_journal
-- Authors: Di Zhang, Yuanzheng Chen, Chuanyu Liu, Y. H. Liu, Hongliang Xin
-- Why it matters: The integration of artificial intelligence (AI) into catalysis is fundamentally reshaping the research paradigm of catalyst discovery.
-- Innovation: The integration of artificial intelligence (AI) into catalysis is fundamentally reshaping the research paradigm of catalyst discovery.
 - Likely limitations: Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.
 - Next step: Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.
 - MOF relevance: Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.
@@ -109,20 +109,7 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.
 - MOF relevance: Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.
 
-### 7. A quantum-informed gradient catalyst layer architecture for freeze-resistant proton exchange membrane fuel cell cold startup via DFT guided machine learning
-
-- Date: `2026-10-16`
-- Journal: Scientific Reports
-- Link: https://doi.org/10.1038/s41598-026-73810-2
-- Tags: catalysis, dft, h2, high_throughput, md, ml, physics_informed, surrogate_model, water
-- Authors: Muhammad Aurangzeb, Junchen Li, Xiong Shusheng, Li Xinwei, Muhammad Khalid
-- Why it matters: The Q-ICE-CL framework follows a five-stage workflow: (1) DFT quantum-mechanical calculations establish water-surface interaction descriptors for N-doped carbon/MoS₂ interfaces; (2) hybrid XGBoost-GNN machine learning models trained on DFT data enable inference-time composition screening within the established design space; (3) gradient catalyst layer architecture is designed using DFT-derived wettability parameters; (4) COMSOL Multiphysics simulations pre-validate the design before physical fabrication, substantially reducing experimental iterations; and (5) experimental cold-start testing validates the fabricated gradient catalyst layer.
-- Innovation: The Q-ICE-CL framework follows a five-stage workflow: (1) DFT quantum-mechanical calculations establish water-surface interaction descriptors for N-doped carbon/MoS₂ interfaces; (2) hybrid XGBoost-GNN machine learning models trained on DFT data enable inference-time composition screening within the established design space; (3) gradient catalyst layer architecture is designed using DFT-derived wettability parameters; (4) COMSOL Multiphysics simulations pre-validate the design before physical fabrication, substantially reducing experimental iterations; and (5) experimental cold-start testing validates the fabricated gradient catalyst layer.
-- Likely limitations: Likely sensitive to training-set coverage and transferability across chemistries. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.
-- Next step: Add kinetics, explicit environment effects, and active-site reconstruction checks. Benchmark uncertainty and out-of-domain behavior before broad screening claims.
-- MOF relevance: Potentially useful as a neighboring-method reference.
-
-### 8. Closing the learning loop in lithium–sulfur batteries through physics-informed and trustworthy artificial intelligence
+### 7. Closing the learning loop in lithium–sulfur batteries through physics-informed and trustworthy artificial intelligence
 
 - Date: `2026-10-05`
 - Journal: Energy and AI
@@ -131,6 +118,19 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Authors: Ka Chun Li, King-cheong Antony LAM, Chi Ho Wong, Wai Kwan LIU
 - Why it matters: It critically examines data infrastructure, text and multimodal extraction, descriptor learning, catalyst and electrolyte design, physics-informed state inference, degradation prognosis, autonomous experimentation, and digital twins.
 - Innovation: It critically examines data infrastructure, text and multimodal extraction, descriptor learning, catalyst and electrolyte design, physics-informed state inference, degradation prognosis, autonomous experimentation, and digital twins.
+- Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.
+- Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Add kinetics, explicit environment effects, and active-site reconstruction checks.
+- MOF relevance: Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.
+
+### 8. Machine Learning‐Assisted Discovery of Unconventional Molybdenum Nitride Nano‐Facets as Hydrogen Evolution Electrocatalysts
+
+- Date: `2026-10-29`
+- Journal: Small Methods
+- Link: https://doi.org/10.1002/smtd.71163
+- Tags: catalysis, dft, h2, ml, priority_journal, uncertainty
+- Authors: Xutao Gao, Chun Kit Chan, Eric Pok Man Kan, Edmund C. M. Tse
+- Why it matters: To accelerate the identification of energetically favourable high‐Miller‐index facets of Mo nitrides, we complement our DFT approach with a machine learning (ML) model trained on computed results for low‐Miller‐index facets.
+- Innovation: To accelerate the identification of energetically favourable high‐Miller‐index facets of Mo nitrides, we complement our DFT approach with a machine learning (ML) model trained on computed results for low‐Miller‐index facets.
 - Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.
 - Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Add kinetics, explicit environment effects, and active-site reconstruction checks.
 - MOF relevance: Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.
@@ -200,57 +200,57 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Next step: Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.
 - MOF relevance: Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors.
 
-### 14. A Multi‐Scale Machine Learning Framework for the Inverse Design of High Entropy Alloys
+### 14. Machine Learning-Guided Design of Cu-Based Single-Atom Alloy Nanoclusters for Selective CO2 Electroreduction
 
-- Date: `2026-09-28`
-- Journal: Advanced Engineering Materials
-- Link: https://doi.org/10.1002/adem.71304
-- Tags: alloy, catalysis, generative_model, high_throughput, ml, multimodal, review
-- Authors: Mikael Takoutsin, Marta Campolucci, Nicolas A. Ishiki, Nathan Mirgot, Nadir Zhamantay
-- Why it matters: To address the lack of experimental 3D structural data required for its training, we introduce a second network, ATOMOD.
-- Innovation: To address the lack of experimental 3D structural data required for its training, we introduce a second network, ATOMOD.
-- Likely limitations: Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Likely sensitive to training-set coverage and transferability across chemistries.
-- Next step: Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Add kinetics, explicit environment effects, and active-site reconstruction checks.
-- MOF relevance: Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.
-
-### 15. Atoms to Processes: The Role of Artificial Intelligence and Machine Learning in Chemical Engineering
-
-- Date: `2026-09-30`
-- Journal: Industrial & Engineering Chemistry Research
-- Link: https://doi.org/10.1021/acs.iecr.6c01806
-- Tags: catalysis, dft, h2, md, ml, physics_informed, review, separation
-- Authors: Michael Bâldea, Linda J. Broadbelt, Marianthi Ierapetritou, Akhilesh Jain, Ankur Kumar
-- Why it matters: Abstract The rapid maturation of artificial intelligence (AI) and machine learning (ML) has catalyzed a profound shift in how chemical engineering problems are formulated, analyzed, and solved.
-- Innovation: Abstract The rapid maturation of artificial intelligence (AI) and machine learning (ML) has catalyzed a profound shift in how chemical engineering problems are formulated, analyzed, and solved.
-- Likely limitations: Likely sensitive to training-set coverage and transferability across chemistries.
-- Next step: Test humid or multicomponent conditions and connect material metrics to process-level targets. Add kinetics, explicit environment effects, and active-site reconstruction checks.
-- MOF relevance: Potentially useful as a neighboring-method reference.
-
-### 16. Deciphering Catalytic Reaction Mechanisms and Modulation Dynamics via Single‐Molecule Break Junctions
-
-- Date: `2026-10-01`
-- Journal: ChemCatChem
-- Link: https://doi.org/10.1002/cctc.71105
-- Tags: catalyst_descriptor, electrocatalysis, h2, md, review, separation
-- Authors: B. X. Gao, Yinghao Huang, Xinhuan Zhang, Sàisài Yuán
-- Why it matters: By identifying hidden electronic descriptors, break junction techniques provide specific design principles that could be emulated in bulk materials through coordination engineering and porous support design.
-- Innovation: By identifying hidden electronic descriptors, break junction techniques provide specific design principles that could be emulated in bulk materials through coordination engineering and porous support design.
-- Likely limitations: Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments.
+- Date: `2026-10-29`
+- Journal: ChemRxiv
+- Link: https://doi.org/10.26434/chemrxiv.15011300/v1
+- Tags: adsorption, alloy, catalyst_descriptor, co2, dft, electrocatalysis, high_throughput, ml
+- Authors: Luyuan Wang, Jielin Chen, Wenjie Du, Jingwei Liu, Yongguang Zhang
+- Why it matters: To clarify these effects, we synergistically couple high-throughput density functional theory (DFT) calculations and machine learning (ML) to evaluate *CO adsorption across 1,944 small Cu-SAAs nanocluster candidates.
+- Innovation: To clarify these effects, we synergistically couple high-throughput density functional theory (DFT) calculations and machine learning (ML) to evaluate *CO adsorption across 1,944 small Cu-SAAs nanocluster candidates.
+- Likely limitations: Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Likely sensitive to training-set coverage and transferability across chemistries.
 - Next step: Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.
 - MOF relevance: Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors.
 
-### 17. Accelerating Mechanistic Understanding and Prediction of Chemical Selectivity with Foundation Machine-Learned Interatomic Potentials
+### 15. Toward Mild Conditions for N2 Activation: Progress and Challenges from Nitrogenase to Biomimetic Artificial Catalysts
 
-- Date: `2026-10-22`
-- Journal: ChemRxiv
-- Link: https://doi.org/10.26434/chemrxiv.15010828/v1
-- Tags: catalysis, dft, foundation_model, h2, high_throughput, interatomic_potential, separation, uncertainty
-- Authors: Niket Manoj, Austin Pounder, Niko Ahmed, Abhijeet S. Bhadauria, Robert S. Paton
-- Why it matters: We introduce the SELECT50 dataset, a chemically diverse collection of paired selectivity-determining transition state structures, evaluated at the ωB97M-V/def2-TZVPD//ωB97X-D3(BJ)/def2-TZVP level of theory, spanning representative cases of kinetically-controlled stereo-, chemo- and regioselectivities, along with competing mechanistic pathways.
-- Innovation: We introduce the SELECT50 dataset, a chemically diverse collection of paired selectivity-determining transition state structures, evaluated at the ωB97M-V/def2-TZVPD//ωB97X-D3(BJ)/def2-TZVP level of theory, spanning representative cases of kinetically-controlled stereo-, chemo- and regioselectivities, along with competing mechanistic pathways.
-- Likely limitations: Pretraining benefits may fade for underrepresented MOF metal nodes, defects, or guest-loaded structures. Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain.
-- Next step: Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states.
-- MOF relevance: Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.
+- Date: `2026-10-29`
+- Journal: ACS Omega
+- Link: https://doi.org/10.1021/acsomega.6c07548
+- Tags: catalysis, h2, review, two_d_material, uncertainty
+- Authors: Li Zhao, Xiaofan Liu, Peixin Li, Qiuyue Wang, Yanyan Xi
+- Why it matters: Abstract Nitrogen (N2), as the most abundant gas in the atmosphere, poses a long-standing challenge in chemistry and biochemistry due to its high bond energy (≈941 kJ·mol–1) and thus low reactivity under mild conditions.
+- Innovation: Abstract Nitrogen (N2), as the most abundant gas in the atmosphere, poses a long-standing challenge in chemistry and biochemistry due to its high bond energy (≈941 kJ·mol–1) and thus low reactivity under mild conditions.
+- Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Catalytic conclusions are likely thermodynamics-heavy unless kinetics or explicit environment are included.
+- Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Add kinetics, explicit environment effects, and active-site reconstruction checks.
+- MOF relevance: Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.
+
+### 16. Structure–Activity Relationships in Phloroglucinol‐Bridged Binuclear Versus Mononuclear Iron/Cobalt Phthalocyanine Electrocatalysts for the Oxygen Reduction Reaction: A Combined Experimental and Computational Investigation
+
+- Date: `2026-10-28`
+- Journal: ChemistrySelect
+- Link: https://doi.org/10.1002/slct.74969
+- Tags: adsorption, catalysis, catalyst_descriptor, dft, h2, photocatalysis
+- Authors: Palesa Mathese Phooko, Aselefech Sorsa Wotango, Siraye Esubalew Debebe, Getachew Adam Workneh
+- Why it matters: Critically, density functional theory (DFT) calculations of O 2 adsorption free energy correlated quadratically with experimental half‐wave potentials ( R 2 = 0.997), and the Fe dz 2 orbital energy emerged as a reliable electronic descriptor of activity, with nitro‐substituted bimetallic FeCoPc exhibiting a narrow HOMO–LUMO gap (∼1.05 eV).
+- Innovation: Critically, density functional theory (DFT) calculations of O 2 adsorption free energy correlated quadratically with experimental half‐wave potentials ( R 2 = 0.997), and the Fe dz 2 orbital energy emerged as a reliable electronic descriptor of activity, with nitro‐substituted bimetallic FeCoPc exhibiting a narrow HOMO–LUMO gap (∼1.05 eV).
+- Likely limitations: Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.
+- Next step: Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.
+- MOF relevance: Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors.
+
+### 17. From electronic descriptors to durable design: a multi-scale review of catalysts for LOHC dehydrogenation
+
+- Date: `2026-10-25`
+- Journal: Colloids and Interface Science Communications
+- Link: https://doi.org/10.1016/j.colcom.2026.100924
+- Tags: adsorption, alloy, catalysis, catalyst_descriptor, h2, ml, oxide, review, separation
+- Authors: Ruolan Du, Yuanzhe Li
+- Why it matters: This review provides a mechanism-focused synthesis connecting atomic-scale electronic descriptors to catalyst formulation and reactor performance.
+- Innovation: This review provides a mechanism-focused synthesis connecting atomic-scale electronic descriptors to catalyst formulation and reactor performance.
+- Likely limitations: Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Likely sensitive to training-set coverage and transferability across chemistries.
+- Next step: Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.
+- MOF relevance: Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors.
 
 ### 18. A green solvent screening tool for emerging materials via uncertainty aware, transformer enhanced transfer learning
 
@@ -278,7 +278,20 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Next step: Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Add kinetics, explicit environment effects, and active-site reconstruction checks.
 - MOF relevance: Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.
 
-### 20. Ioc-Mldroid: a Hybrid Approach for Detection of Android Based Malicious Applications Using Indicators of Compromise (Iocs) and Machine Learning
+### 20. Physics-Guided Design of Ammonia Decomposition Catalysts with Interpretable Machine Learning
+
+- Date: `2026-10-09`
+- Journal: Research Square
+- Link: https://doi.org/10.21203/rs.3.rs-11284169/v1
+- Tags: catalysis, dft, h2, high_throughput, ml, symbolic_regression
+- Authors: Pragyansh Singh, Jiaqi Yang, Fanglin Che
+- Why it matters: Abstract Rational catalyst design for ammonia decomposition requires navigating coupled structural and electronic effects that govern reaction energetics across a large configurational space.
+- Innovation: Abstract Rational catalyst design for ammonia decomposition requires navigating coupled structural and electronic effects that govern reaction energetics across a large configurational space.
+- Likely limitations: Likely sensitive to training-set coverage and transferability across chemistries. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.
+- Next step: Add kinetics, explicit environment effects, and active-site reconstruction checks. Benchmark uncertainty and out-of-domain behavior before broad screening claims.
+- MOF relevance: Potentially useful as a neighboring-method reference.
+
+### 21. Ioc-Mldroid: a Hybrid Approach for Detection of Android Based Malicious Applications Using Indicators of Compromise (Iocs) and Machine Learning
 
 - Date: `2027-06-15`
 - Journal: i-manager's Journal on Computer Science
@@ -291,20 +304,20 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Next step: Benchmark uncertainty and out-of-domain behavior before broad screening claims.
 - MOF relevance: Potentially useful as a neighboring-method reference.
 
-### 21. Accelerated Discovery of Earth‐Abundant Oxygen Evolution Catalysts Through Surface‐Informed Active Learning
+### 22. ReactionAtlas: Ab origine exploration of chemical reaction networks with machine learning
 
-- Date: `2026-10-22`
-- Journal: Advanced Science
-- Link: https://doi.org/10.1002/advs.78281
-- Tags: active_learning, adsorption, alloy, catalysis, dft, h2, high_throughput, water
-- Authors: Hayun Jeon, Minhee Park, Won Suk Lee, Seyoung Park, YongJoo Kim
-- Why it matters: ABSTRACT The development of efficient electrocatalysts for the oxygen evolution reaction (OER) remains a challenge in alkaline water electrolysis.
-- Innovation: ABSTRACT The development of efficient electrocatalysts for the oxygen evolution reaction (OER) remains a challenge in alkaline water electrolysis.
-- Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.
-- Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.
-- MOF relevance: Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.
+- Date: `2026-06-29`
+- Journal: arXiv (Cornell University)
+- Link: https://arxiv.org/abs/2606.30778
+- Tags: catalysis, dft, force_field, generative_model, ml
+- Authors: Stefan Gugler, Max Eissler, Khaled Kahouli, Klaus Robert Müller
+- Why it matters: We introduce ReactionAtlas, which builds a reaction network $\textit{ab origine}$ from a handful of seed molecules and without hand-crafted rules.
+- Innovation: We introduce ReactionAtlas, which builds a reaction network $\textit{ab origine}$ from a handful of seed molecules and without hand-crafted rules.
+- Likely limitations: Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Likely sensitive to training-set coverage and transferability across chemistries.
+- Next step: Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Add kinetics, explicit environment effects, and active-site reconstruction checks.
+- MOF relevance: Generative or inverse-design idea may transfer to MOFs if topology, charge, and synthesizability constraints are made explicit.
 
-### 22. Feature Selection in Multivariate Linear Regression Models for Data-Efficient Reaction Optimization
+### 23. Feature Selection in Multivariate Linear Regression Models for Data-Efficient Reaction Optimization
 
 - Date: `2026-09-04`
 - Journal: ACS Catalysis
@@ -317,7 +330,7 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Next step: Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Test humid or multicomponent conditions and connect material metrics to process-level targets.
 - MOF relevance: Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.
 
-### 23. Selenium‐Induced Interplay Between Processing, Phase Stability, and Hydrogen Evolution in Multicomponent Pentlandites
+### 24. Selenium‐Induced Interplay Between Processing, Phase Stability, and Hydrogen Evolution in Multicomponent Pentlandites
 
 - Date: `2026-10-23`
 - Journal: ChemElectroChem
@@ -330,7 +343,7 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Next step: Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.
 - MOF relevance: Active-site descriptor or model-selection idea can transfer to MOF catalysis through metal-node, defect, bimetallic, or local-field descriptors.
 
-### 24. DASyR-LLM: Domain-Aware Symbolic Regression with LLMs for Kinetic Model Discovery
+### 25. DASyR-LLM: Domain-Aware Symbolic Regression with LLMs for Kinetic Model Discovery
 
 - Date: `2026-08-05`
 - Journal: arXiv (Cornell University)
@@ -343,20 +356,33 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Next step: Fine-tune on MOF datasets and test whether transfer helps scarce labels such as flexibility, defects, or guest response. Add kinetics, explicit environment effects, and active-site reconstruction checks.
 - MOF relevance: Pretraining or transfer-learning route is promising for MOF tasks with sparse labels or many related properties.
 
-### 25. Physics-Guided Design of Ammonia Decomposition Catalysts with Interpretable Machine Learning
+### 26. Automated Exploration of Complex Reaction Networks Accelerated by a Data-Efficient Machine Learning Potential
 
-- Date: `2026-10-09`
+- Date: `2025-10-30`
+- Journal: ChemRxiv
+- Link: https://doi.org/10.26434/chemrxiv-2025-sm7f3
+- Tags: active_learning, catalysis, dft, h2, high_throughput, interatomic_potential, md, ml, separation
+- Authors: Guoao Li, Haobo Ling, C. Joanna Su, Zhengxuan Liu, Guoqiang Wang
+- Why it matters: Here we present an integrated molecular dynamics/coordinate driving-active learning (MD/CD-AL) framework that efficiently samples diverse reactive configurations to construct MDCD20, a curated dataset of ~1.4 million H/C/N/O structures with radical species covered.
+- Innovation: Here we present an integrated molecular dynamics/coordinate driving-active learning (MD/CD-AL) framework that efficiently samples diverse reactive configurations to construct MDCD20, a curated dataset of ~1.4 million H/C/N/O structures with radical species covered.
+- Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.
+- Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Test humid or multicomponent conditions and connect material metrics to process-level targets.
+- MOF relevance: Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.
+
+### 27. Expanding frontiers of complex reaction network exploration through a general reactive machine learning potential
+
+- Date: `2025-05-29`
 - Journal: Research Square
-- Link: https://doi.org/10.21203/rs.3.rs-11284169/v1
-- Tags: catalysis, ml, symbolic_regression
-- Authors: Pragyansh Singh, Jiaqi Yang, Fanglin Che
-- Why it matters: Physics-Guided Design of Ammonia Decomposition Catalysts with Interpretable Machine Learning
-- Innovation: Physics-Guided Design of Ammonia Decomposition Catalysts with Interpretable Machine Learning
-- Likely limitations: Likely sensitive to training-set coverage and transferability across chemistries. Catalytic conclusions are likely thermodynamics-heavy unless kinetics or explicit environment are included.
-- Next step: Add kinetics, explicit environment effects, and active-site reconstruction checks. Benchmark uncertainty and out-of-domain behavior before broad screening claims.
-- MOF relevance: Potentially useful as a neighboring-method reference.
+- Link: https://doi.org/10.21203/rs.3.rs-6458754/v1
+- Tags: active_learning, force_field, h2, high_throughput, interatomic_potential, md, ml
+- Authors: Shuhua Li, Guoao Li, Haobo Ling, Guoqiang Wang, Manyi Yang
+- Why it matters: Here, we introduce an MD/CD-AL framework integrating molecular dynamics/coordinate driving (MD/CD) method with active learning to generate the MDCD20 dataset that encompasses diverse reactive configurations with up to 20 heavy atoms.
+- Innovation: Here, we introduce an MD/CD-AL framework integrating molecular dynamics/coordinate driving (MD/CD) method with active learning to generate the MDCD20 dataset that encompasses diverse reactive configurations with up to 20 heavy atoms.
+- Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.
+- Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Extend training to guest-loaded, distorted, and diffusion-transition configurations.
+- MOF relevance: Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.
 
-### 26. Artificial intelligence-driven platform for catalytic reactor discovery and optimization applied to carbon dioxide valorization
+### 28. Artificial intelligence-driven platform for catalytic reactor discovery and optimization applied to carbon dioxide valorization
 
 - Date: `2025-02-20`
 - Journal: ChemRxiv
@@ -368,16 +394,3 @@ Collected 27 deduplicated papers for profile `reaction_catalyst_ml_transfer`. Th
 - Likely limitations: Acquisition functions and uncertainty estimates may be poorly calibrated outside the original chemistry domain. Likely sensitive to training-set coverage and transferability across chemistries.
 - Next step: Use uncertainty-aware active learning to choose MOF calculations that probe new nodes, linkers, and guest-loaded states. Benchmark uncertainty and out-of-domain behavior before broad screening claims.
 - MOF relevance: Active-learning or uncertainty workflow could help decide which MOF DFT/MD/GCMC labels are worth generating next.
-
-### 27. Expanding frontiers of complex reaction network exploration through a general reactive machine learning potential
-
-- Date: `2025-05-29`
-- Journal: Research Square
-- Link: https://doi.org/10.21203/rs.3.rs-6458754/v1
-- Tags: interatomic_potential, ml
-- Authors: Shuhua Li, Guoao Li, Haobo Ling, Guoqiang Wang, Manyi Yang
-- Why it matters: Expanding frontiers of complex reaction network exploration through a general reactive machine learning potential
-- Innovation: Expanding frontiers of complex reaction network exploration through a general reactive machine learning potential
-- Likely limitations: Likely sensitive to training-set coverage and transferability across chemistries.
-- Next step: Extend training to guest-loaded, distorted, and diffusion-transition configurations. Benchmark uncertainty and out-of-domain behavior before broad screening claims.
-- MOF relevance: MLIP route can transfer to MOFs if trained on flexible, guest-loaded, and charged configurations.

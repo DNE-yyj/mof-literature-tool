@@ -1,0 +1,127 @@
+[
+  {
+    "title": "Metal–Organic Frameworks for Sustainable Photocatalytic and Electrocatalytic HMF‐to‐FDCA Conversion: From Catalyst Engineering to Energy‐Saving Paired Electrolysis Systems",
+    "authors": [
+      "Jianping Luo",
+      "Yuhan Nie",
+      "Xuemei Zhang",
+      "Weikang Wang",
+      "Qinqin Liu"
+    ],
+    "journal": "Advanced Sustainable Systems",
+    "publication_date": "2026-10-30",
+    "year": 2026,
+    "doi": "https://doi.org/10.1002/adsu.70700",
+    "url": "https://doi.org/10.1002/adsu.70700",
+    "abstract": "ABSTRACT Photocatalytic and electrocatalytic upgrading of lignocellulosic biomass into value‐added chemicals offers a sustainable route to carbon neutrality. 5‑hydroxymethylfurfural (HMF) is a key intermediate because its selective oxidation yields 2,5‑furandicarboxylic acid (FDCA), a renewable monomer for biodegradable polyesters. This review summarizes metal–organic frameworks (MOFs)‐based catalysts for photo‐ and electrochemical HMF oxidation, covering pristine MOFs and MOF‐derived catalytic systems. This review further discusses key modification strategies, including dynamic structural regulation, multi‐active‐site design, and derivative structural optimization. Through these strategies, MOF‐based systems modulate electronic structure, active‐site accessibility, and mass/charge transport, thereby enhancing the activity and FDCA selectivity of photocatalytic and electrocatalytic HMF oxidation. Building on this mechanistic understanding, we examine the structure–activity relationships and reaction mechanisms revealed by in situ characterizations and density functional theory calculations. This review also assesses paired electrolysis systems that integrate anodic HMFOR with cathodic hydrogen evolution or other value‐added reductions. Finally, persistent challenges such as scalable synthesis and reactor design are addressed, along with future perspectives for rational catalyst design and industrial implementation of MOF‐based biomass upgrading.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7225016228",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework adsorption machine learning density functional theory",
+      "metal-organic framework catalysis machine learning density functional theory",
+      "metal-organic framework water adsorption diffusion machine learning"
+    ],
+    "citation_count": 0,
+    "score": 8.966666666666667,
+    "tags": [
+      "catalysis",
+      "catalyst_descriptor",
+      "dft",
+      "electrocatalysis",
+      "h2",
+      "mof",
+      "photocatalysis",
+      "review",
+      "separation"
+    ],
+    "takeaway": "ABSTRACT Photocatalytic and electrocatalytic upgrading of lignocellulosic biomass into value‐added chemicals offers a sustainable route to carbon neutrality.",
+    "innovation": "ABSTRACT Photocatalytic and electrocatalytic upgrading of lignocellulosic biomass into value‐added chemicals offers a sustainable route to carbon neutrality.",
+    "limitations": "Descriptor transfer depends on whether the proposed active-site model remains physically faithful in MOF node or defect environments. Electronic-structure trends may be stronger than finite-temperature dynamics, solvent, or kinetics.",
+    "next_steps": "Test whether active-site descriptors transfer to MOF nodes, defects, bimetallic sites, or local-field-controlled catalytic regimes. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Assessing Structural, Thermal, and Mechanical Properties of Zirconium‐Based Metal‐Organic Frameworks via DFTB3 / 3OB MD Simulations: A Benchmark Beyond UiO Frameworks",
+    "authors": [
+      "Andreas Penz",
+      "Thomas S. Hofer"
+    ],
+    "journal": "Journal of Computational Chemistry",
+    "publication_date": "2026-10-28",
+    "year": 2026,
+    "doi": "https://doi.org/10.1002/jcc.70536",
+    "url": "https://doi.org/10.1002/jcc.70536",
+    "abstract": "The exceptional stability and broad application potential of zirconium-based metal-organic frameworks call for reliable atomistic methods capable of describing their structural, thermal, and mechanical properties. In this work, we benchmark the recently introduced extension of the DFTB3/3OB parameter set for the transition metal zirconium by evaluating a representative set of Zr-containing metal-organic frameworks spanning different secondary building units and topologies, namely UiO-66, UiO-67, MOF-801, MIL-140A, and MIL-163. Equilibrium lattice parameters, X-ray diffraction patterns, thermal expansion coefficients, and volumetric stiffness measures have been computed from DFTB3/3OB molecular dynamics simulations and compared to literature reference data. The results have been further assessed using hybrid DFT (HSEsol) reference calculations and contextualized through an independent comparison with neural-network-based MACE-DAC-1 simulations. Across the benchmark set, DFTB3/3OB provides a consistent structural description and reproduces the dominant experimental diffraction features, while the deviations of the lattice parameters remain small. DFTB3/3OB correctly reproduces the negative thermal expansion behavior of the UiO frameworks and predicts positive thermal expansion for MOF-801; for the investigated MIL-type systems, the observed anisotropic expansion highlights a stronger method dependence. For the cubic frameworks UiO-66 and UiO-67, the bulk moduli obtained via DFTB3/3OB fall within reported reference ranges and generally indicate intermediate stiffness relative to MACE-DAC-1 and HSEsol. For the non-cubic MIL-140A and MIL-163, the corresponding MD-derived fixed-shape isotropic volumetric moduli provide a consistent basis for comparison between DFTB3/3OB and MACE-DAC-1. Overall, the presented results support the applicability and transferability of DFTB3/3OB to molecular dynamics simulations of zirconium-based MOFs beyond the prototypical UiO frameworks.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7224334409",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework interatomic potential molecular dynamics adsorption"
+    ],
+    "citation_count": 0,
+    "score": 8.944444444444445,
+    "tags": [
+      "co2",
+      "dft",
+      "equivariant_ml",
+      "h2",
+      "high_throughput",
+      "md",
+      "mof"
+    ],
+    "takeaway": "The exceptional stability and broad application potential of zirconium-based metal-organic frameworks call for reliable atomistic methods capable of describing their structural, thermal, and mechanical properties.",
+    "innovation": "The exceptional stability and broad application potential of zirconium-based metal-organic frameworks call for reliable atomistic methods capable of describing their structural, thermal, and mechanical properties.",
+    "limitations": "Representation gains depend on whether periodicity, long-range electrostatics, and porous-framework topology are handled. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Benchmark node/linker-aware periodic graphs against generic crystal representations on MOF properties.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  },
+  {
+    "title": "Reliable methane storage screening and inverse design of metal organic frameworks under distribution shift",
+    "authors": [
+      "Safiul Haque Chowdhury",
+      "Rakib Ahammed Diptho",
+      "Pial Ghosh"
+    ],
+    "journal": "Discover Artificial Intelligence",
+    "publication_date": "2026-10-31",
+    "year": 2026,
+    "doi": "https://doi.org/10.1007/s44163-026-02574-5",
+    "url": "https://doi.org/10.1007/s44163-026-02574-5",
+    "abstract": "Abstract Adsorbed natural gas storage in metal-organic frameworks (MOFs) is a leading route to energy-dense methane storage, but the design space is too large for exhaustive simulation. We study the methane deliverable (working) capacity across a public database of 252,353 frameworks described by 14 geometric and 148 chemical descriptors, with uptake from grand canonical Monte Carlo simulation at 5.8 and 65 bar. The database is 97.58% computationally enumerated and 2.42% derived from experimentally reported crystal structures, a composition that shapes every result. A gradient boosting regressor reaches $$R^{2}=0.9963$$ (MAE 0.329 mmol/g) under a random split. Accuracy degrades only modestly under eight structure-aware protocols (topology-grouped $$R^{2}=0.9877$$ ), but training on enumerated frameworks and testing on experimental ones reduces the Spearman correlation from 0.998 to 0.879. Ablation shows 14 geometric descriptors alone recover $$R^{2}=0.9903$$ under a grouped split, so the chemical descriptors buy mainly ranking quality. Split-conformal intervals attain nominal marginal coverage (90.1 and 95.1%) but only 74.7% in the top capacity percentile, and 54.8−87.3% when a whole library is held out. Mondrian and shift-weighted variants restore near-nominal coverage within a fixed split. Reporting all three engineering units together, no framework meets the 263 cm 3 (STP) cm −3 volumetric target, while 1405 (0.56%) exceed 0.5 g g −1 . Benchmarked against direct screening, descriptor-space optimisation falls short: ranking recovers the 57.9 mmol/g record holder in a top-ten shortlist, whereas optimise-then-retrieve returns 17.7−28.8 mmol/g and none of the true top ten. Candidates are database-enumerated; no experimental validation is reported.",
+    "type": "article",
+    "source_id": "https://openalex.org/W7225019846",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework adsorption machine learning density functional theory"
+    ],
+    "citation_count": 0,
+    "score": 7.977777777777778,
+    "tags": [
+      "adsorption",
+      "crystal",
+      "gcmc",
+      "generative_model",
+      "h2",
+      "high_throughput",
+      "mof"
+    ],
+    "takeaway": "We study the methane deliverable (working) capacity across a public database of 252,353 frameworks described by 14 geometric and 148 chemical descriptors, with uptake from grand canonical Monte Carlo simulation at 5.8 and 65 bar.",
+    "innovation": "We study the methane deliverable (working) capacity across a public database of 252,353 frameworks described by 14 geometric and 148 chemical descriptors, with uptake from grand canonical Monte Carlo simulation at 5.8 and 65 bar.",
+    "limitations": "Generative candidates may need explicit topology, charge-balance, and synthesizability constraints before MOF transfer. Screening conclusions may depend on idealized structures, force fields, and missing defects/flexibility.",
+    "next_steps": "Recast the generator with MOF topology, linker-node compatibility, charge, and synthetic-accessibility constraints. Test humid or multicomponent conditions and connect material metrics to process-level targets.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  }
+]
