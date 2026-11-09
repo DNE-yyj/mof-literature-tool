@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-11-09T07:54:23",
+  "profile": "mof_latest_custom",
+  "from_date": "2025-11-09",
+  "paper_count": 1,
+  "queries": [
+    "metal-organic framework adsorption machine learning density functional theory",
+    "metal-organic framework catalysis machine learning density functional theory",
+    "metal-organic framework water adsorption diffusion machine learning",
+    "metal-organic framework interatomic potential molecular dynamics adsorption"
+  ],
+  "outputs": {
+    "report": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/weekly_mof_latest/20261109_075423/report.md",
+    "json": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/weekly_mof_latest/20261109_075423/papers.json",
+    "tsv": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/weekly_mof_latest/20261109_075423/papers.tsv"
+  }
+}

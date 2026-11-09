@@ -1,0 +1,40 @@
+{
+  "report_path": "/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20261109_075423/report.md",
+  "counts": {
+    "fresh": 5,
+    "prior_art": 36,
+    "recent_active": 15
+  },
+  "top_ideas": [
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "AnyNav: Visual neuro-symbolic friction learning for off-road navigation",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Explainable artificial intelligence for laser powder bed fusion alloys: breaking the formability–performance trade-off via collaborative control",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "adjacent materials"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "SlideGen: Collaborative Multimodal Agents for Scientific Slide Generation",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Ioc-Mldroid: a Hybrid Approach for Detection of Android Based Malicious Applications Using Indicators of Compromise (Iocs) and Machine Learning",
+      "candidate_source": "Reaction/catalyst ML transfer",
+      "transfer_distance": "distant method analogy"
+    },
+    {
+      "status": "Fresh MOF transfer candidate",
+      "title": "Chemical short-range order as a conditional modifier of deformation and damage in void-containing high-entropy alloys under high-strain-rate loading",
+      "candidate_source": "Cross-material ML transfer",
+      "transfer_distance": "distant method analogy"
+    }
+  ]
+}

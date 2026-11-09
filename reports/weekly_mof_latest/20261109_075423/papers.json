@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Achieving Accurate Prediction of Water Adsorption in Mildly Hydrophobic MOFs",
+    "authors": [
+      "Sabrina Grigoletto",
+      "Ruben Goeminne",
+      "Mohammad Wahiduzzaman",
+      "Louis Vanduyfhuys",
+      "Véronique Van Speybroeck",
+      "Guillaume Maurin"
+    ],
+    "journal": "ChemRxiv",
+    "publication_date": "2026-11-04",
+    "year": 2026,
+    "doi": "https://doi.org/10.26434/chemrxiv.15011663/v1",
+    "url": "https://doi.org/10.26434/chemrxiv.15011663/v1",
+    "abstract": "Accurately predicting the steep, S-shaped water adsorption isotherms of mildly hydrophobic MOFs and other hydrophobic porous materials remains challenging. This difficulty stems from the delicate balance between framework–water and water–water interactions that governs cooperative pore filling. Here, we develop a machine-learning interatomic potential (MLIP), trained on reliable density functional theory reference data, for the prototypical mildly hydrophobic channel MOF MIP-211(Al). Combined with a Molecular Dynamics-based transition-matrix Monte Carlo (MD-TMMC) scheme, this accurate MLIP enables to predict the sorption isotherm in excellent agreement with the corresponding experimental data, capturing both the low-pressure gradual water uptake increase and the sharp adsorption step at P/P0 ≈ 0.3. This accuracy enables to elucidate the adsorption mechanism, from initial adsorption to complete pore filling: water first anchors through a characteristic OCOO···H2O···μ-OH dual hydrogenbond interaction motif; as these sites saturate, a secondary and competitive OCOO···H2O···H2O dual interaction motif emerges, driving cooperative self-assembly and triggering the adsorption step. At saturation, the confined water network approaches, but does not fully reach, bulk-water connectivity. This work demonstrates that combining a reliable MLIP-training level of theory with an appropriate MC strategy enables both quantitative prediction and mechanistic understanding of water adsorption, providing a foundation for the rational design of mildly hydrophobic MOFs of key interest for heat transformation technologies and water harvesting applications.",
+    "type": "preprint",
+    "source_id": "https://openalex.org/W7225246108",
+    "sources": [
+      "openalex"
+    ],
+    "queries": [
+      "metal-organic framework interatomic potential molecular dynamics adsorption"
+    ],
+    "citation_count": 0,
+    "score": 10.944444444444445,
+    "tags": [
+      "adsorption",
+      "dft",
+      "h2",
+      "interatomic_potential",
+      "md",
+      "mof",
+      "porous_material",
+      "water"
+    ],
+    "takeaway": "Here, we develop a machine-learning interatomic potential (MLIP), trained on reliable density functional theory reference data, for the prototypical mildly hydrophobic channel MOF MIP-211(Al).",
+    "innovation": "Here, we develop a machine-learning interatomic potential (MLIP), trained on reliable density functional theory reference data, for the prototypical mildly hydrophobic channel MOF MIP-211(Al).",
+    "limitations": "Abstract-level evidence is promising, but validation breadth is unclear without reading the full paper.",
+    "next_steps": "Test humid or multicomponent conditions and connect material metrics to process-level targets. Extend training to guest-loaded, distorted, and diffusion-transition configurations.",
+    "mof_relevance": "Already in the MOF literature; keep it only if the method adds a new representation, label space, or uncertainty/active-learning angle.",
+    "transfer_distance": "direct MOF",
+    "mof_transfer_route": "Use as direct MOF prior art or a benchmark for a more specific MOF task."
+  }
+]

@@ -1,12 +1,12 @@
 ## Latest combined report
-- Report: `/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20261102_073805/report.md`
-- Fresh MOF transfer candidates: `7`
-- Older MOF prior art exists: `24`
-- Already active in recent MOF literature: `26`
+- Report: `/home/runner/work/mof-literature-tool/mof-literature-tool/reports/method_transfer_novelty/20261109_075423/report.md`
+- Fresh MOF transfer candidates: `5`
+- Older MOF prior art exists: `36`
+- Already active in recent MOF literature: `15`
 
 ## Top opportunities
-1. `Fresh MOF transfer candidate` `adjacent materials` `Cross-material ML transfer; Reaction/catalyst ML transfer` - From Atoms to Reactors: A Critical Review of a Decade of Machine Learning in Heterogeneous Catalysis (2017–2026)
-2. `Fresh MOF transfer candidate` `adjacent materials` `Cross-material ML transfer` - Data-driven discovery of water-splitting electrocatalysts: From predictive machine learning to autonomous optimization
-3. `Fresh MOF transfer candidate` `distant method analogy` `Cross-material ML transfer` - Machine learning surrogate modelling for enhanced heat transfer in heat exchangers: A state-of-the-art review
-4. `Fresh MOF transfer candidate` `distant method analogy` `Cross-material ML transfer` - SIMPLEX: composition-space deep learning for bio-inspired hydrogel adhesion with prospective validation on model-discovered formulations and interpretable composition rules
-5. `Fresh MOF transfer candidate` `distant method analogy` `Cross-material ML transfer` - Artificial intelligence in offshore wind geotechnical engineering: A lifecycle-oriented review
+1. `Fresh MOF transfer candidate` `distant method analogy` `Cross-material ML transfer` - AnyNav: Visual neuro-symbolic friction learning for off-road navigation
+2. `Fresh MOF transfer candidate` `adjacent materials` `Cross-material ML transfer` - Explainable artificial intelligence for laser powder bed fusion alloys: breaking the formability–performance trade-off via collaborative control
+3. `Fresh MOF transfer candidate` `distant method analogy` `Cross-material ML transfer` - SlideGen: Collaborative Multimodal Agents for Scientific Slide Generation
+4. `Fresh MOF transfer candidate` `distant method analogy` `Reaction/catalyst ML transfer` - Ioc-Mldroid: a Hybrid Approach for Detection of Android Based Malicious Applications Using Indicators of Compromise (Iocs) and Machine Learning
+5. `Fresh MOF transfer candidate` `distant method analogy` `Cross-material ML transfer` - Chemical short-range order as a conditional modifier of deformation and damage in void-containing high-entropy alloys under high-strain-rate loading
